@@ -1,0 +1,286 @@
+<title>BPI 2019 온톨로지 그래프</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* layout: 상단 도구줄 + 왼쪽 그래프 캔버스 + 오른쪽 근거 패널 (좁으면 세로로 쌓음) */
+:root {
+  --paper: #F6F4EE; --surface: #FFFDF8; --ink: #16213A; --ink-soft: #4A5263; --muted: #6B7280;
+  --line: #DDD7C8; --blue: #2B63A6; --orange: #A94F12; --orange-soft: #F2B27A; --ghost: #B5AE9E;
+  --sans: 'IBM Plex Sans KR', 'Apple SD Gothic Neo', 'Malgun Gothic', Arial, sans-serif;
+  --mono: 'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --paper: #10182B; --surface: #182238; --ink: #EEF1F6; --ink-soft: #B9C2D3; --muted: #8A94A8;
+  --line: #2C3954; --blue: #7FA8DD; --orange: #F2B27A; --orange-soft: #F2B27A; --ghost: #56617A; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --paper: #10182B; --surface: #182238; --ink: #EEF1F6; --ink-soft: #B9C2D3; --muted: #8A94A8;
+  --line: #2C3954; --blue: #7FA8DD; --orange: #F2B27A; --orange-soft: #F2B27A; --ghost: #56617A; color-scheme: dark }
+
+html, body { height: 100%; }
+body { background: var(--paper); color: var(--ink); font-family: var(--sans); font-size: 15px; line-height: 1.5; }
+.app { height: 100%; display: flex; flex-direction: column; padding-inline: 16px; padding-block: 12px; gap: 12px; box-sizing: border-box; }
+header { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; }
+h1 { font-size: 20px; font-weight: 700; margin: 0; text-wrap: balance; }
+.stats { font-family: var(--mono); font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.controls { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; margin-left: auto; }
+.controls label { display: flex; align-items: center; gap: 6px; font-size: 14px; color: var(--ink-soft); cursor: pointer; }
+input[type="search"] { font: inherit; font-size: 14px; padding: 6px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--ink); width: 200px; max-width: 100%; }
+button { font: inherit; font-size: 14px; padding: 6px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--ink); cursor: pointer; }
+button:hover { border-color: var(--blue); }
+:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+main { flex: 1; min-height: 0; display: flex; gap: 12px; }
+#graph { flex: 1; min-width: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; position: relative; }
+.legend { position: absolute; left: 12px; bottom: 10px; display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 12px; color: var(--muted); pointer-events: none; }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.sw { width: 18px; height: 0; border-top: 2px solid var(--ink); display: inline-block; }
+.sw.held { border-top: 2px dashed var(--orange); }
+.sw.rej { border-top: 2px dotted var(--ghost); }
+.dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+aside { width: 380px; flex: none; overflow-y: auto; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; box-sizing: border-box; }
+aside h2 { font-size: 18px; margin: 0 0 4px; font-family: var(--mono); font-weight: 600; word-break: break-word; }
+aside h3 { font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin: 18px 0 6px; font-weight: 600; }
+aside p { margin: 0 0 8px; }
+.desc { color: var(--ink-soft); }
+.pill { display: inline-block; font-size: 12px; font-weight: 600; padding: 1px 8px; border-radius: 999px; border: 1px solid currentColor; margin-right: 6px; }
+.pill.passed { color: var(--blue); } .pill.held, .pill.rejected { color: var(--orange); }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { font-family: var(--mono); font-size: 12px; padding: 2px 8px; border-radius: 6px; background: var(--paper); border: 1px solid var(--line); cursor: pointer; color: var(--ink); }
+.chip.ev { border-color: var(--blue); } .chip.in { border-color: var(--orange); }
+.rel { display: block; width: 100%; text-align: left; font-family: var(--mono); font-size: 12px; padding: 6px 8px; margin-bottom: 4px; }
+.rel .st { color: var(--orange); }
+blockquote { margin: 0 0 8px; padding: 8px 10px; background: var(--paper); border-left: 3px solid var(--blue); border-radius: 4px; font-size: 14px; }
+blockquote small { display: block; font-family: var(--mono); font-size: 11px; color: var(--muted); margin-top: 4px; }
+.kv { font-family: var(--mono); font-size: 13px; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+.list { display: flex; flex-direction: column; gap: 4px; }
+.list button { text-align: left; display: flex; justify-content: space-between; gap: 8px; font-size: 13px; padding: 5px 8px; }
+.list button span:last-child { font-family: var(--mono); color: var(--muted); font-variant-numeric: tabular-nums; }
+@media (max-width: 760px) {
+  .app { height: auto; }
+  main { flex-direction: column; }
+  #graph { height: min(70vh, 560px); flex: none; }
+  aside { width: auto; }
+  .controls { margin-left: 0; }
+}
+</style>
+
+<div class="app">
+  <header>
+    <h1>BPI 2019 온톨로지 그래프</h1>
+    <div class="stats" id="stats"></div>
+    <div class="controls">
+      <input type="search" id="q" placeholder="concept · term 찾기" aria-label="concept 또는 term 찾기">
+      <label><input type="checkbox" id="showTerms"> term 보기</label>
+      <label><input type="checkbox" id="showGate"> 반려·보류 보기</label>
+      <button id="relayout" type="button">다시 배치</button>
+    </div>
+  </header>
+  <main>
+    <div id="graph" role="img" aria-label="concept와 relation 그래프">
+      <div class="legend">
+        <span><i class="sw"></i>통과 relation</span>
+        <span><i class="sw held"></i>보류</span>
+        <span><i class="sw rej"></i>반려</span>
+        <span><i class="dot" style="background:var(--blue)"></i>evidence term</span>
+        <span><i class="dot" style="background:var(--orange)"></i>instance term</span>
+        <span><i class="dot" style="background:var(--muted)"></i>property term</span>
+      </div>
+    </div>
+    <aside id="panel" aria-live="polite"></aside>
+  </main>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.30.2/cytoscape.min.js"></script>
+<script>
+const DATA = /*__DATA__*/null;
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
+const tok = (n) => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+
+const concepts = Object.fromEntries(DATA.concepts.map((c) => [c.name, c]));
+const relations = DATA.relations;
+const m = DATA.meta;
+$("stats").textContent = `term ${m.n_terms} → normed ${m.n_normed} → concept ${m.n_concepts} → relation ${m.n_relations} · ${m.model}`;
+
+// ---------------------------------------------------------------- elements
+const els = [];
+const maxM = Math.max(...DATA.concepts.map((c) => c.mentions || 1));
+for (const c of DATA.concepts) {
+  els.push({ group: "nodes", data: { id: "c:" + c.name, label: c.name, type: "concept", size: 34 + 46 * Math.sqrt((c.mentions || 1) / maxM) }, classes: "concept " + c.status + (c.status !== "passed" ? " gate hidden" : "") });
+  for (const [role, cls] of [["evidence", "ev"], ["instances", "in"], ["properties", "pr"]]) {
+    for (const t of c[role]) {
+      const tid = `t:${c.name}:${cls}:${t.id}`;
+      const hidden = " hidden" + (c.status !== "passed" ? " gate" : "");
+      els.push({ group: "nodes", data: { id: tid, label: t.label, type: "term", concept: c.name, role, term: t }, classes: "term " + cls + hidden });
+      els.push({ group: "edges", data: { id: "e:" + tid, source: "c:" + c.name, target: tid }, classes: "termedge " + cls + hidden });
+    }
+  }
+  if (c.parent && concepts[c.parent]) els.push({ group: "edges", data: { id: "isa:" + c.name, source: "c:" + c.name, target: "c:" + c.parent, label: "is-a" }, classes: "isa" });
+}
+relations.forEach((r, i) => {
+  if (!concepts[r.domain] || !concepts[r.range]) return;
+  els.push({ group: "edges", data: { id: "r:" + i, idx: i, source: "c:" + r.domain, target: "c:" + r.range, label: `${r.name} · ${r.cardinality}` }, classes: "rel " + r.status + (r.status !== "passed" ? " gate hidden" : "") });
+});
+
+function style() {
+  const ink = tok("--ink"), blue = tok("--blue"), orange = tok("--orange"), muted = tok("--muted"), ghost = tok("--ghost"), surface = tok("--surface"), line = tok("--line"), paper = tok("--paper");
+  return [
+    { selector: "node", style: { "font-family": "IBM Plex Sans KR, sans-serif", color: ink, "text-valign": "bottom", "text-margin-y": 4, "font-size": 11 } },
+    { selector: "node.concept", style: { width: "data(size)", height: "data(size)", "background-color": surface, "border-width": 2, "border-color": ink, label: "data(label)", "font-size": 13, "font-weight": 600, "text-valign": "center", "text-margin-y": 0, "text-wrap": "wrap", "text-max-width": 120, "text-background-color": surface, "text-background-opacity": 0.85, "text-background-padding": 2 } },
+    { selector: "node.concept.rejected", style: { "border-style": "dashed", "border-color": orange, color: muted } },
+    { selector: "node.term", style: { width: 10, height: 10, label: "data(label)", "font-size": 10, color: muted, "background-color": muted } },
+    { selector: "node.term.ev", style: { "background-color": blue } },
+    { selector: "node.term.in", style: { "background-color": orange } },
+    { selector: "edge", style: { "curve-style": "bezier", width: 1.5, "line-color": ink, "target-arrow-color": ink, "target-arrow-shape": "triangle", "arrow-scale": 0.9, "font-size": 10, "font-family": "JetBrains Mono, monospace", color: ink, "text-background-color": paper, "text-background-opacity": 0.9, "text-background-padding": 2, "text-rotation": "autorotate" } },
+    { selector: "edge.rel", style: { label: "data(label)" } },
+    { selector: "edge.rel.held", style: { "line-style": "dashed", "line-color": orange, "target-arrow-color": orange, color: orange } },
+    { selector: "edge.rel.rejected", style: { "line-style": "dotted", "line-color": ghost, "target-arrow-color": ghost, color: muted } },
+    { selector: "edge.isa", style: { label: "data(label)", "line-color": blue, "target-arrow-color": blue, "target-arrow-shape": "triangle-backcurve" } },
+    { selector: "edge.termedge", style: { width: 1, "line-color": line, "target-arrow-shape": "none" } },
+    { selector: ".hidden", style: { display: "none" } },
+    { selector: ".faded", style: { opacity: 0.12 } },
+    { selector: ":selected, .match", style: { "border-color": blue, "border-width": 4, "line-color": blue, "target-arrow-color": blue, width: 3 } },
+  ];
+}
+
+const cy = cytoscape({ container: $("graph"), elements: els, style: style(), wheelSensitivity: 0.25, minZoom: 0.2, maxZoom: 3 });
+function relayout() {
+  cy.elements().not(".hidden").layout({ name: "cose", animate: false, nodeRepulsion: () => 9000, idealEdgeLength: (e) => (e.hasClass("termedge") ? 40 : 140), edgeElasticity: () => 80, padding: 40, randomize: false }).run();
+  cy.fit(cy.elements().not(".hidden"), 40);
+}
+relayout();
+const refit = () => { cy.resize(); cy.fit(cy.elements().not(".hidden"), 40); };
+addEventListener("resize", refit);
+document.fonts?.ready.then(refit);
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => cy.style(style()));
+new MutationObserver(() => cy.style(style())).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+
+// ---------------------------------------------------------------- panel
+const statusLabel = { passed: "통과", held: "보류", rejected: "반려" };
+function pill(o) {
+  const route = o.route_to ? ` → ${o.route_to === "human" ? "사람 큐" : o.route_to}` : "";
+  return `<span class="pill ${o.status}">${statusLabel[o.status]}${esc(route)}</span>${o.reason ? `<span class="kv">${esc(o.reason)}</span>` : ""}`;
+}
+function chips(list, cls, cname, role) {
+  if (!list.length) return `<p class="kv">없음</p>`;
+  return `<div class="chips">${list.map((t) => `<button class="chip ${cls}" type="button" data-term="t:${esc(cname)}:${cls}:${esc(t.id)}" title="${esc(t.variants.join(" · "))}">${esc(t.label)}</button>`).join("")}</div>`;
+}
+function relButton(i) {
+  const r = relations[i];
+  const st = r.status === "passed" ? "" : ` <span class="st">[${statusLabel[r.status]}]</span>`;
+  return `<button class="rel" type="button" data-rel="${i}">${esc(r.domain)} —${esc(r.name)}→ ${esc(r.range)} · ${r.cardinality}${st}</button>`;
+}
+
+function showHome() {
+  const list = DATA.concepts.filter((c) => c.status === "passed").sort((a, b) => b.mentions - a.mentions);
+  const deg = (n) => relations.filter((r) => r.status === "passed" && (r.domain === n || r.range === n)).length;
+  $("panel").innerHTML = `
+    <h2>근거 패널</h2>
+    <p class="desc">노드나 관계를 누르면 원문 근거, 게이트 판정, 연결된 term이 여기에 나온다. 빈 곳을 누르면 이 목록으로 돌아온다.</p>
+    <h3>Object Type · 근거 언급 · 관계 수</h3>
+    <div class="list">${list.map((c) => `<button type="button" data-concept="${esc(c.name)}"><span>${esc(c.name)}</span><span>${c.mentions} · ${deg(c.name)}</span></button>`).join("")}</div>`;
+}
+
+function showConcept(name) {
+  const c = concepts[name];
+  const idx = relations.map((r, i) => i).filter((i) => relations[i].domain === name || relations[i].range === name);
+  const visible = idx.filter((i) => relations[i].status === "passed" || $("showGate").checked);
+  $("panel").innerHTML = `
+    <h2>${esc(c.name)}</h2>
+    <p>${pill(c)}${c.mentions != null ? `<span class="kv">근거 언급 ${c.mentions}회</span>` : ""}</p>
+    <p class="desc">${esc(c.description)}</p>
+    ${c.parent ? `<p class="kv">is-a ${esc(c.parent)}</p>` : ""}
+    <h3>evidence term (타입 자체)</h3>${chips(c.evidence, "ev", c.name)}
+    <h3>instance term (개별 값)</h3>${chips(c.instances, "in", c.name)}
+    <h3>property term (속성)</h3>${chips(c.properties, "pr", c.name)}
+    <h3>relation ${visible.length}</h3>${visible.map(relButton).join("") || `<p class="kv">없음</p>`}
+    ${c.judge ? `<h3>Gate 3 judge</h3><p class="kv">level ${esc(c.judge.level)} · confidence ${c.judge.confidence}</p><p class="desc">${esc(c.judge.reason)}</p>` : ""}`;
+}
+
+function showTerm(node) {
+  const t = node.data("term");
+  const roleName = { evidence: "evidence (타입 자체)", instances: "instance (개별 값)", properties: "property (속성)" }[node.data("role")];
+  $("panel").innerHTML = `
+    <h2>${esc(t.id)}</h2>
+    <p class="kv">${esc(roleName)} of <button class="chip" type="button" data-concept="${esc(node.data("concept"))}">${esc(node.data("concept"))}</button></p>
+    <p class="kv">kind ${esc(t.kind)} · 언급 ${t.mentions}회 · 청크 ${t.chunks.length}개</p>
+    <h3>표면 변형 (p1 원문 표기)</h3><div class="chips">${t.variants.map((v) => `<span class="chip">${esc(v)}</span>`).join("")}</div>
+    <h3>원문 예문</h3><blockquote>${esc(t.sentence)}<small>${esc(t.chunks.join(", "))}</small></blockquote>`;
+}
+
+function showRelation(i) {
+  const r = relations[i];
+  const j = r.judge;
+  $("panel").innerHTML = `
+    <h2>${esc(r.name)}</h2>
+    <p class="kv"><button class="chip" type="button" data-concept="${esc(r.domain)}">${esc(r.domain)}</button> → <button class="chip" type="button" data-concept="${esc(r.range)}">${esc(r.range)}</button></p>
+    <p>${pill(r)}</p>
+    <p class="kv">다중성 ${r.cardinality}${r.confidence != null ? ` · confidence ${r.confidence}` : ""}</p>
+    ${r.absent ? `<p class="desc">근거 문장에 표기가 없는 concept: ${esc(r.absent.join(", "))}</p>` : ""}
+    <h3>근거 문장</h3>${r.evidence.map((e) => `<blockquote>${esc(e.sentence)}<small>${esc(e.chunk_id)}</small></blockquote>`).join("")}
+    ${j ? `<h3>Gate 4 judge</h3><p class="kv">${esc(j.verdict)} · cardinality_ok ${j.cardinality_ok} · confidence ${j.confidence}</p><p class="desc">${esc(j.reason)}</p>` : ""}
+    ${r.same_pair.length ? `<h3>같은 concept 쌍의 다른 관계</h3>${r.same_pair.map((id) => { const k = relations.findIndex((x) => x.id === id); return k >= 0 ? relButton(k) : ""; }).join("")}` : ""}`;
+}
+
+// ---------------------------------------------------------------- interaction
+function focus(ele) {
+  cy.elements().removeClass("faded match");
+  if (!ele) return;
+  const hood = ele.isNode() ? ele.closedNeighborhood() : ele.union(ele.connectedNodes());
+  cy.elements().not(hood).not(".hidden").addClass("faded");
+  cy.animate({ fit: { eles: hood.not(".hidden"), padding: 60 }, duration: 250 });
+}
+function selectConcept(name) { const n = cy.getElementById("c:" + name); focus(n); showConcept(name); }
+function selectRelation(i) { const e = cy.getElementById("r:" + i); if (e.nonempty()) focus(e); showRelation(i); }
+
+cy.on("tap", "node.concept", (e) => selectConcept(e.target.data("label")));
+cy.on("tap", "node.term", (e) => { focus(e.target); showTerm(e.target); });
+cy.on("tap", "edge.rel", (e) => selectRelation(e.target.data("idx")));
+cy.on("tap", (e) => { if (e.target === cy) { focus(null); showHome(); } });
+
+$("panel").addEventListener("click", (e) => {
+  const b = e.target.closest("button");
+  if (!b) return;
+  if (b.dataset.concept) selectConcept(b.dataset.concept);
+  else if (b.dataset.rel) selectRelation(Number(b.dataset.rel));
+  else if (b.dataset.term) {
+    if (!$("showTerms").checked) { $("showTerms").checked = true; applyToggles(); }
+    const n = cy.getElementById(b.dataset.term);
+    if (n.nonempty()) { focus(n); showTerm(n); }
+  }
+});
+
+function applyToggles() {
+  const terms = $("showTerms").checked, gate = $("showGate").checked;
+  cy.batch(() => {
+    cy.elements().forEach((el) => {
+      const isGate = el.hasClass("gate"), isTerm = el.hasClass("term") || el.hasClass("termedge");
+      el.toggleClass("hidden", (isGate && !gate) || (isTerm && !terms));
+    });
+  });
+  relayout();
+}
+$("showTerms").addEventListener("change", applyToggles);
+$("showGate").addEventListener("change", applyToggles);
+$("relayout").addEventListener("click", () => { focus(null); relayout(); cy.fit(undefined, 40); });
+
+$("q").addEventListener("input", () => {
+  const q = $("q").value.trim().toLowerCase();
+  cy.elements().removeClass("faded match");
+  if (!q) return;
+  const hits = cy.nodes().not(".hidden").filter((n) => {
+    if (n.hasClass("concept")) { const c = concepts[n.data("label")]; return c.name.toLowerCase().includes(q) || [...c.evidence, ...c.instances, ...c.properties].some((t) => t.variants.some((v) => v.toLowerCase().includes(q))); }
+    return n.data("term").variants.some((v) => v.toLowerCase().includes(q));
+  });
+  if (hits.empty()) return;
+  hits.addClass("match");
+  cy.elements().not(hits).not(".hidden").addClass("faded");
+});
+$("q").addEventListener("keydown", (e) => {
+  if (e.key !== "Enter") return;
+  const hit = cy.nodes(".match").first();
+  if (hit.empty()) return;
+  if (hit.hasClass("concept")) selectConcept(hit.data("label")); else { focus(hit); showTerm(hit); }
+});
+
+showHome();
+</script>

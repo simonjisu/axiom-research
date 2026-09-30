@@ -11,6 +11,10 @@
 
 실행 순서: p1 → p2 → p3 → p4. 노트북은 이 폴더에서 실행한다 (공통 설정은 `common.py`).
 
+## 그래프로 보기
+
+`uv run python build_graph_view.py` → `outputs/ontology_graph.html`. p2–p4 결과를 읽어 concept(노드)과 relation(엣지)을 인터랙티브 그래프로 보여준다. 노드·엣지를 누르면 원문 근거와 게이트 판정이 나오고, term과 반려·보류 건은 토글로 켠다. 노트북을 다시 돌린 뒤 이 스크립트도 다시 실행한다.
+
 ## 게이트 기록
 
 단계마다 `rejected.json`과 `human_queue.json`을 남긴다. 한 건은 `{item_id, stage, reason, route_to, ...}` 형식이고, `route_to`는 실패 원인 단계(`p1`–`p4`) 또는 `human`이다. 루프 오케스트레이션(반려 건을 원인 단계로 다시 보내는 부분)은 아직 없다. 이 기록이 그 입력이다.
