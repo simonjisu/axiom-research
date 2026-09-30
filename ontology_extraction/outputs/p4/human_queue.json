@@ -1,0 +1,32 @@
+{
+  "human_queue": [
+    {
+      "item_id": "PurchaseRequisition.precedes.PurchaseOrderItem",
+      "stage": "p4",
+      "reason": "cardinality_disputed",
+      "route_to": "human",
+      "relation": {
+        "relation_id": "PurchaseRequisition.precedes.PurchaseOrderItem",
+        "name": "precedes",
+        "domain": "PurchaseRequisition",
+        "range": "PurchaseOrderItem",
+        "cardinality": "1:1",
+        "gen_confidence": 0.9,
+        "evidence": [
+          {
+            "chunk_id": "bpi2019-purchase-process#c02",
+            "sentence": "A purchase requisition can precede an order item, but it is not present in every observed variant."
+          }
+        ],
+        "same_pair_relations": [],
+        "judge": {
+          "verdict": "supported",
+          "cardinality_ok": false,
+          "confidence": 0.9,
+          "reason": "The evidence sentence explicitly states that a purchase requisition can precede an order item, which supports the relation. However, it also mentions that it is not present in every observed variant, which contradicts a strict 1:1 cardinality."
+        },
+        "confidence": 0.9
+      }
+    }
+  ]
+}

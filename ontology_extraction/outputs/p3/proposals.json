@@ -1,0 +1,374 @@
+{
+  "proposals": [
+    {
+      "name": "Company",
+      "description": "A business entity or subsidiary operating within the paints and coatings industry.",
+      "reuse_of": null,
+      "parent": null,
+      "evidence_term_ids": [
+        "company",
+        "subsidiary",
+        "multinational_paints_and_coatings_company",
+        "business_entity"
+      ],
+      "instance_term_ids": [],
+      "property_term_ids": [
+        "company_and_vendor_identifier"
+      ]
+    },
+    {
+      "name": "Vendor",
+      "description": "An external business entity that supplies purchased goods or services.",
+      "reuse_of": null,
+      "parent": null,
+      "evidence_term_ids": [
+        "vendor"
+      ],
+      "instance_term_ids": [],
+      "property_term_ids": [
+        "company_and_vendor_identifier"
+      ]
+    },
+    {
+      "name": "PurchaseOrder",
+      "description": "A document issued by a buyer to a seller, indicating types, quantities, and agreed prices for products or services.",
+      "reuse_of": null,
+      "parent": null,
+      "evidence_term_ids": [
+        "purchase_order"
+      ],
+      "instance_term_ids": [
+        "blanket_purchase_order",
+        "framework_order",
+        "ec_purchase_order",
+        "standard_and_framework_order",
+        "standard_order",
+        "ec_order"
+      ],
+      "property_term_ids": [
+        "document_type",
+        "document_identifier"
+      ]
+    },
+    {
+      "name": "PurchaseOrderItem",
+      "description": "An individual line item within a purchase order.",
+      "reuse_of": null,
+      "parent": null,
+      "evidence_term_ids": [
+        "purchase_order_item",
+        "item",
+        "individual_item"
+      ],
+      "instance_term_ids": [],
+      "property_term_ids": [
+        "item_category",
+        "item_type",
+        "spend_area",
+        "purchase_order_item_value",
+        "item_identifier"
+      ]
+    },
+    {
+      "name": "PurchaseRequisition",
+      "description": "An internal document defining the requirement for goods or services.",
+      "reuse_of": null,
+      "parent": null,
+      "evidence_term_ids": [
+        "requisition"
+      ],
+      "instance_term_ids": [],
+      "property_term_ids": []
+    },
+    {
+      "name": "OrderConfirmation",
+      "description": "A document sent by a vendor confirming the receipt and acceptance of a purchase order.",
+      "reuse_of": null,
+      "parent": null,
+      "evidence_term_ids": [
+        "order_confirmation"
+      ],
+      "instance_term_ids": [],
+      "property_term_ids": []
+    },
+    {
+      "name": "ServiceEntrySheet",
+      "description": "A document recording service-related steps or work performed.",
+      "reuse_of": null,
+      "parent": null,
+      "evidence_term_ids": [
+        "service_entry_sheet"
+      ],
+      "instance_term_ids": [],
+      "property_term_ids": []
+    },
+    {
+      "name": "GoodsReceipt",
+      "description": "An activity or event recording the physical receipt of goods or services.",
+      "reuse_of": null,
+      "parent": null,
+      "evidence_term_ids": [
+        "goods_receipt",
+        "goods_receipt_event",
+        "goods_receipt_recording"
+      ],
+      "instance_term_ids": [],
+      "property_term_ids": [
+        "goods_receipt_value"
+      ]
+    },
+    {
+      "name": "Invoice",
+      "description": "A document or recorded event representing a request for payment by a vendor.",
+      "reuse_of": null,
+      "parent": null,
+      "evidence_term_ids": [
+        "invoice",
+        "invoice_event",
+        "invoice_receipt",
+        "invoice_receipt_recording",
+        "invoice_creation",
+        "vendor_invoice_creation",
+        "recurring_invoice"
+      ],
+      "instance_term_ids": [],
+      "property_term_ids": [
+        "invoice_value"
+      ]
+    },
+    {
+      "name": "VendorDebitMemo",
+      "description": "A document issued by a vendor to notify of a debit adjustment.",
+      "reuse_of": null,
+      "parent": null,
+      "evidence_term_ids": [
+        "vendor_debit_memo"
+      ],
+      "instance_term_ids": [],
+      "property_term_ids": []
+    },
+    {
+      "name": "Warehouse",
+      "description": "A physical location where goods are delivered and stored.",
+      "reuse_of": null,
+      "parent": null,
+      "evidence_term_ids": [
+        "warehouse"
+      ],
+      "instance_term_ids": [],
+      "property_term_ids": []
+    },
+    {
+      "name": "Goods",
+      "description": "Physical items or materials delivered to and stored in a warehouse.",
+      "reuse_of": null,
+      "parent": null,
+      "evidence_term_ids": [
+        "goods"
+      ],
+      "instance_term_ids": [],
+      "property_term_ids": []
+    },
+    {
+      "name": "Resource",
+      "description": "A human user or automated system that executes or records activities.",
+      "reuse_of": null,
+      "parent": null,
+      "evidence_term_ids": [
+        "resource",
+        "recorded_resource"
+      ],
+      "instance_term_ids": [
+        "user",
+        "automated_batch_resource"
+      ],
+      "property_term_ids": []
+    },
+    {
+      "name": "InternalDepartment",
+      "description": "A department within the company that requires purchased goods or services.",
+      "reuse_of": null,
+      "parent": null,
+      "evidence_term_ids": [
+        "internal_department"
+      ],
+      "instance_term_ids": [],
+      "property_term_ids": []
+    },
+    {
+      "name": "EventLog",
+      "description": "A collection of recorded events used to analyze business processes.",
+      "reuse_of": null,
+      "parent": null,
+      "evidence_term_ids": [
+        "event_log",
+        "available_log",
+        "consignment_log"
+      ],
+      "instance_term_ids": [],
+      "property_term_ids": []
+    },
+    {
+      "name": "Case",
+      "description": "The organizational unit used to group events in the event log, typically representing a purchase order item.",
+      "reuse_of": null,
+      "parent": null,
+      "evidence_term_ids": [
+        "case",
+        "consignment_case",
+        "case_unit"
+      ],
+      "instance_term_ids": [],
+      "property_term_ids": [
+        "case_identifier"
+      ]
+    },
+    {
+      "name": "ProcessVariant",
+      "description": "A specific path or execution pattern of the purchasing process.",
+      "reuse_of": null,
+      "parent": null,
+      "evidence_term_ids": [
+        "process_variant"
+      ],
+      "instance_term_ids": [
+        "consignment",
+        "three_way_matching",
+        "two_way_matching"
+      ],
+      "property_term_ids": []
+    },
+    {
+      "name": "PaymentBlock",
+      "description": "A state or restriction placed on an invoice to prevent payment until certain conditions are met.",
+      "reuse_of": null,
+      "parent": null,
+      "evidence_term_ids": [
+        "payment_block",
+        "block_state"
+      ],
+      "instance_term_ids": [],
+      "property_term_ids": []
+    },
+    {
+      "name": "RecordedEvent",
+      "description": "An individual log entry representing the execution of an activity at a specific time.",
+      "reuse_of": null,
+      "parent": null,
+      "evidence_term_ids": [
+        "recorded_event",
+        "document_level_event"
+      ],
+      "instance_term_ids": [],
+      "property_term_ids": [
+        "completion_timestamp",
+        "activity_start_time",
+        "active_work_duration",
+        "elapsed_processing_time",
+        "purchasing_responsiveness",
+        "delivery_time",
+        "invoice_recording_delay",
+        "payment_delay"
+      ]
+    },
+    {
+      "name": "BusinessRule",
+      "description": "A policy, constraint, or matching procedure governing the purchasing process.",
+      "reuse_of": null,
+      "parent": null,
+      "evidence_term_ids": [
+        "invoice_matching_procedure",
+        "approval_authority",
+        "contractual_service_level_threshold",
+        "eventual_response_rule",
+        "invoice_clearance_rule",
+        "ordering_cardinality_and_exclusiveness_rule",
+        "precedence_rule"
+      ],
+      "instance_term_ids": [
+        "invoice_after_goods_receipt_three_way_matching",
+        "invoice_before_goods_receipt_three_way_matching"
+      ],
+      "property_term_ids": []
+    },
+    {
+      "name": "ProcessDeviation",
+      "description": "An anomaly, violation, or deviation from the expected process flow.",
+      "reuse_of": null,
+      "parent": null,
+      "evidence_term_ids": [
+        "apparent_process_deviation",
+        "compliance_violation"
+      ],
+      "instance_term_ids": [],
+      "property_term_ids": []
+    },
+    {
+      "name": "ProcessActivity",
+      "description": "A business action or step performed during the purchasing process.",
+      "reuse_of": null,
+      "parent": null,
+      "evidence_term_ids": [
+        "purchase_order_processing",
+        "price_change",
+        "quantity_change",
+        "delivery_indicator_change",
+        "purchase_order_approval_change",
+        "cancellation",
+        "item_deletion",
+        "reactivation",
+        "release",
+        "approval",
+        "approval_activity",
+        "approval_event",
+        "consumption",
+        "payment",
+        "production",
+        "service_entry_sheet_recording",
+        "purchase_requisition_creation",
+        "order_confirmation_activity",
+        "changes_to_the_order_item",
+        "repeated_change",
+        "repeated_invoice_creation",
+        "srm_activity",
+        "goods_receipt_cancellation",
+        "goods_and_invoice_handling_activity",
+        "invoice_handling",
+        "payment_block_creation",
+        "payment_block_removal",
+        "payment_blocking",
+        "block_creation_event",
+        "invoice_clearance",
+        "clearance",
+        "invoice_clearance_event"
+      ],
+      "instance_term_ids": [],
+      "property_term_ids": []
+    }
+  ],
+  "unassigned_terms": [
+    "block_state",
+    "discovered_model",
+    "ec",
+    "internal_department",
+    "invoice_sequence",
+    "invoice_to_receipt_document_linkage",
+    "item_creation",
+    "item_trace",
+    "participant_analysis_report",
+    "payment_block",
+    "process_mining",
+    "purchase_order_item_creation",
+    "purchase_to_pay",
+    "purchasing",
+    "purchasing_policy",
+    "purchasing_process",
+    "receipt",
+    "rework",
+    "service_entry_sheet",
+    "srm",
+    "srm_subprocess",
+    "vendor_debit_memo",
+    "warehouse"
+  ]
+}

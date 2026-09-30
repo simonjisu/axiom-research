@@ -1,0 +1,2664 @@
+{
+  "merge_log": [
+    {
+      "action": "RULE_MERGE",
+      "into": "framework_order",
+      "spans": [
+        "framework order",
+        "framework orders"
+      ],
+      "rules": [
+        "singular"
+      ]
+    },
+    {
+      "action": "RULE_MERGE",
+      "into": "goods_receipt",
+      "spans": [
+        "Goods receipt",
+        "goods receipt"
+      ],
+      "rules": [
+        "casefold"
+      ]
+    },
+    {
+      "action": "RULE_MERGE",
+      "into": "invoice",
+      "spans": [
+        "invoice",
+        "invoices"
+      ],
+      "rules": [
+        "singular"
+      ]
+    },
+    {
+      "action": "RULE_MERGE",
+      "into": "invoice_clearance",
+      "spans": [
+        "invoice clearance",
+        "Invoice clearance"
+      ],
+      "rules": [
+        "casefold"
+      ]
+    },
+    {
+      "action": "RULE_MERGE",
+      "into": "invoice_receipt",
+      "spans": [
+        "invoice receipt",
+        "Invoice receipt"
+      ],
+      "rules": [
+        "casefold"
+      ]
+    },
+    {
+      "action": "RULE_MERGE",
+      "into": "item_case",
+      "spans": [
+        "item case",
+        "item cases"
+      ],
+      "rules": [
+        "singular"
+      ]
+    },
+    {
+      "action": "RULE_MERGE",
+      "into": "item_deletion",
+      "spans": [
+        "Item deletion",
+        "item deletion"
+      ],
+      "rules": [
+        "casefold"
+      ]
+    },
+    {
+      "action": "RULE_MERGE",
+      "into": "order_confirmation",
+      "spans": [
+        "order confirmation",
+        "order confirmations"
+      ],
+      "rules": [
+        "singular"
+      ]
+    },
+    {
+      "action": "RULE_MERGE",
+      "into": "order_item",
+      "spans": [
+        "order item",
+        "order items"
+      ],
+      "rules": [
+        "singular"
+      ]
+    },
+    {
+      "action": "RULE_MERGE",
+      "into": "payment_block_creation",
+      "spans": [
+        "payment block creation",
+        "Payment block creation"
+      ],
+      "rules": [
+        "casefold"
+      ]
+    },
+    {
+      "action": "RULE_MERGE",
+      "into": "process_variant",
+      "spans": [
+        "process variant",
+        "process variants"
+      ],
+      "rules": [
+        "singular"
+      ]
+    },
+    {
+      "action": "RULE_MERGE",
+      "into": "purchase_order_item",
+      "spans": [
+        "purchase order item",
+        "purchase order items"
+      ],
+      "rules": [
+        "singular"
+      ]
+    },
+    {
+      "action": "RULE_MERGE",
+      "into": "receipt",
+      "spans": [
+        "receipt",
+        "receipts"
+      ],
+      "rules": [
+        "singular"
+      ]
+    },
+    {
+      "action": "RULE_MERGE",
+      "into": "three_way_matching",
+      "spans": [
+        "THREE-WAY MATCHING",
+        "three-way matching"
+      ],
+      "rules": [
+        "casefold",
+        "punctuation"
+      ]
+    },
+    {
+      "action": "RULE_MERGE",
+      "into": "two_way_matching",
+      "spans": [
+        "TWO-WAY MATCHING",
+        "two-way matching"
+      ],
+      "rules": [
+        "casefold",
+        "punctuation"
+      ]
+    },
+    {
+      "action": "RULE_MERGE",
+      "into": "vendor",
+      "spans": [
+        "vendor",
+        "vendors"
+      ],
+      "rules": [
+        "singular"
+      ]
+    },
+    {
+      "action": "RULE_MERGE",
+      "into": "vendor_invoice_creation",
+      "spans": [
+        "Vendor invoice creation",
+        "vendor invoice creation"
+      ],
+      "rules": [
+        "casefold"
+      ]
+    },
+    {
+      "action": "DISTINCT",
+      "a": "payment_block",
+      "b": "payment_blocking",
+      "confidence": 0.8,
+      "reason": "The term 'payment block' refers to the status or flag that is set or removed, whereas 'payment blocking' refers to the activity or process of blocking the payment."
+    },
+    {
+      "action": "MERGE",
+      "a": "purchase_to_pay",
+      "b": "purchase_to_pay_process",
+      "labels": [
+        "Purchase-to-pay",
+        "PURCHASE-TO-PAY PROCESS"
+      ],
+      "confidence": 0.9,
+      "reason": "Both terms refer to the same underlying business process that tracks a purchase order from creation to invoice clearance."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "invoice_after_goods_receipt_three_way_matching",
+      "b": "invoice_before_goods_receipt_three_way_matching",
+      "confidence": 1.0,
+      "reason": "Invoice-after-goods-receipt three-way matching and invoice-before-goods-receipt three-way matching refer to two different matching processes with different precedence relationships between goods receipt and invoice receipt."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "purchase_order",
+      "b": "purchase_order_item",
+      "confidence": 1.0,
+      "reason": "The sentences explicitly state that a purchase order item is an individually tracked line of a purchase order, indicating a part-to-whole relationship rather than identity."
+    },
+    {
+      "action": "MERGE",
+      "a": "invoice_receipt_recording",
+      "b": "recording_of_invoice_receipt",
+      "labels": [
+        "invoice receipt recording",
+        "recording of invoice receipt"
+      ],
+      "confidence": 1.0,
+      "reason": "\"invoice receipt recording\" and \"recording of invoice receipt\" are syntactic variations referring to the same process step of recording an invoice receipt."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "purchasing",
+      "b": "purchasing_process",
+      "confidence": 0.8,
+      "reason": "The term 'purchasing' refers to the general business function or activity, whereas 'purchasing process' refers to the specific sequence of steps representing that process."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "invoice",
+      "b": "invoice_receipt",
+      "confidence": 0.9,
+      "reason": "The term 'invoice' refers to the document created by the vendor, whereas 'invoice receipt' is described as a distinct business activity."
+    },
+    {
+      "action": "MERGE",
+      "a": "invoice_handling",
+      "b": "invoice_processing",
+      "labels": [
+        "invoice handling",
+        "Invoice processing"
+      ],
+      "confidence": 0.9,
+      "reason": "Both terms refer to the same business activity of managing and processing invoices, used synonymously in the context of invoice workflows."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "invoice_creation",
+      "b": "vendor_invoice_creation",
+      "confidence": 0.8,
+      "reason": "Invoice creation is a broader concept, whereas vendor invoice creation specifically refers to the creation of an invoice by or for a vendor."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "service_entry_sheet",
+      "b": "service_entry_sheet_recording",
+      "confidence": 0.95,
+      "reason": "The term 'service entry sheet' refers to the document or record itself, whereas 'service entry sheet recording' refers to the activity of creating or entering that record."
+    },
+    {
+      "action": "MERGE",
+      "a": "invoice",
+      "b": "vendor_invoice",
+      "labels": [
+        "invoice",
+        "vendor invoice"
+      ],
+      "confidence": 0.9,
+      "reason": "Both terms refer to the same document created by a vendor to request payment for supplied goods or services."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "invoice_clearance",
+      "b": "invoice_clearance_event",
+      "confidence": 0.8,
+      "reason": "Invoice clearance refers to the actual business activity or state, whereas the invoice-clearance event refers to the recorded log event representing that occurrence."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "invoice",
+      "b": "invoice_value",
+      "confidence": 0.95,
+      "reason": "The term 'invoice' refers to the document itself, while 'invoice value' refers to a specific attribute or monetary amount of that document."
+    },
+    {
+      "action": "MERGE",
+      "a": "activity_completion_timestamp",
+      "b": "completion_timestamp",
+      "labels": [
+        "Activity completion timestamps",
+        "completion timestamp"
+      ],
+      "confidence": 0.9,
+      "reason": "Both terms refer to the recorded time at which an activity is completed, with Term B being the singular form contextually linked to an activity."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "invoice_receipt",
+      "b": "receipt",
+      "confidence": 0.9,
+      "reason": "In the provided sentences, 'invoice receipt' refers to a specific business activity, whereas 'receipt' refers to a document or record subject to three-way matching alongside invoices."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "approval",
+      "b": "approval_activity",
+      "confidence": 0.8,
+      "reason": "Approvals refers to the resulting decisions or events being counted, whereas approval activities refers to the process steps or tasks performed."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "goods_receipt",
+      "b": "goods_receipt_recording",
+      "confidence": 0.8,
+      "reason": "Goods receipt refers to the event or document of receiving goods, whereas goods receipt recording specifically denotes the business activity of logging that receipt in the system."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "purchase_order",
+      "b": "purchasing",
+      "confidence": 0.95,
+      "reason": "Term A refers to a specific document or entity (purchase order), while Term B refers to the overall process or activity of buying (purchasing)."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "purchase_requisition",
+      "b": "purchase_requisition_creation",
+      "confidence": 1.0,
+      "reason": "The term 'purchase requisition' refers to the document itself, while 'purchase requisition creation' refers to the activity of creating that document."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "item",
+      "b": "item_case",
+      "confidence": 0.9,
+      "reason": "The sentences distinguish 'item cases' from 'items' by stating that an invoice can cover several items but clearance may be recorded in only one of those item cases."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "vendor_invoice",
+      "b": "vendor_invoice_creation",
+      "confidence": 1.0,
+      "reason": "The term 'vendor invoice' refers to the document itself, whereas 'Vendor invoice creation' refers to the activity of creating that document."
+    },
+    {
+      "action": "MERGE",
+      "a": "approval",
+      "b": "approval_decision",
+      "labels": [
+        "approvals",
+        "approval decisions"
+      ],
+      "confidence": 0.9,
+      "reason": "In the context of business processes, 'approvals' and 'approval decisions' both refer to the same concept of an authorized decision to approve an item."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "consignment",
+      "b": "consignment_case",
+      "confidence": 0.8,
+      "reason": "Consignment refers to the overall process or concept, whereas a consignment case refers to a specific instance or case of that process."
+    },
+    {
+      "action": "MERGE",
+      "a": "case",
+      "b": "item_case",
+      "labels": [
+        "case",
+        "item case"
+      ],
+      "confidence": 0.9,
+      "reason": "The sentences indicate that an individual item is the case used to organize the event log, making 'case' and 'item case' refer to the same concept of a process instance."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "purchase_order",
+      "b": "purchase_requisition",
+      "confidence": 0.95,
+      "reason": "The sentences indicate that a purchase requisition can precede an order item, showing they are distinct documents in the procurement process."
+    },
+    {
+      "action": "MERGE",
+      "a": "purchase_requisition",
+      "b": "requisition",
+      "labels": [
+        "purchase requisition",
+        "requisition"
+      ],
+      "confidence": 0.9,
+      "reason": "The term 'requisition' is used as a shortened synonym for 'purchase requisition' in the context of the procurement process leading to purchase order creation."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "individual_item",
+      "b": "item",
+      "confidence": 0.8,
+      "reason": "The term 'individual item' is specifically defined as the case used to organize the event log, whereas 'item' refers to a business object related to receipts or invoices."
+    },
+    {
+      "action": "MERGE",
+      "a": "purchase_order",
+      "b": "purchase_order_document",
+      "labels": [
+        "purchase order",
+        "purchase order document"
+      ],
+      "confidence": 0.9,
+      "reason": "The sentences indicate that both 'purchase order' and 'purchase order document' refer to the same entity that contains or is composed of purchase order items."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "goods_receipt",
+      "b": "goods_receipt_event",
+      "confidence": 0.9,
+      "reason": "Goods receipt refers to the business activity itself, whereas goods receipt events refer to the individual occurrences or instances of this activity."
+    },
+    {
+      "action": "MERGE",
+      "a": "order_item",
+      "b": "purchase_order_item",
+      "labels": [
+        "order item",
+        "purchase order item"
+      ],
+      "confidence": 0.9,
+      "reason": "In the context of the purchase-to-pay process, 'order item' and 'purchase order item' both refer to the individual line items of a purchase order."
+    },
+    {
+      "action": "MERGE",
+      "a": "actual_consumption",
+      "b": "consumption",
+      "labels": [
+        "Actual consumption",
+        "consumption"
+      ],
+      "confidence": 0.9,
+      "reason": "Both terms refer to the same event of consuming consignment goods, which is noted as being outside the scope of the consignment log in both sentences."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "item_category",
+      "b": "item_type",
+      "confidence": 0.95,
+      "reason": "The sentence lists 'an item type' and 'an item category' as separate, co-occurring elements within the same context."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "srm",
+      "b": "srm_activity",
+      "confidence": 0.8,
+      "reason": "SRM refers to the overall subprocess or system, whereas SRM activities refer to the specific tasks or actions performed within that process."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "order_confirmation",
+      "b": "order_confirmation_activity",
+      "confidence": 0.8,
+      "reason": "The term 'order confirmation' refers to a specific activity, whereas 'order confirmation activities' refers to a broader category or set of activities related to confirming an order."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "invoice",
+      "b": "invoice_creation",
+      "confidence": 1.0,
+      "reason": "The term 'invoice' refers to the document itself, whereas 'invoice creation' refers to the activity of producing that document."
+    },
+    {
+      "action": "MERGE",
+      "a": "invoice_event",
+      "b": "invoice_related_event",
+      "labels": [
+        "invoice events",
+        "invoice-related events"
+      ],
+      "confidence": 0.9,
+      "reason": "Both terms refer to the same concept of events or activities associated with invoices within the business process."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "item",
+      "b": "item_category",
+      "confidence": 1.0,
+      "reason": "The term 'item' refers to a specific object or entity, whereas 'item category' refers to a classification or attribute of an item, making them distinct concepts."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "case",
+      "b": "case_unit",
+      "confidence": 0.8,
+      "reason": "A 'case' refers to the actual instance containing recorded events, whereas 'case unit' refers to the entity type or level of granularity used to define what constitutes a case."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "purchase_order_item_creation",
+      "b": "purchase_requisition_creation",
+      "confidence": 0.95,
+      "reason": "Purchase order item creation and purchase requisition creation refer to different stages in the procurement process, where a requisition is a request and an order is the actual purchase commitment."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "purchase_order_item",
+      "b": "purchase_order_item_creation",
+      "confidence": 1.0,
+      "reason": "Term A refers to the physical or logical line item of a purchase order, whereas Term B refers to the activity of creating that item."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "purchase_order",
+      "b": "purchasing_process",
+      "confidence": 0.95,
+      "reason": "A purchase order is a specific document or entity within a business, whereas the purchasing process refers to the overall sequence of activities and workflow."
+    },
+    {
+      "action": "MERGE",
+      "a": "order_approval_change",
+      "b": "purchase_order_approval_change",
+      "labels": [
+        "order approval changes",
+        "purchase order approval change"
+      ],
+      "confidence": 0.9,
+      "reason": "\"order approval changes\" and \"purchase order approval change\" are grammatical variations (plural vs. singular) of the same concept within the context of purchase order processing."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "recurring_invoice",
+      "b": "repeated_invoice_creation",
+      "confidence": 0.9,
+      "reason": "Recurring invoices refers to the documents themselves, whereas repeated invoice creation refers to the activity of creating them."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "invoice",
+      "b": "invoice_handling",
+      "confidence": 0.95,
+      "reason": "The term 'invoice' refers to the physical or digital document, whereas 'invoice handling' refers to the process or activity of managing that document."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "framework_order",
+      "b": "standard_and_framework_order",
+      "confidence": 0.9,
+      "reason": "The term 'standard and framework orders' refers to a combination of two distinct types of orders, whereas 'framework order' refers to only one of those types."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "invoice",
+      "b": "invoice_sequence",
+      "confidence": 0.9,
+      "reason": "The term 'invoice' refers to the billing document itself, whereas 'invoice sequence' refers to a series of process activities related to handling an invoice."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "goods_receipt",
+      "b": "goods_receipt_value",
+      "confidence": 0.9,
+      "reason": "The term 'goods receipt' refers to a business activity, whereas 'goods receipt value' refers to a specific monetary or numerical attribute associated with that activity."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "approval",
+      "b": "approval_authority",
+      "confidence": 0.9,
+      "reason": "The term 'approvals' refers to the instances or acts of approving that are counted, whereas 'approval authority' refers to the organizational right or power to grant such approvals."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "approval_activity",
+      "b": "approval_event",
+      "confidence": 0.8,
+      "reason": "Approval activities refer to the general tasks or steps of approving, whereas an approval event refers to a specific occurrence or instance of an approval in a process trace."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "approval",
+      "b": "approval_event",
+      "confidence": 0.8,
+      "reason": "The term 'approvals' refers to the business decisions or outcomes being counted, whereas 'approval event' refers to the specific log entry or occurrence representing that action."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "purchase_order_document",
+      "b": "purchase_order_item",
+      "confidence": 1.0,
+      "reason": "The sentences indicate a whole-part relationship where a purchase order document contains one or more purchase order items, meaning they are distinct concepts."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "goods_receipt_event",
+      "b": "goods_receipt_recording",
+      "confidence": 0.8,
+      "reason": "Goods receipt events refer to the occurrences of receiving goods, whereas goods receipt recording refers to the specific process activity of logging those receipts."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "item",
+      "b": "item_type",
+      "confidence": 0.9,
+      "reason": "The term 'item' refers to a specific physical or logical entity, whereas 'item type' refers to a classification or attribute of that entity."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "invoice",
+      "b": "invoice_processing",
+      "confidence": 1.0,
+      "reason": "Term A refers to a document, whereas Term B refers to the process or activity of handling that document."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "goods_receipt_recording",
+      "b": "recording_of_invoice_receipt",
+      "confidence": 0.95,
+      "reason": "Goods receipt recording refers to documenting the delivery of physical goods, whereas the recording of invoice receipt refers to documenting the receipt of the billing invoice, which are distinct steps in the procurement process."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "goods_receipt",
+      "b": "receipt",
+      "confidence": 0.8,
+      "reason": "Term A refers to the business activity of receiving goods, whereas Term B refers to the physical or digital receipt document used in three-way matching."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "purchase_order_item",
+      "b": "purchase_order_item_value",
+      "confidence": 0.9,
+      "reason": "The purchase order item refers to the line item itself, whereas the purchase order item values refer to the specific data or attributes associated with that item."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "purchase_to_pay_process",
+      "b": "purchasing_process",
+      "confidence": 0.8,
+      "reason": "The purchase-to-pay process encompasses both purchasing and payment, making it broader than just the purchasing process."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "order_item",
+      "b": "purchase_order",
+      "confidence": 0.95,
+      "reason": "An order item is an individual line item within a purchase order, representing a part-whole relationship rather than identical concepts."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "invoice_receipt",
+      "b": "recording_of_invoice_receipt",
+      "confidence": 0.7,
+      "reason": "While closely related, 'invoice receipt' refers to the business event or document of receiving an invoice, whereas 'recording of invoice receipt' is the specific activity of logging or registering that receipt in the system."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "goods_receipt_recording",
+      "b": "invoice_receipt_recording",
+      "confidence": 1.0,
+      "reason": "The sentences list 'goods receipt recording' and 'invoice receipt recording' as separate, sequential steps in a business progression."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "invoice_receipt",
+      "b": "vendor_invoice",
+      "confidence": 0.9,
+      "reason": "The sentences distinguish between 'vendor invoice creation' and 'invoice receipt recording', indicating that the vendor invoice is the document being created, while the invoice receipt is the subsequent activity of receiving or recording it."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "purchase_order",
+      "b": "purchase_order_processing",
+      "confidence": 0.95,
+      "reason": "Term A refers to the purchase order document itself, whereas Term B refers to the activity or process of handling that document."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "document_identifier",
+      "b": "document_type",
+      "confidence": 0.95,
+      "reason": "A document identifier is a unique key used to link specific documents, whereas a document type refers to the category or classification of a document."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "payment_block",
+      "b": "payment_block_creation",
+      "confidence": 0.9,
+      "reason": "Payment block refers to the state or restriction itself, whereas payment block creation refers to the specific event or activity of establishing that block."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "srm",
+      "b": "srm_subprocess",
+      "confidence": 0.85,
+      "reason": "SRM refers to the broader system or concept of Supplier Relationship Management, whereas SRM subprocess refers to a specific process flow within that system."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "purchase_order_item",
+      "b": "purchase_requisition",
+      "confidence": 0.95,
+      "reason": "The sentences indicate that a purchase requisition can precede a purchase order item, showing they are distinct entities in the process."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "purchase_order_document",
+      "b": "purchase_order_processing",
+      "confidence": 1.0,
+      "reason": "Term A refers to a document entity, whereas Term B refers to the process or activity of handling that document."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "approval_authority",
+      "b": "approval_decision",
+      "confidence": 0.9,
+      "reason": "Approval authority refers to the power or role to grant approval, whereas approval decisions refer to the actual choices or outcomes made."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "invoice_clearance",
+      "b": "invoice_clearance_rule",
+      "confidence": 0.9,
+      "reason": "Invoice clearance refers to a business activity, whereas the invoice-clearance rule refers to a rule or policy evaluated in relation to that activity."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "standard_and_framework_order",
+      "b": "standard_order",
+      "confidence": 0.9,
+      "reason": "The term 'standard and framework orders' refers to a combination of two distinct types of orders, whereas 'standard orders' refers to only one of those types."
+    },
+    {
+      "action": "MERGE",
+      "a": "human_user",
+      "b": "user",
+      "labels": [
+        "human users",
+        "user"
+      ],
+      "confidence": 0.9,
+      "reason": "In the context of the sentences, 'user' is used as a shorthand synonym for 'human users', as both are contrasted with 'resources'."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "approval_activity",
+      "b": "approval_decision",
+      "confidence": 0.8,
+      "reason": "Approval activities refer to the process or tasks of approving, whereas approval decisions refer to the specific outcomes or choices resulting from those activities."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "purchasing",
+      "b": "purchasing_responsiveness",
+      "confidence": 0.9,
+      "reason": "Purchasing refers to the overall procurement process, whereas purchasing responsiveness is a specific metric or business concern measuring the speed or efficiency of that process."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "changes_to_the_order_item",
+      "b": "order_approval_change",
+      "confidence": 0.9,
+      "reason": "Changes to the order item refers to modifying the details of a specific item, whereas order approval changes refers to modifications in the approval status or process of the order."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "event_log",
+      "b": "recorded_event",
+      "confidence": 0.9,
+      "reason": "An event log is a collection of data organized by cases, whereas a recorded event is an individual entry belonging to a specific case."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "ec_purchase_order",
+      "b": "purchase_order",
+      "confidence": 0.95,
+      "reason": "EC purchase orders are a specific subtype of purchase orders, representing a narrower concept compared to the broader purchase order term."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "goods_and_invoice_handling_activity",
+      "b": "invoice_handling",
+      "confidence": 0.9,
+      "reason": "The term 'goods and invoice handling activities' encompasses both goods and invoice handling, whereas 'invoice handling' refers specifically to the processing of invoices."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "business_entity",
+      "b": "company",
+      "confidence": 0.8,
+      "reason": "A business entity is a broader concept that encompasses various organizational forms, whereas a company is a specific type of business entity."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "invoice_clearance_event",
+      "b": "invoice_related_event",
+      "confidence": 0.9,
+      "reason": "An invoice-clearance event is a specific type of invoice-related event, making them related but distinct concepts where one is narrower than the other."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "recorded_event",
+      "b": "recorded_resource",
+      "confidence": 0.9,
+      "reason": "A recorded event identifies an activity and its completion timestamp, whereas a recorded resource serves as evidence about an activity's execution or recording."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "invoice",
+      "b": "invoice_related_event",
+      "confidence": 0.9,
+      "reason": "Term A refers to the invoice document itself, whereas Term B refers to events associated with an invoice, making them related but distinct concepts."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "case_unit",
+      "b": "item_case",
+      "confidence": 0.8,
+      "reason": "The term 'case unit' refers to the conceptual level of granularity that defines a case (the item), whereas 'item case' refers to the actual case instance associated with a specific item."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "purchase_order_processing",
+      "b": "purchasing_process",
+      "confidence": 0.8,
+      "reason": "Purchase order processing refers specifically to the handling of purchase orders, whereas the purchasing process is a broader concept encompassing the entire procurement cycle."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "invoice_matching_procedure",
+      "b": "invoice_processing",
+      "confidence": 0.8,
+      "reason": "The invoice matching procedure is a specific step or variant identified within the current process, whereas invoice processing refers to a broader, separate process handled outside of this event log."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "purchase_requisition",
+      "b": "purchasing",
+      "confidence": 0.95,
+      "reason": "A purchase requisition is a specific document or request that can precede an order, whereas purchasing refers to the overall process or activity of buying."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "invoice_creation",
+      "b": "invoice_processing",
+      "confidence": 0.9,
+      "reason": "Invoice creation is a specific business activity mentioned alongside invoice receipt and clearance, whereas invoice processing refers to a broader, separate process."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "case",
+      "b": "case_identifier",
+      "confidence": 0.9,
+      "reason": "The term 'case' refers to the individual item itself, whereas 'case identifier' refers to the attribute or key used to identify that case."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "invoice_handling",
+      "b": "invoice_receipt",
+      "confidence": 0.9,
+      "reason": "Invoice receipt is a specific business activity, whereas invoice handling refers to the broader processing or management of invoices."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "invoice_creation",
+      "b": "repeated_invoice_creation",
+      "confidence": 0.9,
+      "reason": "Repeated invoice creation refers to a specific pattern of performing the invoice creation activity multiple times, making them related but distinct concepts."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "purchase_order",
+      "b": "standard_purchase_order",
+      "confidence": 0.9,
+      "reason": "Standard purchase orders are a specific subtype of purchase orders, as the text distinguishes them from framework and EC purchase orders."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "invoice_value",
+      "b": "vendor_invoice",
+      "confidence": 0.9,
+      "reason": "The term 'invoice value' refers to the monetary amount of an invoice, whereas 'vendor invoice' refers to the invoice document itself."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "invoice",
+      "b": "invoice_receipt_recording",
+      "confidence": 0.95,
+      "reason": "Term A refers to the invoice document itself, whereas Term B refers to the activity of recording the receipt of that invoice."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "purchase_order_item",
+      "b": "purchasing",
+      "confidence": 1.0,
+      "reason": "A purchase order item is an individually tracked line of a purchase order, whereas purchasing refers to the overall business process."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "invoice_recording_delay",
+      "b": "payment_delay",
+      "confidence": 1.0,
+      "reason": "The sentence lists 'invoice recording delay' and 'payment delay' as two different business concerns."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "procurement_process",
+      "b": "purchase_to_pay_process",
+      "confidence": 0.9,
+      "reason": "Procurement Processes is a broader concept, whereas the Purchase-to-Pay Process is a specific type of procurement process analyzed in the BPI Challenge 2019."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "invoice_handling",
+      "b": "invoice_related_event",
+      "confidence": 0.8,
+      "reason": "Invoice handling refers to the specific process of managing an invoice, whereas invoice-related events represent a broader category of occurrences associated with invoices."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "procurement_process",
+      "b": "purchase_order_processing",
+      "confidence": 0.9,
+      "reason": "Procurement processes refer to the overall lifecycle of acquiring goods and services, whereas purchase order processing is a specific subprocess within procurement that handles purchase orders."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "purchase_order_processing",
+      "b": "purchase_to_pay_process",
+      "confidence": 0.9,
+      "reason": "Purchase order processing is a specific sub-process within the broader purchase-to-pay process."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "purchase_to_pay",
+      "b": "purchasing_process",
+      "confidence": 0.8,
+      "reason": "Purchase-to-pay is a specific end-to-end process spanning from purchase order to invoice clearance, whereas purchasing process is a broader term that may only cover the acquisition phase."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "invoice_receipt",
+      "b": "invoice_value",
+      "confidence": 1.0,
+      "reason": "Invoice receipt refers to a business activity or event, whereas invoice value refers to a numerical attribute or amount checked during verification."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "invoice_processing",
+      "b": "vendor_invoice",
+      "confidence": 0.9,
+      "reason": "Invoice processing refers to the overall activity or process of handling invoices, whereas vendor invoice refers to the specific document being processed."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "invoice_receipt",
+      "b": "invoice_sequence",
+      "confidence": 0.9,
+      "reason": "The term 'invoice receipt' refers to a specific business activity, whereas 'invoice sequence' refers to a series of invoice-related activities."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "three_way_matching",
+      "b": "two_way_matching",
+      "confidence": 1.0,
+      "reason": "Three-way matching and two-way matching are described as different process variants with different requirements, such as whether a goods receipt is required."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "purchase_order_document",
+      "b": "standard_purchase_order",
+      "confidence": 0.9,
+      "reason": "The term 'standard purchase orders' refers to a specific type of purchase order, whereas 'purchase order document' is a broader concept that can have different document types."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "invoice_processing",
+      "b": "invoice_sequence",
+      "confidence": 0.9,
+      "reason": "Invoice processing refers to the overall handling of invoices, whereas an invoice sequence refers to a specific series of invoice-related activities within an item trace."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "ec",
+      "b": "ec_order",
+      "confidence": 0.8,
+      "reason": "The term 'EC' acts as a modifier describing a type of case or purchase order, whereas 'EC orders' refers to the specific order entities themselves."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "invoice_processing",
+      "b": "invoice_related_event",
+      "confidence": 0.9,
+      "reason": "Invoice processing refers to the overall business process, whereas invoice-related events refer to specific occurrences or log entries associated with invoices."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "invoice_handling",
+      "b": "invoice_matching_procedure",
+      "confidence": 0.8,
+      "reason": "Invoice handling refers to the overall processing of invoices, whereas the invoice matching procedure is a specific step or method used to match invoices within that process."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "invoice_creation",
+      "b": "vendor_invoice",
+      "confidence": 0.9,
+      "reason": "Invoice creation refers to the business activity of generating an invoice, whereas vendor invoice refers to the actual document or object itself."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "payment_block_creation",
+      "b": "payment_blocking",
+      "confidence": 0.8,
+      "reason": "Payment block creation refers to the specific event of creating a block, whereas payment blocking refers to the state or process of keeping a payment blocked."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "purchase_order_processing",
+      "b": "standard_purchase_order",
+      "confidence": 0.95,
+      "reason": "Term A refers to the process of handling purchase orders, whereas Term B refers to a specific type of purchase order document."
+    },
+    {
+      "action": "MERGE",
+      "a": "procurement_process",
+      "b": "purchasing_process",
+      "labels": [
+        "Procurement Processes",
+        "purchasing process"
+      ],
+      "confidence": 0.9,
+      "reason": "The terms 'Procurement Processes' and 'purchasing process' are used interchangeably in the context of the document to refer to the same underlying business process."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "purchase_order",
+      "b": "purchase_order_item_creation",
+      "confidence": 1.0,
+      "reason": "Term A refers to a document or entity, whereas Term B refers to an activity that creates an item of that document."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "purchase_order",
+      "b": "purchase_order_item_value",
+      "confidence": 0.9,
+      "reason": "The term 'purchase order' refers to the overall order document, whereas 'purchase order item values' refers to the specific data values associated with an item within that order."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "invoice_processing",
+      "b": "purchase_order_processing",
+      "confidence": 1.0,
+      "reason": "Invoice processing and purchase order processing refer to two different business processes handling different types of documents."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "purchase_order_document",
+      "b": "purchase_requisition",
+      "confidence": 0.9,
+      "reason": "A purchase requisition is an internal request that can precede an order, whereas a purchase order document is the actual order containing purchase order items."
+    },
+    {
+      "action": "MERGE",
+      "a": "standard_order",
+      "b": "standard_purchase_order",
+      "labels": [
+        "standard orders",
+        "standard purchase orders"
+      ],
+      "confidence": 0.85,
+      "reason": "The term 'standard orders' is used as a shorthand for 'standard purchase orders' in the context of procurement processes that involve requisitions and order confirmations."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "item",
+      "b": "purchase_order_item",
+      "confidence": 0.8,
+      "reason": "The term 'item' is a broader concept that can refer to any generic item, whereas 'purchase order item' specifically denotes an individually tracked line of a purchase order."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "recorded_resource",
+      "b": "resource",
+      "confidence": 0.9,
+      "reason": "Based on the sentences, a 'recorded resource' is evidence of an activity's execution, whereas a 'resource' is an entity performing the recording of activities."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "purchasing_process",
+      "b": "purchasing_responsiveness",
+      "confidence": 0.9,
+      "reason": "The purchasing process refers to the overall workflow of purchasing, whereas purchasing responsiveness is a specific business concern or metric measuring the speed of that process."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "invoice_processing",
+      "b": "invoice_receipt",
+      "confidence": 0.9,
+      "reason": "Invoice processing refers to the overall process of handling invoices, whereas invoice receipt is a specific business activity."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "purchase_order_item",
+      "b": "purchase_order_processing",
+      "confidence": 1.0,
+      "reason": "A purchase order item is an individually tracked line of a purchase order, whereas purchase order processing is the activity or process of handling changes and approvals related to purchase orders."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "purchase_requisition",
+      "b": "purchasing_process",
+      "confidence": 0.95,
+      "reason": "A purchase requisition is a specific document or request that can precede an order item, whereas the purchasing process refers to the entire business process being analyzed."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "purchase_order_processing",
+      "b": "purchase_to_pay",
+      "confidence": 0.9,
+      "reason": "Purchase order processing refers to managing changes and approvals of an order, whereas Purchase-to-pay is a broader end-to-end process spanning from order creation to invoice clearance."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "goods",
+      "b": "goods_receipt",
+      "confidence": 0.95,
+      "reason": "The term 'goods' refers to physical items delivered to a warehouse, whereas 'goods receipt' refers to a distinct business activity that occurs in the process."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "purchase_order_item",
+      "b": "purchasing_process",
+      "confidence": 1.0,
+      "reason": "A purchase order item is an individual line of a purchase order document, whereas the purchasing process refers to the overall business process."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "approval_decision",
+      "b": "approval_event",
+      "confidence": 0.8,
+      "reason": "An approval decision refers to the choice or resolution made, whereas an approval event refers to the occurrence or happening of the approval process in time."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "invoice_receipt_recording",
+      "b": "receipt",
+      "confidence": 0.9,
+      "reason": "Term A refers to the activity of recording an invoice receipt, whereas Term B refers to the physical or digital receipt document used in three-way matching."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "goods_receipt_recording",
+      "b": "goods_receipt_value",
+      "confidence": 0.9,
+      "reason": "\"goods receipt recording\" refers to the activity of recording the receipt, whereas \"goods receipt value\" refers to the monetary value associated with the goods receipt."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "invoice_creation",
+      "b": "invoice_handling",
+      "confidence": 0.9,
+      "reason": "Invoice creation refers specifically to the generation of an invoice, whereas invoice handling refers to the broader processing or recording of invoices."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "ec_purchase_order",
+      "b": "purchase_order_processing",
+      "confidence": 0.95,
+      "reason": "EC purchase orders refers to a specific type of document, whereas purchase order processing refers to the activity or process of handling purchase orders."
+    },
+    {
+      "action": "DISTINCT",
+      "a": "item_creation",
+      "b": "purchase_order_item_creation",
+      "confidence": 0.8,
+      "reason": "\"item creation\" is a broader concept that can refer to the creation of any item in the process, whereas \"purchase order item creation\" specifically refers to the creation of a purchase order item."
+    }
+  ],
+  "decisions": [
+    {
+      "a": "payment_block",
+      "b": "payment_blocking",
+      "similarity": 0.9922,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.8,
+        "reason": "The term 'payment block' refers to the status or flag that is set or removed, whereas 'payment blocking' refers to the activity or process of blocking the payment."
+      },
+      "error": null
+    },
+    {
+      "a": "purchase_to_pay",
+      "b": "purchase_to_pay_process",
+      "similarity": 0.9873,
+      "decision": {
+        "action": "MERGE",
+        "confidence": 0.9,
+        "reason": "Both terms refer to the same underlying business process that tracks a purchase order from creation to invoice clearance."
+      },
+      "error": null
+    },
+    {
+      "a": "invoice_after_goods_receipt_three_way_matching",
+      "b": "invoice_before_goods_receipt_three_way_matching",
+      "similarity": 0.9765,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 1.0,
+        "reason": "Invoice-after-goods-receipt three-way matching and invoice-before-goods-receipt three-way matching refer to two different matching processes with different precedence relationships between goods receipt and invoice receipt."
+      },
+      "error": null
+    },
+    {
+      "a": "purchase_order",
+      "b": "purchase_order_item",
+      "similarity": 0.9724,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 1.0,
+        "reason": "The sentences explicitly state that a purchase order item is an individually tracked line of a purchase order, indicating a part-to-whole relationship rather than identity."
+      },
+      "error": null
+    },
+    {
+      "a": "invoice_receipt_recording",
+      "b": "recording_of_invoice_receipt",
+      "similarity": 0.9724,
+      "decision": {
+        "action": "MERGE",
+        "confidence": 1.0,
+        "reason": "\"invoice receipt recording\" and \"recording of invoice receipt\" are syntactic variations referring to the same process step of recording an invoice receipt."
+      },
+      "error": null
+    },
+    {
+      "a": "purchasing",
+      "b": "purchasing_process",
+      "similarity": 0.9707,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.8,
+        "reason": "The term 'purchasing' refers to the general business function or activity, whereas 'purchasing process' refers to the specific sequence of steps representing that process."
+      },
+      "error": null
+    },
+    {
+      "a": "invoice",
+      "b": "invoice_receipt",
+      "similarity": 0.9697,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.9,
+        "reason": "The term 'invoice' refers to the document created by the vendor, whereas 'invoice receipt' is described as a distinct business activity."
+      },
+      "error": null
+    },
+    {
+      "a": "invoice_handling",
+      "b": "invoice_processing",
+      "similarity": 0.9667,
+      "decision": {
+        "action": "MERGE",
+        "confidence": 0.9,
+        "reason": "Both terms refer to the same business activity of managing and processing invoices, used synonymously in the context of invoice workflows."
+      },
+      "error": null
+    },
+    {
+      "a": "invoice_creation",
+      "b": "vendor_invoice_creation",
+      "similarity": 0.9647,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.8,
+        "reason": "Invoice creation is a broader concept, whereas vendor invoice creation specifically refers to the creation of an invoice by or for a vendor."
+      },
+      "error": null
+    },
+    {
+      "a": "service_entry_sheet",
+      "b": "service_entry_sheet_recording",
+      "similarity": 0.9645,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.95,
+        "reason": "The term 'service entry sheet' refers to the document or record itself, whereas 'service entry sheet recording' refers to the activity of creating or entering that record."
+      },
+      "error": null
+    },
+    {
+      "a": "invoice",
+      "b": "vendor_invoice",
+      "similarity": 0.9625,
+      "decision": {
+        "action": "MERGE",
+        "confidence": 0.9,
+        "reason": "Both terms refer to the same document created by a vendor to request payment for supplied goods or services."
+      },
+      "error": null
+    },
+    {
+      "a": "invoice_clearance",
+      "b": "invoice_clearance_event",
+      "similarity": 0.9606,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.8,
+        "reason": "Invoice clearance refers to the actual business activity or state, whereas the invoice-clearance event refers to the recorded log event representing that occurrence."
+      },
+      "error": null
+    },
+    {
+      "a": "invoice",
+      "b": "invoice_value",
+      "similarity": 0.9606,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.95,
+        "reason": "The term 'invoice' refers to the document itself, while 'invoice value' refers to a specific attribute or monetary amount of that document."
+      },
+      "error": null
+    },
+    {
+      "a": "activity_completion_timestamp",
+      "b": "completion_timestamp",
+      "similarity": 0.9604,
+      "decision": {
+        "action": "MERGE",
+        "confidence": 0.9,
+        "reason": "Both terms refer to the recorded time at which an activity is completed, with Term B being the singular form contextually linked to an activity."
+      },
+      "error": null
+    },
+    {
+      "a": "invoice_receipt",
+      "b": "receipt",
+      "similarity": 0.9603,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.9,
+        "reason": "In the provided sentences, 'invoice receipt' refers to a specific business activity, whereas 'receipt' refers to a document or record subject to three-way matching alongside invoices."
+      },
+      "error": null
+    },
+    {
+      "a": "approval",
+      "b": "approval_activity",
+      "similarity": 0.959,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.8,
+        "reason": "Approvals refers to the resulting decisions or events being counted, whereas approval activities refers to the process steps or tasks performed."
+      },
+      "error": null
+    },
+    {
+      "a": "goods_receipt",
+      "b": "goods_receipt_recording",
+      "similarity": 0.9585,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.8,
+        "reason": "Goods receipt refers to the event or document of receiving goods, whereas goods receipt recording specifically denotes the business activity of logging that receipt in the system."
+      },
+      "error": null
+    },
+    {
+      "a": "purchase_order",
+      "b": "purchasing",
+      "similarity": 0.9579,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.95,
+        "reason": "Term A refers to a specific document or entity (purchase order), while Term B refers to the overall process or activity of buying (purchasing)."
+      },
+      "error": null
+    },
+    {
+      "a": "purchase_requisition",
+      "b": "purchase_requisition_creation",
+      "similarity": 0.9563,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 1.0,
+        "reason": "The term 'purchase requisition' refers to the document itself, while 'purchase requisition creation' refers to the activity of creating that document."
+      },
+      "error": null
+    },
+    {
+      "a": "item",
+      "b": "item_case",
+      "similarity": 0.9556,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.9,
+        "reason": "The sentences distinguish 'item cases' from 'items' by stating that an invoice can cover several items but clearance may be recorded in only one of those item cases."
+      },
+      "error": null
+    },
+    {
+      "a": "vendor_invoice",
+      "b": "vendor_invoice_creation",
+      "similarity": 0.9553,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 1.0,
+        "reason": "The term 'vendor invoice' refers to the document itself, whereas 'Vendor invoice creation' refers to the activity of creating that document."
+      },
+      "error": null
+    },
+    {
+      "a": "approval",
+      "b": "approval_decision",
+      "similarity": 0.9552,
+      "decision": {
+        "action": "MERGE",
+        "confidence": 0.9,
+        "reason": "In the context of business processes, 'approvals' and 'approval decisions' both refer to the same concept of an authorized decision to approve an item."
+      },
+      "error": null
+    },
+    {
+      "a": "consignment",
+      "b": "consignment_case",
+      "similarity": 0.9545,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.8,
+        "reason": "Consignment refers to the overall process or concept, whereas a consignment case refers to a specific instance or case of that process."
+      },
+      "error": null
+    },
+    {
+      "a": "case",
+      "b": "item_case",
+      "similarity": 0.9543,
+      "decision": {
+        "action": "MERGE",
+        "confidence": 0.9,
+        "reason": "The sentences indicate that an individual item is the case used to organize the event log, making 'case' and 'item case' refer to the same concept of a process instance."
+      },
+      "error": null
+    },
+    {
+      "a": "purchase_order",
+      "b": "purchase_requisition",
+      "similarity": 0.9532,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.95,
+        "reason": "The sentences indicate that a purchase requisition can precede an order item, showing they are distinct documents in the procurement process."
+      },
+      "error": null
+    },
+    {
+      "a": "purchase_requisition",
+      "b": "requisition",
+      "similarity": 0.9528,
+      "decision": {
+        "action": "MERGE",
+        "confidence": 0.9,
+        "reason": "The term 'requisition' is used as a shortened synonym for 'purchase requisition' in the context of the procurement process leading to purchase order creation."
+      },
+      "error": null
+    },
+    {
+      "a": "individual_item",
+      "b": "item",
+      "similarity": 0.9528,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.8,
+        "reason": "The term 'individual item' is specifically defined as the case used to organize the event log, whereas 'item' refers to a business object related to receipts or invoices."
+      },
+      "error": null
+    },
+    {
+      "a": "purchase_order",
+      "b": "purchase_order_document",
+      "similarity": 0.9527,
+      "decision": {
+        "action": "MERGE",
+        "confidence": 0.9,
+        "reason": "The sentences indicate that both 'purchase order' and 'purchase order document' refer to the same entity that contains or is composed of purchase order items."
+      },
+      "error": null
+    },
+    {
+      "a": "goods_receipt",
+      "b": "goods_receipt_event",
+      "similarity": 0.9524,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.9,
+        "reason": "Goods receipt refers to the business activity itself, whereas goods receipt events refer to the individual occurrences or instances of this activity."
+      },
+      "error": null
+    },
+    {
+      "a": "order_item",
+      "b": "purchase_order_item",
+      "similarity": 0.9524,
+      "decision": {
+        "action": "MERGE",
+        "confidence": 0.9,
+        "reason": "In the context of the purchase-to-pay process, 'order item' and 'purchase order item' both refer to the individual line items of a purchase order."
+      },
+      "error": null
+    },
+    {
+      "a": "actual_consumption",
+      "b": "consumption",
+      "similarity": 0.9524,
+      "decision": {
+        "action": "MERGE",
+        "confidence": 0.9,
+        "reason": "Both terms refer to the same event of consuming consignment goods, which is noted as being outside the scope of the consignment log in both sentences."
+      },
+      "error": null
+    },
+    {
+      "a": "item_category",
+      "b": "item_type",
+      "similarity": 0.9519,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.95,
+        "reason": "The sentence lists 'an item type' and 'an item category' as separate, co-occurring elements within the same context."
+      },
+      "error": null
+    },
+    {
+      "a": "srm",
+      "b": "srm_activity",
+      "similarity": 0.9514,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.8,
+        "reason": "SRM refers to the overall subprocess or system, whereas SRM activities refer to the specific tasks or actions performed within that process."
+      },
+      "error": null
+    },
+    {
+      "a": "order_confirmation",
+      "b": "order_confirmation_activity",
+      "similarity": 0.9508,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.8,
+        "reason": "The term 'order confirmation' refers to a specific activity, whereas 'order confirmation activities' refers to a broader category or set of activities related to confirming an order."
+      },
+      "error": null
+    },
+    {
+      "a": "invoice",
+      "b": "invoice_creation",
+      "similarity": 0.9505,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 1.0,
+        "reason": "The term 'invoice' refers to the document itself, whereas 'invoice creation' refers to the activity of producing that document."
+      },
+      "error": null
+    },
+    {
+      "a": "invoice_event",
+      "b": "invoice_related_event",
+      "similarity": 0.9501,
+      "decision": {
+        "action": "MERGE",
+        "confidence": 0.9,
+        "reason": "Both terms refer to the same concept of events or activities associated with invoices within the business process."
+      },
+      "error": null
+    },
+    {
+      "a": "item",
+      "b": "item_category",
+      "similarity": 0.95,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 1.0,
+        "reason": "The term 'item' refers to a specific object or entity, whereas 'item category' refers to a classification or attribute of an item, making them distinct concepts."
+      },
+      "error": null
+    },
+    {
+      "a": "case",
+      "b": "case_unit",
+      "similarity": 0.9499,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.8,
+        "reason": "A 'case' refers to the actual instance containing recorded events, whereas 'case unit' refers to the entity type or level of granularity used to define what constitutes a case."
+      },
+      "error": null
+    },
+    {
+      "a": "purchase_order_item_creation",
+      "b": "purchase_requisition_creation",
+      "similarity": 0.9498,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.95,
+        "reason": "Purchase order item creation and purchase requisition creation refer to different stages in the procurement process, where a requisition is a request and an order is the actual purchase commitment."
+      },
+      "error": null
+    },
+    {
+      "a": "purchase_order_item",
+      "b": "purchase_order_item_creation",
+      "similarity": 0.9487,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 1.0,
+        "reason": "Term A refers to the physical or logical line item of a purchase order, whereas Term B refers to the activity of creating that item."
+      },
+      "error": null
+    },
+    {
+      "a": "purchase_order",
+      "b": "purchasing_process",
+      "similarity": 0.948,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.95,
+        "reason": "A purchase order is a specific document or entity within a business, whereas the purchasing process refers to the overall sequence of activities and workflow."
+      },
+      "error": null
+    },
+    {
+      "a": "invoice_receipt",
+      "b": "invoice_receipt_recording",
+      "similarity": 0.9471,
+      "decision": {
+        "action": "MERGE",
+        "confidence": 0.9,
+        "reason": "Both terms refer to the same business activity step occurring between goods receipt (or goods receipt recording) and invoice clearance in the procurement process."
+      },
+      "error": null
+    },
+    {
+      "a": "order_approval_change",
+      "b": "purchase_order_approval_change",
+      "similarity": 0.9468,
+      "decision": {
+        "action": "MERGE",
+        "confidence": 0.9,
+        "reason": "\"order approval changes\" and \"purchase order approval change\" are grammatical variations (plural vs. singular) of the same concept within the context of purchase order processing."
+      },
+      "error": null
+    },
+    {
+      "a": "recurring_invoice",
+      "b": "repeated_invoice_creation",
+      "similarity": 0.9468,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.9,
+        "reason": "Recurring invoices refers to the documents themselves, whereas repeated invoice creation refers to the activity of creating them."
+      },
+      "error": null
+    },
+    {
+      "a": "invoice",
+      "b": "invoice_handling",
+      "similarity": 0.9462,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.95,
+        "reason": "The term 'invoice' refers to the physical or digital document, whereas 'invoice handling' refers to the process or activity of managing that document."
+      },
+      "error": null
+    },
+    {
+      "a": "framework_order",
+      "b": "standard_and_framework_order",
+      "similarity": 0.946,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.9,
+        "reason": "The term 'standard and framework orders' refers to a combination of two distinct types of orders, whereas 'framework order' refers to only one of those types."
+      },
+      "error": null
+    },
+    {
+      "a": "invoice",
+      "b": "invoice_sequence",
+      "similarity": 0.9454,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.9,
+        "reason": "The term 'invoice' refers to the billing document itself, whereas 'invoice sequence' refers to a series of process activities related to handling an invoice."
+      },
+      "error": null
+    },
+    {
+      "a": "goods_receipt",
+      "b": "goods_receipt_value",
+      "similarity": 0.9446,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.9,
+        "reason": "The term 'goods receipt' refers to a business activity, whereas 'goods receipt value' refers to a specific monetary or numerical attribute associated with that activity."
+      },
+      "error": null
+    },
+    {
+      "a": "approval",
+      "b": "approval_authority",
+      "similarity": 0.9445,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.9,
+        "reason": "The term 'approvals' refers to the instances or acts of approving that are counted, whereas 'approval authority' refers to the organizational right or power to grant such approvals."
+      },
+      "error": null
+    },
+    {
+      "a": "approval_activity",
+      "b": "approval_event",
+      "similarity": 0.9441,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.8,
+        "reason": "Approval activities refer to the general tasks or steps of approving, whereas an approval event refers to a specific occurrence or instance of an approval in a process trace."
+      },
+      "error": null
+    },
+    {
+      "a": "approval",
+      "b": "approval_event",
+      "similarity": 0.9438,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.8,
+        "reason": "The term 'approvals' refers to the business decisions or outcomes being counted, whereas 'approval event' refers to the specific log entry or occurrence representing that action."
+      },
+      "error": null
+    },
+    {
+      "a": "purchase_order_document",
+      "b": "purchase_order_item",
+      "similarity": 0.9425,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 1.0,
+        "reason": "The sentences indicate a whole-part relationship where a purchase order document contains one or more purchase order items, meaning they are distinct concepts."
+      },
+      "error": null
+    },
+    {
+      "a": "goods_receipt_event",
+      "b": "goods_receipt_recording",
+      "similarity": 0.9422,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.8,
+        "reason": "Goods receipt events refer to the occurrences of receiving goods, whereas goods receipt recording refers to the specific process activity of logging those receipts."
+      },
+      "error": null
+    },
+    {
+      "a": "item",
+      "b": "item_type",
+      "similarity": 0.9421,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.9,
+        "reason": "The term 'item' refers to a specific physical or logical entity, whereas 'item type' refers to a classification or attribute of that entity."
+      },
+      "error": null
+    },
+    {
+      "a": "invoice",
+      "b": "invoice_processing",
+      "similarity": 0.9416,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 1.0,
+        "reason": "Term A refers to a document, whereas Term B refers to the process or activity of handling that document."
+      },
+      "error": null
+    },
+    {
+      "a": "goods_receipt_recording",
+      "b": "recording_of_invoice_receipt",
+      "similarity": 0.941,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.95,
+        "reason": "Goods receipt recording refers to documenting the delivery of physical goods, whereas the recording of invoice receipt refers to documenting the receipt of the billing invoice, which are distinct steps in the procurement process."
+      },
+      "error": null
+    },
+    {
+      "a": "goods_receipt",
+      "b": "receipt",
+      "similarity": 0.9409,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.8,
+        "reason": "Term A refers to the business activity of receiving goods, whereas Term B refers to the physical or digital receipt document used in three-way matching."
+      },
+      "error": null
+    },
+    {
+      "a": "purchase_order_item",
+      "b": "purchase_order_item_value",
+      "similarity": 0.9407,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.9,
+        "reason": "The purchase order item refers to the line item itself, whereas the purchase order item values refer to the specific data or attributes associated with that item."
+      },
+      "error": null
+    },
+    {
+      "a": "purchase_to_pay_process",
+      "b": "purchasing_process",
+      "similarity": 0.9403,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.8,
+        "reason": "The purchase-to-pay process encompasses both purchasing and payment, making it broader than just the purchasing process."
+      },
+      "error": null
+    },
+    {
+      "a": "order_item",
+      "b": "purchase_order",
+      "similarity": 0.9401,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.95,
+        "reason": "An order item is an individual line item within a purchase order, representing a part-whole relationship rather than identical concepts."
+      },
+      "error": null
+    },
+    {
+      "a": "invoice_receipt",
+      "b": "recording_of_invoice_receipt",
+      "similarity": 0.9397,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.7,
+        "reason": "While closely related, 'invoice receipt' refers to the business event or document of receiving an invoice, whereas 'recording of invoice receipt' is the specific activity of logging or registering that receipt in the system."
+      },
+      "error": null
+    },
+    {
+      "a": "goods_receipt_recording",
+      "b": "invoice_receipt_recording",
+      "similarity": 0.9394,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 1.0,
+        "reason": "The sentences list 'goods receipt recording' and 'invoice receipt recording' as separate, sequential steps in a business progression."
+      },
+      "error": null
+    },
+    {
+      "a": "invoice_receipt",
+      "b": "vendor_invoice",
+      "similarity": 0.9394,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.9,
+        "reason": "The sentences distinguish between 'vendor invoice creation' and 'invoice receipt recording', indicating that the vendor invoice is the document being created, while the invoice receipt is the subsequent activity of receiving or recording it."
+      },
+      "error": null
+    },
+    {
+      "a": "purchase_order",
+      "b": "purchase_order_processing",
+      "similarity": 0.9388,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.95,
+        "reason": "Term A refers to the purchase order document itself, whereas Term B refers to the activity or process of handling that document."
+      },
+      "error": null
+    },
+    {
+      "a": "document_identifier",
+      "b": "document_type",
+      "similarity": 0.9385,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.95,
+        "reason": "A document identifier is a unique key used to link specific documents, whereas a document type refers to the category or classification of a document."
+      },
+      "error": null
+    },
+    {
+      "a": "payment_block",
+      "b": "payment_block_creation",
+      "similarity": 0.9378,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.9,
+        "reason": "Payment block refers to the state or restriction itself, whereas payment block creation refers to the specific event or activity of establishing that block."
+      },
+      "error": null
+    },
+    {
+      "a": "srm",
+      "b": "srm_subprocess",
+      "similarity": 0.9378,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.85,
+        "reason": "SRM refers to the broader system or concept of Supplier Relationship Management, whereas SRM subprocess refers to a specific process flow within that system."
+      },
+      "error": null
+    },
+    {
+      "a": "purchase_order_item",
+      "b": "purchase_requisition",
+      "similarity": 0.9368,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.95,
+        "reason": "The sentences indicate that a purchase requisition can precede a purchase order item, showing they are distinct entities in the process."
+      },
+      "error": null
+    },
+    {
+      "a": "purchase_order_document",
+      "b": "purchase_order_processing",
+      "similarity": 0.9364,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 1.0,
+        "reason": "Term A refers to a document entity, whereas Term B refers to the process or activity of handling that document."
+      },
+      "error": null
+    },
+    {
+      "a": "approval_authority",
+      "b": "approval_decision",
+      "similarity": 0.9353,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.9,
+        "reason": "Approval authority refers to the power or role to grant approval, whereas approval decisions refer to the actual choices or outcomes made."
+      },
+      "error": null
+    },
+    {
+      "a": "invoice_clearance",
+      "b": "invoice_clearance_rule",
+      "similarity": 0.9352,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.9,
+        "reason": "Invoice clearance refers to a business activity, whereas the invoice-clearance rule refers to a rule or policy evaluated in relation to that activity."
+      },
+      "error": null
+    },
+    {
+      "a": "standard_and_framework_order",
+      "b": "standard_order",
+      "similarity": 0.9339,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.9,
+        "reason": "The term 'standard and framework orders' refers to a combination of two distinct types of orders, whereas 'standard orders' refers to only one of those types."
+      },
+      "error": null
+    },
+    {
+      "a": "human_user",
+      "b": "user",
+      "similarity": 0.9331,
+      "decision": {
+        "action": "MERGE",
+        "confidence": 0.9,
+        "reason": "In the context of the sentences, 'user' is used as a shorthand synonym for 'human users', as both are contrasted with 'resources'."
+      },
+      "error": null
+    },
+    {
+      "a": "approval_activity",
+      "b": "approval_decision",
+      "similarity": 0.9331,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.8,
+        "reason": "Approval activities refer to the process or tasks of approving, whereas approval decisions refer to the specific outcomes or choices resulting from those activities."
+      },
+      "error": null
+    },
+    {
+      "a": "purchasing",
+      "b": "purchasing_responsiveness",
+      "similarity": 0.933,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.9,
+        "reason": "Purchasing refers to the overall procurement process, whereas purchasing responsiveness is a specific metric or business concern measuring the speed or efficiency of that process."
+      },
+      "error": null
+    },
+    {
+      "a": "changes_to_the_order_item",
+      "b": "order_approval_change",
+      "similarity": 0.9327,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.9,
+        "reason": "Changes to the order item refers to modifying the details of a specific item, whereas order approval changes refers to modifications in the approval status or process of the order."
+      },
+      "error": null
+    },
+    {
+      "a": "event_log",
+      "b": "recorded_event",
+      "similarity": 0.9325,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.9,
+        "reason": "An event log is a collection of data organized by cases, whereas a recorded event is an individual entry belonging to a specific case."
+      },
+      "error": null
+    },
+    {
+      "a": "ec_purchase_order",
+      "b": "purchase_order",
+      "similarity": 0.9324,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.95,
+        "reason": "EC purchase orders are a specific subtype of purchase orders, representing a narrower concept compared to the broader purchase order term."
+      },
+      "error": null
+    },
+    {
+      "a": "goods_and_invoice_handling_activity",
+      "b": "invoice_handling",
+      "similarity": 0.9317,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.9,
+        "reason": "The term 'goods and invoice handling activities' encompasses both goods and invoice handling, whereas 'invoice handling' refers specifically to the processing of invoices."
+      },
+      "error": null
+    },
+    {
+      "a": "business_entity",
+      "b": "company",
+      "similarity": 0.9316,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.8,
+        "reason": "A business entity is a broader concept that encompasses various organizational forms, whereas a company is a specific type of business entity."
+      },
+      "error": null
+    },
+    {
+      "a": "invoice_clearance_event",
+      "b": "invoice_related_event",
+      "similarity": 0.9314,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.9,
+        "reason": "An invoice-clearance event is a specific type of invoice-related event, making them related but distinct concepts where one is narrower than the other."
+      },
+      "error": null
+    },
+    {
+      "a": "recorded_event",
+      "b": "recorded_resource",
+      "similarity": 0.9313,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.9,
+        "reason": "A recorded event identifies an activity and its completion timestamp, whereas a recorded resource serves as evidence about an activity's execution or recording."
+      },
+      "error": null
+    },
+    {
+      "a": "invoice",
+      "b": "invoice_related_event",
+      "similarity": 0.931,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.9,
+        "reason": "Term A refers to the invoice document itself, whereas Term B refers to events associated with an invoice, making them related but distinct concepts."
+      },
+      "error": null
+    },
+    {
+      "a": "case_unit",
+      "b": "item_case",
+      "similarity": 0.9308,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.8,
+        "reason": "The term 'case unit' refers to the conceptual level of granularity that defines a case (the item), whereas 'item case' refers to the actual case instance associated with a specific item."
+      },
+      "error": null
+    },
+    {
+      "a": "purchase_order_processing",
+      "b": "purchasing_process",
+      "similarity": 0.9307,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.8,
+        "reason": "Purchase order processing refers specifically to the handling of purchase orders, whereas the purchasing process is a broader concept encompassing the entire procurement cycle."
+      },
+      "error": null
+    },
+    {
+      "a": "invoice_matching_procedure",
+      "b": "invoice_processing",
+      "similarity": 0.9307,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.8,
+        "reason": "The invoice matching procedure is a specific step or variant identified within the current process, whereas invoice processing refers to a broader, separate process handled outside of this event log."
+      },
+      "error": null
+    },
+    {
+      "a": "purchase_requisition",
+      "b": "purchasing",
+      "similarity": 0.9305,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.95,
+        "reason": "A purchase requisition is a specific document or request that can precede an order, whereas purchasing refers to the overall process or activity of buying."
+      },
+      "error": null
+    },
+    {
+      "a": "invoice_creation",
+      "b": "invoice_processing",
+      "similarity": 0.9303,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.9,
+        "reason": "Invoice creation is a specific business activity mentioned alongside invoice receipt and clearance, whereas invoice processing refers to a broader, separate process."
+      },
+      "error": null
+    },
+    {
+      "a": "case",
+      "b": "case_identifier",
+      "similarity": 0.9299,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.9,
+        "reason": "The term 'case' refers to the individual item itself, whereas 'case identifier' refers to the attribute or key used to identify that case."
+      },
+      "error": null
+    },
+    {
+      "a": "invoice_handling",
+      "b": "invoice_receipt",
+      "similarity": 0.9286,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.9,
+        "reason": "Invoice receipt is a specific business activity, whereas invoice handling refers to the broader processing or management of invoices."
+      },
+      "error": null
+    },
+    {
+      "a": "invoice_creation",
+      "b": "repeated_invoice_creation",
+      "similarity": 0.9281,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.9,
+        "reason": "Repeated invoice creation refers to a specific pattern of performing the invoice creation activity multiple times, making them related but distinct concepts."
+      },
+      "error": null
+    },
+    {
+      "a": "purchase_order",
+      "b": "standard_purchase_order",
+      "similarity": 0.928,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.9,
+        "reason": "Standard purchase orders are a specific subtype of purchase orders, as the text distinguishes them from framework and EC purchase orders."
+      },
+      "error": null
+    },
+    {
+      "a": "invoice_value",
+      "b": "vendor_invoice",
+      "similarity": 0.9276,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.9,
+        "reason": "The term 'invoice value' refers to the monetary amount of an invoice, whereas 'vendor invoice' refers to the invoice document itself."
+      },
+      "error": null
+    },
+    {
+      "a": "invoice",
+      "b": "invoice_receipt_recording",
+      "similarity": 0.9274,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.95,
+        "reason": "Term A refers to the invoice document itself, whereas Term B refers to the activity of recording the receipt of that invoice."
+      },
+      "error": null
+    },
+    {
+      "a": "purchase_order_item",
+      "b": "purchasing",
+      "similarity": 0.9272,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 1.0,
+        "reason": "A purchase order item is an individually tracked line of a purchase order, whereas purchasing refers to the overall business process."
+      },
+      "error": null
+    },
+    {
+      "a": "invoice_recording_delay",
+      "b": "payment_delay",
+      "similarity": 0.9269,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 1.0,
+        "reason": "The sentence lists 'invoice recording delay' and 'payment delay' as two different business concerns."
+      },
+      "error": null
+    },
+    {
+      "a": "procurement_process",
+      "b": "purchase_to_pay_process",
+      "similarity": 0.9268,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.9,
+        "reason": "Procurement Processes is a broader concept, whereas the Purchase-to-Pay Process is a specific type of procurement process analyzed in the BPI Challenge 2019."
+      },
+      "error": null
+    },
+    {
+      "a": "invoice_handling",
+      "b": "invoice_related_event",
+      "similarity": 0.9266,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.8,
+        "reason": "Invoice handling refers to the specific process of managing an invoice, whereas invoice-related events represent a broader category of occurrences associated with invoices."
+      },
+      "error": null
+    },
+    {
+      "a": "procurement_process",
+      "b": "purchase_order_processing",
+      "similarity": 0.9265,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.9,
+        "reason": "Procurement processes refer to the overall lifecycle of acquiring goods and services, whereas purchase order processing is a specific subprocess within procurement that handles purchase orders."
+      },
+      "error": null
+    },
+    {
+      "a": "purchase_order_processing",
+      "b": "purchase_to_pay_process",
+      "similarity": 0.9265,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.9,
+        "reason": "Purchase order processing is a specific sub-process within the broader purchase-to-pay process."
+      },
+      "error": null
+    },
+    {
+      "a": "purchase_to_pay",
+      "b": "purchasing_process",
+      "similarity": 0.9263,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.8,
+        "reason": "Purchase-to-pay is a specific end-to-end process spanning from purchase order to invoice clearance, whereas purchasing process is a broader term that may only cover the acquisition phase."
+      },
+      "error": null
+    },
+    {
+      "a": "invoice_receipt",
+      "b": "invoice_value",
+      "similarity": 0.9257,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 1.0,
+        "reason": "Invoice receipt refers to a business activity or event, whereas invoice value refers to a numerical attribute or amount checked during verification."
+      },
+      "error": null
+    },
+    {
+      "a": "invoice_processing",
+      "b": "vendor_invoice",
+      "similarity": 0.9255,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.9,
+        "reason": "Invoice processing refers to the overall activity or process of handling invoices, whereas vendor invoice refers to the specific document being processed."
+      },
+      "error": null
+    },
+    {
+      "a": "invoice_receipt",
+      "b": "invoice_sequence",
+      "similarity": 0.9253,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.9,
+        "reason": "The term 'invoice receipt' refers to a specific business activity, whereas 'invoice sequence' refers to a series of invoice-related activities."
+      },
+      "error": null
+    },
+    {
+      "a": "three_way_matching",
+      "b": "two_way_matching",
+      "similarity": 0.9252,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 1.0,
+        "reason": "Three-way matching and two-way matching are described as different process variants with different requirements, such as whether a goods receipt is required."
+      },
+      "error": null
+    },
+    {
+      "a": "purchase_order_document",
+      "b": "standard_purchase_order",
+      "similarity": 0.925,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.9,
+        "reason": "The term 'standard purchase orders' refers to a specific type of purchase order, whereas 'purchase order document' is a broader concept that can have different document types."
+      },
+      "error": null
+    },
+    {
+      "a": "invoice_processing",
+      "b": "invoice_sequence",
+      "similarity": 0.9248,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.9,
+        "reason": "Invoice processing refers to the overall handling of invoices, whereas an invoice sequence refers to a specific series of invoice-related activities within an item trace."
+      },
+      "error": null
+    },
+    {
+      "a": "ec",
+      "b": "ec_order",
+      "similarity": 0.9248,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.8,
+        "reason": "The term 'EC' acts as a modifier describing a type of case or purchase order, whereas 'EC orders' refers to the specific order entities themselves."
+      },
+      "error": null
+    },
+    {
+      "a": "invoice_processing",
+      "b": "invoice_related_event",
+      "similarity": 0.9245,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.9,
+        "reason": "Invoice processing refers to the overall business process, whereas invoice-related events refer to specific occurrences or log entries associated with invoices."
+      },
+      "error": null
+    },
+    {
+      "a": "invoice_handling",
+      "b": "invoice_matching_procedure",
+      "similarity": 0.924,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.8,
+        "reason": "Invoice handling refers to the overall processing of invoices, whereas the invoice matching procedure is a specific step or method used to match invoices within that process."
+      },
+      "error": null
+    },
+    {
+      "a": "invoice_creation",
+      "b": "vendor_invoice",
+      "similarity": 0.9238,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.9,
+        "reason": "Invoice creation refers to the business activity of generating an invoice, whereas vendor invoice refers to the actual document or object itself."
+      },
+      "error": null
+    },
+    {
+      "a": "payment_block_creation",
+      "b": "payment_blocking",
+      "similarity": 0.9237,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.8,
+        "reason": "Payment block creation refers to the specific event of creating a block, whereas payment blocking refers to the state or process of keeping a payment blocked."
+      },
+      "error": null
+    },
+    {
+      "a": "purchase_order_processing",
+      "b": "standard_purchase_order",
+      "similarity": 0.9236,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.95,
+        "reason": "Term A refers to the process of handling purchase orders, whereas Term B refers to a specific type of purchase order document."
+      },
+      "error": null
+    },
+    {
+      "a": "procurement_process",
+      "b": "purchasing_process",
+      "similarity": 0.9233,
+      "decision": {
+        "action": "MERGE",
+        "confidence": 0.9,
+        "reason": "The terms 'Procurement Processes' and 'purchasing process' are used interchangeably in the context of the document to refer to the same underlying business process."
+      },
+      "error": null
+    },
+    {
+      "a": "purchase_order",
+      "b": "purchase_order_item_creation",
+      "similarity": 0.9233,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 1.0,
+        "reason": "Term A refers to a document or entity, whereas Term B refers to an activity that creates an item of that document."
+      },
+      "error": null
+    },
+    {
+      "a": "purchase_order",
+      "b": "purchase_order_item_value",
+      "similarity": 0.9227,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.9,
+        "reason": "The term 'purchase order' refers to the overall order document, whereas 'purchase order item values' refers to the specific data values associated with an item within that order."
+      },
+      "error": null
+    },
+    {
+      "a": "invoice_processing",
+      "b": "purchase_order_processing",
+      "similarity": 0.9224,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 1.0,
+        "reason": "Invoice processing and purchase order processing refer to two different business processes handling different types of documents."
+      },
+      "error": null
+    },
+    {
+      "a": "purchase_order_document",
+      "b": "purchase_requisition",
+      "similarity": 0.9223,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.9,
+        "reason": "A purchase requisition is an internal request that can precede an order, whereas a purchase order document is the actual order containing purchase order items."
+      },
+      "error": null
+    },
+    {
+      "a": "standard_order",
+      "b": "standard_purchase_order",
+      "similarity": 0.9223,
+      "decision": {
+        "action": "MERGE",
+        "confidence": 0.85,
+        "reason": "The term 'standard orders' is used as a shorthand for 'standard purchase orders' in the context of procurement processes that involve requisitions and order confirmations."
+      },
+      "error": null
+    },
+    {
+      "a": "item",
+      "b": "purchase_order_item",
+      "similarity": 0.9223,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.8,
+        "reason": "The term 'item' is a broader concept that can refer to any generic item, whereas 'purchase order item' specifically denotes an individually tracked line of a purchase order."
+      },
+      "error": null
+    },
+    {
+      "a": "recorded_resource",
+      "b": "resource",
+      "similarity": 0.9222,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.9,
+        "reason": "Based on the sentences, a 'recorded resource' is evidence of an activity's execution, whereas a 'resource' is an entity performing the recording of activities."
+      },
+      "error": null
+    },
+    {
+      "a": "purchasing_process",
+      "b": "purchasing_responsiveness",
+      "similarity": 0.9217,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.9,
+        "reason": "The purchasing process refers to the overall workflow of purchasing, whereas purchasing responsiveness is a specific business concern or metric measuring the speed of that process."
+      },
+      "error": null
+    },
+    {
+      "a": "invoice_processing",
+      "b": "invoice_receipt",
+      "similarity": 0.9217,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.9,
+        "reason": "Invoice processing refers to the overall process of handling invoices, whereas invoice receipt is a specific business activity."
+      },
+      "error": null
+    },
+    {
+      "a": "purchase_order_item",
+      "b": "purchase_order_processing",
+      "similarity": 0.9214,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 1.0,
+        "reason": "A purchase order item is an individually tracked line of a purchase order, whereas purchase order processing is the activity or process of handling changes and approvals related to purchase orders."
+      },
+      "error": null
+    },
+    {
+      "a": "purchase_requisition",
+      "b": "purchasing_process",
+      "similarity": 0.9214,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.95,
+        "reason": "A purchase requisition is a specific document or request that can precede an order item, whereas the purchasing process refers to the entire business process being analyzed."
+      },
+      "error": null
+    },
+    {
+      "a": "purchase_order_processing",
+      "b": "purchase_to_pay",
+      "similarity": 0.9211,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.9,
+        "reason": "Purchase order processing refers to managing changes and approvals of an order, whereas Purchase-to-pay is a broader end-to-end process spanning from order creation to invoice clearance."
+      },
+      "error": null
+    },
+    {
+      "a": "goods",
+      "b": "goods_receipt",
+      "similarity": 0.9207,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.95,
+        "reason": "The term 'goods' refers to physical items delivered to a warehouse, whereas 'goods receipt' refers to a distinct business activity that occurs in the process."
+      },
+      "error": null
+    },
+    {
+      "a": "purchase_order_item",
+      "b": "purchasing_process",
+      "similarity": 0.9207,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 1.0,
+        "reason": "A purchase order item is an individual line of a purchase order document, whereas the purchasing process refers to the overall business process."
+      },
+      "error": null
+    },
+    {
+      "a": "approval_decision",
+      "b": "approval_event",
+      "similarity": 0.9203,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.8,
+        "reason": "An approval decision refers to the choice or resolution made, whereas an approval event refers to the occurrence or happening of the approval process in time."
+      },
+      "error": null
+    },
+    {
+      "a": "invoice_receipt_recording",
+      "b": "receipt",
+      "similarity": 0.9203,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.9,
+        "reason": "Term A refers to the activity of recording an invoice receipt, whereas Term B refers to the physical or digital receipt document used in three-way matching."
+      },
+      "error": null
+    },
+    {
+      "a": "goods_receipt_recording",
+      "b": "goods_receipt_value",
+      "similarity": 0.9202,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.9,
+        "reason": "\"goods receipt recording\" refers to the activity of recording the receipt, whereas \"goods receipt value\" refers to the monetary value associated with the goods receipt."
+      },
+      "error": null
+    },
+    {
+      "a": "invoice_creation",
+      "b": "invoice_handling",
+      "similarity": 0.9202,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.9,
+        "reason": "Invoice creation refers specifically to the generation of an invoice, whereas invoice handling refers to the broader processing or recording of invoices."
+      },
+      "error": null
+    },
+    {
+      "a": "ec_purchase_order",
+      "b": "purchase_order_processing",
+      "similarity": 0.9201,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.95,
+        "reason": "EC purchase orders refers to a specific type of document, whereas purchase order processing refers to the activity or process of handling purchase orders."
+      },
+      "error": null
+    },
+    {
+      "a": "item_creation",
+      "b": "purchase_order_item_creation",
+      "similarity": 0.92,
+      "decision": {
+        "action": "DISTINCT",
+        "confidence": 0.8,
+        "reason": "\"item creation\" is a broader concept that can refer to the creation of any item in the process, whereas \"purchase order item creation\" specifically refers to the creation of a purchase order item."
+      },
+      "error": null
+    }
+  ]
+}

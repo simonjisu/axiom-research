@@ -1,0 +1,21 @@
+{
+  "human_queue": [
+    {
+      "item_id": "invoice_receipt|invoice_receipt_recording",
+      "stage": "p2",
+      "reason": "pk_conflict",
+      "route_to": "human",
+      "conflicts_with": [
+        [
+          "invoice_receipt",
+          "recording_of_invoice_receipt"
+        ]
+      ],
+      "judge": {
+        "action": "MERGE",
+        "confidence": 0.9,
+        "reason": "Both terms refer to the same business activity step occurring between goods receipt (or goods receipt recording) and invoice clearance in the procurement process."
+      }
+    }
+  ]
+}

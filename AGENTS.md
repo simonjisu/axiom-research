@@ -13,4 +13,4 @@
 ## 구조
 
 - `wiki/`: Notion 자료 인덱스와 연구 질문.
-- `ontology_extraction/`: 문서 → 온톨로지 구축 파이프라인(p1–p5) 실험 노트북.
+- `ontology_extraction/`: 문서 → 온톨로지 구축 파이프라인(p1–p5) 실험 노트북. 공통 설정·헬퍼는 `common.py`, 단계별 산출물은 `outputs/p*/`.

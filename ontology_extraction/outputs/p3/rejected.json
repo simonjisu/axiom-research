@@ -1,0 +1,47 @@
+{
+  "rejected": [
+    {
+      "item_id": "ServiceEntrySheet",
+      "stage": "p3",
+      "reason": "insufficient_evidence",
+      "route_to": "p1",
+      "evidence_mentions": 1
+    },
+    {
+      "item_id": "VendorDebitMemo",
+      "stage": "p3",
+      "reason": "insufficient_evidence",
+      "route_to": "p1",
+      "evidence_mentions": 1
+    },
+    {
+      "item_id": "Warehouse",
+      "stage": "p3",
+      "reason": "insufficient_evidence",
+      "route_to": "p1",
+      "evidence_mentions": 1
+    },
+    {
+      "item_id": "InternalDepartment",
+      "stage": "p3",
+      "reason": "insufficient_evidence",
+      "route_to": "p1",
+      "evidence_mentions": 1
+    },
+    {
+      "item_id": "PaymentBlock",
+      "stage": "p3",
+      "reason": "not_a_type",
+      "route_to": "p3",
+      "judge": {
+        "level": "not_a_type",
+        "duplicate_of": null,
+        "confidence": 0.9,
+        "reason": "A payment block is a state or restriction applied to an invoice, making it an attribute or state of the Invoice object rather than a standalone entity, document, or role."
+      }
+    }
+  ],
+  "hierarchy_issues": [],
+  "dropped_members": [],
+  "merge_notes": []
+}

@@ -1,0 +1,326 @@
+{
+  "rejected": [
+    {
+      "item_id": "BusinessRule.checksInvoice.Invoice@bpi2019-purchase-process#c03",
+      "stage": "p4",
+      "reason": "term_missing",
+      "route_to": "p1",
+      "chunk_id": "bpi2019-purchase-process#c03",
+      "absent": [
+        "BusinessRule"
+      ],
+      "proposal": {
+        "chunk_id": "bpi2019-purchase-process#c03",
+        "name": "checksInvoice",
+        "domain": "BusinessRule",
+        "range": "Invoice",
+        "cardinality": "N:M",
+        "evidence": "Expected behavior: the invoice value is checked against both the goods receipt value and the value recorded when the purchase order item was created.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "item_id": "BusinessRule.checksGoodsReceipt.GoodsReceipt@bpi2019-purchase-process#c03",
+      "stage": "p4",
+      "reason": "term_missing",
+      "route_to": "p1",
+      "chunk_id": "bpi2019-purchase-process#c03",
+      "absent": [
+        "BusinessRule"
+      ],
+      "proposal": {
+        "chunk_id": "bpi2019-purchase-process#c03",
+        "name": "checksGoodsReceipt",
+        "domain": "BusinessRule",
+        "range": "GoodsReceipt",
+        "cardinality": "N:M",
+        "evidence": "Expected behavior: the invoice value is checked against both the goods receipt value and the value recorded when the purchase order item was created.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "item_id": "BusinessRule.checksPurchaseOrderItem.PurchaseOrderItem@bpi2019-purchase-process#c03",
+      "stage": "p4",
+      "reason": "term_missing",
+      "route_to": "p1",
+      "chunk_id": "bpi2019-purchase-process#c03",
+      "absent": [
+        "BusinessRule"
+      ],
+      "proposal": {
+        "chunk_id": "bpi2019-purchase-process#c03",
+        "name": "checksPurchaseOrderItem",
+        "domain": "BusinessRule",
+        "range": "PurchaseOrderItem",
+        "cardinality": "N:M",
+        "evidence": "Expected behavior: the invoice value is checked against both the goods receipt value and the value recorded when the purchase order item was created.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "item_id": "BusinessRule.governs.PurchaseOrderItem@bpi2019-purchase-process#c04",
+      "stage": "p4",
+      "reason": "term_missing",
+      "route_to": "p1",
+      "chunk_id": "bpi2019-purchase-process#c04",
+      "absent": [
+        "BusinessRule"
+      ],
+      "proposal": {
+        "chunk_id": "bpi2019-purchase-process#c04",
+        "name": "governs",
+        "domain": "BusinessRule",
+        "range": "PurchaseOrderItem",
+        "cardinality": "1:N",
+        "evidence": "The invoice, receipt, and purchase order item values are still subject to three-way matching.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "item_id": "BusinessRule.governs.Invoice@bpi2019-purchase-process#c04",
+      "stage": "p4",
+      "reason": "term_missing",
+      "route_to": "p1",
+      "chunk_id": "bpi2019-purchase-process#c04",
+      "absent": [
+        "BusinessRule"
+      ],
+      "proposal": {
+        "chunk_id": "bpi2019-purchase-process#c04",
+        "name": "governs",
+        "domain": "BusinessRule",
+        "range": "Invoice",
+        "cardinality": "1:N",
+        "evidence": "The invoice, receipt, and purchase order item values are still subject to three-way matching.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "item_id": "BusinessRule.governs.GoodsReceipt@bpi2019-purchase-process#c04",
+      "stage": "p4",
+      "reason": "term_missing",
+      "route_to": "p1",
+      "chunk_id": "bpi2019-purchase-process#c04",
+      "absent": [
+        "BusinessRule"
+      ],
+      "proposal": {
+        "chunk_id": "bpi2019-purchase-process#c04",
+        "name": "governs",
+        "domain": "BusinessRule",
+        "range": "GoodsReceipt",
+        "cardinality": "1:N",
+        "evidence": "The invoice, receipt, and purchase order item values are still subject to three-way matching.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "item_id": "ProcessVariant.hasProcessActivity.ProcessActivity@bpi2019-purchase-process#c04",
+      "stage": "p4",
+      "reason": "term_missing",
+      "route_to": "p1",
+      "chunk_id": "bpi2019-purchase-process#c04",
+      "absent": [
+        "ProcessVariant"
+      ],
+      "proposal": {
+        "chunk_id": "bpi2019-purchase-process#c04",
+        "name": "hasProcessActivity",
+        "domain": "ProcessVariant",
+        "range": "ProcessActivity",
+        "cardinality": "1:N",
+        "evidence": "The essential activities are purchase order item creation, goods receipt recording, invoice receipt recording, any applicable payment block removal, and invoice clearance.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "item_id": "RecordedEvent.copiedInto.Case@bpi2019-purchase-process#c05",
+      "stage": "p4",
+      "reason": "term_missing",
+      "route_to": "p1",
+      "chunk_id": "bpi2019-purchase-process#c05",
+      "absent": [
+        "Case"
+      ],
+      "proposal": {
+        "chunk_id": "bpi2019-purchase-process#c05",
+        "name": "copiedInto",
+        "domain": "RecordedEvent",
+        "range": "Case",
+        "cardinality": "1:N",
+        "evidence": "Its event can be copied into several item traces.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "item_id": "RecordedEvent.concerns.PurchaseOrder@bpi2019-purchase-process#c05",
+      "stage": "p4",
+      "reason": "term_missing",
+      "route_to": "p1",
+      "chunk_id": "bpi2019-purchase-process#c05",
+      "absent": [
+        "RecordedEvent"
+      ],
+      "proposal": {
+        "chunk_id": "bpi2019-purchase-process#c05",
+        "name": "concerns",
+        "domain": "RecordedEvent",
+        "range": "PurchaseOrder",
+        "cardinality": "N:1",
+        "evidence": "A purchase order approval change concerns the purchase order document.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "item_id": "ProcessVariant.associatedWith.Invoice@bpi2019-purchase-process#c05",
+      "stage": "p4",
+      "reason": "term_missing",
+      "route_to": "p1",
+      "chunk_id": "bpi2019-purchase-process#c05",
+      "absent": [
+        "ProcessVariant"
+      ],
+      "proposal": {
+        "chunk_id": "bpi2019-purchase-process#c05",
+        "name": "associatedWith",
+        "domain": "ProcessVariant",
+        "range": "Invoice",
+        "cardinality": "1:N",
+        "evidence": "The report associates this category with framework orders and recurring invoices.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "item_id": "RecordedEvent.recordedIn.Case@bpi2019-purchase-process#c05",
+      "stage": "p4",
+      "reason": "term_missing",
+      "route_to": "p1",
+      "chunk_id": "bpi2019-purchase-process#c05",
+      "absent": [
+        "RecordedEvent"
+      ],
+      "proposal": {
+        "chunk_id": "bpi2019-purchase-process#c05",
+        "name": "recordedIn",
+        "domain": "RecordedEvent",
+        "range": "Case",
+        "cardinality": "N:1",
+        "evidence": "Invoice receipt and clearance may be recorded in only one of those item cases even when the invoice covers several items.",
+        "confidence": 0.85
+      }
+    },
+    {
+      "item_id": "PurchaseOrderItem.hasGoodsReceipt.GoodsReceipt@bpi2019-purchase-process#c06",
+      "stage": "p4",
+      "reason": "term_missing",
+      "route_to": "p1",
+      "chunk_id": "bpi2019-purchase-process#c06",
+      "absent": [
+        "GoodsReceipt"
+      ],
+      "proposal": {
+        "chunk_id": "bpi2019-purchase-process#c06",
+        "name": "hasGoodsReceipt",
+        "domain": "PurchaseOrderItem",
+        "range": "GoodsReceipt",
+        "cardinality": "1:N",
+        "evidence": "Goods may be received several times for the same item.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "item_id": "RecordedEvent.missingPredecessorSupports.ProcessDeviation@bpi2019-purchase-process#c08",
+      "stage": "p4",
+      "reason": "term_missing",
+      "route_to": "p1",
+      "chunk_id": "bpi2019-purchase-process#c08",
+      "absent": [
+        "RecordedEvent"
+      ],
+      "proposal": {
+        "chunk_id": "bpi2019-purchase-process#c08",
+        "name": "missingPredecessorSupports",
+        "domain": "RecordedEvent",
+        "range": "ProcessDeviation",
+        "cardinality": "N:M",
+        "evidence": "A missing required recorded predecessor can support a finding of apparent process deviation.",
+        "confidence": 0.8
+      }
+    },
+    {
+      "item_id": "ProcessActivity.applicableTo.ProcessVariant@bpi2019-purchase-process#c10",
+      "stage": "p4",
+      "reason": "term_missing",
+      "route_to": "p1",
+      "chunk_id": "bpi2019-purchase-process#c10",
+      "absent": [
+        "ProcessActivity"
+      ],
+      "proposal": {
+        "chunk_id": "bpi2019-purchase-process#c10",
+        "name": "applicableTo",
+        "domain": "ProcessActivity",
+        "range": "ProcessVariant",
+        "cardinality": "N:M",
+        "evidence": "They are meaningful only where their endpoint activities are available and applicable to the process variant.",
+        "confidence": 0.9
+      }
+    },
+    {
+      "item_id": "PurchaseOrder.hasPurchaseRequisition.PurchaseRequisition",
+      "stage": "p4",
+      "reason": "unsupported_by_evidence",
+      "route_to": "p4",
+      "relation": {
+        "relation_id": "PurchaseOrder.hasPurchaseRequisition.PurchaseRequisition",
+        "name": "hasPurchaseRequisition",
+        "domain": "PurchaseOrder",
+        "range": "PurchaseRequisition",
+        "cardinality": "1:N",
+        "gen_confidence": 0.8,
+        "evidence": [
+          {
+            "chunk_id": "bpi2019-purchase-process#c04",
+            "sentence": "standard orders may contain requisition and order confirmation activities."
+          }
+        ],
+        "same_pair_relations": [],
+        "judge": {
+          "verdict": "unsupported",
+          "cardinality_ok": true,
+          "confidence": 0.8,
+          "reason": "The evidence sentence refers to 'standard orders' containing 'requisition and order confirmation activities' in a process context, which does not sufficiently support a structural relation between a PurchaseOrder document and a PurchaseRequisition document."
+        },
+        "confidence": 0.8
+      }
+    },
+    {
+      "item_id": "PurchaseOrder.hasOrderConfirmation.OrderConfirmation",
+      "stage": "p4",
+      "reason": "unsupported_by_evidence",
+      "route_to": "p4",
+      "relation": {
+        "relation_id": "PurchaseOrder.hasOrderConfirmation.OrderConfirmation",
+        "name": "hasOrderConfirmation",
+        "domain": "PurchaseOrder",
+        "range": "OrderConfirmation",
+        "cardinality": "1:N",
+        "gen_confidence": 0.8,
+        "evidence": [
+          {
+            "chunk_id": "bpi2019-purchase-process#c04",
+            "sentence": "standard orders may contain requisition and order confirmation activities."
+          }
+        ],
+        "same_pair_relations": [],
+        "judge": {
+          "verdict": "unsupported",
+          "cardinality_ok": false,
+          "confidence": 0.8,
+          "reason": "The evidence sentence mentions that 'standard orders may contain requisition and order confirmation activities', which refers to activities rather than establishing a direct relation between a PurchaseOrder document and an OrderConfirmation document."
+        },
+        "confidence": 0.8
+      }
+    }
+  ]
+}
