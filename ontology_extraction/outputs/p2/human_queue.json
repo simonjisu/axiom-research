@@ -7,8 +7,8 @@
       "route_to": "human",
       "conflicts_with": [
         [
-          "invoice_receipt",
-          "recording_of_invoice_receipt"
+          "recording_of_invoice_receipt",
+          "invoice_receipt"
         ]
       ],
       "judge": {

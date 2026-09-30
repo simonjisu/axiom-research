@@ -1,13 +1,77 @@
 {
   "human_queue": [
     {
-      "item_id": "PurchaseRequisition.precedes.PurchaseOrderItem",
+      "item_id": "InvoiceReceipt.precedes.InvoiceClearance",
+      "stage": "p4",
+      "reason": "cardinality_conflict",
+      "route_to": "human",
+      "cardinalities": {
+        "1:1": 3,
+        "N:M": 1
+      },
+      "relation": {
+        "relation_id": "InvoiceReceipt.precedes.InvoiceClearance",
+        "name": "precedes",
+        "domain": "InvoiceReceipt",
+        "range": "InvoiceClearance",
+        "cardinality": "1:1",
+        "gen_confidence": 1.0,
+        "evidence": [
+          {
+            "chunk_id": "bpi2019-purchase-process#c05",
+            "sentence": "Invoice receipt precedes invoice clearance."
+          },
+          {
+            "chunk_id": "bpi2019-purchase-process#c08",
+            "sentence": "For invoice-after-goods-receipt three-way matching, the expected precedence relationships are goods receipt before invoice receipt, goods receipt before invoice clearance, and invoice receipt before invoice clearance."
+          },
+          {
+            "chunk_id": "bpi2019-purchase-process#c08",
+            "sentence": "For two-way matching, invoice receipt precedes invoice clearance; goods receipt is not a required step."
+          },
+          {
+            "chunk_id": "bpi2019-purchase-process#c10",
+            "sentence": "The report measures elapsed time from requisition or SRM creation to purchase order item creation, from item creation to goods receipt, from vendor invoice creation to invoice receipt recording, from invoice receipt to invoice clearance, and from goods receipt to invoice clearance."
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "GoodsReceipt.precedes.InvoiceClearance",
+      "stage": "p4",
+      "reason": "cardinality_conflict",
+      "route_to": "human",
+      "cardinalities": {
+        "1:1": 1,
+        "N:M": 1
+      },
+      "relation": {
+        "relation_id": "GoodsReceipt.precedes.InvoiceClearance",
+        "name": "precedes",
+        "domain": "GoodsReceipt",
+        "range": "InvoiceClearance",
+        "cardinality": "1:1",
+        "gen_confidence": 0.9,
+        "evidence": [
+          {
+            "chunk_id": "bpi2019-purchase-process#c08",
+            "sentence": "For invoice-after-goods-receipt three-way matching, the expected precedence relationships are goods receipt before invoice receipt, goods receipt before invoice clearance, and invoice receipt before invoice clearance."
+          },
+          {
+            "chunk_id": "bpi2019-purchase-process#c10",
+            "sentence": "The report measures elapsed time from requisition or SRM creation to purchase order item creation, from item creation to goods receipt, from vendor invoice creation to invoice receipt recording, from invoice receipt to invoice clearance, and from goods receipt to invoice clearance."
+          }
+        ]
+      }
+    },
+    {
+      "item_id": "PurchaseRequisition.precedesPurchaseOrderItem.PurchaseOrderItem",
       "stage": "p4",
       "reason": "cardinality_disputed",
       "route_to": "human",
       "relation": {
-        "relation_id": "PurchaseRequisition.precedes.PurchaseOrderItem",
-        "name": "precedes",
+        "relation_id": "PurchaseRequisition.precedesPurchaseOrderItem.PurchaseOrderItem",
+        "name": "precedesPurchaseOrderItem",
         "domain": "PurchaseRequisition",
         "range": "PurchaseOrderItem",
         "cardinality": "1:1",
@@ -23,7 +87,37 @@
           "verdict": "supported",
           "cardinality_ok": false,
           "confidence": 0.9,
-          "reason": "The evidence sentence explicitly states that a purchase requisition can precede an order item, which supports the relation. However, it also mentions that it is not present in every observed variant, which contradicts a strict 1:1 cardinality."
+          "reason": "The evidence sentence states that a purchase requisition can precede an order item, which supports the relation direction. However, it also mentions that it is not present in every observed variant, which contradicts the strict 1:1 cardinality."
+        },
+        "confidence": 0.9
+      }
+    },
+    {
+      "item_id": "GoodsReceipt.precedes.InvoiceReceipt",
+      "stage": "p4",
+      "reason": "cardinality_disputed",
+      "route_to": "human",
+      "relation": {
+        "relation_id": "GoodsReceipt.precedes.InvoiceReceipt",
+        "name": "precedes",
+        "domain": "GoodsReceipt",
+        "range": "InvoiceReceipt",
+        "cardinality": "1:1",
+        "gen_confidence": 0.9,
+        "evidence": [
+          {
+            "chunk_id": "bpi2019-purchase-process#c08",
+            "sentence": "For invoice-after-goods-receipt three-way matching, the expected precedence relationships are goods receipt before invoice receipt, goods receipt before invoice clearance, and invoice receipt before invoice clearance."
+          }
+        ],
+        "same_pair_relations": [
+          "GoodsReceipt.precedesInvoiceReceipt.InvoiceReceipt"
+        ],
+        "judge": {
+          "verdict": "supported",
+          "cardinality_ok": false,
+          "confidence": 0.9,
+          "reason": "The evidence sentence explicitly states that goods receipt occurs before invoice receipt, which supports the 'precedes' relation. However, it does not establish or mention a strict 1:1 cardinality."
         },
         "confidence": 0.9
       }

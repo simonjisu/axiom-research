@@ -1,8 +1,44 @@
 {
+  "concepts": [
+    "Approval",
+    "Company",
+    "Consignment",
+    "Consumption",
+    "ECPurchaseOrder",
+    "EventualResponseRule",
+    "FrameworkPurchaseOrder",
+    "Goods",
+    "GoodsReceipt",
+    "Invoice",
+    "InvoiceClearance",
+    "InvoiceCreation",
+    "InvoiceHandling",
+    "InvoiceReceipt",
+    "ItemDeletion",
+    "OrderConfirmation",
+    "PaymentBlockCreation",
+    "PrecedenceRule",
+    "ProcessVariant",
+    "PurchaseOrder",
+    "PurchaseOrderApprovalChange",
+    "PurchaseOrderItem",
+    "PurchaseOrderItemChange",
+    "PurchaseOrderItemCreation",
+    "PurchaseRequisition",
+    "PurchaseRequisitionCreation",
+    "QuantityChange",
+    "Receipt",
+    "RecurringInvoice",
+    "Resource",
+    "SRMSubprocess",
+    "StandardPurchaseOrder",
+    "Vendor",
+    "VendorInvoiceCreation"
+  ],
   "proposals": [
     {
       "chunk_id": "bpi2019-purchase-process#c01",
-      "name": "containsItem",
+      "name": "contains",
       "domain": "PurchaseOrder",
       "range": "PurchaseOrderItem",
       "cardinality": "1:N",
@@ -10,39 +46,21 @@
       "confidence": 1.0
     },
     {
-      "chunk_id": "bpi2019-purchase-process#c01",
-      "name": "representsCase",
-      "domain": "PurchaseOrderItem",
-      "range": "Case",
-      "cardinality": "1:1",
-      "evidence": "An individual item is the case used to organize the event log.",
-      "confidence": 0.9
-    },
-    {
-      "chunk_id": "bpi2019-purchase-process#c01",
-      "name": "containsEvent",
-      "domain": "Case",
-      "range": "RecordedEvent",
-      "cardinality": "1:N",
-      "evidence": "A case contains the events recorded for that item; the entire purchase order is not the case unit.",
-      "confidence": 0.9
-    },
-    {
-      "chunk_id": "bpi2019-purchase-process#c01",
-      "name": "organizesEventLog",
-      "domain": "Case",
-      "range": "EventLog",
-      "cardinality": "N:1",
-      "evidence": "An individual item is the case used to organize the event log.",
-      "confidence": 0.8
-    },
-    {
       "chunk_id": "bpi2019-purchase-process#c02",
-      "name": "groups",
+      "name": "groupsPurchaseOrderItem",
       "domain": "PurchaseOrder",
       "range": "PurchaseOrderItem",
       "cardinality": "1:N",
       "evidence": "A purchase order document groups purchase order items and has a document type.",
+      "confidence": 1.0
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c02",
+      "name": "supportsRecurringInvoice",
+      "domain": "FrameworkPurchaseOrder",
+      "range": "RecurringInvoice",
+      "cardinality": "1:N",
+      "evidence": "A framework order, also described as a blanket purchase order, can support recurring invoices over a period of time.",
       "confidence": 1.0
     },
     {
@@ -65,43 +83,25 @@
     },
     {
       "chunk_id": "bpi2019-purchase-process#c02",
-      "name": "supplies",
+      "name": "suppliesGoods",
       "domain": "Vendor",
       "range": "Goods",
       "cardinality": "1:N",
       "evidence": "A vendor supplies the purchased goods or services and can create an invoice.",
-      "confidence": 0.9
-    },
-    {
-      "chunk_id": "bpi2019-purchase-process#c02",
-      "name": "creates",
-      "domain": "Vendor",
-      "range": "Invoice",
-      "cardinality": "1:N",
-      "evidence": "A vendor supplies the purchased goods or services and can create an invoice.",
-      "confidence": 0.9
-    },
-    {
-      "chunk_id": "bpi2019-purchase-process#c02",
-      "name": "belongsTo",
-      "domain": "RecordedEvent",
-      "range": "Case",
-      "cardinality": "N:1",
-      "evidence": "A recorded event belongs to an item case and identifies an activity and its completion timestamp.",
       "confidence": 1.0
     },
     {
       "chunk_id": "bpi2019-purchase-process#c02",
-      "name": "identifies",
-      "domain": "RecordedEvent",
-      "range": "ProcessActivity",
-      "cardinality": "N:1",
-      "evidence": "A recorded event belongs to an item case and identifies an activity and its completion timestamp.",
-      "confidence": 0.9
+      "name": "createsInvoice",
+      "domain": "Vendor",
+      "range": "Invoice",
+      "cardinality": "1:N",
+      "evidence": "A vendor supplies the purchased goods or services and can create an invoice.",
+      "confidence": 1.0
     },
     {
       "chunk_id": "bpi2019-purchase-process#c02",
-      "name": "precedes",
+      "name": "precedesPurchaseOrderItem",
       "domain": "PurchaseRequisition",
       "range": "PurchaseOrderItem",
       "cardinality": "1:1",
@@ -122,171 +122,162 @@
       "name": "hasInvoice",
       "domain": "PurchaseOrderItem",
       "range": "Invoice",
-      "cardinality": "1:N",
-      "evidence": "An item can have multiple goods receipt events and multiple invoice-related events.",
-      "confidence": 0.9
-    },
-    {
-      "chunk_id": "bpi2019-purchase-process#c03",
-      "name": "createsInvoice",
-      "domain": "Vendor",
-      "range": "Invoice",
-      "cardinality": "1:N",
-      "evidence": "Vendor invoice creation is a distinct activity from the company's recording of invoice receipt.",
+      "cardinality": "N:M",
+      "evidence": "Consequently, purchase order item, goods receipt, and invoice do not have a universally established one-to-one relationship in this log.",
       "confidence": 0.8
     },
     {
       "chunk_id": "bpi2019-purchase-process#c03",
-      "name": "recordsInvoice",
+      "name": "includesSRMSubprocess",
+      "domain": "ECPurchaseOrder",
+      "range": "SRMSubprocess",
+      "cardinality": "1:N",
+      "evidence": "the report separates EC purchase orders from standard and framework orders because EC orders include an SRM subprocess.",
+      "confidence": 0.9
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c03",
+      "name": "precedesInvoiceReceipt",
+      "domain": "GoodsReceipt",
+      "range": "InvoiceReceipt",
+      "cardinality": "N:M",
+      "evidence": "Goods receipt must precede invoice receipt for this category.",
+      "confidence": 0.9
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c03",
+      "name": "recordsInvoiceReceipt",
       "domain": "Company",
-      "range": "Invoice",
+      "range": "InvoiceReceipt",
       "cardinality": "1:N",
       "evidence": "Vendor invoice creation is a distinct activity from the company's recording of invoice receipt.",
       "confidence": 0.8
     },
     {
       "chunk_id": "bpi2019-purchase-process#c03",
-      "name": "checksInvoice",
-      "domain": "BusinessRule",
-      "range": "Invoice",
-      "cardinality": "N:M",
-      "evidence": "Expected behavior: the invoice value is checked against both the goods receipt value and the value recorded when the purchase order item was created.",
-      "confidence": 0.9
-    },
-    {
-      "chunk_id": "bpi2019-purchase-process#c03",
-      "name": "checksGoodsReceipt",
-      "domain": "BusinessRule",
-      "range": "GoodsReceipt",
-      "cardinality": "N:M",
-      "evidence": "Expected behavior: the invoice value is checked against both the goods receipt value and the value recorded when the purchase order item was created.",
-      "confidence": 0.9
-    },
-    {
-      "chunk_id": "bpi2019-purchase-process#c03",
-      "name": "checksPurchaseOrderItem",
-      "domain": "BusinessRule",
-      "range": "PurchaseOrderItem",
-      "cardinality": "N:M",
-      "evidence": "Expected behavior: the invoice value is checked against both the goods receipt value and the value recorded when the purchase order item was created.",
-      "confidence": 0.9
-    },
-    {
-      "chunk_id": "bpi2019-purchase-process#c04",
-      "name": "governs",
-      "domain": "BusinessRule",
-      "range": "PurchaseOrderItem",
+      "name": "performsVendorInvoiceCreation",
+      "domain": "Vendor",
+      "range": "VendorInvoiceCreation",
       "cardinality": "1:N",
-      "evidence": "The invoice, receipt, and purchase order item values are still subject to three-way matching.",
-      "confidence": 0.9
-    },
-    {
-      "chunk_id": "bpi2019-purchase-process#c04",
-      "name": "governs",
-      "domain": "BusinessRule",
-      "range": "Invoice",
-      "cardinality": "1:N",
-      "evidence": "The invoice, receipt, and purchase order item values are still subject to three-way matching.",
-      "confidence": 0.9
-    },
-    {
-      "chunk_id": "bpi2019-purchase-process#c04",
-      "name": "governs",
-      "domain": "BusinessRule",
-      "range": "GoodsReceipt",
-      "cardinality": "1:N",
-      "evidence": "The invoice, receipt, and purchase order item values are still subject to three-way matching.",
-      "confidence": 0.9
+      "evidence": "Vendor invoice creation is a distinct activity from the company's recording of invoice receipt.",
+      "confidence": 0.8
     },
     {
       "chunk_id": "bpi2019-purchase-process#c04",
       "name": "hasPurchaseRequisition",
-      "domain": "PurchaseOrder",
+      "domain": "StandardPurchaseOrder",
       "range": "PurchaseRequisition",
       "cardinality": "1:N",
       "evidence": "standard orders may contain requisition and order confirmation activities.",
-      "confidence": 0.8
+      "confidence": 0.9
     },
     {
       "chunk_id": "bpi2019-purchase-process#c04",
       "name": "hasOrderConfirmation",
-      "domain": "PurchaseOrder",
+      "domain": "StandardPurchaseOrder",
       "range": "OrderConfirmation",
       "cardinality": "1:N",
       "evidence": "standard orders may contain requisition and order confirmation activities.",
-      "confidence": 0.8
+      "confidence": 0.9
     },
     {
       "chunk_id": "bpi2019-purchase-process#c04",
-      "name": "hasInvoice",
-      "domain": "Case",
-      "range": "Invoice",
+      "name": "includesSRMSubprocess",
+      "domain": "ECPurchaseOrder",
+      "range": "SRMSubprocess",
       "cardinality": "1:N",
-      "evidence": "The report describes invoice creation and receipt before goods receipt in EC cases.",
-      "confidence": 0.8
+      "evidence": "EC orders include SRM activities before or around item creation.",
+      "confidence": 0.9
     },
     {
       "chunk_id": "bpi2019-purchase-process#c04",
-      "name": "hasGoodsReceipt",
-      "domain": "Case",
-      "range": "GoodsReceipt",
-      "cardinality": "1:N",
-      "evidence": "The report describes invoice creation and receipt before goods receipt in EC cases.",
-      "confidence": 0.8
-    },
-    {
-      "chunk_id": "bpi2019-purchase-process#c04",
-      "name": "hasProcessActivity",
+      "name": "includesActivity",
       "domain": "ProcessVariant",
-      "range": "ProcessActivity",
+      "range": "PurchaseOrderItemCreation",
       "cardinality": "1:N",
       "evidence": "The essential activities are purchase order item creation, goods receipt recording, invoice receipt recording, any applicable payment block removal, and invoice clearance.",
-      "confidence": 0.9
+      "confidence": 0.85
     },
     {
-      "chunk_id": "bpi2019-purchase-process#c05",
-      "name": "covers",
-      "domain": "Invoice",
-      "range": "PurchaseOrderItem",
+      "chunk_id": "bpi2019-purchase-process#c04",
+      "name": "includesActivity",
+      "domain": "ProcessVariant",
+      "range": "GoodsReceipt",
       "cardinality": "1:N",
-      "evidence": "Invoice receipt and clearance may be recorded in only one of those item cases even when the invoice covers several items.",
-      "confidence": 0.9
+      "evidence": "The essential activities are purchase order item creation, goods receipt recording, invoice receipt recording, any applicable payment block removal, and invoice clearance.",
+      "confidence": 0.85
     },
     {
-      "chunk_id": "bpi2019-purchase-process#c05",
-      "name": "copiedInto",
-      "domain": "RecordedEvent",
-      "range": "Case",
+      "chunk_id": "bpi2019-purchase-process#c04",
+      "name": "includesActivity",
+      "domain": "ProcessVariant",
+      "range": "InvoiceReceipt",
       "cardinality": "1:N",
-      "evidence": "Its event can be copied into several item traces.",
-      "confidence": 0.9
+      "evidence": "The essential activities are purchase order item creation, goods receipt recording, invoice receipt recording, any applicable payment block removal, and invoice clearance.",
+      "confidence": 0.85
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c04",
+      "name": "includesActivity",
+      "domain": "ProcessVariant",
+      "range": "InvoiceClearance",
+      "cardinality": "1:N",
+      "evidence": "The essential activities are purchase order item creation, goods receipt recording, invoice receipt recording, any applicable payment block removal, and invoice clearance.",
+      "confidence": 0.85
     },
     {
       "chunk_id": "bpi2019-purchase-process#c05",
       "name": "concerns",
-      "domain": "RecordedEvent",
+      "domain": "PurchaseOrderApprovalChange",
       "range": "PurchaseOrder",
       "cardinality": "N:1",
       "evidence": "A purchase order approval change concerns the purchase order document.",
-      "confidence": 0.8
+      "confidence": 1.0
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c05",
+      "name": "precedes",
+      "domain": "InvoiceReceipt",
+      "range": "InvoiceClearance",
+      "cardinality": "1:1",
+      "evidence": "Invoice receipt precedes invoice clearance.",
+      "confidence": 1.0
     },
     {
       "chunk_id": "bpi2019-purchase-process#c05",
       "name": "associatedWith",
       "domain": "ProcessVariant",
-      "range": "Invoice",
-      "cardinality": "1:N",
+      "range": "FrameworkPurchaseOrder",
+      "cardinality": "N:M",
       "evidence": "The report associates this category with framework orders and recurring invoices.",
+      "confidence": 0.9
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c05",
+      "name": "associatedWith",
+      "domain": "ProcessVariant",
+      "range": "RecurringInvoice",
+      "cardinality": "N:M",
+      "evidence": "The report associates this category with framework orders and recurring invoices.",
+      "confidence": 0.9
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c05",
+      "name": "followedBy",
+      "domain": "VendorInvoiceCreation",
+      "range": "PurchaseOrderItemCreation",
+      "cardinality": "1:N",
+      "evidence": "the modeled flow can begin with vendor invoice creation, followed by creation of one or more order items and a purchase order approval change.",
       "confidence": 0.8
     },
     {
       "chunk_id": "bpi2019-purchase-process#c05",
-      "name": "recordedIn",
-      "domain": "RecordedEvent",
-      "range": "Case",
+      "name": "followedBy",
+      "domain": "PurchaseOrderItemCreation",
+      "range": "PurchaseOrderApprovalChange",
       "cardinality": "N:1",
-      "evidence": "Invoice receipt and clearance may be recorded in only one of those item cases even when the invoice covers several items.",
-      "confidence": 0.85
+      "evidence": "the modeled flow can begin with vendor invoice creation, followed by creation of one or more order items and a purchase order approval change.",
+      "confidence": 0.8
     },
     {
       "chunk_id": "bpi2019-purchase-process#c06",
@@ -300,16 +291,25 @@
     {
       "chunk_id": "bpi2019-purchase-process#c06",
       "name": "followedBy",
-      "domain": "PurchaseOrderItem",
+      "domain": "PurchaseOrderItemCreation",
       "range": "GoodsReceipt",
       "cardinality": "1:N",
       "evidence": "the common recorded progression is purchase order item creation followed by goods receipt.",
-      "confidence": 0.85
+      "confidence": 0.9
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c06",
+      "name": "involvesGoods",
+      "domain": "Consignment",
+      "range": "Goods",
+      "cardinality": "1:N",
+      "evidence": "Expected business arrangement: goods are delivered to and stored in a warehouse, and payment takes place after their use in production.",
+      "confidence": 0.8
     },
     {
       "chunk_id": "bpi2019-purchase-process#c07",
       "name": "relatesTo",
-      "domain": "GoodsReceipt",
+      "domain": "Receipt",
       "range": "PurchaseOrderItem",
       "cardinality": "N:1",
       "evidence": "Several receipts or invoices can legitimately relate to one item.",
@@ -326,48 +326,156 @@
     },
     {
       "chunk_id": "bpi2019-purchase-process#c08",
-      "name": "requiresActivity",
-      "domain": "BusinessRule",
-      "range": "ProcessActivity",
-      "cardinality": "1:N",
-      "evidence": "An eventual-response rule requires another activity later in the same case.",
+      "name": "precedes",
+      "domain": "GoodsReceipt",
+      "range": "InvoiceReceipt",
+      "cardinality": "1:1",
+      "evidence": "For invoice-after-goods-receipt three-way matching, the expected precedence relationships are goods receipt before invoice receipt, goods receipt before invoice clearance, and invoice receipt before invoice clearance.",
       "confidence": 0.9
     },
     {
       "chunk_id": "bpi2019-purchase-process#c08",
-      "name": "occursInCase",
-      "domain": "ProcessActivity",
-      "range": "Case",
-      "cardinality": "N:1",
-      "evidence": "An eventual-response rule requires another activity later in the same case.",
+      "name": "precedes",
+      "domain": "GoodsReceipt",
+      "range": "InvoiceClearance",
+      "cardinality": "1:1",
+      "evidence": "For invoice-after-goods-receipt three-way matching, the expected precedence relationships are goods receipt before invoice receipt, goods receipt before invoice clearance, and invoice receipt before invoice clearance.",
       "confidence": 0.9
     },
     {
       "chunk_id": "bpi2019-purchase-process#c08",
-      "name": "missingPredecessorSupports",
-      "domain": "RecordedEvent",
-      "range": "ProcessDeviation",
-      "cardinality": "N:M",
-      "evidence": "A missing required recorded predecessor can support a finding of apparent process deviation.",
+      "name": "precedes",
+      "domain": "InvoiceReceipt",
+      "range": "InvoiceClearance",
+      "cardinality": "1:1",
+      "evidence": "For invoice-after-goods-receipt three-way matching, the expected precedence relationships are goods receipt before invoice receipt, goods receipt before invoice clearance, and invoice receipt before invoice clearance.",
+      "confidence": 0.9
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c08",
+      "name": "precedes",
+      "domain": "InvoiceReceipt",
+      "range": "InvoiceClearance",
+      "cardinality": "1:1",
+      "evidence": "For two-way matching, invoice receipt precedes invoice clearance; goods receipt is not a required step.",
+      "confidence": 0.9
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c08",
+      "name": "requires",
+      "domain": "InvoiceReceipt",
+      "range": "PaymentBlockCreation",
+      "cardinality": "1:1",
+      "evidence": "Early invoice receipt requires payment blocking until goods receipt.",
       "confidence": 0.8
     },
     {
       "chunk_id": "bpi2019-purchase-process#c09",
-      "name": "copiedInto",
-      "domain": "RecordedEvent",
-      "range": "Case",
+      "name": "mayPrecede",
+      "domain": "Approval",
+      "range": "PurchaseOrderItemCreation",
       "cardinality": "N:M",
-      "evidence": "Document-level events can be copied into item cases.",
-      "confidence": 0.9
+      "evidence": "A copied approval event may even precede the creation of a later item.",
+      "confidence": 0.8
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c10",
+      "name": "precedes",
+      "domain": "PurchaseRequisitionCreation",
+      "range": "PurchaseOrderItemCreation",
+      "cardinality": "N:M",
+      "evidence": "The report measures elapsed time from requisition or SRM creation to purchase order item creation, from item creation to goods receipt, from vendor invoice creation to invoice receipt recording, from invoice receipt to invoice clearance, and from goods receipt to invoice clearance.",
+      "confidence": 0.7
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c10",
+      "name": "precedes",
+      "domain": "SRMSubprocess",
+      "range": "PurchaseOrderItemCreation",
+      "cardinality": "N:M",
+      "evidence": "The report measures elapsed time from requisition or SRM creation to purchase order item creation, from item creation to goods receipt, from vendor invoice creation to invoice receipt recording, from invoice receipt to invoice clearance, and from goods receipt to invoice clearance.",
+      "confidence": 0.7
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c10",
+      "name": "precedes",
+      "domain": "PurchaseOrderItemCreation",
+      "range": "GoodsReceipt",
+      "cardinality": "N:M",
+      "evidence": "The report measures elapsed time from requisition or SRM creation to purchase order item creation, from item creation to goods receipt, from vendor invoice creation to invoice receipt recording, from invoice receipt to invoice clearance, and from goods receipt to invoice clearance.",
+      "confidence": 0.7
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c10",
+      "name": "precedes",
+      "domain": "VendorInvoiceCreation",
+      "range": "InvoiceReceipt",
+      "cardinality": "N:M",
+      "evidence": "The report measures elapsed time from requisition or SRM creation to purchase order item creation, from item creation to goods receipt, from vendor invoice creation to invoice receipt recording, from invoice receipt to invoice clearance, and from goods receipt to invoice clearance.",
+      "confidence": 0.7
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c10",
+      "name": "precedes",
+      "domain": "InvoiceReceipt",
+      "range": "InvoiceClearance",
+      "cardinality": "N:M",
+      "evidence": "The report measures elapsed time from requisition or SRM creation to purchase order item creation, from item creation to goods receipt, from vendor invoice creation to invoice receipt recording, from invoice receipt to invoice clearance, and from goods receipt to invoice clearance.",
+      "confidence": 0.7
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c10",
+      "name": "precedes",
+      "domain": "GoodsReceipt",
+      "range": "InvoiceClearance",
+      "cardinality": "N:M",
+      "evidence": "The report measures elapsed time from requisition or SRM creation to purchase order item creation, from item creation to goods receipt, from vendor invoice creation to invoice receipt recording, from invoice receipt to invoice clearance, and from goods receipt to invoice clearance.",
+      "confidence": 0.7
     },
     {
       "chunk_id": "bpi2019-purchase-process#c10",
       "name": "applicableTo",
-      "domain": "ProcessActivity",
+      "domain": "GoodsReceipt",
       "range": "ProcessVariant",
       "cardinality": "N:M",
       "evidence": "They are meaningful only where their endpoint activities are available and applicable to the process variant.",
-      "confidence": 0.9
+      "confidence": 0.8
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c10",
+      "name": "applicableTo",
+      "domain": "InvoiceClearance",
+      "range": "ProcessVariant",
+      "cardinality": "N:M",
+      "evidence": "They are meaningful only where their endpoint activities are available and applicable to the process variant.",
+      "confidence": 0.8
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c10",
+      "name": "applicableTo",
+      "domain": "InvoiceReceipt",
+      "range": "ProcessVariant",
+      "cardinality": "N:M",
+      "evidence": "They are meaningful only where their endpoint activities are available and applicable to the process variant.",
+      "confidence": 0.8
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c10",
+      "name": "applicableTo",
+      "domain": "PurchaseOrderItemCreation",
+      "range": "ProcessVariant",
+      "cardinality": "N:M",
+      "evidence": "They are meaningful only where their endpoint activities are available and applicable to the process variant.",
+      "confidence": 0.8
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c10",
+      "name": "applicableTo",
+      "domain": "VendorInvoiceCreation",
+      "range": "ProcessVariant",
+      "cardinality": "N:M",
+      "evidence": "They are meaningful only where their endpoint activities are available and applicable to the process variant.",
+      "confidence": 0.8
     }
   ]
 }

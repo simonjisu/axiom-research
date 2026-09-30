@@ -890,14 +890,14 @@
       ]
     },
     {
-      "normed_id": "contractual_service_level_threshold",
+      "normed_id": "contractual_service_level_thresholds",
       "label": "contractual service-level thresholds",
       "kind": "rule",
       "surface_variants": [
         "contractual service-level thresholds"
       ],
       "rule_keys": [
-        "contractual_service_level_threshold"
+        "contractual_service_level_thresholds"
       ],
       "term_ids": [
         "bpi2019-purchase-process#t030"
@@ -919,14 +919,14 @@
       ]
     },
     {
-      "normed_id": "delivery_indicator_change",
+      "normed_id": "delivery_indicator_changes",
       "label": "delivery indicator changes",
       "kind": "activity",
       "surface_variants": [
         "delivery indicator changes"
       ],
       "rule_keys": [
-        "delivery_indicator_change"
+        "delivery_indicator_changes"
       ],
       "term_ids": [
         "bpi2019-purchase-process#t031"
@@ -1712,25 +1712,21 @@
       "kind": "document",
       "surface_variants": [
         "invoice",
-        "invoices",
-        "vendor invoice"
+        "invoices"
       ],
       "rule_keys": [
-        "invoice",
-        "vendor_invoice"
+        "invoice"
       ],
       "term_ids": [
         "bpi2019-purchase-process#t056",
-        "bpi2019-purchase-process#t076",
-        "bpi2019-purchase-process#t157"
+        "bpi2019-purchase-process#t076"
       ],
-      "n_mentions": 27,
+      "n_mentions": 26,
       "chunk_ids": [
         "bpi2019-purchase-process#c02",
         "bpi2019-purchase-process#c04",
         "bpi2019-purchase-process#c05",
-        "bpi2019-purchase-process#c07",
-        "bpi2019-purchase-process#c10"
+        "bpi2019-purchase-process#c07"
       ],
       "mentions": [
         {
@@ -1790,15 +1786,6 @@
             8698
           ],
           "sentence": "Several receipts or invoices can legitimately relate to one item."
-        },
-        {
-          "term_id": "bpi2019-purchase-process#t157",
-          "span": "vendor invoice",
-          "chunk_id": "bpi2019-purchase-process#c10",
-          "offsets": [
-            12090
-          ],
-          "sentence": "The report measures elapsed time from requisition or SRM creation to purchase order item creation, from item creation to goods receipt, from vendor invoice creation to invoice receipt recording, from invoice receipt to invoice clearance, and from goods receipt to invoice clearance."
         }
       ]
     },
@@ -3647,19 +3634,35 @@
       "label": "purchasing",
       "kind": "activity",
       "surface_variants": [
-        "purchasing"
+        "Procurement Processes",
+        "purchasing",
+        "purchasing process"
       ],
       "rule_keys": [
-        "purchasing"
+        "procurement_processes",
+        "purchasing",
+        "purchasing_process"
       ],
       "term_ids": [
-        "bpi2019-purchase-process#t122"
+        "bpi2019-purchase-process#t108",
+        "bpi2019-purchase-process#t122",
+        "bpi2019-purchase-process#t124"
       ],
-      "n_mentions": 1,
+      "n_mentions": 3,
       "chunk_ids": [
+        "bpi2019-purchase-process#c00",
         "bpi2019-purchase-process#c01"
       ],
       "mentions": [
+        {
+          "term_id": "bpi2019-purchase-process#t108",
+          "span": "Procurement Processes",
+          "chunk_id": "bpi2019-purchase-process#c00",
+          "offsets": [
+            196
+          ],
+          "sentence": "This English text is a selective paraphrase of \"Compliance and Performance Analysis of Procurement Processes Using Process Mining: BPI Challenge 2019\" by Kiarash Diba, Simon Remy, and Luise Pufahl, Hasso Plattner Institute, University of Potsdam, 2019."
+        },
         {
           "term_id": "bpi2019-purchase-process#t122",
           "span": "purchasing",
@@ -3668,6 +3671,15 @@
             1244
           ],
           "sentence": "The process concerns purchasing in a multinational paints and coatings company operating from the Netherlands."
+        },
+        {
+          "term_id": "bpi2019-purchase-process#t124",
+          "span": "purchasing process",
+          "chunk_id": "bpi2019-purchase-process#c00",
+          "offsets": [
+            916
+          ],
+          "sentence": "Statements about expected behavior describe the report's interpretation of the purchasing process."
         }
       ]
     },
@@ -3697,47 +3709,6 @@
             1046
           ],
           "sentence": "The report is not a company-issued purchasing policy, and its discovered models are simplified representations of common behavior."
-        }
-      ]
-    },
-    {
-      "normed_id": "purchasing_process",
-      "label": "purchasing process",
-      "kind": "activity",
-      "surface_variants": [
-        "Procurement Processes",
-        "purchasing process"
-      ],
-      "rule_keys": [
-        "procurement_process",
-        "purchasing_process"
-      ],
-      "term_ids": [
-        "bpi2019-purchase-process#t108",
-        "bpi2019-purchase-process#t124"
-      ],
-      "n_mentions": 2,
-      "chunk_ids": [
-        "bpi2019-purchase-process#c00"
-      ],
-      "mentions": [
-        {
-          "term_id": "bpi2019-purchase-process#t108",
-          "span": "Procurement Processes",
-          "chunk_id": "bpi2019-purchase-process#c00",
-          "offsets": [
-            196
-          ],
-          "sentence": "This English text is a selective paraphrase of \"Compliance and Performance Analysis of Procurement Processes Using Process Mining: BPI Challenge 2019\" by Kiarash Diba, Simon Remy, and Luise Pufahl, Hasso Plattner Institute, University of Potsdam, 2019."
-        },
-        {
-          "term_id": "bpi2019-purchase-process#t124",
-          "span": "purchasing process",
-          "chunk_id": "bpi2019-purchase-process#c00",
-          "offsets": [
-            916
-          ],
-          "sentence": "Statements about expected behavior describe the report's interpretation of the purchasing process."
         }
       ]
     },
@@ -4673,6 +4644,35 @@
             8542
           ],
           "sentence": "Communications include order confirmations and vendor debit memos."
+        }
+      ]
+    },
+    {
+      "normed_id": "vendor_invoice",
+      "label": "vendor invoice",
+      "kind": "document",
+      "surface_variants": [
+        "vendor invoice"
+      ],
+      "rule_keys": [
+        "vendor_invoice"
+      ],
+      "term_ids": [
+        "bpi2019-purchase-process#t157"
+      ],
+      "n_mentions": 1,
+      "chunk_ids": [
+        "bpi2019-purchase-process#c10"
+      ],
+      "mentions": [
+        {
+          "term_id": "bpi2019-purchase-process#t157",
+          "span": "vendor invoice",
+          "chunk_id": "bpi2019-purchase-process#c10",
+          "offsets": [
+            12090
+          ],
+          "sentence": "The report measures elapsed time from requisition or SRM creation to purchase order item creation, from item creation to goods receipt, from vendor invoice creation to invoice receipt recording, from invoice receipt to invoice clearance, and from goods receipt to invoice clearance."
         }
       ]
     },

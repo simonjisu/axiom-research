@@ -1,170 +1,170 @@
 {
-  "PurchaseOrder.containsItem.PurchaseOrderItem|1:N|A purchase order document contains one or more purchase order items.": {
+  "PurchaseOrder.contains.PurchaseOrderItem|1:N|A purchase order document contains one or more purchase order items.": {
     "verdict": "supported",
     "cardinality_ok": true,
     "confidence": 1.0,
-    "reason": "The evidence sentence explicitly states that a purchase order document contains one or more purchase order items, which directly supports the relation and the 1:N cardinality."
+    "reason": "The evidence sentence explicitly states that a purchase order document contains one or more purchase order items, which directly supports the relation and its 1:N cardinality."
   },
-  "PurchaseOrderItem.representsCase.Case|1:1|An individual item is the case used to organize the event log.": {
+  "PurchaseOrder.groupsPurchaseOrderItem.PurchaseOrderItem|1:N|A purchase order document groups purchase order items and has a document type.": {
     "verdict": "supported",
     "cardinality_ok": true,
-    "confidence": 0.9,
-    "reason": "The evidence sentence states that 'An individual item is the case used to organize the event log', which directly supports the relation that a PurchaseOrderItem (individual item) represents a Case, with a 1:1 mapping implied."
+    "confidence": 1.0,
+    "reason": "The evidence sentence explicitly states that a purchase order document groups purchase order items, which supports the relation and its 1:N cardinality."
   },
-  "Case.containsEvent.RecordedEvent|1:N|A case contains the events recorded for that item; the entire purchase order is not the case unit.": {
+  "FrameworkPurchaseOrder.supportsRecurringInvoice.RecurringInvoice|1:N|A framework order, also described as a blanket purchase order, can support recurring invoices over a period of time.": {
     "verdict": "supported",
     "cardinality_ok": true,
     "confidence": 0.95,
-    "reason": "The evidence sentence explicitly states that 'a case contains the events recorded for that item', which directly supports the relation 'Case --containsEvent--> RecordedEvent' and the 1:N cardinality (events is plural)."
-  },
-  "Case.organizesEventLog.EventLog|N:1|An individual item is the case used to organize the event log.": {
-    "verdict": "supported",
-    "cardinality_ok": true,
-    "confidence": 0.9,
-    "reason": "The evidence sentence explicitly states that 'the case' is used to 'organize the event log', which directly supports the relation Case --organizesEventLog--> EventLog. The N:1 cardinality is consistent with the domain and not contradicted by the text."
-  },
-  "PurchaseOrder.groups.PurchaseOrderItem|1:N|A purchase order document groups purchase order items and has a document type.": {
-    "verdict": "supported",
-    "cardinality_ok": true,
-    "confidence": 1.0,
-    "reason": "The evidence sentence explicitly states that 'A purchase order document groups purchase order items', which directly supports the relation in the specified direction (PurchaseOrder -> PurchaseOrderItem) and the 1:N cardinality (items is plural)."
+    "reason": "The evidence sentence directly states that a framework order (FrameworkPurchaseOrder) can support recurring invoices (RecurringInvoice) over a period of time, which supports the relation in the specified direction and the 1:N cardinality."
   },
   "PurchaseOrderItem.hasCompany.Company|N:1|Its context includes a subsidiary or company, a vendor, an item type, a spend area, and an item category.": {
     "verdict": "supported",
     "cardinality_ok": true,
     "confidence": 0.85,
-    "reason": "The evidence sentence states that 'Its context includes a subsidiary or company', where 'Its' refers to the PurchaseOrderItem. This supports the relation that a PurchaseOrderItem is associated with a Company. The singular 'a subsidiary or company' aligns with the N:1 cardinality (each item has one company)."
+    "reason": "The evidence sentence states that 'Its context' (referring to the PurchaseOrderItem) 'includes a subsidiary or company', which supports the relation that a PurchaseOrderItem is associated with a Company. The singular 'a subsidiary or company' is consistent with the N:1 cardinality."
   },
   "PurchaseOrderItem.hasVendor.Vendor|N:1|Its context includes a subsidiary or company, a vendor, an item type, a spend area, and an item category.": {
     "verdict": "supported",
     "cardinality_ok": true,
-    "confidence": 0.7,
-    "reason": "The evidence sentence states that 'Its context' (where 'Its' refers to the PurchaseOrderItem) includes 'a vendor', which supports the relation that a PurchaseOrderItem has a Vendor. The mention of 'a vendor' is consistent with the N:1 cardinality."
+    "confidence": 0.9,
+    "reason": "The evidence sentence states that the context of the item (PurchaseOrderItem) includes 'a vendor', which supports the relation that a PurchaseOrderItem has a Vendor. The singular 'a vendor' supports the N:1 cardinality (each item has one vendor, while a vendor can be associated with multiple items)."
   },
-  "Vendor.supplies.Goods|1:N|A vendor supplies the purchased goods or services and can create an invoice.": {
-    "verdict": "supported",
-    "cardinality_ok": true,
-    "confidence": 0.95,
-    "reason": "The evidence sentence explicitly states that 'A vendor supplies the purchased goods', which directly supports the relation in the specified direction. The plural 'goods' is consistent with the 1:N cardinality."
-  },
-  "Vendor.creates.Invoice|1:N|A vendor supplies the purchased goods or services and can create an invoice.": {
+  "Vendor.suppliesGoods.Goods|1:N|A vendor supplies the purchased goods or services and can create an invoice.": {
     "verdict": "supported",
     "cardinality_ok": true,
     "confidence": 0.9,
-    "reason": "The evidence sentence explicitly states that a vendor can create an invoice, which directly supports the 'creates' relation from Vendor to Invoice. The 1:N cardinality is standard for this relationship and is not contradicted by the text."
+    "reason": "The evidence sentence explicitly states that 'A vendor supplies the purchased goods', which directly supports the relation in the specified direction. The cardinality of 1:N is consistent with the plural 'goods' mentioned in the sentence."
   },
-  "RecordedEvent.belongsTo.Case|N:1|A recorded event belongs to an item case and identifies an activity and its completion timestamp.": {
-    "verdict": "supported",
-    "cardinality_ok": true,
-    "confidence": 1.0,
-    "reason": "The evidence sentence explicitly states that 'A recorded event belongs to an item case', which directly supports the 'belongsTo' relation from RecordedEvent to Case with a many-to-one (N:1) cardinality."
-  },
-  "RecordedEvent.identifies.ProcessActivity|N:1|A recorded event belongs to an item case and identifies an activity and its completion timestamp.": {
+  "Vendor.createsInvoice.Invoice|1:N|A vendor supplies the purchased goods or services and can create an invoice.": {
     "verdict": "supported",
     "cardinality_ok": true,
     "confidence": 0.9,
-    "reason": "The evidence sentence explicitly states that 'a recorded event ... identifies an activity', which directly supports the relation from RecordedEvent to ProcessActivity. The singular 'an activity' supports the N:1 cardinality (each event identifies one activity)."
+    "reason": "The evidence sentence explicitly states that 'a vendor ... can create an invoice', which directly supports the relation in the proposed direction. The cardinality of 1:N (one vendor can create multiple invoices) is consistent with the general statement and typical business domain knowledge, with no contradiction in the text."
+  },
+  "PurchaseRequisition.precedesPurchaseOrderItem.PurchaseOrderItem|1:1|A purchase requisition can precede an order item, but it is not present in every observed variant.": {
+    "verdict": "supported",
+    "cardinality_ok": false,
+    "confidence": 0.9,
+    "reason": "The evidence sentence states that a purchase requisition can precede an order item, which supports the relation direction. However, it also mentions that it is not present in every observed variant, which contradicts the strict 1:1 cardinality."
   },
   "PurchaseOrderItem.hasGoodsReceipt.GoodsReceipt|1:N|An item can have multiple goods receipt events and multiple invoice-related events.": {
     "verdict": "supported",
     "cardinality_ok": true,
-    "confidence": 0.9,
-    "reason": "The evidence sentence explicitly states that an item (PurchaseOrderItem) can have multiple goods receipt events (GoodsReceipt), which directly supports the relation and its 1:N cardinality."
+    "confidence": 0.95,
+    "reason": "The evidence sentence explicitly states that 'An item' (PurchaseOrderItem) 'can have multiple goods receipt events' (GoodsReceipt), which directly supports the relation and its 1:N cardinality."
   },
-  "PurchaseOrderItem.hasInvoice.Invoice|1:N|An item can have multiple goods receipt events and multiple invoice-related events.": {
-    "verdict": "supported",
-    "cardinality_ok": true,
-    "confidence": 0.9,
-    "reason": "The evidence sentence states that 'an item' (PurchaseOrderItem) can have 'multiple invoice-related events' (Invoice), which directly supports the relation and its 1:N cardinality."
-  },
-  "Vendor.createsInvoice.Invoice|1:N|Vendor invoice creation is a distinct activity from the company's recording of invoice receipt.": {
-    "verdict": "supported",
-    "cardinality_ok": true,
-    "confidence": 0.8,
-    "reason": "The evidence sentence contrasts 'Vendor invoice creation' with 'the company's recording of invoice receipt', which strongly implies that the vendor is the entity creating the invoice before the company receives and records it."
-  },
-  "Company.recordsInvoice.Invoice|1:N|Vendor invoice creation is a distinct activity from the company's recording of invoice receipt.": {
+  "PurchaseOrderItem.hasInvoice.Invoice|N:M|Consequently, purchase order item, goods receipt, and invoice do not have a universally established one-to-one relationship in this log.": {
     "verdict": "supported",
     "cardinality_ok": true,
     "confidence": 0.85,
-    "reason": "The evidence sentence mentions 'the company's recording of invoice receipt', which directly supports the relation that a Company records an Invoice. The cardinality of 1:N is standard and not contradicted by the text."
+    "reason": "The evidence sentence states that purchase order items and invoices do not have a one-to-one relationship, which supports the existence of a relationship between them and is consistent with the proposed N:M (many-to-many) cardinality."
   },
-  "Case.hasInvoice.Invoice|1:N|The report describes invoice creation and receipt before goods receipt in EC cases.": {
-    "verdict": "supported",
-    "cardinality_ok": true,
-    "confidence": 0.8,
-    "reason": "The evidence sentence mentions 'invoice creation and receipt... in EC cases', which indicates that cases (EC cases) contain or are associated with invoices, supporting the relation that a Case has an Invoice."
-  },
-  "Case.hasGoodsReceipt.GoodsReceipt|1:N|The report describes invoice creation and receipt before goods receipt in EC cases.": {
-    "verdict": "supported",
-    "cardinality_ok": true,
-    "confidence": 0.8,
-    "reason": "The evidence sentence mentions 'goods receipt in EC cases', which directly implies that cases (Case) contain or have goods receipts (GoodsReceipt). This supports the proposed relation, and there is no contradiction to the 1:N cardinality."
-  },
-  "Invoice.covers.PurchaseOrderItem|1:N|Invoice receipt and clearance may be recorded in only one of those item cases even when the invoice covers several items.": {
+  "ECPurchaseOrder.includesSRMSubprocess.SRMSubprocess|1:N|EC orders include SRM activities before or around item creation.||the report separates EC purchase orders from standard and framework orders because EC orders include an SRM subprocess.": {
     "verdict": "supported",
     "cardinality_ok": true,
     "confidence": 0.9,
-    "reason": "The evidence sentence explicitly states that 'the invoice covers several items', which supports the 'covers' relation from Invoice to PurchaseOrderItem with a 1:N cardinality."
+    "reason": "The evidence sentences explicitly state that EC purchase orders include an SRM subprocess."
   },
-  "PurchaseOrderItem.followedBy.GoodsReceipt|1:N|the common recorded progression is purchase order item creation followed by goods receipt.": {
+  "GoodsReceipt.precedesInvoiceReceipt.InvoiceReceipt|N:M|Goods receipt must precede invoice receipt for this category.": {
+    "verdict": "supported",
+    "cardinality_ok": true,
+    "confidence": 1.0,
+    "reason": "The evidence sentence explicitly states that 'Goods receipt must precede invoice receipt', which directly supports the relation in the proposed direction (GoodsReceipt -> InvoiceReceipt). The cardinality of N:M is not contradicted by the sentence."
+  },
+  "Company.recordsInvoiceReceipt.InvoiceReceipt|1:N|Vendor invoice creation is a distinct activity from the company's recording of invoice receipt.": {
+    "verdict": "supported",
+    "cardinality_ok": true,
+    "confidence": 0.85,
+    "reason": "The evidence sentence mentions 'the company's recording of invoice receipt', which directly supports the relation that a Company records an InvoiceReceipt. There is no contradiction to the 1:N cardinality."
+  },
+  "Vendor.performsVendorInvoiceCreation.VendorInvoiceCreation|1:N|Vendor invoice creation is a distinct activity from the company's recording of invoice receipt.": {
+    "verdict": "unsupported",
+    "cardinality_ok": false,
+    "confidence": 0.8,
+    "reason": "The evidence sentence mentions 'Vendor invoice creation' as an activity and distinguishes it from another activity, but it does not state or support that a 'Vendor' performs this activity."
+  },
+  "StandardPurchaseOrder.hasPurchaseRequisition.PurchaseRequisition|1:N|standard orders may contain requisition and order confirmation activities.": {
+    "verdict": "unsupported",
+    "cardinality_ok": false,
+    "confidence": 0.8,
+    "reason": "The evidence sentence refers to 'requisition and order confirmation activities' contained within standard orders, which describes process steps/activities rather than a structural relationship between a StandardPurchaseOrder and a PurchaseRequisition document. Furthermore, it does not support the proposed 1:N cardinality."
+  },
+  "StandardPurchaseOrder.hasOrderConfirmation.OrderConfirmation|1:N|standard orders may contain requisition and order confirmation activities.": {
+    "verdict": "unsupported",
+    "cardinality_ok": false,
+    "confidence": 0.8,
+    "reason": "The evidence sentence mentions that 'standard orders may contain requisition and order confirmation activities', which refers to process activities rather than a structural relationship where a StandardPurchaseOrder has one or more OrderConfirmation documents."
+  },
+  "PurchaseOrderApprovalChange.concerns.PurchaseOrder|N:1|A purchase order approval change concerns the purchase order document.": {
     "verdict": "supported",
     "cardinality_ok": true,
     "confidence": 0.9,
-    "reason": "The evidence sentence explicitly states that the common progression is purchase order item creation followed by goods receipt, which directly supports the 'followedBy' relation from PurchaseOrderItem to GoodsReceipt. The 1:N cardinality is not contradicted by the text."
+    "reason": "The evidence sentence explicitly states that 'a purchase order approval change concerns the purchase order document', which directly supports the relation in the specified direction. The cardinality of N:1 is also consistent with the context, as a single purchase order can undergo multiple approval changes over time."
   },
-  "GoodsReceipt.relatesTo.PurchaseOrderItem|N:1|Several receipts or invoices can legitimately relate to one item.": {
+  "VendorInvoiceCreation.followedBy.PurchaseOrderItemCreation|1:N|the modeled flow can begin with vendor invoice creation, followed by creation of one or more order items and a purchase order approval change.": {
+    "verdict": "supported",
+    "cardinality_ok": true,
+    "confidence": 1.0,
+    "reason": "The evidence sentence explicitly states that the flow can begin with vendor invoice creation, followed by the creation of one or more order items, which directly supports the 'followedBy' relation from VendorInvoiceCreation to PurchaseOrderItemCreation with a 1:N cardinality."
+  },
+  "PurchaseOrderItemCreation.followedBy.PurchaseOrderApprovalChange|N:1|the modeled flow can begin with vendor invoice creation, followed by creation of one or more order items and a purchase order approval change.": {
     "verdict": "supported",
     "cardinality_ok": true,
     "confidence": 0.95,
-    "reason": "The evidence sentence explicitly states that 'Several receipts... can legitimately relate to one item', which directly supports the N:1 relation from GoodsReceipt (receipts) to PurchaseOrderItem (item)."
+    "reason": "The evidence sentence explicitly states that the creation of one or more order items (PurchaseOrderItemCreation) is followed by a purchase order approval change (PurchaseOrderApprovalChange), which supports both the relation direction and the N:1 cardinality."
+  },
+  "PurchaseOrderItemCreation.followedBy.GoodsReceipt|1:N|the common recorded progression is purchase order item creation followed by goods receipt.": {
+    "verdict": "supported",
+    "cardinality_ok": true,
+    "confidence": 0.9,
+    "reason": "The evidence sentence explicitly states that purchase order item creation is followed by goods receipt, which directly supports the proposed relation. The cardinality of 1:N is not contradicted by the text."
+  },
+  "Receipt.relatesTo.PurchaseOrderItem|N:1|Several receipts or invoices can legitimately relate to one item.": {
+    "verdict": "supported",
+    "cardinality_ok": true,
+    "confidence": 0.95,
+    "reason": "The evidence sentence explicitly states that 'Several receipts... can legitimately relate to one item', which directly supports the N:1 relation from Receipt to PurchaseOrderItem."
   },
   "Invoice.relatesTo.PurchaseOrderItem|N:1|Several receipts or invoices can legitimately relate to one item.": {
     "verdict": "supported",
     "cardinality_ok": true,
-    "confidence": 0.95,
-    "reason": "The evidence sentence explicitly states that 'Several receipts or invoices can legitimately relate to one item', which directly supports the 'Invoice --relatesTo--> PurchaseOrderItem' relation with an N:1 cardinality."
-  },
-  "BusinessRule.requiresActivity.ProcessActivity|1:N|An eventual-response rule requires another activity later in the same case.": {
-    "verdict": "supported",
-    "cardinality_ok": true,
     "confidence": 0.9,
-    "reason": "The evidence sentence states that 'An eventual-response rule requires another activity', which directly supports the relation that a BusinessRule (eventual-response rule) requires a ProcessActivity (another activity) in the specified direction. The cardinality of 1:N is not contradicted by the text."
+    "reason": "The evidence sentence explicitly states that several invoices can relate to one item, which directly supports the 'relatesTo' relation from Invoice to PurchaseOrderItem with an N:1 cardinality."
   },
-  "ProcessActivity.occursInCase.Case|N:1|An eventual-response rule requires another activity later in the same case.": {
-    "verdict": "supported",
-    "cardinality_ok": true,
-    "confidence": 0.8,
-    "reason": "The evidence sentence mentions 'another activity later in the same case', which implies that multiple process activities can occur within the same case, supporting both the relation and the N:1 cardinality."
-  },
-  "RecordedEvent.copiedInto.Case|N:M|Document-level events can be copied into item cases.": {
-    "verdict": "supported",
-    "cardinality_ok": true,
-    "confidence": 0.9,
-    "reason": "The evidence sentence 'Document-level events can be copied into item cases' directly states that events (RecordedEvent) can be copied into cases (Case), matching the proposed relation and direction."
-  },
-  "PurchaseOrder.hasPurchaseRequisition.PurchaseRequisition|1:N|standard orders may contain requisition and order confirmation activities.": {
-    "verdict": "unsupported",
-    "cardinality_ok": true,
-    "confidence": 0.8,
-    "reason": "The evidence sentence refers to 'standard orders' containing 'requisition and order confirmation activities' in a process context, which does not sufficiently support a structural relation between a PurchaseOrder document and a PurchaseRequisition document."
-  },
-  "PurchaseOrder.hasOrderConfirmation.OrderConfirmation|1:N|standard orders may contain requisition and order confirmation activities.": {
-    "verdict": "unsupported",
-    "cardinality_ok": false,
-    "confidence": 0.8,
-    "reason": "The evidence sentence mentions that 'standard orders may contain requisition and order confirmation activities', which refers to activities rather than establishing a direct relation between a PurchaseOrder document and an OrderConfirmation document."
-  },
-  "PurchaseRequisition.precedes.PurchaseOrderItem|1:1|A purchase requisition can precede an order item, but it is not present in every observed variant.": {
+  "GoodsReceipt.precedes.InvoiceReceipt|1:1|For invoice-after-goods-receipt three-way matching, the expected precedence relationships are goods receipt before invoice receipt, goods receipt before invoice clearance, and invoice receipt before invoice clearance.": {
     "verdict": "supported",
     "cardinality_ok": false,
     "confidence": 0.9,
-    "reason": "The evidence sentence explicitly states that a purchase requisition can precede an order item, which supports the relation. However, it also mentions that it is not present in every observed variant, which contradicts a strict 1:1 cardinality."
+    "reason": "The evidence sentence explicitly states that goods receipt occurs before invoice receipt, which supports the 'precedes' relation. However, it does not establish or mention a strict 1:1 cardinality."
   },
-  "ProcessActivity.applicableTo.ProcessVariant|N:M|They are meaningful only where their endpoint activities are available and applicable to the process variant.": {
+  "Approval.mayPrecede.PurchaseOrderItemCreation|N:M|A copied approval event may even precede the creation of a later item.": {
     "verdict": "supported",
     "cardinality_ok": true,
-    "confidence": 0.85,
-    "reason": "The evidence sentence explicitly states that 'activities' (ProcessActivity) are 'applicable to the process variant' (ProcessVariant). The N:M cardinality is not contradicted by the text."
+    "confidence": 0.9,
+    "reason": "The evidence sentence explicitly states that an approval event may precede the creation of a later item, which directly supports the proposed relation 'Approval --mayPrecede--> PurchaseOrderItemCreation'."
+  },
+  "PurchaseRequisitionCreation.precedes.PurchaseOrderItemCreation|N:M|The report measures elapsed time from requisition or SRM creation to purchase order item creation, from item creation to goods receipt, from vendor invoice creation to invoice receipt recording, from invoice receipt to invoice clearance, and from goods receipt to invoice clearance.": {
+    "verdict": "supported",
+    "cardinality_ok": true,
+    "confidence": 0.9,
+    "reason": "The evidence sentence explicitly mentions measuring the elapsed time 'from requisition or SRM creation to purchase order item creation', which directly supports the temporal precedence of PurchaseRequisitionCreation before PurchaseOrderItemCreation. The N:M cardinality is not contradicted by the text."
+  },
+  "SRMSubprocess.precedes.PurchaseOrderItemCreation|N:M|The report measures elapsed time from requisition or SRM creation to purchase order item creation, from item creation to goods receipt, from vendor invoice creation to invoice receipt recording, from invoice receipt to invoice clearance, and from goods receipt to invoice clearance.": {
+    "verdict": "supported",
+    "cardinality_ok": true,
+    "confidence": 0.9,
+    "reason": "The evidence sentence states that the report measures elapsed time 'from requisition or SRM creation to purchase order item creation', which directly supports that SRM creation (representing the SRMSubprocess) precedes PurchaseOrderItemCreation."
+  },
+  "PurchaseOrderItemCreation.precedes.GoodsReceipt|N:M|The report measures elapsed time from requisition or SRM creation to purchase order item creation, from item creation to goods receipt, from vendor invoice creation to invoice receipt recording, from invoice receipt to invoice clearance, and from goods receipt to invoice clearance.": {
+    "verdict": "supported",
+    "cardinality_ok": true,
+    "confidence": 0.9,
+    "reason": "The evidence sentence explicitly mentions measuring the elapsed time 'from item creation to goods receipt', which directly supports the precedence relation from PurchaseOrderItemCreation to GoodsReceipt."
+  },
+  "VendorInvoiceCreation.precedes.InvoiceReceipt|N:M|The report measures elapsed time from requisition or SRM creation to purchase order item creation, from item creation to goods receipt, from vendor invoice creation to invoice receipt recording, from invoice receipt to invoice clearance, and from goods receipt to invoice clearance.": {
+    "verdict": "supported",
+    "cardinality_ok": true,
+    "confidence": 0.9,
+    "reason": "The evidence sentence explicitly mentions measuring the elapsed time 'from vendor invoice creation to invoice receipt recording', which directly supports the precedence relation from VendorInvoiceCreation to InvoiceReceipt."
   }
 }

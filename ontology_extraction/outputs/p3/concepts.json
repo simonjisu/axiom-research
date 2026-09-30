@@ -5,163 +5,220 @@
     "min_evidence_mentions": 2,
     "judge_conf": 0.7,
     "n_normed_terms_in": 129,
-    "n_proposed": 22,
-    "n_concepts": 17,
-    "n_rejected": 5,
+    "n_proposed": 66,
+    "n_concepts": 34,
+    "n_rejected": 32,
     "n_human_queue": 0,
-    "n_hierarchy_issues": 0,
-    "n_unassigned_terms": 23
+    "n_hierarchy_issues": 15,
+    "n_unassigned_terms": 57
   },
   "concepts": [
     {
-      "concept_id": "BusinessRule",
-      "name": "BusinessRule",
-      "description": "A policy, constraint, or matching procedure governing the purchasing process.",
+      "concept_id": "Approval",
+      "name": "Approval",
+      "description": "The activity of approving a document or decision.",
       "reuse_of": null,
       "parent": null,
       "evidence_term_ids": [
-        "invoice_matching_procedure",
-        "approval_authority",
-        "contractual_service_level_threshold",
-        "eventual_response_rule",
-        "invoice_clearance_rule",
-        "ordering_cardinality_and_exclusiveness_rule",
-        "precedence_rule"
-      ],
-      "instance_term_ids": [
-        "invoice_after_goods_receipt_three_way_matching",
-        "invoice_before_goods_receipt_three_way_matching"
-      ],
-      "property_term_ids": [],
-      "evidence_mentions": 11,
-      "surface_forms": [
-        "approval authority",
-        "contractual service-level thresholds",
-        "eventual-response rule",
-        "invoice matching procedure",
-        "invoice-clearance rule",
-        "ordering, cardinality, and exclusiveness rules",
-        "precedence rule"
-      ],
-      "chunk_ids": [
-        "bpi2019-purchase-process#c02",
-        "bpi2019-purchase-process#c08",
-        "bpi2019-purchase-process#c10"
-      ],
-      "judge": {
-        "level": "type",
-        "duplicate_of": null,
-        "confidence": 0.95,
-        "reason": "BusinessRule represents a class of policies, constraints, or procedures that govern the purchasing process. It has distinct instances and is a valid ontology class (type) that does not duplicate any other listed concept."
-      }
-    },
-    {
-      "concept_id": "Case",
-      "name": "Case",
-      "description": "The organizational unit used to group events in the event log, typically representing a purchase order item.",
-      "reuse_of": null,
-      "parent": null,
-      "evidence_term_ids": [
-        "case",
-        "consignment_case",
-        "case_unit"
+        "approval",
+        "approval_activity",
+        "approval_event"
       ],
       "instance_term_ids": [],
-      "property_term_ids": [
-        "case_identifier"
-      ],
-      "evidence_mentions": 10,
+      "property_term_ids": [],
+      "evidence_mentions": 4,
       "surface_forms": [
-        "case",
-        "case unit",
-        "consignment case",
-        "item case",
-        "item cases"
+        "approval activities",
+        "approval decisions",
+        "approval event",
+        "approvals"
       ],
       "chunk_ids": [
-        "bpi2019-purchase-process#c01",
-        "bpi2019-purchase-process#c02",
         "bpi2019-purchase-process#c05",
-        "bpi2019-purchase-process#c06",
         "bpi2019-purchase-process#c09"
       ],
       "judge": {
         "level": "type",
         "duplicate_of": null,
-        "confidence": 0.9,
-        "reason": "Case is a fundamental class (type) in process mining representing a process instance. Although in this domain it is mapped to a PurchaseOrderItem, it remains a distinct technical concept used to group events in an event log."
+        "confidence": 0.95,
+        "reason": "Approval is a class of business process activities or events where a document or decision is approved. It represents many individual approval events, making it a 'type'."
       }
     },
     {
       "concept_id": "Company",
       "name": "Company",
-      "description": "A business entity or subsidiary operating within the paints and coatings industry.",
+      "description": "An organization or subsidiary that acts as the buyer in the purchasing process.",
       "reuse_of": null,
       "parent": null,
       "evidence_term_ids": [
-        "company",
-        "subsidiary",
-        "multinational_paints_and_coatings_company",
-        "business_entity"
+        "company"
       ],
-      "instance_term_ids": [],
+      "instance_term_ids": [
+        "multinational_paints_and_coatings_company"
+      ],
       "property_term_ids": [
         "company_and_vendor_identifier"
       ],
-      "evidence_mentions": 6,
+      "evidence_mentions": 3,
       "surface_forms": [
-        "business entity",
-        "company",
-        "multinational paints and coatings company",
-        "subsidiary"
+        "company"
       ],
       "chunk_ids": [
         "bpi2019-purchase-process#c01",
-        "bpi2019-purchase-process#c02",
-        "bpi2019-purchase-process#c09"
+        "bpi2019-purchase-process#c02"
       ],
       "judge": {
         "level": "type",
         "duplicate_of": null,
         "confidence": 0.95,
-        "reason": "Company represents a class of organizational business entities or subsidiaries operating the purchasing process, which is distinct from external vendors and other process artifacts."
+        "reason": "Company is a fundamental organizational entity (class/type) in business processes, representing the buyer. It is not a duplicate of Subsidiary, which is a more specific subtype."
       }
     },
     {
-      "concept_id": "EventLog",
-      "name": "EventLog",
-      "description": "A collection of recorded events used to analyze business processes.",
+      "concept_id": "Consignment",
+      "name": "Consignment",
+      "description": "A business arrangement where goods are stored at the buyer's site but owned by the vendor until consumed.",
       "reuse_of": null,
       "parent": null,
       "evidence_term_ids": [
-        "event_log",
-        "available_log",
-        "consignment_log"
+        "consignment",
+        "consignment_case"
       ],
       "instance_term_ids": [],
       "property_term_ids": [],
-      "evidence_mentions": 5,
+      "evidence_mentions": 3,
       "surface_forms": [
-        "available log",
-        "consignment log",
-        "event log"
+        "Consignment",
+        "consignment case"
       ],
       "chunk_ids": [
-        "bpi2019-purchase-process#c00",
+        "bpi2019-purchase-process#c01",
+        "bpi2019-purchase-process#c06",
+        "bpi2019-purchase-process#c08"
+      ],
+      "judge": {
+        "level": "type",
+        "duplicate_of": null,
+        "confidence": 0.9,
+        "reason": "Consignment (or consignment case) represents a specific type of procurement arrangement or process category, of which there can be many individual instances (cases) in a business process log."
+      }
+    },
+    {
+      "concept_id": "Consumption",
+      "name": "Consumption",
+      "description": "The activity of consuming goods, particularly in a consignment arrangement.",
+      "reuse_of": null,
+      "parent": null,
+      "evidence_term_ids": [
+        "consumption"
+      ],
+      "instance_term_ids": [],
+      "property_term_ids": [],
+      "evidence_mentions": 2,
+      "surface_forms": [
+        "Actual consumption",
+        "consumption"
+      ],
+      "chunk_ids": [
         "bpi2019-purchase-process#c01",
         "bpi2019-purchase-process#c06"
       ],
       "judge": {
         "level": "type",
         "duplicate_of": null,
+        "confidence": 0.9,
+        "reason": "Consumption is a business activity/event representing the act of consuming goods, which is a valid class of events in a business process ontology."
+      }
+    },
+    {
+      "concept_id": "ECPurchaseOrder",
+      "name": "ECPurchaseOrder",
+      "description": "A purchase order that includes an SRM subprocess before or around item creation.",
+      "reuse_of": null,
+      "parent": "PurchaseOrder",
+      "evidence_term_ids": [
+        "ec_purchase_order",
+        "ec_order",
+        "ec"
+      ],
+      "instance_term_ids": [],
+      "property_term_ids": [],
+      "evidence_mentions": 9,
+      "surface_forms": [
+        "EC",
+        "EC orders",
+        "EC purchase orders"
+      ],
+      "chunk_ids": [
+        "bpi2019-purchase-process#c02",
+        "bpi2019-purchase-process#c03",
+        "bpi2019-purchase-process#c04"
+      ],
+      "judge": {
+        "level": "type",
+        "duplicate_of": null,
         "confidence": 0.95,
-        "reason": "An Event Log is a distinct class of data collections (digital artifacts) containing recorded events, which is a fundamental concept in process mining and business process analysis. It is not a duplicate of any other listed concept."
+        "reason": "ECPurchaseOrder is a specific subtype of PurchaseOrder, distinct from StandardPurchaseOrder and FrameworkPurchaseOrder, characterized by the inclusion of an SRM subprocess. It represents a class of individual documents in the business process."
+      }
+    },
+    {
+      "concept_id": "EventualResponseRule",
+      "name": "EventualResponseRule",
+      "description": "A rule defining that an activity must eventually be followed by another.",
+      "reuse_of": null,
+      "parent": "PrecedenceRule",
+      "evidence_term_ids": [
+        "eventual_response_rule"
+      ],
+      "instance_term_ids": [],
+      "property_term_ids": [],
+      "evidence_mentions": 2,
+      "surface_forms": [
+        "eventual-response rule"
+      ],
+      "chunk_ids": [
+        "bpi2019-purchase-process#c08"
+      ],
+      "judge": {
+        "level": "type",
+        "duplicate_of": null,
+        "confidence": 0.9,
+        "reason": "An EventualResponseRule is a specific type of process constraint or rule (similar to PrecedenceRule) that can have multiple instances representing different activity pairs in a business process."
+      }
+    },
+    {
+      "concept_id": "FrameworkPurchaseOrder",
+      "name": "FrameworkPurchaseOrder",
+      "description": "A purchase order that supports recurring invoices over a period of time.",
+      "reuse_of": null,
+      "parent": "PurchaseOrder",
+      "evidence_term_ids": [
+        "framework_order",
+        "blanket_purchase_order"
+      ],
+      "instance_term_ids": [],
+      "property_term_ids": [],
+      "evidence_mentions": 5,
+      "surface_forms": [
+        "blanket purchase order",
+        "framework order",
+        "framework orders"
+      ],
+      "chunk_ids": [
+        "bpi2019-purchase-process#c02",
+        "bpi2019-purchase-process#c05"
+      ],
+      "judge": {
+        "level": "type",
+        "duplicate_of": null,
+        "confidence": 1.0,
+        "reason": "FrameworkPurchaseOrder (also known as a blanket purchase order) is a specific subtype of PurchaseOrder used in procurement. It represents a class of documents, making it a 'type' level concept."
       }
     },
     {
       "concept_id": "Goods",
       "name": "Goods",
-      "description": "Physical items or materials delivered to and stored in a warehouse.",
+      "description": "Physical items or products purchased from a vendor.",
       "reuse_of": null,
       "parent": null,
       "evidence_term_ids": [
@@ -179,20 +236,20 @@
       "judge": {
         "level": "type",
         "duplicate_of": null,
-        "confidence": 1.0,
-        "reason": "Goods represents a class of physical items or materials that are delivered and stored, which is a fundamental entity type in procurement and inventory processes."
+        "confidence": 0.95,
+        "reason": "Goods represents a class of physical items or products purchased from a vendor, which is a fundamental object type in a purchasing process."
       }
     },
     {
       "concept_id": "GoodsReceipt",
       "name": "GoodsReceipt",
-      "description": "An activity or event recording the physical receipt of goods or services.",
+      "description": "The activity of recording the receipt of goods.",
       "reuse_of": null,
       "parent": null,
       "evidence_term_ids": [
         "goods_receipt",
-        "goods_receipt_event",
-        "goods_receipt_recording"
+        "goods_receipt_recording",
+        "goods_receipt_event"
       ],
       "instance_term_ids": [],
       "property_term_ids": [
@@ -218,65 +275,198 @@
         "level": "type",
         "duplicate_of": null,
         "confidence": 0.95,
-        "reason": "GoodsReceipt is a fundamental business event/document type in the procurement process, representing the physical receipt of goods. It has multiple instances in a process execution and is distinct from other concepts."
+        "reason": "GoodsReceipt is a standard business process activity/event representing the recording of received goods. It is distinct from the 'Receipt' document concept."
       }
     },
     {
       "concept_id": "Invoice",
       "name": "Invoice",
-      "description": "A document or recorded event representing a request for payment by a vendor.",
+      "description": "A document requesting payment for goods or services provided.",
       "reuse_of": null,
       "parent": null,
       "evidence_term_ids": [
-        "invoice",
-        "invoice_event",
-        "invoice_receipt",
-        "invoice_receipt_recording",
-        "invoice_creation",
-        "vendor_invoice_creation",
-        "recurring_invoice"
+        "invoice"
       ],
       "instance_term_ids": [],
       "property_term_ids": [
         "invoice_value"
       ],
-      "evidence_mentions": 55,
+      "evidence_mentions": 26,
+      "surface_forms": [
+        "invoice",
+        "invoices"
+      ],
+      "chunk_ids": [
+        "bpi2019-purchase-process#c02",
+        "bpi2019-purchase-process#c04",
+        "bpi2019-purchase-process#c05",
+        "bpi2019-purchase-process#c07"
+      ],
+      "judge": {
+        "level": "type",
+        "duplicate_of": null,
+        "confidence": 1.0,
+        "reason": "Invoice is a fundamental document type in business processes, representing a class of individual invoice documents. It is not a duplicate of any other listed concept, though 'RecurringInvoice' is a subtype."
+      }
+    },
+    {
+      "concept_id": "InvoiceClearance",
+      "name": "InvoiceClearance",
+      "description": "The activity of clearing an invoice for payment.",
+      "reuse_of": null,
+      "parent": null,
+      "evidence_term_ids": [
+        "invoice_clearance",
+        "invoice_clearance_event",
+        "clearance"
+      ],
+      "instance_term_ids": [],
+      "property_term_ids": [],
+      "evidence_mentions": 15,
+      "surface_forms": [
+        "Invoice clearance",
+        "clearance",
+        "invoice clearance",
+        "invoice-clearance event"
+      ],
+      "chunk_ids": [
+        "bpi2019-purchase-process#c01",
+        "bpi2019-purchase-process#c02",
+        "bpi2019-purchase-process#c03",
+        "bpi2019-purchase-process#c04",
+        "bpi2019-purchase-process#c05",
+        "bpi2019-purchase-process#c08",
+        "bpi2019-purchase-process#c09",
+        "bpi2019-purchase-process#c10"
+      ],
+      "judge": {
+        "level": "type",
+        "duplicate_of": null,
+        "confidence": 0.95,
+        "reason": "InvoiceClearance is a distinct business process activity/event representing the clearing of an invoice for payment. It is a class of events, so it is classified as a type."
+      }
+    },
+    {
+      "concept_id": "InvoiceCreation",
+      "name": "InvoiceCreation",
+      "description": "The activity of creating an invoice.",
+      "reuse_of": null,
+      "parent": null,
+      "evidence_term_ids": [
+        "invoice_creation",
+        "repeated_invoice_creation"
+      ],
+      "instance_term_ids": [],
+      "property_term_ids": [],
+      "evidence_mentions": 3,
+      "surface_forms": [
+        "invoice creation",
+        "repeated invoice creation"
+      ],
+      "chunk_ids": [
+        "bpi2019-purchase-process#c02",
+        "bpi2019-purchase-process#c03",
+        "bpi2019-purchase-process#c04"
+      ],
+      "judge": {
+        "level": "type",
+        "duplicate_of": null,
+        "confidence": 0.9,
+        "reason": "InvoiceCreation represents a class of business process activities (events) where invoices are created. Each instance of this activity in a process log would be an individual event, so it is classified as a type."
+      }
+    },
+    {
+      "concept_id": "InvoiceHandling",
+      "name": "InvoiceHandling",
+      "description": "The activity of processing or handling an invoice.",
+      "reuse_of": null,
+      "parent": null,
+      "evidence_term_ids": [
+        "invoice_handling"
+      ],
+      "instance_term_ids": [],
+      "property_term_ids": [],
+      "evidence_mentions": 2,
+      "surface_forms": [
+        "Invoice processing",
+        "invoice handling"
+      ],
+      "chunk_ids": [
+        "bpi2019-purchase-process#c02",
+        "bpi2019-purchase-process#c06"
+      ],
+      "judge": {
+        "level": "type",
+        "duplicate_of": null,
+        "confidence": 0.9,
+        "reason": "InvoiceHandling represents a class of activities or process steps related to the processing of an invoice, which is a valid object type in a business process ontology."
+      }
+    },
+    {
+      "concept_id": "InvoiceReceipt",
+      "name": "InvoiceReceipt",
+      "description": "The activity of recording the receipt of an invoice.",
+      "reuse_of": null,
+      "parent": null,
+      "evidence_term_ids": [
+        "invoice_receipt",
+        "invoice_receipt_recording"
+      ],
+      "instance_term_ids": [],
+      "property_term_ids": [],
+      "evidence_mentions": 20,
       "surface_forms": [
         "Invoice receipt",
-        "Vendor invoice creation",
-        "invoice",
-        "invoice creation",
-        "invoice events",
         "invoice receipt",
         "invoice receipt recording",
-        "invoice-related events",
-        "invoices",
-        "recording of invoice receipt",
-        "recurring invoices",
-        "vendor invoice",
-        "vendor invoice creation"
+        "recording of invoice receipt"
       ],
       "chunk_ids": [
         "bpi2019-purchase-process#c02",
         "bpi2019-purchase-process#c03",
         "bpi2019-purchase-process#c04",
         "bpi2019-purchase-process#c05",
-        "bpi2019-purchase-process#c06",
-        "bpi2019-purchase-process#c07",
         "bpi2019-purchase-process#c08",
         "bpi2019-purchase-process#c10"
       ],
       "judge": {
         "level": "type",
         "duplicate_of": null,
-        "confidence": 1.0,
-        "reason": "Invoice is a fundamental business document type in procurement and accounts payable processes, representing a class of individual invoice documents. It is distinct from other concepts like PurchaseOrder or GoodsReceipt."
+        "confidence": 0.95,
+        "reason": "InvoiceReceipt is a distinct business process activity (event type) representing the recording of an invoice's receipt, which is a class of individual event instances."
+      }
+    },
+    {
+      "concept_id": "ItemDeletion",
+      "name": "ItemDeletion",
+      "description": "The activity of deleting an item.",
+      "reuse_of": null,
+      "parent": null,
+      "evidence_term_ids": [
+        "item_deletion"
+      ],
+      "instance_term_ids": [],
+      "property_term_ids": [],
+      "evidence_mentions": 2,
+      "surface_forms": [
+        "Item deletion",
+        "item deletion"
+      ],
+      "chunk_ids": [
+        "bpi2019-purchase-process#c06",
+        "bpi2019-purchase-process#c07"
+      ],
+      "judge": {
+        "level": "type",
+        "duplicate_of": null,
+        "confidence": 0.95,
+        "reason": "ItemDeletion represents a class of activities (events) within a business process, specifically the action of deleting an item (such as a purchase order item). This is a standard process activity type."
       }
     },
     {
       "concept_id": "OrderConfirmation",
       "name": "OrderConfirmation",
-      "description": "A document sent by a vendor confirming the receipt and acceptance of a purchase order.",
+      "description": "A document or communication from a vendor confirming the receipt and acceptance of a purchase order.",
       "reuse_of": null,
       "parent": null,
       "evidence_term_ids": [
@@ -297,154 +487,76 @@
       "judge": {
         "level": "type",
         "duplicate_of": null,
-        "confidence": 0.95,
-        "reason": "OrderConfirmation is a distinct class of business documents in the procurement process, representing a vendor's confirmation of a purchase order. It is not a duplicate of any other listed concepts."
+        "confidence": 1.0,
+        "reason": "OrderConfirmation is a distinct class of documents in the procurement process, representing a vendor's confirmation of a purchase order. It is a type with many potential individual instances and does not duplicate any other listed concept."
       }
     },
     {
-      "concept_id": "ProcessActivity",
-      "name": "ProcessActivity",
-      "description": "A business action or step performed during the purchasing process.",
+      "concept_id": "PaymentBlockCreation",
+      "name": "PaymentBlockCreation",
+      "description": "The activity of creating a payment block on an invoice.",
       "reuse_of": null,
       "parent": null,
       "evidence_term_ids": [
-        "purchase_order_processing",
-        "price_change",
-        "quantity_change",
-        "delivery_indicator_change",
-        "purchase_order_approval_change",
-        "cancellation",
-        "item_deletion",
-        "reactivation",
-        "release",
-        "approval",
-        "approval_activity",
-        "approval_event",
-        "consumption",
-        "payment",
-        "production",
-        "service_entry_sheet_recording",
-        "purchase_requisition_creation",
-        "order_confirmation_activity",
-        "changes_to_the_order_item",
-        "repeated_change",
-        "repeated_invoice_creation",
-        "srm_activity",
-        "goods_receipt_cancellation",
-        "goods_and_invoice_handling_activity",
-        "invoice_handling",
-        "payment_block_creation",
-        "payment_block_removal",
-        "payment_blocking",
-        "block_creation_event",
-        "invoice_clearance",
-        "clearance",
-        "invoice_clearance_event"
-      ],
-      "instance_term_ids": [],
-      "property_term_ids": [],
-      "evidence_mentions": 53,
-      "surface_forms": [
-        "Actual consumption",
-        "Invoice clearance",
-        "Invoice processing",
-        "Item deletion",
-        "Payment block creation",
-        "Purchase order processing",
-        "SRM activities",
-        "approval activities",
-        "approval decisions",
-        "approval event",
-        "approvals",
-        "block creation events",
-        "cancellations",
-        "changes to the order item",
-        "clearance",
-        "consumption",
-        "delivery indicator changes",
-        "goods and invoice handling activities",
-        "goods receipt cancellation",
-        "invoice clearance",
-        "invoice handling",
-        "invoice-clearance event",
-        "item deletion",
-        "order approval changes",
-        "order confirmation activities",
-        "payment",
-        "payment block creation",
-        "payment block removal",
-        "payment blocking",
-        "price changes",
-        "production",
-        "purchase order approval change",
-        "purchase requisition creation",
-        "quantity changes",
-        "reactivation",
-        "release",
-        "repeated changes",
-        "repeated invoice creation",
-        "service entry sheet recording"
-      ],
-      "chunk_ids": [
-        "bpi2019-purchase-process#c01",
-        "bpi2019-purchase-process#c02",
-        "bpi2019-purchase-process#c03",
-        "bpi2019-purchase-process#c04",
-        "bpi2019-purchase-process#c05",
-        "bpi2019-purchase-process#c06",
-        "bpi2019-purchase-process#c07",
-        "bpi2019-purchase-process#c08",
-        "bpi2019-purchase-process#c09",
-        "bpi2019-purchase-process#c10"
-      ],
-      "judge": {
-        "level": "type",
-        "duplicate_of": null,
-        "confidence": 0.95,
-        "reason": "ProcessActivity represents a class of business actions or steps performed in a process, which is a fundamental entity type in business process modeling and event log analysis."
-      }
-    },
-    {
-      "concept_id": "ProcessDeviation",
-      "name": "ProcessDeviation",
-      "description": "An anomaly, violation, or deviation from the expected process flow.",
-      "reuse_of": null,
-      "parent": null,
-      "evidence_term_ids": [
-        "apparent_process_deviation",
-        "compliance_violation"
+        "payment_block_creation"
       ],
       "instance_term_ids": [],
       "property_term_ids": [],
       "evidence_mentions": 2,
       "surface_forms": [
-        "apparent process deviation",
-        "compliance violation"
+        "Payment block creation",
+        "payment block creation"
       ],
       "chunk_ids": [
-        "bpi2019-purchase-process#c06",
+        "bpi2019-purchase-process#c04",
+        "bpi2019-purchase-process#c09"
+      ],
+      "judge": {
+        "level": "type",
+        "duplicate_of": null,
+        "confidence": 0.95,
+        "reason": "PaymentBlockCreation is a class of activities (events) representing the action of creating a payment block on an invoice, which is a standard event type in business process execution."
+      }
+    },
+    {
+      "concept_id": "PrecedenceRule",
+      "name": "PrecedenceRule",
+      "description": "A rule defining the required order of activities.",
+      "reuse_of": null,
+      "parent": null,
+      "evidence_term_ids": [
+        "precedence_rule"
+      ],
+      "instance_term_ids": [],
+      "property_term_ids": [],
+      "evidence_mentions": 2,
+      "surface_forms": [
+        "precedence rule"
+      ],
+      "chunk_ids": [
         "bpi2019-purchase-process#c08"
       ],
       "judge": {
         "level": "type",
         "duplicate_of": null,
-        "confidence": 0.85,
-        "reason": "ProcessDeviation represents a class of occurrences or anomalies detected during process execution. Individual instances of deviations can be identified, logged, and investigated, making it a valid ontology class (type) rather than a simple attribute or analysis term."
+        "confidence": 0.9,
+        "reason": "A precedence rule is a class of process constraints or rules that define the ordering of activities. It is a valid ontological concept in the domain of process mining and business process modeling."
       }
     },
     {
       "concept_id": "ProcessVariant",
       "name": "ProcessVariant",
-      "description": "A specific path or execution pattern of the purchasing process.",
+      "description": "A specific path or sequence of activities followed in the purchasing process.",
       "reuse_of": null,
       "parent": null,
       "evidence_term_ids": [
         "process_variant"
       ],
       "instance_term_ids": [
-        "consignment",
         "three_way_matching",
-        "two_way_matching"
+        "two_way_matching",
+        "invoice_after_goods_receipt_three_way_matching",
+        "invoice_before_goods_receipt_three_way_matching"
       ],
       "property_term_ids": [],
       "evidence_mentions": 8,
@@ -454,7 +566,6 @@
       ],
       "chunk_ids": [
         "bpi2019-purchase-process#c00",
-        "bpi2019-purchase-process#c01",
         "bpi2019-purchase-process#c03",
         "bpi2019-purchase-process#c04",
         "bpi2019-purchase-process#c05",
@@ -464,32 +575,24 @@
       "judge": {
         "level": "type",
         "duplicate_of": null,
-        "confidence": 0.9,
-        "reason": "ProcessVariant represents a class of different execution paths or configurations of a business process (such as Consignment or Three-Way Matching). It is a fundamental concept in process modeling and process mining, distinct from individual process activities or event logs."
+        "confidence": 0.95,
+        "reason": "ProcessVariant represents a class of process execution paths (such as three-way matching or two-way matching) in a business process. It is a valid ontology class (type) and does not duplicate any other listed concepts."
       }
     },
     {
       "concept_id": "PurchaseOrder",
       "name": "PurchaseOrder",
-      "description": "A document issued by a buyer to a seller, indicating types, quantities, and agreed prices for products or services.",
+      "description": "A document issued by a buyer to a seller indicating types, quantities, and agreed prices for products or services.",
       "reuse_of": null,
       "parent": null,
       "evidence_term_ids": [
         "purchase_order"
       ],
-      "instance_term_ids": [
-        "blanket_purchase_order",
-        "framework_order",
-        "ec_purchase_order",
-        "standard_and_framework_order",
-        "standard_order",
-        "ec_order"
-      ],
+      "instance_term_ids": [],
       "property_term_ids": [
-        "document_type",
-        "document_identifier"
+        "document_type"
       ],
-      "evidence_mentions": 27,
+      "evidence_mentions": 16,
       "surface_forms": [
         "purchase order",
         "purchase order document"
@@ -497,15 +600,40 @@
       "chunk_ids": [
         "bpi2019-purchase-process#c01",
         "bpi2019-purchase-process#c02",
-        "bpi2019-purchase-process#c03",
-        "bpi2019-purchase-process#c04",
         "bpi2019-purchase-process#c05"
       ],
       "judge": {
         "level": "type",
         "duplicate_of": null,
         "confidence": 1.0,
-        "reason": "PurchaseOrder is a standard business document class representing a buyer's commitment to purchase goods or services. It is a core entity type in procurement processes and is distinct from other listed concepts like PurchaseOrderItem or PurchaseRequisition."
+        "reason": "PurchaseOrder is a standard business document class representing a type of document issued by a buyer to a seller. It has many individual instances in a business process."
+      }
+    },
+    {
+      "concept_id": "PurchaseOrderApprovalChange",
+      "name": "PurchaseOrderApprovalChange",
+      "description": "The activity of changing the approval status of a purchase order.",
+      "reuse_of": null,
+      "parent": null,
+      "evidence_term_ids": [
+        "purchase_order_approval_change"
+      ],
+      "instance_term_ids": [],
+      "property_term_ids": [],
+      "evidence_mentions": 3,
+      "surface_forms": [
+        "order approval changes",
+        "purchase order approval change"
+      ],
+      "chunk_ids": [
+        "bpi2019-purchase-process#c05",
+        "bpi2019-purchase-process#c07"
+      ],
+      "judge": {
+        "level": "type",
+        "duplicate_of": null,
+        "confidence": 0.9,
+        "reason": "PurchaseOrderApprovalChange represents a specific activity (event type) within the purchase order lifecycle, which is a valid class of events in a business process ontology."
       }
     },
     {
@@ -525,7 +653,11 @@
         "item_type",
         "spend_area",
         "purchase_order_item_value",
-        "item_identifier"
+        "item_identifier",
+        "delivery_time",
+        "invoice_recording_delay",
+        "payment_delay",
+        "purchasing_responsiveness"
       ],
       "evidence_mentions": 20,
       "surface_forms": [
@@ -548,14 +680,71 @@
       "judge": {
         "level": "type",
         "duplicate_of": null,
+        "confidence": 1.0,
+        "reason": "PurchaseOrderItem is a fundamental entity type in procurement processes, representing individual line items within a purchase order. It is distinct from the PurchaseOrder itself and serves as a common case notion in process mining."
+      }
+    },
+    {
+      "concept_id": "PurchaseOrderItemChange",
+      "name": "PurchaseOrderItemChange",
+      "description": "The activity of making changes to a purchase order item.",
+      "reuse_of": null,
+      "parent": null,
+      "evidence_term_ids": [
+        "changes_to_the_order_item",
+        "repeated_change"
+      ],
+      "instance_term_ids": [],
+      "property_term_ids": [],
+      "evidence_mentions": 2,
+      "surface_forms": [
+        "changes to the order item",
+        "repeated changes"
+      ],
+      "chunk_ids": [
+        "bpi2019-purchase-process#c03"
+      ],
+      "judge": {
+        "level": "type",
+        "duplicate_of": null,
         "confidence": 0.95,
-        "reason": "PurchaseOrderItem is a fundamental domain entity representing a line item in a purchase order. It is a class with many individual instances in any procurement process."
+        "reason": "PurchaseOrderItemChange represents a class of activities (events) in a business process, specifically the modification of a purchase order item. It is a valid ontology class (type) and does not duplicate any existing concepts, though it may have subtypes like QuantityChange."
+      }
+    },
+    {
+      "concept_id": "PurchaseOrderItemCreation",
+      "name": "PurchaseOrderItemCreation",
+      "description": "The activity of creating a purchase order item.",
+      "reuse_of": null,
+      "parent": null,
+      "evidence_term_ids": [
+        "purchase_order_item_creation",
+        "item_creation"
+      ],
+      "instance_term_ids": [],
+      "property_term_ids": [],
+      "evidence_mentions": 8,
+      "surface_forms": [
+        "item creation",
+        "purchase order item creation"
+      ],
+      "chunk_ids": [
+        "bpi2019-purchase-process#c03",
+        "bpi2019-purchase-process#c04",
+        "bpi2019-purchase-process#c05",
+        "bpi2019-purchase-process#c06"
+      ],
+      "judge": {
+        "level": "type",
+        "duplicate_of": null,
+        "confidence": 0.95,
+        "reason": "PurchaseOrderItemCreation represents a class of activities (events) in a business process, specifically the creation of a purchase order item. It has many individual occurrences across different process executions, making it a type."
       }
     },
     {
       "concept_id": "PurchaseRequisition",
       "name": "PurchaseRequisition",
-      "description": "An internal document defining the requirement for goods or services.",
+      "description": "An internal document that defines the need for a purchase before an order is created.",
       "reuse_of": null,
       "parent": null,
       "evidence_term_ids": [
@@ -577,50 +766,118 @@
         "level": "type",
         "duplicate_of": null,
         "confidence": 1.0,
-        "reason": "PurchaseRequisition is a standard business document class representing an internal request for goods or services, distinct from other concepts like PurchaseOrder."
+        "reason": "PurchaseRequisition is a standard business document class representing an internal request for purchasing. It has many individual instances in a typical procurement process and is distinct from the activity of creating it (PurchaseRequisitionCreation)."
       }
     },
     {
-      "concept_id": "RecordedEvent",
-      "name": "RecordedEvent",
-      "description": "An individual log entry representing the execution of an activity at a specific time.",
+      "concept_id": "PurchaseRequisitionCreation",
+      "name": "PurchaseRequisitionCreation",
+      "description": "The activity of creating a purchase requisition.",
       "reuse_of": null,
       "parent": null,
       "evidence_term_ids": [
-        "recorded_event",
-        "document_level_event"
+        "purchase_requisition_creation"
       ],
       "instance_term_ids": [],
-      "property_term_ids": [
-        "completion_timestamp",
-        "activity_start_time",
-        "active_work_duration",
-        "elapsed_processing_time",
-        "purchasing_responsiveness",
-        "delivery_time",
-        "invoice_recording_delay",
-        "payment_delay"
-      ],
+      "property_term_ids": [],
       "evidence_mentions": 2,
       "surface_forms": [
-        "Document-level events",
-        "recorded event"
+        "purchase requisition creation"
       ],
       "chunk_ids": [
-        "bpi2019-purchase-process#c02",
-        "bpi2019-purchase-process#c09"
+        "bpi2019-purchase-process#c03",
+        "bpi2019-purchase-process#c06"
       ],
       "judge": {
         "level": "type",
         "duplicate_of": null,
         "confidence": 0.95,
-        "reason": "RecordedEvent represents a class of individual event occurrences in a process log, which is a fundamental entity type in process mining ontologies. It is distinct from ProcessActivity (the type of action) and EventLog (the collection of events)."
+        "reason": "PurchaseRequisitionCreation represents a class of events (an activity type) in the business process, where individual executions of this activity are its instances. It is a valid ontology class and does not duplicate any other listed concept."
+      }
+    },
+    {
+      "concept_id": "QuantityChange",
+      "name": "QuantityChange",
+      "description": "The activity of changing the quantity of an item.",
+      "reuse_of": null,
+      "parent": null,
+      "evidence_term_ids": [
+        "quantity_change"
+      ],
+      "instance_term_ids": [],
+      "property_term_ids": [],
+      "evidence_mentions": 2,
+      "surface_forms": [
+        "quantity changes"
+      ],
+      "chunk_ids": [
+        "bpi2019-purchase-process#c06",
+        "bpi2019-purchase-process#c07"
+      ],
+      "judge": {
+        "level": "type",
+        "duplicate_of": null,
+        "confidence": 0.95,
+        "reason": "QuantityChange is a class of events representing the activity of changing the quantity of an item in a business process. It is a specific type of activity, distinct from the broader PurchaseOrderItemChange."
+      }
+    },
+    {
+      "concept_id": "Receipt",
+      "name": "Receipt",
+      "description": "A document acknowledging that goods or services have been received.",
+      "reuse_of": null,
+      "parent": null,
+      "evidence_term_ids": [
+        "receipt"
+      ],
+      "instance_term_ids": [],
+      "property_term_ids": [],
+      "evidence_mentions": 11,
+      "surface_forms": [
+        "receipt",
+        "receipts"
+      ],
+      "chunk_ids": [
+        "bpi2019-purchase-process#c04",
+        "bpi2019-purchase-process#c07"
+      ],
+      "judge": {
+        "level": "type",
+        "duplicate_of": null,
+        "confidence": 0.95,
+        "reason": "Receipt is a class of documents acknowledging the receipt of goods or services, which is a fundamental entity type in the purchasing process, distinct from activities like GoodsReceipt."
+      }
+    },
+    {
+      "concept_id": "RecurringInvoice",
+      "name": "RecurringInvoice",
+      "description": "An invoice that occurs repeatedly over a period of time, typically supported by a framework order.",
+      "reuse_of": null,
+      "parent": "Invoice",
+      "evidence_term_ids": [
+        "recurring_invoice"
+      ],
+      "instance_term_ids": [],
+      "property_term_ids": [],
+      "evidence_mentions": 2,
+      "surface_forms": [
+        "recurring invoices"
+      ],
+      "chunk_ids": [
+        "bpi2019-purchase-process#c02",
+        "bpi2019-purchase-process#c05"
+      ],
+      "judge": {
+        "level": "type",
+        "duplicate_of": null,
+        "confidence": 0.95,
+        "reason": "RecurringInvoice is a specific subtype of Invoice representing a class of documents that occur repeatedly. It is a valid ontology class (type)."
       }
     },
     {
       "concept_id": "Resource",
       "name": "Resource",
-      "description": "A human user or automated system that executes or records activities.",
+      "description": "An entity, either human or automated, that executes or records activities.",
       "reuse_of": null,
       "parent": null,
       "evidence_term_ids": [
@@ -644,22 +901,76 @@
         "level": "type",
         "duplicate_of": null,
         "confidence": 0.95,
-        "reason": "The concept 'Resource' represents a class of entities (human users or automated systems) that perform or record activities in a business process. This is a fundamental entity type in process mining and ontology modeling, and it does not duplicate any of the other listed concepts."
+        "reason": "Resource is a fundamental class in business process modeling representing the actors (human or system) that perform activities. It is a type, not an instance or a non-type attribute."
+      }
+    },
+    {
+      "concept_id": "SRMSubprocess",
+      "name": "SRMSubprocess",
+      "description": "A Supplier Relationship Management subprocess.",
+      "reuse_of": null,
+      "parent": null,
+      "evidence_term_ids": [
+        "srm_subprocess",
+        "srm"
+      ],
+      "instance_term_ids": [],
+      "property_term_ids": [],
+      "evidence_mentions": 4,
+      "surface_forms": [
+        "SRM",
+        "SRM subprocess"
+      ],
+      "chunk_ids": [
+        "bpi2019-purchase-process#c03",
+        "bpi2019-purchase-process#c04",
+        "bpi2019-purchase-process#c10"
+      ],
+      "judge": {
+        "level": "type",
+        "duplicate_of": null,
+        "confidence": 0.8,
+        "reason": "SRMSubprocess represents a specific category of subprocesses within the procurement domain, making it a valid object type."
+      }
+    },
+    {
+      "concept_id": "StandardPurchaseOrder",
+      "name": "StandardPurchaseOrder",
+      "description": "A standard type of purchase order used for one-off purchases.",
+      "reuse_of": null,
+      "parent": "PurchaseOrder",
+      "evidence_term_ids": [
+        "standard_order"
+      ],
+      "instance_term_ids": [],
+      "property_term_ids": [],
+      "evidence_mentions": 2,
+      "surface_forms": [
+        "standard orders",
+        "standard purchase orders"
+      ],
+      "chunk_ids": [
+        "bpi2019-purchase-process#c02",
+        "bpi2019-purchase-process#c04"
+      ],
+      "judge": {
+        "level": "type",
+        "duplicate_of": null,
+        "confidence": 0.95,
+        "reason": "StandardPurchaseOrder is a specific subtype of PurchaseOrder representing a class of documents used for one-off purchases. It is a valid ontology class (type)."
       }
     },
     {
       "concept_id": "Vendor",
       "name": "Vendor",
-      "description": "An external business entity that supplies purchased goods or services.",
+      "description": "An external entity that supplies goods or services to the company.",
       "reuse_of": null,
       "parent": null,
       "evidence_term_ids": [
         "vendor"
       ],
       "instance_term_ids": [],
-      "property_term_ids": [
-        "company_and_vendor_identifier"
-      ],
+      "property_term_ids": [],
       "evidence_mentions": 5,
       "surface_forms": [
         "vendor",
@@ -673,7 +984,34 @@
         "level": "type",
         "duplicate_of": null,
         "confidence": 1.0,
-        "reason": "Vendor represents a class of external business entities that supply goods or services, which is a fundamental object type in procurement processes. It is distinct from internal companies/subsidiaries."
+        "reason": "Vendor is a standard business entity representing external suppliers. It is a class whose members are many individual supplier organizations, making it a 'type'."
+      }
+    },
+    {
+      "concept_id": "VendorInvoiceCreation",
+      "name": "VendorInvoiceCreation",
+      "description": "The activity of a vendor creating an invoice.",
+      "reuse_of": null,
+      "parent": null,
+      "evidence_term_ids": [
+        "vendor_invoice_creation"
+      ],
+      "instance_term_ids": [],
+      "property_term_ids": [],
+      "evidence_mentions": 2,
+      "surface_forms": [
+        "Vendor invoice creation",
+        "vendor invoice creation"
+      ],
+      "chunk_ids": [
+        "bpi2019-purchase-process#c03",
+        "bpi2019-purchase-process#c05"
+      ],
+      "judge": {
+        "level": "type",
+        "duplicate_of": null,
+        "confidence": 0.85,
+        "reason": "VendorInvoiceCreation is a specific activity type in the purchasing process representing the event of a vendor generating an invoice. It is distinct from the internal 'InvoiceReceipt' or 'InvoiceCreation' (which may refer to internal invoice entry or self-billing)."
       }
     }
   ]

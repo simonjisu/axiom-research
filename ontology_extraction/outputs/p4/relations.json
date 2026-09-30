@@ -2,23 +2,23 @@
   "meta": {
     "model": "gemini-3.5-flash",
     "conf_threshold": 0.7,
-    "n_concepts_in": 17,
-    "n_proposals": 41,
-    "n_l1_passed": 28,
+    "n_concepts_in": 34,
+    "n_proposals": 49,
+    "n_l1_passed": 35,
     "n_relation_types_merged": 28,
-    "n_relations": 25,
-    "n_rejected": 15,
-    "n_human_queue": 1,
+    "n_relations": 23,
+    "n_rejected": 17,
+    "n_human_queue": 4,
     "rejected_by_route": {
-      "p1": 13,
-      "p4": 2
+      "p1": 14,
+      "p4": 3
     },
-    "concepts_covered": 13
+    "concepts_covered": 18
   },
   "relations": [
     {
-      "relation_id": "PurchaseOrder.containsItem.PurchaseOrderItem",
-      "name": "containsItem",
+      "relation_id": "PurchaseOrder.contains.PurchaseOrderItem",
+      "name": "contains",
       "domain": "PurchaseOrder",
       "range": "PurchaseOrderItem",
       "cardinality": "1:N",
@@ -30,88 +30,19 @@
         }
       ],
       "same_pair_relations": [
-        "PurchaseOrder.groups.PurchaseOrderItem"
+        "PurchaseOrder.groupsPurchaseOrderItem.PurchaseOrderItem"
       ],
       "judge": {
         "verdict": "supported",
         "cardinality_ok": true,
         "confidence": 1.0,
-        "reason": "The evidence sentence explicitly states that a purchase order document contains one or more purchase order items, which directly supports the relation and the 1:N cardinality."
+        "reason": "The evidence sentence explicitly states that a purchase order document contains one or more purchase order items, which directly supports the relation and its 1:N cardinality."
       },
       "confidence": 1.0
     },
     {
-      "relation_id": "PurchaseOrderItem.representsCase.Case",
-      "name": "representsCase",
-      "domain": "PurchaseOrderItem",
-      "range": "Case",
-      "cardinality": "1:1",
-      "gen_confidence": 0.9,
-      "evidence": [
-        {
-          "chunk_id": "bpi2019-purchase-process#c01",
-          "sentence": "An individual item is the case used to organize the event log."
-        }
-      ],
-      "same_pair_relations": [],
-      "judge": {
-        "verdict": "supported",
-        "cardinality_ok": true,
-        "confidence": 0.9,
-        "reason": "The evidence sentence states that 'An individual item is the case used to organize the event log', which directly supports the relation that a PurchaseOrderItem (individual item) represents a Case, with a 1:1 mapping implied."
-      },
-      "confidence": 0.9
-    },
-    {
-      "relation_id": "Case.containsEvent.RecordedEvent",
-      "name": "containsEvent",
-      "domain": "Case",
-      "range": "RecordedEvent",
-      "cardinality": "1:N",
-      "gen_confidence": 0.9,
-      "evidence": [
-        {
-          "chunk_id": "bpi2019-purchase-process#c01",
-          "sentence": "A case contains the events recorded for that item; the entire purchase order is not the case unit."
-        }
-      ],
-      "same_pair_relations": [
-        "RecordedEvent.belongsTo.Case",
-        "RecordedEvent.copiedInto.Case"
-      ],
-      "judge": {
-        "verdict": "supported",
-        "cardinality_ok": true,
-        "confidence": 0.95,
-        "reason": "The evidence sentence explicitly states that 'a case contains the events recorded for that item', which directly supports the relation 'Case --containsEvent--> RecordedEvent' and the 1:N cardinality (events is plural)."
-      },
-      "confidence": 0.9
-    },
-    {
-      "relation_id": "Case.organizesEventLog.EventLog",
-      "name": "organizesEventLog",
-      "domain": "Case",
-      "range": "EventLog",
-      "cardinality": "N:1",
-      "gen_confidence": 0.8,
-      "evidence": [
-        {
-          "chunk_id": "bpi2019-purchase-process#c01",
-          "sentence": "An individual item is the case used to organize the event log."
-        }
-      ],
-      "same_pair_relations": [],
-      "judge": {
-        "verdict": "supported",
-        "cardinality_ok": true,
-        "confidence": 0.9,
-        "reason": "The evidence sentence explicitly states that 'the case' is used to 'organize the event log', which directly supports the relation Case --organizesEventLog--> EventLog. The N:1 cardinality is consistent with the domain and not contradicted by the text."
-      },
-      "confidence": 0.8
-    },
-    {
-      "relation_id": "PurchaseOrder.groups.PurchaseOrderItem",
-      "name": "groups",
+      "relation_id": "PurchaseOrder.groupsPurchaseOrderItem.PurchaseOrderItem",
+      "name": "groupsPurchaseOrderItem",
       "domain": "PurchaseOrder",
       "range": "PurchaseOrderItem",
       "cardinality": "1:N",
@@ -123,15 +54,37 @@
         }
       ],
       "same_pair_relations": [
-        "PurchaseOrder.containsItem.PurchaseOrderItem"
+        "PurchaseOrder.contains.PurchaseOrderItem"
       ],
       "judge": {
         "verdict": "supported",
         "cardinality_ok": true,
         "confidence": 1.0,
-        "reason": "The evidence sentence explicitly states that 'A purchase order document groups purchase order items', which directly supports the relation in the specified direction (PurchaseOrder -> PurchaseOrderItem) and the 1:N cardinality (items is plural)."
+        "reason": "The evidence sentence explicitly states that a purchase order document groups purchase order items, which supports the relation and its 1:N cardinality."
       },
       "confidence": 1.0
+    },
+    {
+      "relation_id": "FrameworkPurchaseOrder.supportsRecurringInvoice.RecurringInvoice",
+      "name": "supportsRecurringInvoice",
+      "domain": "FrameworkPurchaseOrder",
+      "range": "RecurringInvoice",
+      "cardinality": "1:N",
+      "gen_confidence": 1.0,
+      "evidence": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c02",
+          "sentence": "A framework order, also described as a blanket purchase order, can support recurring invoices over a period of time."
+        }
+      ],
+      "same_pair_relations": [],
+      "judge": {
+        "verdict": "supported",
+        "cardinality_ok": true,
+        "confidence": 0.95,
+        "reason": "The evidence sentence directly states that a framework order (FrameworkPurchaseOrder) can support recurring invoices (RecurringInvoice) over a period of time, which supports the relation in the specified direction and the 1:N cardinality."
+      },
+      "confidence": 0.95
     },
     {
       "relation_id": "PurchaseOrderItem.hasCompany.Company",
@@ -151,7 +104,7 @@
         "verdict": "supported",
         "cardinality_ok": true,
         "confidence": 0.85,
-        "reason": "The evidence sentence states that 'Its context includes a subsidiary or company', where 'Its' refers to the PurchaseOrderItem. This supports the relation that a PurchaseOrderItem is associated with a Company. The singular 'a subsidiary or company' aligns with the N:1 cardinality (each item has one company)."
+        "reason": "The evidence sentence states that 'Its context' (referring to the PurchaseOrderItem) 'includes a subsidiary or company', which supports the relation that a PurchaseOrderItem is associated with a Company. The singular 'a subsidiary or company' is consistent with the N:1 cardinality."
       },
       "confidence": 0.85
     },
@@ -172,93 +125,22 @@
       "judge": {
         "verdict": "supported",
         "cardinality_ok": true,
-        "confidence": 0.7,
-        "reason": "The evidence sentence states that 'Its context' (where 'Its' refers to the PurchaseOrderItem) includes 'a vendor', which supports the relation that a PurchaseOrderItem has a Vendor. The mention of 'a vendor' is consistent with the N:1 cardinality."
+        "confidence": 0.9,
+        "reason": "The evidence sentence states that the context of the item (PurchaseOrderItem) includes 'a vendor', which supports the relation that a PurchaseOrderItem has a Vendor. The singular 'a vendor' supports the N:1 cardinality (each item has one vendor, while a vendor can be associated with multiple items)."
       },
-      "confidence": 0.7
+      "confidence": 0.9
     },
     {
-      "relation_id": "Vendor.supplies.Goods",
-      "name": "supplies",
+      "relation_id": "Vendor.suppliesGoods.Goods",
+      "name": "suppliesGoods",
       "domain": "Vendor",
       "range": "Goods",
       "cardinality": "1:N",
-      "gen_confidence": 0.9,
-      "evidence": [
-        {
-          "chunk_id": "bpi2019-purchase-process#c02",
-          "sentence": "A vendor supplies the purchased goods or services and can create an invoice."
-        }
-      ],
-      "same_pair_relations": [],
-      "judge": {
-        "verdict": "supported",
-        "cardinality_ok": true,
-        "confidence": 0.95,
-        "reason": "The evidence sentence explicitly states that 'A vendor supplies the purchased goods', which directly supports the relation in the specified direction. The plural 'goods' is consistent with the 1:N cardinality."
-      },
-      "confidence": 0.9
-    },
-    {
-      "relation_id": "Vendor.creates.Invoice",
-      "name": "creates",
-      "domain": "Vendor",
-      "range": "Invoice",
-      "cardinality": "1:N",
-      "gen_confidence": 0.9,
-      "evidence": [
-        {
-          "chunk_id": "bpi2019-purchase-process#c02",
-          "sentence": "A vendor supplies the purchased goods or services and can create an invoice."
-        }
-      ],
-      "same_pair_relations": [
-        "Vendor.createsInvoice.Invoice"
-      ],
-      "judge": {
-        "verdict": "supported",
-        "cardinality_ok": true,
-        "confidence": 0.9,
-        "reason": "The evidence sentence explicitly states that a vendor can create an invoice, which directly supports the 'creates' relation from Vendor to Invoice. The 1:N cardinality is standard for this relationship and is not contradicted by the text."
-      },
-      "confidence": 0.9
-    },
-    {
-      "relation_id": "RecordedEvent.belongsTo.Case",
-      "name": "belongsTo",
-      "domain": "RecordedEvent",
-      "range": "Case",
-      "cardinality": "N:1",
       "gen_confidence": 1.0,
       "evidence": [
         {
           "chunk_id": "bpi2019-purchase-process#c02",
-          "sentence": "A recorded event belongs to an item case and identifies an activity and its completion timestamp."
-        }
-      ],
-      "same_pair_relations": [
-        "Case.containsEvent.RecordedEvent",
-        "RecordedEvent.copiedInto.Case"
-      ],
-      "judge": {
-        "verdict": "supported",
-        "cardinality_ok": true,
-        "confidence": 1.0,
-        "reason": "The evidence sentence explicitly states that 'A recorded event belongs to an item case', which directly supports the 'belongsTo' relation from RecordedEvent to Case with a many-to-one (N:1) cardinality."
-      },
-      "confidence": 1.0
-    },
-    {
-      "relation_id": "RecordedEvent.identifies.ProcessActivity",
-      "name": "identifies",
-      "domain": "RecordedEvent",
-      "range": "ProcessActivity",
-      "cardinality": "N:1",
-      "gen_confidence": 0.9,
-      "evidence": [
-        {
-          "chunk_id": "bpi2019-purchase-process#c02",
-          "sentence": "A recorded event belongs to an item case and identifies an activity and its completion timestamp."
+          "sentence": "A vendor supplies the purchased goods or services and can create an invoice."
         }
       ],
       "same_pair_relations": [],
@@ -266,7 +148,29 @@
         "verdict": "supported",
         "cardinality_ok": true,
         "confidence": 0.9,
-        "reason": "The evidence sentence explicitly states that 'a recorded event ... identifies an activity', which directly supports the relation from RecordedEvent to ProcessActivity. The singular 'an activity' supports the N:1 cardinality (each event identifies one activity)."
+        "reason": "The evidence sentence explicitly states that 'A vendor supplies the purchased goods', which directly supports the relation in the specified direction. The cardinality of 1:N is consistent with the plural 'goods' mentioned in the sentence."
+      },
+      "confidence": 0.9
+    },
+    {
+      "relation_id": "Vendor.createsInvoice.Invoice",
+      "name": "createsInvoice",
+      "domain": "Vendor",
+      "range": "Invoice",
+      "cardinality": "1:N",
+      "gen_confidence": 1.0,
+      "evidence": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c02",
+          "sentence": "A vendor supplies the purchased goods or services and can create an invoice."
+        }
+      ],
+      "same_pair_relations": [],
+      "judge": {
+        "verdict": "supported",
+        "cardinality_ok": true,
+        "confidence": 0.9,
+        "reason": "The evidence sentence explicitly states that 'a vendor ... can create an invoice', which directly supports the relation in the proposed direction. The cardinality of 1:N (one vendor can create multiple invoices) is consistent with the general statement and typical business domain knowledge, with no contradiction in the text."
       },
       "confidence": 0.9
     },
@@ -283,15 +187,12 @@
           "sentence": "An item can have multiple goods receipt events and multiple invoice-related events."
         }
       ],
-      "same_pair_relations": [
-        "PurchaseOrderItem.followedBy.GoodsReceipt",
-        "GoodsReceipt.relatesTo.PurchaseOrderItem"
-      ],
+      "same_pair_relations": [],
       "judge": {
         "verdict": "supported",
         "cardinality_ok": true,
-        "confidence": 0.9,
-        "reason": "The evidence sentence explicitly states that an item (PurchaseOrderItem) can have multiple goods receipt events (GoodsReceipt), which directly supports the relation and its 1:N cardinality."
+        "confidence": 0.95,
+        "reason": "The evidence sentence explicitly states that 'An item' (PurchaseOrderItem) 'can have multiple goods receipt events' (GoodsReceipt), which directly supports the relation and its 1:N cardinality."
       },
       "confidence": 0.9
     },
@@ -300,55 +201,80 @@
       "name": "hasInvoice",
       "domain": "PurchaseOrderItem",
       "range": "Invoice",
-      "cardinality": "1:N",
-      "gen_confidence": 0.9,
+      "cardinality": "N:M",
+      "gen_confidence": 0.8,
       "evidence": [
         {
           "chunk_id": "bpi2019-purchase-process#c02",
-          "sentence": "An item can have multiple goods receipt events and multiple invoice-related events."
+          "sentence": "Consequently, purchase order item, goods receipt, and invoice do not have a universally established one-to-one relationship in this log."
         }
       ],
       "same_pair_relations": [
-        "Invoice.covers.PurchaseOrderItem",
         "Invoice.relatesTo.PurchaseOrderItem"
       ],
       "judge": {
         "verdict": "supported",
         "cardinality_ok": true,
-        "confidence": 0.9,
-        "reason": "The evidence sentence states that 'an item' (PurchaseOrderItem) can have 'multiple invoice-related events' (Invoice), which directly supports the relation and its 1:N cardinality."
-      },
-      "confidence": 0.9
-    },
-    {
-      "relation_id": "Vendor.createsInvoice.Invoice",
-      "name": "createsInvoice",
-      "domain": "Vendor",
-      "range": "Invoice",
-      "cardinality": "1:N",
-      "gen_confidence": 0.8,
-      "evidence": [
-        {
-          "chunk_id": "bpi2019-purchase-process#c03",
-          "sentence": "Vendor invoice creation is a distinct activity from the company's recording of invoice receipt."
-        }
-      ],
-      "same_pair_relations": [
-        "Vendor.creates.Invoice"
-      ],
-      "judge": {
-        "verdict": "supported",
-        "cardinality_ok": true,
-        "confidence": 0.8,
-        "reason": "The evidence sentence contrasts 'Vendor invoice creation' with 'the company's recording of invoice receipt', which strongly implies that the vendor is the entity creating the invoice before the company receives and records it."
+        "confidence": 0.85,
+        "reason": "The evidence sentence states that purchase order items and invoices do not have a one-to-one relationship, which supports the existence of a relationship between them and is consistent with the proposed N:M (many-to-many) cardinality."
       },
       "confidence": 0.8
     },
     {
-      "relation_id": "Company.recordsInvoice.Invoice",
-      "name": "recordsInvoice",
+      "relation_id": "ECPurchaseOrder.includesSRMSubprocess.SRMSubprocess",
+      "name": "includesSRMSubprocess",
+      "domain": "ECPurchaseOrder",
+      "range": "SRMSubprocess",
+      "cardinality": "1:N",
+      "gen_confidence": 0.9,
+      "evidence": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c03",
+          "sentence": "the report separates EC purchase orders from standard and framework orders because EC orders include an SRM subprocess."
+        },
+        {
+          "chunk_id": "bpi2019-purchase-process#c04",
+          "sentence": "EC orders include SRM activities before or around item creation."
+        }
+      ],
+      "same_pair_relations": [],
+      "judge": {
+        "verdict": "supported",
+        "cardinality_ok": true,
+        "confidence": 0.9,
+        "reason": "The evidence sentences explicitly state that EC purchase orders include an SRM subprocess."
+      },
+      "confidence": 0.9
+    },
+    {
+      "relation_id": "GoodsReceipt.precedesInvoiceReceipt.InvoiceReceipt",
+      "name": "precedesInvoiceReceipt",
+      "domain": "GoodsReceipt",
+      "range": "InvoiceReceipt",
+      "cardinality": "N:M",
+      "gen_confidence": 0.9,
+      "evidence": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c03",
+          "sentence": "Goods receipt must precede invoice receipt for this category."
+        }
+      ],
+      "same_pair_relations": [
+        "GoodsReceipt.precedes.InvoiceReceipt"
+      ],
+      "judge": {
+        "verdict": "supported",
+        "cardinality_ok": true,
+        "confidence": 1.0,
+        "reason": "The evidence sentence explicitly states that 'Goods receipt must precede invoice receipt', which directly supports the relation in the proposed direction (GoodsReceipt -> InvoiceReceipt). The cardinality of N:M is not contradicted by the sentence."
+      },
+      "confidence": 0.9
+    },
+    {
+      "relation_id": "Company.recordsInvoiceReceipt.InvoiceReceipt",
+      "name": "recordsInvoiceReceipt",
       "domain": "Company",
-      "range": "Invoice",
+      "range": "InvoiceReceipt",
       "cardinality": "1:N",
       "gen_confidence": 0.8,
       "evidence": [
@@ -362,86 +288,83 @@
         "verdict": "supported",
         "cardinality_ok": true,
         "confidence": 0.85,
-        "reason": "The evidence sentence mentions 'the company's recording of invoice receipt', which directly supports the relation that a Company records an Invoice. The cardinality of 1:N is standard and not contradicted by the text."
+        "reason": "The evidence sentence mentions 'the company's recording of invoice receipt', which directly supports the relation that a Company records an InvoiceReceipt. There is no contradiction to the 1:N cardinality."
       },
       "confidence": 0.8
     },
     {
-      "relation_id": "Case.hasInvoice.Invoice",
-      "name": "hasInvoice",
-      "domain": "Case",
-      "range": "Invoice",
-      "cardinality": "1:N",
-      "gen_confidence": 0.8,
-      "evidence": [
-        {
-          "chunk_id": "bpi2019-purchase-process#c04",
-          "sentence": "The report describes invoice creation and receipt before goods receipt in EC cases."
-        }
-      ],
-      "same_pair_relations": [],
-      "judge": {
-        "verdict": "supported",
-        "cardinality_ok": true,
-        "confidence": 0.8,
-        "reason": "The evidence sentence mentions 'invoice creation and receipt... in EC cases', which indicates that cases (EC cases) contain or are associated with invoices, supporting the relation that a Case has an Invoice."
-      },
-      "confidence": 0.8
-    },
-    {
-      "relation_id": "Case.hasGoodsReceipt.GoodsReceipt",
-      "name": "hasGoodsReceipt",
-      "domain": "Case",
-      "range": "GoodsReceipt",
-      "cardinality": "1:N",
-      "gen_confidence": 0.8,
-      "evidence": [
-        {
-          "chunk_id": "bpi2019-purchase-process#c04",
-          "sentence": "The report describes invoice creation and receipt before goods receipt in EC cases."
-        }
-      ],
-      "same_pair_relations": [],
-      "judge": {
-        "verdict": "supported",
-        "cardinality_ok": true,
-        "confidence": 0.8,
-        "reason": "The evidence sentence mentions 'goods receipt in EC cases', which directly implies that cases (Case) contain or have goods receipts (GoodsReceipt). This supports the proposed relation, and there is no contradiction to the 1:N cardinality."
-      },
-      "confidence": 0.8
-    },
-    {
-      "relation_id": "Invoice.covers.PurchaseOrderItem",
-      "name": "covers",
-      "domain": "Invoice",
-      "range": "PurchaseOrderItem",
-      "cardinality": "1:N",
-      "gen_confidence": 0.9,
+      "relation_id": "PurchaseOrderApprovalChange.concerns.PurchaseOrder",
+      "name": "concerns",
+      "domain": "PurchaseOrderApprovalChange",
+      "range": "PurchaseOrder",
+      "cardinality": "N:1",
+      "gen_confidence": 1.0,
       "evidence": [
         {
           "chunk_id": "bpi2019-purchase-process#c05",
-          "sentence": "Invoice receipt and clearance may be recorded in only one of those item cases even when the invoice covers several items."
+          "sentence": "A purchase order approval change concerns the purchase order document."
         }
       ],
-      "same_pair_relations": [
-        "PurchaseOrderItem.hasInvoice.Invoice",
-        "Invoice.relatesTo.PurchaseOrderItem"
-      ],
+      "same_pair_relations": [],
       "judge": {
         "verdict": "supported",
         "cardinality_ok": true,
         "confidence": 0.9,
-        "reason": "The evidence sentence explicitly states that 'the invoice covers several items', which supports the 'covers' relation from Invoice to PurchaseOrderItem with a 1:N cardinality."
+        "reason": "The evidence sentence explicitly states that 'a purchase order approval change concerns the purchase order document', which directly supports the relation in the specified direction. The cardinality of N:1 is also consistent with the context, as a single purchase order can undergo multiple approval changes over time."
       },
       "confidence": 0.9
     },
     {
-      "relation_id": "PurchaseOrderItem.followedBy.GoodsReceipt",
+      "relation_id": "VendorInvoiceCreation.followedBy.PurchaseOrderItemCreation",
       "name": "followedBy",
-      "domain": "PurchaseOrderItem",
+      "domain": "VendorInvoiceCreation",
+      "range": "PurchaseOrderItemCreation",
+      "cardinality": "1:N",
+      "gen_confidence": 0.8,
+      "evidence": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c05",
+          "sentence": "the modeled flow can begin with vendor invoice creation, followed by creation of one or more order items and a purchase order approval change."
+        }
+      ],
+      "same_pair_relations": [],
+      "judge": {
+        "verdict": "supported",
+        "cardinality_ok": true,
+        "confidence": 1.0,
+        "reason": "The evidence sentence explicitly states that the flow can begin with vendor invoice creation, followed by the creation of one or more order items, which directly supports the 'followedBy' relation from VendorInvoiceCreation to PurchaseOrderItemCreation with a 1:N cardinality."
+      },
+      "confidence": 0.8
+    },
+    {
+      "relation_id": "PurchaseOrderItemCreation.followedBy.PurchaseOrderApprovalChange",
+      "name": "followedBy",
+      "domain": "PurchaseOrderItemCreation",
+      "range": "PurchaseOrderApprovalChange",
+      "cardinality": "N:1",
+      "gen_confidence": 0.8,
+      "evidence": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c05",
+          "sentence": "the modeled flow can begin with vendor invoice creation, followed by creation of one or more order items and a purchase order approval change."
+        }
+      ],
+      "same_pair_relations": [],
+      "judge": {
+        "verdict": "supported",
+        "cardinality_ok": true,
+        "confidence": 0.95,
+        "reason": "The evidence sentence explicitly states that the creation of one or more order items (PurchaseOrderItemCreation) is followed by a purchase order approval change (PurchaseOrderApprovalChange), which supports both the relation direction and the N:1 cardinality."
+      },
+      "confidence": 0.8
+    },
+    {
+      "relation_id": "PurchaseOrderItemCreation.followedBy.GoodsReceipt",
+      "name": "followedBy",
+      "domain": "PurchaseOrderItemCreation",
       "range": "GoodsReceipt",
       "cardinality": "1:N",
-      "gen_confidence": 0.85,
+      "gen_confidence": 0.9,
       "evidence": [
         {
           "chunk_id": "bpi2019-purchase-process#c06",
@@ -449,21 +372,20 @@
         }
       ],
       "same_pair_relations": [
-        "PurchaseOrderItem.hasGoodsReceipt.GoodsReceipt",
-        "GoodsReceipt.relatesTo.PurchaseOrderItem"
+        "PurchaseOrderItemCreation.precedes.GoodsReceipt"
       ],
       "judge": {
         "verdict": "supported",
         "cardinality_ok": true,
         "confidence": 0.9,
-        "reason": "The evidence sentence explicitly states that the common progression is purchase order item creation followed by goods receipt, which directly supports the 'followedBy' relation from PurchaseOrderItem to GoodsReceipt. The 1:N cardinality is not contradicted by the text."
+        "reason": "The evidence sentence explicitly states that purchase order item creation is followed by goods receipt, which directly supports the proposed relation. The cardinality of 1:N is not contradicted by the text."
       },
-      "confidence": 0.85
+      "confidence": 0.9
     },
     {
-      "relation_id": "GoodsReceipt.relatesTo.PurchaseOrderItem",
+      "relation_id": "Receipt.relatesTo.PurchaseOrderItem",
       "name": "relatesTo",
-      "domain": "GoodsReceipt",
+      "domain": "Receipt",
       "range": "PurchaseOrderItem",
       "cardinality": "N:1",
       "gen_confidence": 0.9,
@@ -473,15 +395,12 @@
           "sentence": "Several receipts or invoices can legitimately relate to one item."
         }
       ],
-      "same_pair_relations": [
-        "PurchaseOrderItem.hasGoodsReceipt.GoodsReceipt",
-        "PurchaseOrderItem.followedBy.GoodsReceipt"
-      ],
+      "same_pair_relations": [],
       "judge": {
         "verdict": "supported",
         "cardinality_ok": true,
         "confidence": 0.95,
-        "reason": "The evidence sentence explicitly states that 'Several receipts... can legitimately relate to one item', which directly supports the N:1 relation from GoodsReceipt (receipts) to PurchaseOrderItem (item)."
+        "reason": "The evidence sentence explicitly states that 'Several receipts... can legitimately relate to one item', which directly supports the N:1 relation from Receipt to PurchaseOrderItem."
       },
       "confidence": 0.9
     },
@@ -499,28 +418,27 @@
         }
       ],
       "same_pair_relations": [
-        "PurchaseOrderItem.hasInvoice.Invoice",
-        "Invoice.covers.PurchaseOrderItem"
+        "PurchaseOrderItem.hasInvoice.Invoice"
       ],
       "judge": {
         "verdict": "supported",
         "cardinality_ok": true,
-        "confidence": 0.95,
-        "reason": "The evidence sentence explicitly states that 'Several receipts or invoices can legitimately relate to one item', which directly supports the 'Invoice --relatesTo--> PurchaseOrderItem' relation with an N:1 cardinality."
+        "confidence": 0.9,
+        "reason": "The evidence sentence explicitly states that several invoices can relate to one item, which directly supports the 'relatesTo' relation from Invoice to PurchaseOrderItem with an N:1 cardinality."
       },
       "confidence": 0.9
     },
     {
-      "relation_id": "BusinessRule.requiresActivity.ProcessActivity",
-      "name": "requiresActivity",
-      "domain": "BusinessRule",
-      "range": "ProcessActivity",
-      "cardinality": "1:N",
-      "gen_confidence": 0.9,
+      "relation_id": "Approval.mayPrecede.PurchaseOrderItemCreation",
+      "name": "mayPrecede",
+      "domain": "Approval",
+      "range": "PurchaseOrderItemCreation",
+      "cardinality": "N:M",
+      "gen_confidence": 0.8,
       "evidence": [
         {
-          "chunk_id": "bpi2019-purchase-process#c08",
-          "sentence": "An eventual-response rule requires another activity later in the same case."
+          "chunk_id": "bpi2019-purchase-process#c09",
+          "sentence": "A copied approval event may even precede the creation of a later item."
         }
       ],
       "same_pair_relations": [],
@@ -528,78 +446,99 @@
         "verdict": "supported",
         "cardinality_ok": true,
         "confidence": 0.9,
-        "reason": "The evidence sentence states that 'An eventual-response rule requires another activity', which directly supports the relation that a BusinessRule (eventual-response rule) requires a ProcessActivity (another activity) in the specified direction. The cardinality of 1:N is not contradicted by the text."
-      },
-      "confidence": 0.9
-    },
-    {
-      "relation_id": "ProcessActivity.occursInCase.Case",
-      "name": "occursInCase",
-      "domain": "ProcessActivity",
-      "range": "Case",
-      "cardinality": "N:1",
-      "gen_confidence": 0.9,
-      "evidence": [
-        {
-          "chunk_id": "bpi2019-purchase-process#c08",
-          "sentence": "An eventual-response rule requires another activity later in the same case."
-        }
-      ],
-      "same_pair_relations": [],
-      "judge": {
-        "verdict": "supported",
-        "cardinality_ok": true,
-        "confidence": 0.8,
-        "reason": "The evidence sentence mentions 'another activity later in the same case', which implies that multiple process activities can occur within the same case, supporting both the relation and the N:1 cardinality."
+        "reason": "The evidence sentence explicitly states that an approval event may precede the creation of a later item, which directly supports the proposed relation 'Approval --mayPrecede--> PurchaseOrderItemCreation'."
       },
       "confidence": 0.8
     },
     {
-      "relation_id": "RecordedEvent.copiedInto.Case",
-      "name": "copiedInto",
-      "domain": "RecordedEvent",
-      "range": "Case",
+      "relation_id": "PurchaseRequisitionCreation.precedes.PurchaseOrderItemCreation",
+      "name": "precedes",
+      "domain": "PurchaseRequisitionCreation",
+      "range": "PurchaseOrderItemCreation",
       "cardinality": "N:M",
-      "gen_confidence": 0.9,
-      "evidence": [
-        {
-          "chunk_id": "bpi2019-purchase-process#c09",
-          "sentence": "Document-level events can be copied into item cases."
-        }
-      ],
-      "same_pair_relations": [
-        "Case.containsEvent.RecordedEvent",
-        "RecordedEvent.belongsTo.Case"
-      ],
-      "judge": {
-        "verdict": "supported",
-        "cardinality_ok": true,
-        "confidence": 0.9,
-        "reason": "The evidence sentence 'Document-level events can be copied into item cases' directly states that events (RecordedEvent) can be copied into cases (Case), matching the proposed relation and direction."
-      },
-      "confidence": 0.9
-    },
-    {
-      "relation_id": "ProcessActivity.applicableTo.ProcessVariant",
-      "name": "applicableTo",
-      "domain": "ProcessActivity",
-      "range": "ProcessVariant",
-      "cardinality": "N:M",
-      "gen_confidence": 0.9,
+      "gen_confidence": 0.7,
       "evidence": [
         {
           "chunk_id": "bpi2019-purchase-process#c10",
-          "sentence": "They are meaningful only where their endpoint activities are available and applicable to the process variant."
+          "sentence": "The report measures elapsed time from requisition or SRM creation to purchase order item creation, from item creation to goods receipt, from vendor invoice creation to invoice receipt recording, from invoice receipt to invoice clearance, and from goods receipt to invoice clearance."
         }
       ],
       "same_pair_relations": [],
       "judge": {
         "verdict": "supported",
         "cardinality_ok": true,
-        "confidence": 0.85,
-        "reason": "The evidence sentence explicitly states that 'activities' (ProcessActivity) are 'applicable to the process variant' (ProcessVariant). The N:M cardinality is not contradicted by the text."
+        "confidence": 0.9,
+        "reason": "The evidence sentence explicitly mentions measuring the elapsed time 'from requisition or SRM creation to purchase order item creation', which directly supports the temporal precedence of PurchaseRequisitionCreation before PurchaseOrderItemCreation. The N:M cardinality is not contradicted by the text."
       },
-      "confidence": 0.85
+      "confidence": 0.7
+    },
+    {
+      "relation_id": "SRMSubprocess.precedes.PurchaseOrderItemCreation",
+      "name": "precedes",
+      "domain": "SRMSubprocess",
+      "range": "PurchaseOrderItemCreation",
+      "cardinality": "N:M",
+      "gen_confidence": 0.7,
+      "evidence": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c10",
+          "sentence": "The report measures elapsed time from requisition or SRM creation to purchase order item creation, from item creation to goods receipt, from vendor invoice creation to invoice receipt recording, from invoice receipt to invoice clearance, and from goods receipt to invoice clearance."
+        }
+      ],
+      "same_pair_relations": [],
+      "judge": {
+        "verdict": "supported",
+        "cardinality_ok": true,
+        "confidence": 0.9,
+        "reason": "The evidence sentence states that the report measures elapsed time 'from requisition or SRM creation to purchase order item creation', which directly supports that SRM creation (representing the SRMSubprocess) precedes PurchaseOrderItemCreation."
+      },
+      "confidence": 0.7
+    },
+    {
+      "relation_id": "PurchaseOrderItemCreation.precedes.GoodsReceipt",
+      "name": "precedes",
+      "domain": "PurchaseOrderItemCreation",
+      "range": "GoodsReceipt",
+      "cardinality": "N:M",
+      "gen_confidence": 0.7,
+      "evidence": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c10",
+          "sentence": "The report measures elapsed time from requisition or SRM creation to purchase order item creation, from item creation to goods receipt, from vendor invoice creation to invoice receipt recording, from invoice receipt to invoice clearance, and from goods receipt to invoice clearance."
+        }
+      ],
+      "same_pair_relations": [
+        "PurchaseOrderItemCreation.followedBy.GoodsReceipt"
+      ],
+      "judge": {
+        "verdict": "supported",
+        "cardinality_ok": true,
+        "confidence": 0.9,
+        "reason": "The evidence sentence explicitly mentions measuring the elapsed time 'from item creation to goods receipt', which directly supports the precedence relation from PurchaseOrderItemCreation to GoodsReceipt."
+      },
+      "confidence": 0.7
+    },
+    {
+      "relation_id": "VendorInvoiceCreation.precedes.InvoiceReceipt",
+      "name": "precedes",
+      "domain": "VendorInvoiceCreation",
+      "range": "InvoiceReceipt",
+      "cardinality": "N:M",
+      "gen_confidence": 0.7,
+      "evidence": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c10",
+          "sentence": "The report measures elapsed time from requisition or SRM creation to purchase order item creation, from item creation to goods receipt, from vendor invoice creation to invoice receipt recording, from invoice receipt to invoice clearance, and from goods receipt to invoice clearance."
+        }
+      ],
+      "same_pair_relations": [],
+      "judge": {
+        "verdict": "supported",
+        "cardinality_ok": true,
+        "confidence": 0.9,
+        "reason": "The evidence sentence explicitly mentions measuring the elapsed time 'from vendor invoice creation to invoice receipt recording', which directly supports the precedence relation from VendorInvoiceCreation to InvoiceReceipt."
+      },
+      "confidence": 0.7
     }
   ]
 }

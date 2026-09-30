@@ -1,14 +1,7 @@
 {
   "rejected": [
     {
-      "item_id": "ServiceEntrySheet",
-      "stage": "p3",
-      "reason": "insufficient_evidence",
-      "route_to": "p1",
-      "evidence_mentions": 1
-    },
-    {
-      "item_id": "VendorDebitMemo",
+      "item_id": "InternalDepartment",
       "stage": "p3",
       "reason": "insufficient_evidence",
       "route_to": "p1",
@@ -22,26 +15,319 @@
       "evidence_mentions": 1
     },
     {
-      "item_id": "InternalDepartment",
+      "item_id": "ServiceEntrySheet",
       "stage": "p3",
       "reason": "insufficient_evidence",
       "route_to": "p1",
       "evidence_mentions": 1
     },
     {
-      "item_id": "PaymentBlock",
+      "item_id": "VendorInvoice",
+      "stage": "p3",
+      "reason": "insufficient_evidence",
+      "route_to": "p1",
+      "evidence_mentions": 1
+    },
+    {
+      "item_id": "VendorDebitMemo",
+      "stage": "p3",
+      "reason": "insufficient_evidence",
+      "route_to": "p1",
+      "evidence_mentions": 1
+    },
+    {
+      "item_id": "BusinessActivity",
+      "stage": "p3",
+      "reason": "insufficient_evidence",
+      "route_to": "p1",
+      "evidence_mentions": 1
+    },
+    {
+      "item_id": "PurchaseOrderProcessing",
+      "stage": "p3",
+      "reason": "insufficient_evidence",
+      "route_to": "p1",
+      "evidence_mentions": 1
+    },
+    {
+      "item_id": "OrderConfirmationRecording",
+      "stage": "p3",
+      "reason": "insufficient_evidence",
+      "route_to": "p1",
+      "evidence_mentions": 1
+    },
+    {
+      "item_id": "ServiceEntrySheetRecording",
+      "stage": "p3",
+      "reason": "insufficient_evidence",
+      "route_to": "p1",
+      "evidence_mentions": 1
+    },
+    {
+      "item_id": "GoodsReceiptCancellation",
+      "stage": "p3",
+      "reason": "insufficient_evidence",
+      "route_to": "p1",
+      "evidence_mentions": 1
+    },
+    {
+      "item_id": "Payment",
+      "stage": "p3",
+      "reason": "insufficient_evidence",
+      "route_to": "p1",
+      "evidence_mentions": 1
+    },
+    {
+      "item_id": "Production",
+      "stage": "p3",
+      "reason": "insufficient_evidence",
+      "route_to": "p1",
+      "evidence_mentions": 1
+    },
+    {
+      "item_id": "SRMActivity",
+      "stage": "p3",
+      "reason": "insufficient_evidence",
+      "route_to": "p1",
+      "evidence_mentions": 1
+    },
+    {
+      "item_id": "PaymentBlockRemoval",
+      "stage": "p3",
+      "reason": "insufficient_evidence",
+      "route_to": "p1",
+      "evidence_mentions": 1
+    },
+    {
+      "item_id": "PaymentBlocking",
+      "stage": "p3",
+      "reason": "insufficient_evidence",
+      "route_to": "p1",
+      "evidence_mentions": 1
+    },
+    {
+      "item_id": "PriceChange",
+      "stage": "p3",
+      "reason": "insufficient_evidence",
+      "route_to": "p1",
+      "evidence_mentions": 1
+    },
+    {
+      "item_id": "DeliveryIndicatorChange",
+      "stage": "p3",
+      "reason": "insufficient_evidence",
+      "route_to": "p1",
+      "evidence_mentions": 1
+    },
+    {
+      "item_id": "Cancellation",
+      "stage": "p3",
+      "reason": "insufficient_evidence",
+      "route_to": "p1",
+      "evidence_mentions": 1
+    },
+    {
+      "item_id": "Release",
+      "stage": "p3",
+      "reason": "insufficient_evidence",
+      "route_to": "p1",
+      "evidence_mentions": 1
+    },
+    {
+      "item_id": "Reactivation",
+      "stage": "p3",
+      "reason": "insufficient_evidence",
+      "route_to": "p1",
+      "evidence_mentions": 1
+    },
+    {
+      "item_id": "BlockCreation",
+      "stage": "p3",
+      "reason": "insufficient_evidence",
+      "route_to": "p1",
+      "evidence_mentions": 1
+    },
+    {
+      "item_id": "BlockState",
+      "stage": "p3",
+      "reason": "insufficient_evidence",
+      "route_to": "p1",
+      "evidence_mentions": 1
+    },
+    {
+      "item_id": "ProcessDeviation",
+      "stage": "p3",
+      "reason": "insufficient_evidence",
+      "route_to": "p1",
+      "evidence_mentions": 1
+    },
+    {
+      "item_id": "ComplianceViolation",
+      "stage": "p3",
+      "reason": "insufficient_evidence",
+      "route_to": "p1",
+      "evidence_mentions": 1
+    },
+    {
+      "item_id": "ApprovalAuthority",
+      "stage": "p3",
+      "reason": "insufficient_evidence",
+      "route_to": "p1",
+      "evidence_mentions": 1
+    },
+    {
+      "item_id": "ServiceLevelThreshold",
+      "stage": "p3",
+      "reason": "insufficient_evidence",
+      "route_to": "p1",
+      "evidence_mentions": 1
+    },
+    {
+      "item_id": "InvoiceClearanceRule",
+      "stage": "p3",
+      "reason": "insufficient_evidence",
+      "route_to": "p1",
+      "evidence_mentions": 1
+    },
+    {
+      "item_id": "InvoiceMatchingProcedure",
+      "stage": "p3",
+      "reason": "insufficient_evidence",
+      "route_to": "p1",
+      "evidence_mentions": 1
+    },
+    {
+      "item_id": "OrderingRule",
+      "stage": "p3",
+      "reason": "insufficient_evidence",
+      "route_to": "p1",
+      "evidence_mentions": 1
+    },
+    {
+      "item_id": "DocumentLinkage",
+      "stage": "p3",
+      "reason": "insufficient_evidence",
+      "route_to": "p1",
+      "evidence_mentions": 1
+    },
+    {
+      "item_id": "PaymentBlockState",
       "stage": "p3",
       "reason": "not_a_type",
       "route_to": "p3",
       "judge": {
         "level": "not_a_type",
         "duplicate_of": null,
+        "confidence": 0.95,
+        "reason": "PaymentBlockState represents a state or attribute of an invoice rather than a distinct entity, event, document, or role in the business process. According to the guidelines, states are classified as 'not_a_type'."
+      }
+    },
+    {
+      "item_id": "Subsidiary",
+      "stage": "p3",
+      "reason": "duplicate_concept",
+      "route_to": "p3",
+      "duplicate_of": "Company",
+      "judge": {
+        "level": "type",
+        "duplicate_of": "Company",
         "confidence": 0.9,
-        "reason": "A payment block is a state or restriction applied to an invoice, making it an attribute or state of the Invoice object rather than a standalone entity, document, or role."
+        "reason": "Subsidiary is a class of organizational entities. Since 'Company' is defined in this ontology as 'An organization or subsidiary that acts as the buyer', 'Subsidiary' is a duplicate concept of 'Company' in this context."
       }
     }
   ],
-  "hierarchy_issues": [],
+  "hierarchy_issues": [
+    {
+      "item_id": "InvoiceReceipt->BusinessActivity",
+      "stage": "p3",
+      "reason": "parent_not_a_concept",
+      "route_to": "p3"
+    },
+    {
+      "item_id": "GoodsReceipt->BusinessActivity",
+      "stage": "p3",
+      "reason": "parent_not_a_concept",
+      "route_to": "p3"
+    },
+    {
+      "item_id": "InvoiceClearance->BusinessActivity",
+      "stage": "p3",
+      "reason": "parent_not_a_concept",
+      "route_to": "p3"
+    },
+    {
+      "item_id": "PurchaseOrderItemCreation->BusinessActivity",
+      "stage": "p3",
+      "reason": "parent_not_a_concept",
+      "route_to": "p3"
+    },
+    {
+      "item_id": "Approval->BusinessActivity",
+      "stage": "p3",
+      "reason": "parent_not_a_concept",
+      "route_to": "p3"
+    },
+    {
+      "item_id": "InvoiceCreation->BusinessActivity",
+      "stage": "p3",
+      "reason": "parent_not_a_concept",
+      "route_to": "p3"
+    },
+    {
+      "item_id": "PurchaseOrderApprovalChange->BusinessActivity",
+      "stage": "p3",
+      "reason": "parent_not_a_concept",
+      "route_to": "p3"
+    },
+    {
+      "item_id": "PurchaseRequisitionCreation->BusinessActivity",
+      "stage": "p3",
+      "reason": "parent_not_a_concept",
+      "route_to": "p3"
+    },
+    {
+      "item_id": "VendorInvoiceCreation->BusinessActivity",
+      "stage": "p3",
+      "reason": "parent_not_a_concept",
+      "route_to": "p3"
+    },
+    {
+      "item_id": "InvoiceHandling->BusinessActivity",
+      "stage": "p3",
+      "reason": "parent_not_a_concept",
+      "route_to": "p3"
+    },
+    {
+      "item_id": "Consumption->BusinessActivity",
+      "stage": "p3",
+      "reason": "parent_not_a_concept",
+      "route_to": "p3"
+    },
+    {
+      "item_id": "PaymentBlockCreation->BusinessActivity",
+      "stage": "p3",
+      "reason": "parent_not_a_concept",
+      "route_to": "p3"
+    },
+    {
+      "item_id": "QuantityChange->BusinessActivity",
+      "stage": "p3",
+      "reason": "parent_not_a_concept",
+      "route_to": "p3"
+    },
+    {
+      "item_id": "ItemDeletion->BusinessActivity",
+      "stage": "p3",
+      "reason": "parent_not_a_concept",
+      "route_to": "p3"
+    },
+    {
+      "item_id": "PurchaseOrderItemChange->BusinessActivity",
+      "stage": "p3",
+      "reason": "parent_not_a_concept",
+      "route_to": "p3"
+    }
+  ],
   "dropped_members": [],
   "merge_notes": []
 }
