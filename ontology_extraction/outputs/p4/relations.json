@@ -4,16 +4,16 @@
     "conf_threshold": 0.7,
     "n_concepts_in": 17,
     "n_proposals": 41,
-    "n_l1_passed": 27,
-    "n_relation_types_merged": 27,
-    "n_relations": 24,
-    "n_rejected": 16,
+    "n_l1_passed": 28,
+    "n_relation_types_merged": 28,
+    "n_relations": 25,
+    "n_rejected": 15,
     "n_human_queue": 1,
     "rejected_by_route": {
-      "p1": 14,
+      "p1": 13,
       "p4": 2
     },
-    "concepts_covered": 12
+    "concepts_covered": 13
   },
   "relations": [
     {
@@ -578,6 +578,28 @@
         "reason": "The evidence sentence 'Document-level events can be copied into item cases' directly states that events (RecordedEvent) can be copied into cases (Case), matching the proposed relation and direction."
       },
       "confidence": 0.9
+    },
+    {
+      "relation_id": "ProcessActivity.applicableTo.ProcessVariant",
+      "name": "applicableTo",
+      "domain": "ProcessActivity",
+      "range": "ProcessVariant",
+      "cardinality": "N:M",
+      "gen_confidence": 0.9,
+      "evidence": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c10",
+          "sentence": "They are meaningful only where their endpoint activities are available and applicable to the process variant."
+        }
+      ],
+      "same_pair_relations": [],
+      "judge": {
+        "verdict": "supported",
+        "cardinality_ok": true,
+        "confidence": 0.85,
+        "reason": "The evidence sentence explicitly states that 'activities' (ProcessActivity) are 'applicable to the process variant' (ProcessVariant). The N:M cardinality is not contradicted by the text."
+      },
+      "confidence": 0.85
     }
   ]
 }

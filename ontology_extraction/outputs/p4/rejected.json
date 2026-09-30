@@ -248,25 +248,6 @@
       }
     },
     {
-      "item_id": "ProcessActivity.applicableTo.ProcessVariant@bpi2019-purchase-process#c10",
-      "stage": "p4",
-      "reason": "term_missing",
-      "route_to": "p1",
-      "chunk_id": "bpi2019-purchase-process#c10",
-      "absent": [
-        "ProcessActivity"
-      ],
-      "proposal": {
-        "chunk_id": "bpi2019-purchase-process#c10",
-        "name": "applicableTo",
-        "domain": "ProcessActivity",
-        "range": "ProcessVariant",
-        "cardinality": "N:M",
-        "evidence": "They are meaningful only where their endpoint activities are available and applicable to the process variant.",
-        "confidence": 0.9
-      }
-    },
-    {
       "item_id": "PurchaseOrder.hasPurchaseRequisition.PurchaseRequisition",
       "stage": "p4",
       "reason": "unsupported_by_evidence",
