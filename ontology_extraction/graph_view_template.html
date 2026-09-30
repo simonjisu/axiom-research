@@ -69,8 +69,8 @@ blockquote small { display: block; font-family: var(--mono); font-size: 11px; co
     <div class="stats" id="stats"></div>
     <div class="controls">
       <input type="search" id="q" placeholder="concept · term 찾기" aria-label="concept 또는 term 찾기">
-      <label><input type="checkbox" id="showTerms"> term 보기</label>
-      <label><input type="checkbox" id="showGate"> 반려·보류 보기</label>
+      <label><input type="checkbox" id="showTerms" autocomplete="off"> term 보기</label>
+      <label><input type="checkbox" id="showGate" autocomplete="off"> 반려·보류 보기</label>
       <button id="relayout" type="button">다시 배치</button>
     </div>
   </header>
@@ -282,5 +282,9 @@ $("q").addEventListener("keydown", (e) => {
   if (hit.hasClass("concept")) selectConcept(hit.data("label")); else { focus(hit); showTerm(hit); }
 });
 
+// 기본 보기: 통과한 concept·relation만. 브라우저가 체크 상태를 복원해도 기본값으로 되돌린다
+$("showTerms").checked = false;
+$("showGate").checked = false;
+applyToggles();
 showHome();
 </script>
