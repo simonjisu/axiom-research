@@ -1,0 +1,3900 @@
+{
+  "bpi2019-purchase-process#c00": [
+    [
+      {
+        "span": "PURCHASE-TO-PAY PROCESS",
+        "sentence": "BPI CHALLENGE 2019: PURCHASE-TO-PAY PROCESS",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "Procurement Processes",
+        "sentence": "This English text is a selective paraphrase of \"Compliance and Performance Analysis of Procurement Processes Using Process Mining: BPI Challenge 2019\" by Kiarash Diba, Simon Remy, and Luise Pufahl, Hasso Plattner Institute, University of Potsdam, 2019.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "Process Mining",
+        "sentence": "This English text is a selective paraphrase of \"Compliance and Performance Analysis of Procurement Processes Using Process Mining: BPI Challenge 2019\" by Kiarash Diba, Simon Remy, and Luise Pufahl, Hasso Plattner Institute, University of Potsdam, 2019.",
+        "kind": "other",
+        "expansion": null
+      },
+      {
+        "span": "BPI Challenge 2019",
+        "sentence": "This English text is a selective paraphrase of \"Compliance and Performance Analysis of Procurement Processes Using Process Mining: BPI Challenge 2019\" by Kiarash Diba, Simon Remy, and Luise Pufahl, Hasso Plattner Institute, University of Potsdam, 2019.",
+        "kind": "identifier",
+        "expansion": null
+      },
+      {
+        "span": "business concepts",
+        "sentence": "This document preserves business concepts, relationships, process variants, and evidence limitations.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "process variants",
+        "sentence": "This document preserves business concepts, relationships, process variants, and evidence limitations.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "individual vendors",
+        "sentence": "It omits statistical tables, charts, tool comparisons, and rankings of individual vendors.",
+        "kind": "role",
+        "expansion": null
+      },
+      {
+        "span": "participant analysis report",
+        "sentence": "The source is a participant analysis report.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "expected behavior",
+        "sentence": "Statements about expected behavior describe the report's interpretation of the purchasing process.",
+        "kind": "state",
+        "expansion": null
+      },
+      {
+        "span": "purchasing process",
+        "sentence": "Statements about expected behavior describe the report's interpretation of the purchasing process.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "observed behavior",
+        "sentence": "Statements about observed behavior describe its analysis of the event log.",
+        "kind": "state",
+        "expansion": null
+      },
+      {
+        "span": "event log",
+        "sentence": "Statements about observed behavior describe its analysis of the event log.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "company-issued purchasing policy",
+        "sentence": "The report is not a company-issued purchasing policy, and its discovered models are simplified representations of common behavior.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "discovered models",
+        "sentence": "The report is not a company-issued purchasing policy, and its discovered models are simplified representations of common behavior.",
+        "kind": "thing",
+        "expansion": null
+      }
+    ],
+    [
+      {
+        "span": "PURCHASE-TO-PAY PROCESS",
+        "sentence": "BPI CHALLENGE 2019: PURCHASE-TO-PAY PROCESS",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "Procurement Processes",
+        "sentence": "This English text is a selective paraphrase of \"Compliance and Performance Analysis of Procurement Processes Using Process Mining: BPI Challenge 2019\" by Kiarash Diba, Simon Remy, and Luise Pufahl, Hasso Plattner Institute, University of Potsdam, 2019.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "Process Mining",
+        "sentence": "This English text is a selective paraphrase of \"Compliance and Performance Analysis of Procurement Processes Using Process Mining: BPI Challenge 2019\" by Kiarash Diba, Simon Remy, and Luise Pufahl, Hasso Plattner Institute, University of Potsdam, 2019.",
+        "kind": "other",
+        "expansion": null
+      },
+      {
+        "span": "PDF",
+        "sentence": "Page references below use the PDF's page numbering, starting at 1.",
+        "kind": "abbreviation",
+        "expansion": null
+      },
+      {
+        "span": "process variants",
+        "sentence": "This document preserves business concepts, relationships, process variants, and evidence limitations.",
+        "kind": "other",
+        "expansion": null
+      },
+      {
+        "span": "vendors",
+        "sentence": "It omits statistical tables, charts, tool comparisons, and rankings of individual vendors.",
+        "kind": "role",
+        "expansion": null
+      },
+      {
+        "span": "participant analysis report",
+        "sentence": "The source is a participant analysis report.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "purchasing process",
+        "sentence": "Statements about expected behavior describe the report's interpretation of the purchasing process.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "event log",
+        "sentence": "Statements about observed behavior describe its analysis of the event log.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "purchasing policy",
+        "sentence": "The report is not a company-issued purchasing policy, and its discovered models are simplified representations of common behavior.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "discovered models",
+        "sentence": "The report is not a company-issued purchasing policy, and its discovered models are simplified representations of common behavior.",
+        "kind": "document",
+        "expansion": null
+      }
+    ],
+    [
+      {
+        "span": "PURCHASE-TO-PAY PROCESS",
+        "sentence": "BPI CHALLENGE 2019: PURCHASE-TO-PAY PROCESS",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "Procurement Processes",
+        "sentence": "This English text is a selective paraphrase of \"Compliance and Performance Analysis of Procurement Processes Using Process Mining: BPI Challenge 2019\" by Kiarash Diba, Simon Remy, and Luise Pufahl, Hasso Plattner Institute, University of Potsdam, 2019.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "Process Mining",
+        "sentence": "This English text is a selective paraphrase of \"Compliance and Performance Analysis of Procurement Processes Using Process Mining: BPI Challenge 2019\" by Kiarash Diba, Simon Remy, and Luise Pufahl, Hasso Plattner Institute, University of Potsdam, 2019.",
+        "kind": "other",
+        "expansion": null
+      },
+      {
+        "span": "process variants",
+        "sentence": "This document preserves business concepts, relationships, process variants, and evidence limitations.",
+        "kind": "other",
+        "expansion": null
+      },
+      {
+        "span": "vendors",
+        "sentence": "It omits statistical tables, charts, tool comparisons, and rankings of individual vendors.",
+        "kind": "role",
+        "expansion": null
+      },
+      {
+        "span": "purchasing process",
+        "sentence": "Statements about expected behavior describe the report's interpretation of the purchasing process.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "event log",
+        "sentence": "Statements about observed behavior describe its analysis of the event log.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "purchasing policy",
+        "sentence": "The report is not a company-issued purchasing policy, and its discovered models are simplified representations of common behavior.",
+        "kind": "rule",
+        "expansion": null
+      }
+    ]
+  ],
+  "bpi2019-purchase-process#c01": [
+    [
+      {
+        "span": "purchasing",
+        "sentence": "The process concerns purchasing in a multinational paints and coatings company operating from the Netherlands.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "multinational paints and coatings company",
+        "sentence": "The process concerns purchasing in a multinational paints and coatings company operating from the Netherlands.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "Netherlands",
+        "sentence": "The process concerns purchasing in a multinational paints and coatings company operating from the Netherlands.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "Purchase-to-pay",
+        "sentence": "Purchase-to-pay follows a purchase order item from its creation through the applicable goods and invoice handling activities to invoice clearance.",
+        "kind": "other",
+        "expansion": null
+      },
+      {
+        "span": "purchase order item",
+        "sentence": "Purchase-to-pay follows a purchase order item from its creation through the applicable goods and invoice handling activities to invoice clearance.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "goods and invoice handling activities",
+        "sentence": "Purchase-to-pay follows a purchase order item from its creation through the applicable goods and invoice handling activities to invoice clearance.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "invoice clearance",
+        "sentence": "Purchase-to-pay follows a purchase order item from its creation through the applicable goods and invoice handling activities to invoice clearance.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "Consignment",
+        "sentence": "Consignment has a different endpoint in the available log because subsequent consumption and payment are outside its scope.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "available log",
+        "sentence": "Consignment has a different endpoint in the available log because subsequent consumption and payment are outside its scope.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "subsequent consumption",
+        "sentence": "Consignment has a different endpoint in the available log because subsequent consumption and payment are outside its scope.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "payment",
+        "sentence": "Consignment has a different endpoint in the available log because subsequent consumption and payment are outside its scope.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "purchase order document",
+        "sentence": "A purchase order document contains one or more purchase order items.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "purchase order items",
+        "sentence": "A purchase order document contains one or more purchase order items.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "case",
+        "sentence": "An individual item is the case used to organize the event log.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "event log",
+        "sentence": "An individual item is the case used to organize the event log.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "events",
+        "sentence": "A case contains the events recorded for that item; the entire purchase order is not the case unit.",
+        "kind": "other",
+        "expansion": null
+      },
+      {
+        "span": "entire purchase order",
+        "sentence": "A case contains the events recorded for that item; the entire purchase order is not the case unit.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "case unit",
+        "sentence": "A case contains the events recorded for that item; the entire purchase order is not the case unit.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "case identifier",
+        "sentence": "The case identifier combines purchase order and item identifiers.",
+        "kind": "identifier",
+        "expansion": null
+      },
+      {
+        "span": "purchase order",
+        "sentence": "The case identifier combines purchase order and item identifiers.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "item identifiers",
+        "sentence": "The case identifier combines purchase order and item identifiers.",
+        "kind": "identifier",
+        "expansion": null
+      }
+    ],
+    [
+      {
+        "span": "multinational paints and coatings company",
+        "sentence": "The process concerns purchasing in a multinational paints and coatings company operating from the Netherlands.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "Purchase-to-pay",
+        "sentence": "Purchase-to-pay follows a purchase order item from its creation through the applicable goods and invoice handling activities to invoice clearance.",
+        "kind": "other",
+        "expansion": null
+      },
+      {
+        "span": "purchase order item",
+        "sentence": "Purchase-to-pay follows a purchase order item from its creation through the applicable goods and invoice handling activities to invoice clearance.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "goods and invoice handling activities",
+        "sentence": "Purchase-to-pay follows a purchase order item from its creation through the applicable goods and invoice handling activities to invoice clearance.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "invoice clearance",
+        "sentence": "Purchase-to-pay follows a purchase order item from its creation through the applicable goods and invoice handling activities to invoice clearance.",
+        "kind": "state",
+        "expansion": null
+      },
+      {
+        "span": "Consignment",
+        "sentence": "Consignment has a different endpoint in the available log because subsequent consumption and payment are outside its scope.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "consumption",
+        "sentence": "Consignment has a different endpoint in the available log because subsequent consumption and payment are outside its scope.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "payment",
+        "sentence": "Consignment has a different endpoint in the available log because subsequent consumption and payment are outside its scope.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "purchase order document",
+        "sentence": "A purchase order document contains one or more purchase order items.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "purchase order items",
+        "sentence": "A purchase order document contains one or more purchase order items.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "individual item",
+        "sentence": "An individual item is the case used to organize the event log.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "case",
+        "sentence": "An individual item is the case used to organize the event log.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "event log",
+        "sentence": "An individual item is the case used to organize the event log.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "purchase order",
+        "sentence": "A case contains the events recorded for that item; the entire purchase order is not the case unit.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "case unit",
+        "sentence": "A case contains the events recorded for that item; the entire purchase order is not the case unit.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "case identifier",
+        "sentence": "The case identifier combines purchase order and item identifiers.",
+        "kind": "identifier",
+        "expansion": null
+      },
+      {
+        "span": "item identifiers",
+        "sentence": "The case identifier combines purchase order and item identifiers.",
+        "kind": "identifier",
+        "expansion": null
+      }
+    ],
+    [
+      {
+        "span": "purchasing",
+        "sentence": "The process concerns purchasing in a multinational paints and coatings company operating from the Netherlands.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "multinational paints and coatings company",
+        "sentence": "The process concerns purchasing in a multinational paints and coatings company operating from the Netherlands.",
+        "kind": "role",
+        "expansion": null
+      },
+      {
+        "span": "Purchase-to-pay",
+        "sentence": "Purchase-to-pay follows a purchase order item from its creation through the applicable goods and invoice handling activities to invoice clearance.",
+        "kind": "other",
+        "expansion": null
+      },
+      {
+        "span": "purchase order item",
+        "sentence": "Purchase-to-pay follows a purchase order item from its creation through the applicable goods and invoice handling activities to invoice clearance.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "goods and invoice handling activities",
+        "sentence": "Purchase-to-pay follows a purchase order item from its creation through the applicable goods and invoice handling activities to invoice clearance.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "invoice clearance",
+        "sentence": "Purchase-to-pay follows a purchase order item from its creation through the applicable goods and invoice handling activities to invoice clearance.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "Consignment",
+        "sentence": "Consignment has a different endpoint in the available log because subsequent consumption and payment are outside its scope.",
+        "kind": "other",
+        "expansion": null
+      },
+      {
+        "span": "available log",
+        "sentence": "Consignment has a different endpoint in the available log because subsequent consumption and payment are outside its scope.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "consumption",
+        "sentence": "Consignment has a different endpoint in the available log because subsequent consumption and payment are outside its scope.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "payment",
+        "sentence": "Consignment has a different endpoint in the available log because subsequent consumption and payment are outside its scope.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "purchase order document",
+        "sentence": "A purchase order document contains one or more purchase order items.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "purchase order items",
+        "sentence": "A purchase order document contains one or more purchase order items.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "individual item",
+        "sentence": "An individual item is the case used to organize the event log.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "case",
+        "sentence": "An individual item is the case used to organize the event log.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "event log",
+        "sentence": "An individual item is the case used to organize the event log.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "purchase order",
+        "sentence": "A case contains the events recorded for that item; the entire purchase order is not the case unit.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "case unit",
+        "sentence": "A case contains the events recorded for that item; the entire purchase order is not the case unit.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "case identifier",
+        "sentence": "The case identifier combines purchase order and item identifiers.",
+        "kind": "identifier",
+        "expansion": null
+      },
+      {
+        "span": "item identifiers",
+        "sentence": "The case identifier combines purchase order and item identifiers.",
+        "kind": "identifier",
+        "expansion": null
+      }
+    ]
+  ],
+  "bpi2019-purchase-process#c02": [
+    [
+      {
+        "span": "purchase order document",
+        "sentence": "A purchase order document groups purchase order items and has a document type.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "purchase order items",
+        "sentence": "A purchase order document groups purchase order items and has a document type.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "document type",
+        "sentence": "A purchase order document groups purchase order items and has a document type.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "standard purchase orders",
+        "sentence": "The report distinguishes standard purchase orders, framework orders, and EC purchase orders.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "framework orders",
+        "sentence": "The report distinguishes standard purchase orders, framework orders, and EC purchase orders.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "EC purchase orders",
+        "sentence": "The report distinguishes standard purchase orders, framework orders, and EC purchase orders.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "framework order",
+        "sentence": "A framework order, also described as a blanket purchase order, can support recurring invoices over a period of time.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "blanket purchase order",
+        "sentence": "A framework order, also described as a blanket purchase order, can support recurring invoices over a period of time.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "recurring invoices",
+        "sentence": "A framework order, also described as a blanket purchase order, can support recurring invoices over a period of time.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "purchase order item",
+        "sentence": "A purchase order item is an individually tracked line of a purchase order.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "purchase order",
+        "sentence": "A purchase order item is an individually tracked line of a purchase order.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "subsidiary",
+        "sentence": "Its context includes a subsidiary or company, a vendor, an item type, a spend area, and an item category.",
+        "kind": "role",
+        "expansion": null
+      },
+      {
+        "span": "vendor",
+        "sentence": "Its context includes a subsidiary or company, a vendor, an item type, a spend area, and an item category.",
+        "kind": "role",
+        "expansion": null
+      },
+      {
+        "span": "item type",
+        "sentence": "Its context includes a subsidiary or company, a vendor, an item type, a spend area, and an item category.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "spend area",
+        "sentence": "Its context includes a subsidiary or company, a vendor, an item type, a spend area, and an item category.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "item category",
+        "sentence": "Its context includes a subsidiary or company, a vendor, an item type, a spend area, and an item category.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "invoice matching procedure",
+        "sentence": "The item category identifies the invoice matching procedure and therefore the applicable process variant.",
+        "kind": "rule",
+        "expansion": null
+      },
+      {
+        "span": "invoice",
+        "sentence": "A vendor supplies the purchased goods or services and can create an invoice.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "Internal departments",
+        "sentence": "Internal departments require purchased goods or services; vendors have an interest in timely payment.",
+        "kind": "role",
+        "expansion": null
+      },
+      {
+        "span": "Company and vendor identifiers",
+        "sentence": "Company and vendor identifiers in the dataset are anonymized.",
+        "kind": "identifier",
+        "expansion": null
+      },
+      {
+        "span": "recorded event",
+        "sentence": "A recorded event belongs to an item case and identifies an activity and its completion timestamp.",
+        "kind": "other",
+        "expansion": null
+      },
+      {
+        "span": "item case",
+        "sentence": "A recorded event belongs to an item case and identifies an activity and its completion timestamp.",
+        "kind": "other",
+        "expansion": null
+      },
+      {
+        "span": "completion timestamp",
+        "sentence": "A recorded event belongs to an item case and identifies an activity and its completion timestamp.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "Automated batch resources",
+        "sentence": "Automated batch resources and human users both occur.",
+        "kind": "role",
+        "expansion": null
+      },
+      {
+        "span": "human users",
+        "sentence": "Automated batch resources and human users both occur.",
+        "kind": "role",
+        "expansion": null
+      },
+      {
+        "span": "recorded resource",
+        "sentence": "A recorded resource is evidence about an activity's execution or recording; it does not by itself establish a complete organizational role or approval authority.",
+        "kind": "role",
+        "expansion": null
+      },
+      {
+        "span": "approval authority",
+        "sentence": "A recorded resource is evidence about an activity's execution or recording; it does not by itself establish a complete organizational role or approval authority.",
+        "kind": "rule",
+        "expansion": null
+      },
+      {
+        "span": "Goods receipt",
+        "sentence": "Goods receipt, invoice creation, invoice receipt, and invoice clearance are distinct business activities.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "invoice creation",
+        "sentence": "Goods receipt, invoice creation, invoice receipt, and invoice clearance are distinct business activities.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "invoice receipt",
+        "sentence": "Goods receipt, invoice creation, invoice receipt, and invoice clearance are distinct business activities.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "invoice clearance",
+        "sentence": "Goods receipt, invoice creation, invoice receipt, and invoice clearance are distinct business activities.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "purchase requisition",
+        "sentence": "A purchase requisition can precede an order item, but it is not present in every observed variant.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "order item",
+        "sentence": "A purchase requisition can precede an order item, but it is not present in every observed variant.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "service entry sheet",
+        "sentence": "A service entry sheet records a service-related step in some variants.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "document identifier",
+        "sentence": "The report does not provide a reliable document identifier that links every individual invoice to every corresponding receipt.",
+        "kind": "identifier",
+        "expansion": null
+      }
+    ],
+    [
+      {
+        "span": "purchase order document",
+        "sentence": "A purchase order document groups purchase order items and has a document type.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "purchase order items",
+        "sentence": "A purchase order document groups purchase order items and has a document type.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "document type",
+        "sentence": "A purchase order document groups purchase order items and has a document type.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "standard purchase orders",
+        "sentence": "The report distinguishes standard purchase orders, framework orders, and EC purchase orders.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "framework orders",
+        "sentence": "The report distinguishes standard purchase orders, framework orders, and EC purchase orders.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "EC purchase orders",
+        "sentence": "The report distinguishes standard purchase orders, framework orders, and EC purchase orders.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "blanket purchase order",
+        "sentence": "A framework order, also described as a blanket purchase order, can support recurring invoices over a period of time.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "recurring invoices",
+        "sentence": "A framework order, also described as a blanket purchase order, can support recurring invoices over a period of time.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "purchase order item",
+        "sentence": "A purchase order item is an individually tracked line of a purchase order.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "purchase order",
+        "sentence": "A purchase order item is an individually tracked line of a purchase order.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "subsidiary",
+        "sentence": "Its context includes a subsidiary or company, a vendor, an item type, a spend area, and an item category.",
+        "kind": "role",
+        "expansion": null
+      },
+      {
+        "span": "company",
+        "sentence": "Its context includes a subsidiary or company, a vendor, an item type, a spend area, and an item category.",
+        "kind": "role",
+        "expansion": null
+      },
+      {
+        "span": "vendor",
+        "sentence": "Its context includes a subsidiary or company, a vendor, an item type, a spend area, and an item category.",
+        "kind": "role",
+        "expansion": null
+      },
+      {
+        "span": "item type",
+        "sentence": "Its context includes a subsidiary or company, a vendor, an item type, a spend area, and an item category.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "spend area",
+        "sentence": "Its context includes a subsidiary or company, a vendor, an item type, a spend area, and an item category.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "item category",
+        "sentence": "Its context includes a subsidiary or company, a vendor, an item type, a spend area, and an item category.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "invoice matching procedure",
+        "sentence": "The item category identifies the invoice matching procedure and therefore the applicable process variant.",
+        "kind": "rule",
+        "expansion": null
+      },
+      {
+        "span": "invoice",
+        "sentence": "A vendor supplies the purchased goods or services and can create an invoice.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "Internal departments",
+        "sentence": "Internal departments require purchased goods or services; vendors have an interest in timely payment.",
+        "kind": "role",
+        "expansion": null
+      },
+      {
+        "span": "Company and vendor identifiers",
+        "sentence": "Company and vendor identifiers in the dataset are anonymized.",
+        "kind": "identifier",
+        "expansion": null
+      },
+      {
+        "span": "recorded event",
+        "sentence": "A recorded event belongs to an item case and identifies an activity and its completion timestamp.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "item case",
+        "sentence": "A recorded event belongs to an item case and identifies an activity and its completion timestamp.",
+        "kind": "identifier",
+        "expansion": null
+      },
+      {
+        "span": "completion timestamp",
+        "sentence": "A recorded event belongs to an item case and identifies an activity and its completion timestamp.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "user",
+        "sentence": "The log also identifies the user or resource recording activities.",
+        "kind": "role",
+        "expansion": null
+      },
+      {
+        "span": "resource",
+        "sentence": "The log also identifies the user or resource recording activities.",
+        "kind": "role",
+        "expansion": null
+      },
+      {
+        "span": "Automated batch resources",
+        "sentence": "Automated batch resources and human users both occur.",
+        "kind": "role",
+        "expansion": null
+      },
+      {
+        "span": "human users",
+        "sentence": "Automated batch resources and human users both occur.",
+        "kind": "role",
+        "expansion": null
+      },
+      {
+        "span": "recorded resource",
+        "sentence": "A recorded resource is evidence about an activity's execution or recording; it does not by itself establish a complete organizational role or approval authority.",
+        "kind": "role",
+        "expansion": null
+      },
+      {
+        "span": "approval authority",
+        "sentence": "A recorded resource is evidence about an activity's execution or recording; it does not by itself establish a complete organizational role or approval authority.",
+        "kind": "rule",
+        "expansion": null
+      },
+      {
+        "span": "Goods receipt",
+        "sentence": "Goods receipt, invoice creation, invoice receipt, and invoice clearance are distinct business activities.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "invoice creation",
+        "sentence": "Goods receipt, invoice creation, invoice receipt, and invoice clearance are distinct business activities.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "invoice receipt",
+        "sentence": "Goods receipt, invoice creation, invoice receipt, and invoice clearance are distinct business activities.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "invoice clearance",
+        "sentence": "Goods receipt, invoice creation, invoice receipt, and invoice clearance are distinct business activities.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "purchase requisition",
+        "sentence": "A purchase requisition can precede an order item, but it is not present in every observed variant.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "order item",
+        "sentence": "A purchase requisition can precede an order item, but it is not present in every observed variant.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "service entry sheet",
+        "sentence": "A service entry sheet records a service-related step in some variants.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "goods receipt events",
+        "sentence": "An item can have multiple goods receipt events and multiple invoice-related events.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "invoice-related events",
+        "sentence": "An item can have multiple goods receipt events and multiple invoice-related events.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "invoice handling",
+        "sentence": "The report also describes invoices that cover several items even though invoice handling is recorded in only one item case.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "document identifier",
+        "sentence": "The report does not provide a reliable document identifier that links every individual invoice to every corresponding receipt.",
+        "kind": "identifier",
+        "expansion": null
+      }
+    ],
+    [
+      {
+        "span": "purchase order document",
+        "sentence": "A purchase order document groups purchase order items and has a document type.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "purchase order items",
+        "sentence": "A purchase order document groups purchase order items and has a document type.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "document type",
+        "sentence": "A purchase order document groups purchase order items and has a document type.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "standard purchase orders",
+        "sentence": "The report distinguishes standard purchase orders, framework orders, and EC purchase orders.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "framework orders",
+        "sentence": "The report distinguishes standard purchase orders, framework orders, and EC purchase orders.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "EC purchase orders",
+        "sentence": "The report distinguishes standard purchase orders, framework orders, and EC purchase orders.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "framework order",
+        "sentence": "A framework order, also described as a blanket purchase order, can support recurring invoices over a period of time.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "blanket purchase order",
+        "sentence": "A framework order, also described as a blanket purchase order, can support recurring invoices over a period of time.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "recurring invoices",
+        "sentence": "A framework order, also described as a blanket purchase order, can support recurring invoices over a period of time.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "purchase order item",
+        "sentence": "A purchase order item is an individually tracked line of a purchase order.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "purchase order",
+        "sentence": "A purchase order item is an individually tracked line of a purchase order.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "subsidiary",
+        "sentence": "Its context includes a subsidiary or company, a vendor, an item type, a spend area, and an item category.",
+        "kind": "role",
+        "expansion": null
+      },
+      {
+        "span": "company",
+        "sentence": "Its context includes a subsidiary or company, a vendor, an item type, a spend area, and an item category.",
+        "kind": "role",
+        "expansion": null
+      },
+      {
+        "span": "vendor",
+        "sentence": "Its context includes a subsidiary or company, a vendor, an item type, a spend area, and an item category.",
+        "kind": "role",
+        "expansion": null
+      },
+      {
+        "span": "item type",
+        "sentence": "Its context includes a subsidiary or company, a vendor, an item type, a spend area, and an item category.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "spend area",
+        "sentence": "Its context includes a subsidiary or company, a vendor, an item type, a spend area, and an item category.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "item category",
+        "sentence": "Its context includes a subsidiary or company, a vendor, an item type, a spend area, and an item category.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "invoice matching procedure",
+        "sentence": "The item category identifies the invoice matching procedure and therefore the applicable process variant.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "process variant",
+        "sentence": "The item category identifies the invoice matching procedure and therefore the applicable process variant.",
+        "kind": "other",
+        "expansion": null
+      },
+      {
+        "span": "purchased goods or services",
+        "sentence": "A vendor supplies the purchased goods or services and can create an invoice.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "invoice",
+        "sentence": "A vendor supplies the purchased goods or services and can create an invoice.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "company entity",
+        "sentence": "A subsidiary identifies the company entity associated with the purchase.",
+        "kind": "role",
+        "expansion": null
+      },
+      {
+        "span": "Internal departments",
+        "sentence": "Internal departments require purchased goods or services; vendors have an interest in timely payment.",
+        "kind": "role",
+        "expansion": null
+      },
+      {
+        "span": "Company and vendor identifiers",
+        "sentence": "Company and vendor identifiers in the dataset are anonymized.",
+        "kind": "identifier",
+        "expansion": null
+      },
+      {
+        "span": "recorded event",
+        "sentence": "A recorded event belongs to an item case and identifies an activity and its completion timestamp.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "item case",
+        "sentence": "A recorded event belongs to an item case and identifies an activity and its completion timestamp.",
+        "kind": "identifier",
+        "expansion": null
+      },
+      {
+        "span": "completion timestamp",
+        "sentence": "A recorded event belongs to an item case and identifies an activity and its completion timestamp.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "user",
+        "sentence": "The log also identifies the user or resource recording activities.",
+        "kind": "role",
+        "expansion": null
+      },
+      {
+        "span": "resource",
+        "sentence": "The log also identifies the user or resource recording activities.",
+        "kind": "role",
+        "expansion": null
+      },
+      {
+        "span": "Automated batch resources",
+        "sentence": "Automated batch resources and human users both occur.",
+        "kind": "role",
+        "expansion": null
+      },
+      {
+        "span": "human users",
+        "sentence": "Automated batch resources and human users both occur.",
+        "kind": "role",
+        "expansion": null
+      },
+      {
+        "span": "recorded resource",
+        "sentence": "A recorded resource is evidence about an activity's execution or recording; it does not by itself establish a complete organizational role or approval authority.",
+        "kind": "role",
+        "expansion": null
+      },
+      {
+        "span": "organizational role",
+        "sentence": "A recorded resource is evidence about an activity's execution or recording; it does not by itself establish a complete organizational role or approval authority.",
+        "kind": "role",
+        "expansion": null
+      },
+      {
+        "span": "approval authority",
+        "sentence": "A recorded resource is evidence about an activity's execution or recording; it does not by itself establish a complete organizational role or approval authority.",
+        "kind": "rule",
+        "expansion": null
+      },
+      {
+        "span": "Goods receipt",
+        "sentence": "Goods receipt, invoice creation, invoice receipt, and invoice clearance are distinct business activities.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "invoice creation",
+        "sentence": "Goods receipt, invoice creation, invoice receipt, and invoice clearance are distinct business activities.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "invoice receipt",
+        "sentence": "Goods receipt, invoice creation, invoice receipt, and invoice clearance are distinct business activities.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "invoice clearance",
+        "sentence": "Goods receipt, invoice creation, invoice receipt, and invoice clearance are distinct business activities.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "purchase requisition",
+        "sentence": "A purchase requisition can precede an order item, but it is not present in every observed variant.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "order item",
+        "sentence": "A purchase requisition can precede an order item, but it is not present in every observed variant.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "service entry sheet",
+        "sentence": "A service entry sheet records a service-related step in some variants.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "service-related step",
+        "sentence": "A service entry sheet records a service-related step in some variants.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "goods receipt events",
+        "sentence": "An item can have multiple goods receipt events and multiple invoice-related events.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "invoice-related events",
+        "sentence": "An item can have multiple goods receipt events and multiple invoice-related events.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "invoice handling",
+        "sentence": "The report also describes invoices that cover several items even though invoice handling is recorded in only one item case.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "document identifier",
+        "sentence": "The report does not provide a reliable document identifier that links every individual invoice to every corresponding receipt.",
+        "kind": "identifier",
+        "expansion": null
+      }
+    ]
+  ],
+  "bpi2019-purchase-process#c03": [
+    [
+      {
+        "span": "THREE-WAY MATCHING",
+        "sentence": "3. PROCESS VARIANT: THREE-WAY MATCHING, INVOICE AFTER GOODS RECEIPT",
+        "kind": "rule",
+        "expansion": null
+      },
+      {
+        "span": "INVOICE AFTER GOODS RECEIPT",
+        "sentence": "3. PROCESS VARIANT: THREE-WAY MATCHING, INVOICE AFTER GOODS RECEIPT",
+        "kind": "rule",
+        "expansion": null
+      },
+      {
+        "span": "invoice value",
+        "sentence": "Expected behavior: the invoice value is checked against both the goods receipt value and the value recorded when the purchase order item was created.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "goods receipt value",
+        "sentence": "Expected behavior: the invoice value is checked against both the goods receipt value and the value recorded when the purchase order item was created.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "purchase order item",
+        "sentence": "Expected behavior: the invoice value is checked against both the goods receipt value and the value recorded when the purchase order item was created.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "Goods receipt",
+        "sentence": "Goods receipt must precede invoice receipt for this category.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "invoice receipt",
+        "sentence": "Goods receipt must precede invoice receipt for this category.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "Invoice clearance",
+        "sentence": "Invoice clearance follows the required receipt and matching steps.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "purchase order item creation",
+        "sentence": "The common business progression is purchase order item creation, goods receipt recording, invoice receipt recording, and invoice clearance.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "goods receipt recording",
+        "sentence": "The common business progression is purchase order item creation, goods receipt recording, invoice receipt recording, and invoice clearance.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "invoice receipt recording",
+        "sentence": "The common business progression is purchase order item creation, goods receipt recording, invoice receipt recording, and invoice clearance.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "Vendor invoice creation",
+        "sentence": "Vendor invoice creation is a distinct activity from the company's recording of invoice receipt.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "recording of invoice receipt",
+        "sentence": "Vendor invoice creation is a distinct activity from the company's recording of invoice receipt.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "purchase requisition creation",
+        "sentence": "Optional or additional activities include purchase requisition creation, order confirmation, service entry sheet recording, and changes to the order item.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "order confirmation",
+        "sentence": "Optional or additional activities include purchase requisition creation, order confirmation, service entry sheet recording, and changes to the order item.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "service entry sheet recording",
+        "sentence": "Optional or additional activities include purchase requisition creation, order confirmation, service entry sheet recording, and changes to the order item.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "changes to the order item",
+        "sentence": "Optional or additional activities include purchase requisition creation, order confirmation, service entry sheet recording, and changes to the order item.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "EC purchase orders",
+        "sentence": "Observed behavior: the report separates EC purchase orders from standard and framework orders because EC orders include an SRM subprocess.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "standard and framework orders",
+        "sentence": "Observed behavior: the report separates EC purchase orders from standard and framework orders because EC orders include an SRM subprocess.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "EC",
+        "sentence": "Observed behavior: the report separates EC purchase orders from standard and framework orders because EC orders include an SRM subprocess.",
+        "kind": "abbreviation",
+        "expansion": null
+      },
+      {
+        "span": "SRM",
+        "sentence": "Observed behavior: the report separates EC purchase orders from standard and framework orders because EC orders include an SRM subprocess.",
+        "kind": "abbreviation",
+        "expansion": null
+      },
+      {
+        "span": "SRM subprocess",
+        "sentence": "Observed behavior: the report separates EC purchase orders from standard and framework orders because EC orders include an SRM subprocess.",
+        "kind": "other",
+        "expansion": null
+      },
+      {
+        "span": "repeated invoice creation",
+        "sentence": "It also observes repeated invoice creation and repeated changes.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "repeated changes",
+        "sentence": "It also observes repeated invoice creation and repeated changes.",
+        "kind": "activity",
+        "expansion": null
+      }
+    ],
+    [
+      {
+        "span": "invoice value",
+        "sentence": "Expected behavior: the invoice value is checked against both the goods receipt value and the value recorded when the purchase order item was created.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "goods receipt value",
+        "sentence": "Expected behavior: the invoice value is checked against both the goods receipt value and the value recorded when the purchase order item was created.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "purchase order item",
+        "sentence": "Expected behavior: the invoice value is checked against both the goods receipt value and the value recorded when the purchase order item was created.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "Goods receipt",
+        "sentence": "Goods receipt must precede invoice receipt for this category.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "invoice receipt",
+        "sentence": "Goods receipt must precede invoice receipt for this category.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "Invoice clearance",
+        "sentence": "Invoice clearance follows the required receipt and matching steps.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "purchase order item creation",
+        "sentence": "The common business progression is purchase order item creation, goods receipt recording, invoice receipt recording, and invoice clearance.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "goods receipt recording",
+        "sentence": "The common business progression is purchase order item creation, goods receipt recording, invoice receipt recording, and invoice clearance.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "invoice receipt recording",
+        "sentence": "The common business progression is purchase order item creation, goods receipt recording, invoice receipt recording, and invoice clearance.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "Vendor invoice creation",
+        "sentence": "Vendor invoice creation is a distinct activity from the company's recording of invoice receipt.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "recording of invoice receipt",
+        "sentence": "Vendor invoice creation is a distinct activity from the company's recording of invoice receipt.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "purchase requisition creation",
+        "sentence": "Optional or additional activities include purchase requisition creation, order confirmation, service entry sheet recording, and changes to the order item.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "order confirmation",
+        "sentence": "Optional or additional activities include purchase requisition creation, order confirmation, service entry sheet recording, and changes to the order item.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "service entry sheet recording",
+        "sentence": "Optional or additional activities include purchase requisition creation, order confirmation, service entry sheet recording, and changes to the order item.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "changes to the order item",
+        "sentence": "Optional or additional activities include purchase requisition creation, order confirmation, service entry sheet recording, and changes to the order item.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "EC purchase orders",
+        "sentence": "Observed behavior: the report separates EC purchase orders from standard and framework orders because EC orders include an SRM subprocess.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "EC",
+        "sentence": "Observed behavior: the report separates EC purchase orders from standard and framework orders because EC orders include an SRM subprocess.",
+        "kind": "abbreviation",
+        "expansion": null
+      },
+      {
+        "span": "SRM",
+        "sentence": "Observed behavior: the report separates EC purchase orders from standard and framework orders because EC orders include an SRM subprocess.",
+        "kind": "abbreviation",
+        "expansion": null
+      },
+      {
+        "span": "SRM subprocess",
+        "sentence": "Observed behavior: the report separates EC purchase orders from standard and framework orders because EC orders include an SRM subprocess.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "repeated invoice creation",
+        "sentence": "It also observes repeated invoice creation and repeated changes.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "repeated changes",
+        "sentence": "It also observes repeated invoice creation and repeated changes.",
+        "kind": "activity",
+        "expansion": null
+      }
+    ],
+    [
+      {
+        "span": "THREE-WAY MATCHING",
+        "sentence": "3. PROCESS VARIANT: THREE-WAY MATCHING, INVOICE AFTER GOODS RECEIPT",
+        "kind": "rule",
+        "expansion": null
+      },
+      {
+        "span": "invoice value",
+        "sentence": "Expected behavior: the invoice value is checked against both the goods receipt value and the value recorded when the purchase order item was created.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "goods receipt value",
+        "sentence": "Expected behavior: the invoice value is checked against both the goods receipt value and the value recorded when the purchase order item was created.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "purchase order item",
+        "sentence": "Expected behavior: the invoice value is checked against both the goods receipt value and the value recorded when the purchase order item was created.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "Goods receipt",
+        "sentence": "Goods receipt must precede invoice receipt for this category.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "invoice receipt",
+        "sentence": "Goods receipt must precede invoice receipt for this category.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "Invoice clearance",
+        "sentence": "Invoice clearance follows the required receipt and matching steps.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "purchase order item creation",
+        "sentence": "The common business progression is purchase order item creation, goods receipt recording, invoice receipt recording, and invoice clearance.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "goods receipt recording",
+        "sentence": "The common business progression is purchase order item creation, goods receipt recording, invoice receipt recording, and invoice clearance.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "invoice receipt recording",
+        "sentence": "The common business progression is purchase order item creation, goods receipt recording, invoice receipt recording, and invoice clearance.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "Vendor invoice creation",
+        "sentence": "Vendor invoice creation is a distinct activity from the company's recording of invoice receipt.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "recording of invoice receipt",
+        "sentence": "Vendor invoice creation is a distinct activity from the company's recording of invoice receipt.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "purchase requisition creation",
+        "sentence": "Optional or additional activities include purchase requisition creation, order confirmation, service entry sheet recording, and changes to the order item.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "order confirmation",
+        "sentence": "Optional or additional activities include purchase requisition creation, order confirmation, service entry sheet recording, and changes to the order item.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "service entry sheet recording",
+        "sentence": "Optional or additional activities include purchase requisition creation, order confirmation, service entry sheet recording, and changes to the order item.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "changes to the order item",
+        "sentence": "Optional or additional activities include purchase requisition creation, order confirmation, service entry sheet recording, and changes to the order item.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "EC purchase orders",
+        "sentence": "Observed behavior: the report separates EC purchase orders from standard and framework orders because EC orders include an SRM subprocess.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "EC",
+        "sentence": "Observed behavior: the report separates EC purchase orders from standard and framework orders because EC orders include an SRM subprocess.",
+        "kind": "abbreviation",
+        "expansion": null
+      },
+      {
+        "span": "standard and framework orders",
+        "sentence": "Observed behavior: the report separates EC purchase orders from standard and framework orders because EC orders include an SRM subprocess.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "SRM",
+        "sentence": "Observed behavior: the report separates EC purchase orders from standard and framework orders because EC orders include an SRM subprocess.",
+        "kind": "abbreviation",
+        "expansion": null
+      },
+      {
+        "span": "SRM subprocess",
+        "sentence": "Observed behavior: the report separates EC purchase orders from standard and framework orders because EC orders include an SRM subprocess.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "repeated invoice creation",
+        "sentence": "It also observes repeated invoice creation and repeated changes.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "repeated changes",
+        "sentence": "It also observes repeated invoice creation and repeated changes.",
+        "kind": "activity",
+        "expansion": null
+      }
+    ]
+  ],
+  "bpi2019-purchase-process#c04": [
+    [
+      {
+        "span": "invoice receipt",
+        "sentence": "Expected behavior: invoice receipt is permitted before goods receipt.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "goods receipt",
+        "sentence": "Expected behavior: invoice receipt is permitted before goods receipt.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "invoice",
+        "sentence": "The invoice, receipt, and purchase order item values are still subject to three-way matching.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "receipt",
+        "sentence": "The invoice, receipt, and purchase order item values are still subject to three-way matching.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "purchase order item",
+        "sentence": "The invoice, receipt, and purchase order item values are still subject to three-way matching.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "three-way matching",
+        "sentence": "The invoice, receipt, and purchase order item values are still subject to three-way matching.",
+        "kind": "rule",
+        "expansion": null
+      },
+      {
+        "span": "payment block",
+        "sentence": "A previously set payment block is removed before invoice clearance.",
+        "kind": "state",
+        "expansion": null
+      },
+      {
+        "span": "invoice clearance",
+        "sentence": "A previously set payment block is removed before invoice clearance.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "purchase order item creation",
+        "sentence": "The essential activities are purchase order item creation, goods receipt recording, invoice receipt recording, any applicable payment block removal, and invoice clearance.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "goods receipt recording",
+        "sentence": "The essential activities are purchase order item creation, goods receipt recording, invoice receipt recording, any applicable payment block removal, and invoice clearance.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "invoice receipt recording",
+        "sentence": "The essential activities are purchase order item creation, goods receipt recording, invoice receipt recording, any applicable payment block removal, and invoice clearance.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "payment block removal",
+        "sentence": "The essential activities are purchase order item creation, goods receipt recording, invoice receipt recording, any applicable payment block removal, and invoice clearance.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "standard orders",
+        "sentence": "Observed behavior: standard orders may contain requisition and order confirmation activities.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "requisition",
+        "sentence": "Observed behavior: standard orders may contain requisition and order confirmation activities.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "order confirmation",
+        "sentence": "Observed behavior: standard orders may contain requisition and order confirmation activities.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "EC orders",
+        "sentence": "EC orders include SRM activities before or around item creation.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "SRM",
+        "sentence": "EC orders include SRM activities before or around item creation.",
+        "kind": "abbreviation",
+        "expansion": null
+      },
+      {
+        "span": "item creation",
+        "sentence": "EC orders include SRM activities before or around item creation.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "invoice creation",
+        "sentence": "The report describes invoice creation and receipt before goods receipt in EC cases.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "EC",
+        "sentence": "The report describes invoice creation and receipt before goods receipt in EC cases.",
+        "kind": "abbreviation",
+        "expansion": null
+      },
+      {
+        "span": "payment block creation",
+        "sentence": "Payment block removal is visible much more often than payment block creation.",
+        "kind": "activity",
+        "expansion": null
+      }
+    ],
+    [
+      {
+        "span": "invoice receipt",
+        "sentence": "Expected behavior: invoice receipt is permitted before goods receipt.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "goods receipt",
+        "sentence": "Expected behavior: invoice receipt is permitted before goods receipt.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "invoice",
+        "sentence": "The invoice, receipt, and purchase order item values are still subject to three-way matching.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "receipt",
+        "sentence": "The invoice, receipt, and purchase order item values are still subject to three-way matching.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "purchase order item values",
+        "sentence": "The invoice, receipt, and purchase order item values are still subject to three-way matching.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "three-way matching",
+        "sentence": "The invoice, receipt, and purchase order item values are still subject to three-way matching.",
+        "kind": "rule",
+        "expansion": null
+      },
+      {
+        "span": "payment block",
+        "sentence": "A previously set payment block is removed before invoice clearance.",
+        "kind": "state",
+        "expansion": null
+      },
+      {
+        "span": "invoice clearance",
+        "sentence": "A previously set payment block is removed before invoice clearance.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "purchase order item creation",
+        "sentence": "The essential activities are purchase order item creation, goods receipt recording, invoice receipt recording, any applicable payment block removal, and invoice clearance.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "goods receipt recording",
+        "sentence": "The essential activities are purchase order item creation, goods receipt recording, invoice receipt recording, any applicable payment block removal, and invoice clearance.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "invoice receipt recording",
+        "sentence": "The essential activities are purchase order item creation, goods receipt recording, invoice receipt recording, any applicable payment block removal, and invoice clearance.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "payment block removal",
+        "sentence": "The essential activities are purchase order item creation, goods receipt recording, invoice receipt recording, any applicable payment block removal, and invoice clearance.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "standard orders",
+        "sentence": "Observed behavior: standard orders may contain requisition and order confirmation activities.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "requisition",
+        "sentence": "Observed behavior: standard orders may contain requisition and order confirmation activities.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "order confirmation activities",
+        "sentence": "Observed behavior: standard orders may contain requisition and order confirmation activities.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "EC orders",
+        "sentence": "EC orders include SRM activities before or around item creation.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "SRM activities",
+        "sentence": "EC orders include SRM activities before or around item creation.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "SRM",
+        "sentence": "EC orders include SRM activities before or around item creation.",
+        "kind": "abbreviation",
+        "expansion": null
+      },
+      {
+        "span": "item creation",
+        "sentence": "EC orders include SRM activities before or around item creation.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "invoice creation",
+        "sentence": "The report describes invoice creation and receipt before goods receipt in EC cases.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "EC",
+        "sentence": "The report describes invoice creation and receipt before goods receipt in EC cases.",
+        "kind": "abbreviation",
+        "expansion": null
+      },
+      {
+        "span": "payment block creation",
+        "sentence": "Payment block removal is visible much more often than payment block creation.",
+        "kind": "activity",
+        "expansion": null
+      }
+    ],
+    [
+      {
+        "span": "three-way matching",
+        "sentence": "The invoice, receipt, and purchase order item values are still subject to three-way matching.",
+        "kind": "rule",
+        "expansion": null
+      },
+      {
+        "span": "invoice receipt",
+        "sentence": "Expected behavior: invoice receipt is permitted before goods receipt.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "goods receipt",
+        "sentence": "Expected behavior: invoice receipt is permitted before goods receipt.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "invoice",
+        "sentence": "The invoice, receipt, and purchase order item values are still subject to three-way matching.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "receipt",
+        "sentence": "The invoice, receipt, and purchase order item values are still subject to three-way matching.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "purchase order item values",
+        "sentence": "The invoice, receipt, and purchase order item values are still subject to three-way matching.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "payment block",
+        "sentence": "A previously set payment block is removed before invoice clearance.",
+        "kind": "state",
+        "expansion": null
+      },
+      {
+        "span": "invoice clearance",
+        "sentence": "A previously set payment block is removed before invoice clearance.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "purchase order item creation",
+        "sentence": "The essential activities are purchase order item creation, goods receipt recording, invoice receipt recording, any applicable payment block removal, and invoice clearance.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "goods receipt recording",
+        "sentence": "The essential activities are purchase order item creation, goods receipt recording, invoice receipt recording, any applicable payment block removal, and invoice clearance.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "invoice receipt recording",
+        "sentence": "The essential activities are purchase order item creation, goods receipt recording, invoice receipt recording, any applicable payment block removal, and invoice clearance.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "payment block removal",
+        "sentence": "The essential activities are purchase order item creation, goods receipt recording, invoice receipt recording, any applicable payment block removal, and invoice clearance.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "standard orders",
+        "sentence": "Observed behavior: standard orders may contain requisition and order confirmation activities.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "requisition",
+        "sentence": "Observed behavior: standard orders may contain requisition and order confirmation activities.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "order confirmation activities",
+        "sentence": "Observed behavior: standard orders may contain requisition and order confirmation activities.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "EC orders",
+        "sentence": "EC orders include SRM activities before or around item creation.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "EC",
+        "sentence": "EC orders include SRM activities before or around item creation.",
+        "kind": "abbreviation",
+        "expansion": null
+      },
+      {
+        "span": "SRM activities",
+        "sentence": "EC orders include SRM activities before or around item creation.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "SRM",
+        "sentence": "EC orders include SRM activities before or around item creation.",
+        "kind": "abbreviation",
+        "expansion": null
+      },
+      {
+        "span": "item creation",
+        "sentence": "EC orders include SRM activities before or around item creation.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "invoice creation",
+        "sentence": "The report describes invoice creation and receipt before goods receipt in EC cases.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "payment block creation",
+        "sentence": "Payment block removal is visible much more often than payment block creation.",
+        "kind": "activity",
+        "expansion": null
+      }
+    ]
+  ],
+  "bpi2019-purchase-process#c05": [
+    [
+      {
+        "span": "TWO-WAY MATCHING",
+        "sentence": "5. PROCESS VARIANT: TWO-WAY MATCHING",
+        "kind": "other",
+        "expansion": null
+      },
+      {
+        "span": "goods receipt",
+        "sentence": "Expected behavior: goods receipt is not required for this category.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "invoice value",
+        "sentence": "The invoice value is matched against the value recorded at purchase order item creation.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "purchase order item creation",
+        "sentence": "The invoice value is matched against the value recorded at purchase order item creation.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "Invoice receipt",
+        "sentence": "Invoice receipt precedes invoice clearance.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "invoice clearance",
+        "sentence": "Invoice receipt precedes invoice clearance.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "framework orders",
+        "sentence": "The report associates this category with framework orders and recurring invoices.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "recurring invoices",
+        "sentence": "The report associates this category with framework orders and recurring invoices.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "vendor invoice creation",
+        "sentence": "Observed behavior: the modeled flow can begin with vendor invoice creation, followed by creation of one or more order items and a purchase order approval change.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "order items",
+        "sentence": "Observed behavior: the modeled flow can begin with vendor invoice creation, followed by creation of one or more order items and a purchase order approval change.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "purchase order approval change",
+        "sentence": "Observed behavior: the modeled flow can begin with vendor invoice creation, followed by creation of one or more order items and a purchase order approval change.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "item cases",
+        "sentence": "Invoice receipt and clearance may be recorded in only one of those item cases even when the invoice covers several items.",
+        "kind": "other",
+        "expansion": null
+      },
+      {
+        "span": "invoice",
+        "sentence": "Invoice receipt and clearance may be recorded in only one of those item cases even when the invoice covers several items.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "item traces",
+        "sentence": "Some item traces therefore contain item creation and approval activities without a complete invoice sequence.",
+        "kind": "other",
+        "expansion": null
+      },
+      {
+        "span": "item creation",
+        "sentence": "Some item traces therefore contain item creation and approval activities without a complete invoice sequence.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "approval activities",
+        "sentence": "Some item traces therefore contain item creation and approval activities without a complete invoice sequence.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "invoice sequence",
+        "sentence": "Some item traces therefore contain item creation and approval activities without a complete invoice sequence.",
+        "kind": "other",
+        "expansion": null
+      },
+      {
+        "span": "purchase order document",
+        "sentence": "A purchase order approval change concerns the purchase order document.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "approval decisions",
+        "sentence": "These copies do not necessarily represent independent approval decisions for every item.",
+        "kind": "other",
+        "expansion": null
+      },
+      {
+        "span": "item",
+        "sentence": "These copies do not necessarily represent independent approval decisions for every item.",
+        "kind": "thing",
+        "expansion": null
+      }
+    ],
+    [
+      {
+        "span": "TWO-WAY MATCHING",
+        "sentence": "5. PROCESS VARIANT: TWO-WAY MATCHING",
+        "kind": "rule",
+        "expansion": null
+      },
+      {
+        "span": "goods receipt",
+        "sentence": "Expected behavior: goods receipt is not required for this category.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "invoice value",
+        "sentence": "The invoice value is matched against the value recorded at purchase order item creation.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "purchase order item creation",
+        "sentence": "The invoice value is matched against the value recorded at purchase order item creation.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "Invoice receipt",
+        "sentence": "Invoice receipt precedes invoice clearance.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "invoice clearance",
+        "sentence": "Invoice receipt precedes invoice clearance.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "framework orders",
+        "sentence": "The report associates this category with framework orders and recurring invoices.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "recurring invoices",
+        "sentence": "The report associates this category with framework orders and recurring invoices.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "vendor invoice creation",
+        "sentence": "Observed behavior: the modeled flow can begin with vendor invoice creation, followed by creation of one or more order items and a purchase order approval change.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "order items",
+        "sentence": "Observed behavior: the modeled flow can begin with vendor invoice creation, followed by creation of one or more order items and a purchase order approval change.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "purchase order approval change",
+        "sentence": "Observed behavior: the modeled flow can begin with vendor invoice creation, followed by creation of one or more order items and a purchase order approval change.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "item cases",
+        "sentence": "Invoice receipt and clearance may be recorded in only one of those item cases even when the invoice covers several items.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "invoice",
+        "sentence": "Invoice receipt and clearance may be recorded in only one of those item cases even when the invoice covers several items.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "item traces",
+        "sentence": "Some item traces therefore contain item creation and approval activities without a complete invoice sequence.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "item creation",
+        "sentence": "Some item traces therefore contain item creation and approval activities without a complete invoice sequence.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "approval activities",
+        "sentence": "Some item traces therefore contain item creation and approval activities without a complete invoice sequence.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "purchase order document",
+        "sentence": "A purchase order approval change concerns the purchase order document.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "approval decisions",
+        "sentence": "These copies do not necessarily represent independent approval decisions for every item.",
+        "kind": "activity",
+        "expansion": null
+      }
+    ],
+    [
+      {
+        "span": "TWO-WAY MATCHING",
+        "sentence": "5. PROCESS VARIANT: TWO-WAY MATCHING",
+        "kind": "rule",
+        "expansion": null
+      },
+      {
+        "span": "goods receipt",
+        "sentence": "Expected behavior: goods receipt is not required for this category.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "invoice value",
+        "sentence": "The invoice value is matched against the value recorded at purchase order item creation.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "purchase order item creation",
+        "sentence": "The invoice value is matched against the value recorded at purchase order item creation.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "Invoice receipt",
+        "sentence": "Invoice receipt precedes invoice clearance.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "invoice clearance",
+        "sentence": "Invoice receipt precedes invoice clearance.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "framework orders",
+        "sentence": "The report associates this category with framework orders and recurring invoices.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "recurring invoices",
+        "sentence": "The report associates this category with framework orders and recurring invoices.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "vendor invoice creation",
+        "sentence": "Observed behavior: the modeled flow can begin with vendor invoice creation, followed by creation of one or more order items and a purchase order approval change.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "order items",
+        "sentence": "Observed behavior: the modeled flow can begin with vendor invoice creation, followed by creation of one or more order items and a purchase order approval change.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "purchase order approval change",
+        "sentence": "Observed behavior: the modeled flow can begin with vendor invoice creation, followed by creation of one or more order items and a purchase order approval change.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "invoice",
+        "sentence": "Invoice receipt and clearance may be recorded in only one of those item cases even when the invoice covers several items.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "item traces",
+        "sentence": "Some item traces therefore contain item creation and approval activities without a complete invoice sequence.",
+        "kind": "other",
+        "expansion": null
+      },
+      {
+        "span": "item creation",
+        "sentence": "Some item traces therefore contain item creation and approval activities without a complete invoice sequence.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "approval activities",
+        "sentence": "Some item traces therefore contain item creation and approval activities without a complete invoice sequence.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "invoice sequence",
+        "sentence": "Some item traces therefore contain item creation and approval activities without a complete invoice sequence.",
+        "kind": "other",
+        "expansion": null
+      },
+      {
+        "span": "purchase order document",
+        "sentence": "A purchase order approval change concerns the purchase order document.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "approval decisions",
+        "sentence": "These copies do not necessarily represent independent approval decisions for every item.",
+        "kind": "other",
+        "expansion": null
+      }
+    ]
+  ],
+  "bpi2019-purchase-process#c06": [
+    [
+      {
+        "span": "goods",
+        "sentence": "Expected business arrangement: goods are delivered to and stored in a warehouse, and payment takes place after their use in production.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "warehouse",
+        "sentence": "Expected business arrangement: goods are delivered to and stored in a warehouse, and payment takes place after their use in production.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "production",
+        "sentence": "Expected business arrangement: goods are delivered to and stored in a warehouse, and payment takes place after their use in production.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "Invoice processing",
+        "sentence": "Invoice processing is handled separately from the process represented by this event log.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "event log",
+        "sentence": "Invoice processing is handled separately from the process represented by this event log.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "purchase order item creation",
+        "sentence": "Observed behavior: the common recorded progression is purchase order item creation followed by goods receipt.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "goods receipt",
+        "sentence": "Observed behavior: the common recorded progression is purchase order item creation followed by goods receipt.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "purchase requisition creation",
+        "sentence": "Optional activities include purchase requisition creation, order confirmation, and quantity changes.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "order confirmation",
+        "sentence": "Optional activities include purchase requisition creation, order confirmation, and quantity changes.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "quantity changes",
+        "sentence": "Optional activities include purchase requisition creation, order confirmation, and quantity changes.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "Item deletion",
+        "sentence": "Item deletion can terminate a case; goods receipt cancellation is also discussed as a possible case ending.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "goods receipt cancellation",
+        "sentence": "Item deletion can terminate a case; goods receipt cancellation is also discussed as a possible case ending.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "consignment log",
+        "sentence": "Actual consumption, invoicing, and payment are not represented by this consignment log.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "invoice events",
+        "sentence": "The absence of invoice events in a consignment case is therefore consistent with the stated recording scope, rather than sufficient evidence of a compliance violation.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "consignment case",
+        "sentence": "The absence of invoice events in a consignment case is therefore consistent with the stated recording scope, rather than sufficient evidence of a compliance violation.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "compliance violation",
+        "sentence": "The absence of invoice events in a consignment case is therefore consistent with the stated recording scope, rather than sufficient evidence of a compliance violation.",
+        "kind": "state",
+        "expansion": null
+      }
+    ],
+    [
+      {
+        "span": "goods",
+        "sentence": "Expected business arrangement: goods are delivered to and stored in a warehouse, and payment takes place after their use in production.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "warehouse",
+        "sentence": "Expected business arrangement: goods are delivered to and stored in a warehouse, and payment takes place after their use in production.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "Invoice processing",
+        "sentence": "Invoice processing is handled separately from the process represented by this event log.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "event log",
+        "sentence": "Invoice processing is handled separately from the process represented by this event log.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "purchase order item creation",
+        "sentence": "Observed behavior: the common recorded progression is purchase order item creation followed by goods receipt.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "goods receipt",
+        "sentence": "Observed behavior: the common recorded progression is purchase order item creation followed by goods receipt.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "purchase requisition creation",
+        "sentence": "Optional activities include purchase requisition creation, order confirmation, and quantity changes.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "order confirmation",
+        "sentence": "Optional activities include purchase requisition creation, order confirmation, and quantity changes.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "quantity changes",
+        "sentence": "Optional activities include purchase requisition creation, order confirmation, and quantity changes.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "Item deletion",
+        "sentence": "Item deletion can terminate a case; goods receipt cancellation is also discussed as a possible case ending.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "goods receipt cancellation",
+        "sentence": "Item deletion can terminate a case; goods receipt cancellation is also discussed as a possible case ending.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "Actual consumption",
+        "sentence": "Actual consumption, invoicing, and payment are not represented by this consignment log.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "consignment log",
+        "sentence": "Actual consumption, invoicing, and payment are not represented by this consignment log.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "invoice events",
+        "sentence": "The absence of invoice events in a consignment case is therefore consistent with the stated recording scope, rather than sufficient evidence of a compliance violation.",
+        "kind": "other",
+        "expansion": null
+      },
+      {
+        "span": "consignment case",
+        "sentence": "The absence of invoice events in a consignment case is therefore consistent with the stated recording scope, rather than sufficient evidence of a compliance violation.",
+        "kind": "other",
+        "expansion": null
+      },
+      {
+        "span": "compliance violation",
+        "sentence": "The absence of invoice events in a consignment case is therefore consistent with the stated recording scope, rather than sufficient evidence of a compliance violation.",
+        "kind": "state",
+        "expansion": null
+      }
+    ],
+    [
+      {
+        "span": "goods",
+        "sentence": "Expected business arrangement: goods are delivered to and stored in a warehouse, and payment takes place after their use in production.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "warehouse",
+        "sentence": "Expected business arrangement: goods are delivered to and stored in a warehouse, and payment takes place after their use in production.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "payment",
+        "sentence": "Expected business arrangement: goods are delivered to and stored in a warehouse, and payment takes place after their use in production.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "production",
+        "sentence": "Expected business arrangement: goods are delivered to and stored in a warehouse, and payment takes place after their use in production.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "Invoice processing",
+        "sentence": "Invoice processing is handled separately from the process represented by this event log.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "event log",
+        "sentence": "Invoice processing is handled separately from the process represented by this event log.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "purchase order item creation",
+        "sentence": "Observed behavior: the common recorded progression is purchase order item creation followed by goods receipt.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "goods receipt",
+        "sentence": "Observed behavior: the common recorded progression is purchase order item creation followed by goods receipt.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "purchase requisition creation",
+        "sentence": "Optional activities include purchase requisition creation, order confirmation, and quantity changes.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "order confirmation",
+        "sentence": "Optional activities include purchase requisition creation, order confirmation, and quantity changes.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "quantity changes",
+        "sentence": "Optional activities include purchase requisition creation, order confirmation, and quantity changes.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "Item deletion",
+        "sentence": "Item deletion can terminate a case; goods receipt cancellation is also discussed as a possible case ending.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "goods receipt cancellation",
+        "sentence": "Item deletion can terminate a case; goods receipt cancellation is also discussed as a possible case ending.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "Actual consumption",
+        "sentence": "Actual consumption, invoicing, and payment are not represented by this consignment log.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "invoicing",
+        "sentence": "Actual consumption, invoicing, and payment are not represented by this consignment log.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "consignment log",
+        "sentence": "Actual consumption, invoicing, and payment are not represented by this consignment log.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "invoice events",
+        "sentence": "The absence of invoice events in a consignment case is therefore consistent with the stated recording scope, rather than sufficient evidence of a compliance violation.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "consignment case",
+        "sentence": "The absence of invoice events in a consignment case is therefore consistent with the stated recording scope, rather than sufficient evidence of a compliance violation.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "compliance violation",
+        "sentence": "The absence of invoice events in a consignment case is therefore consistent with the stated recording scope, rather than sufficient evidence of a compliance violation.",
+        "kind": "state",
+        "expansion": null
+      }
+    ]
+  ],
+  "bpi2019-purchase-process#c07": [
+    [
+      {
+        "span": "Purchase order processing",
+        "sentence": "Purchase order processing can include price changes, quantity changes, delivery indicator changes, order approval changes, cancellations, item deletion, release, and reactivation.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "price changes",
+        "sentence": "Purchase order processing can include price changes, quantity changes, delivery indicator changes, order approval changes, cancellations, item deletion, release, and reactivation.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "quantity changes",
+        "sentence": "Purchase order processing can include price changes, quantity changes, delivery indicator changes, order approval changes, cancellations, item deletion, release, and reactivation.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "delivery indicator changes",
+        "sentence": "Purchase order processing can include price changes, quantity changes, delivery indicator changes, order approval changes, cancellations, item deletion, release, and reactivation.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "order approval changes",
+        "sentence": "Purchase order processing can include price changes, quantity changes, delivery indicator changes, order approval changes, cancellations, item deletion, release, and reactivation.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "cancellations",
+        "sentence": "Purchase order processing can include price changes, quantity changes, delivery indicator changes, order approval changes, cancellations, item deletion, release, and reactivation.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "item deletion",
+        "sentence": "Purchase order processing can include price changes, quantity changes, delivery indicator changes, order approval changes, cancellations, item deletion, release, and reactivation.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "release",
+        "sentence": "Purchase order processing can include price changes, quantity changes, delivery indicator changes, order approval changes, cancellations, item deletion, release, and reactivation.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "reactivation",
+        "sentence": "Purchase order processing can include price changes, quantity changes, delivery indicator changes, order approval changes, cancellations, item deletion, release, and reactivation.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "order confirmations",
+        "sentence": "Communications include order confirmations and vendor debit memos.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "vendor debit memos",
+        "sentence": "Communications include order confirmations and vendor debit memos.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "rework",
+        "sentence": "These activities may introduce rework or affect elapsed processing time.",
+        "kind": "other",
+        "expansion": null
+      },
+      {
+        "span": "elapsed processing time",
+        "sentence": "These activities may introduce rework or affect elapsed processing time.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "receipts",
+        "sentence": "Several receipts or invoices can legitimately relate to one item.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "invoices",
+        "sentence": "Several receipts or invoices can legitimately relate to one item.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "item",
+        "sentence": "Several receipts or invoices can legitimately relate to one item.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "purchase",
+        "sentence": "Their activity sequences and loops are analytical abstractions, rather than exhaustive rules for every purchase.",
+        "kind": "activity",
+        "expansion": null
+      }
+    ],
+    [
+      {
+        "span": "Purchase order processing",
+        "sentence": "Purchase order processing can include price changes, quantity changes, delivery indicator changes, order approval changes, cancellations, item deletion, release, and reactivation.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "price changes",
+        "sentence": "Purchase order processing can include price changes, quantity changes, delivery indicator changes, order approval changes, cancellations, item deletion, release, and reactivation.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "quantity changes",
+        "sentence": "Purchase order processing can include price changes, quantity changes, delivery indicator changes, order approval changes, cancellations, item deletion, release, and reactivation.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "delivery indicator changes",
+        "sentence": "Purchase order processing can include price changes, quantity changes, delivery indicator changes, order approval changes, cancellations, item deletion, release, and reactivation.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "order approval changes",
+        "sentence": "Purchase order processing can include price changes, quantity changes, delivery indicator changes, order approval changes, cancellations, item deletion, release, and reactivation.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "cancellations",
+        "sentence": "Purchase order processing can include price changes, quantity changes, delivery indicator changes, order approval changes, cancellations, item deletion, release, and reactivation.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "item deletion",
+        "sentence": "Purchase order processing can include price changes, quantity changes, delivery indicator changes, order approval changes, cancellations, item deletion, release, and reactivation.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "release",
+        "sentence": "Purchase order processing can include price changes, quantity changes, delivery indicator changes, order approval changes, cancellations, item deletion, release, and reactivation.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "reactivation",
+        "sentence": "Purchase order processing can include price changes, quantity changes, delivery indicator changes, order approval changes, cancellations, item deletion, release, and reactivation.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "order confirmations",
+        "sentence": "Communications include order confirmations and vendor debit memos.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "vendor debit memos",
+        "sentence": "Communications include order confirmations and vendor debit memos.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "rework",
+        "sentence": "These activities may introduce rework or affect elapsed processing time.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "elapsed processing time",
+        "sentence": "These activities may introduce rework or affect elapsed processing time.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "receipts",
+        "sentence": "Several receipts or invoices can legitimately relate to one item.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "invoices",
+        "sentence": "Several receipts or invoices can legitimately relate to one item.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "item",
+        "sentence": "Several receipts or invoices can legitimately relate to one item.",
+        "kind": "thing",
+        "expansion": null
+      }
+    ],
+    [
+      {
+        "span": "Purchase order processing",
+        "sentence": "Purchase order processing can include price changes, quantity changes, delivery indicator changes, order approval changes, cancellations, item deletion, release, and reactivation.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "price changes",
+        "sentence": "Purchase order processing can include price changes, quantity changes, delivery indicator changes, order approval changes, cancellations, item deletion, release, and reactivation.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "quantity changes",
+        "sentence": "Purchase order processing can include price changes, quantity changes, delivery indicator changes, order approval changes, cancellations, item deletion, release, and reactivation.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "delivery indicator changes",
+        "sentence": "Purchase order processing can include price changes, quantity changes, delivery indicator changes, order approval changes, cancellations, item deletion, release, and reactivation.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "order approval changes",
+        "sentence": "Purchase order processing can include price changes, quantity changes, delivery indicator changes, order approval changes, cancellations, item deletion, release, and reactivation.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "cancellations",
+        "sentence": "Purchase order processing can include price changes, quantity changes, delivery indicator changes, order approval changes, cancellations, item deletion, release, and reactivation.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "item deletion",
+        "sentence": "Purchase order processing can include price changes, quantity changes, delivery indicator changes, order approval changes, cancellations, item deletion, release, and reactivation.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "release",
+        "sentence": "Purchase order processing can include price changes, quantity changes, delivery indicator changes, order approval changes, cancellations, item deletion, release, and reactivation.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "reactivation",
+        "sentence": "Purchase order processing can include price changes, quantity changes, delivery indicator changes, order approval changes, cancellations, item deletion, release, and reactivation.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "order confirmations",
+        "sentence": "Communications include order confirmations and vendor debit memos.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "vendor debit memos",
+        "sentence": "Communications include order confirmations and vendor debit memos.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "rework",
+        "sentence": "These activities may introduce rework or affect elapsed processing time.",
+        "kind": "state",
+        "expansion": null
+      },
+      {
+        "span": "elapsed processing time",
+        "sentence": "These activities may introduce rework or affect elapsed processing time.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "receipts",
+        "sentence": "Several receipts or invoices can legitimately relate to one item.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "invoices",
+        "sentence": "Several receipts or invoices can legitimately relate to one item.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "item",
+        "sentence": "Several receipts or invoices can legitimately relate to one item.",
+        "kind": "thing",
+        "expansion": null
+      }
+    ]
+  ],
+  "bpi2019-purchase-process#c08": [
+    [
+      {
+        "span": "invoice-after-goods-receipt three-way matching",
+        "sentence": "For invoice-after-goods-receipt three-way matching, the expected precedence relationships are goods receipt before invoice receipt, goods receipt before invoice clearance, and invoice receipt before invoice clearance.",
+        "kind": "rule",
+        "expansion": null
+      },
+      {
+        "span": "goods receipt",
+        "sentence": "For invoice-after-goods-receipt three-way matching, the expected precedence relationships are goods receipt before invoice receipt, goods receipt before invoice clearance, and invoice receipt before invoice clearance.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "invoice receipt",
+        "sentence": "For invoice-after-goods-receipt three-way matching, the expected precedence relationships are goods receipt before invoice receipt, goods receipt before invoice clearance, and invoice receipt before invoice clearance.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "invoice clearance",
+        "sentence": "For invoice-after-goods-receipt three-way matching, the expected precedence relationships are goods receipt before invoice receipt, goods receipt before invoice clearance, and invoice receipt before invoice clearance.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "invoice-before-goods-receipt three-way matching",
+        "sentence": "For invoice-before-goods-receipt three-way matching, invoice receipt and goods receipt both precede invoice clearance.",
+        "kind": "rule",
+        "expansion": null
+      },
+      {
+        "span": "payment blocking",
+        "sentence": "Early invoice receipt requires payment blocking until goods receipt.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "payment block",
+        "sentence": "Removal of a payment block presupposes that a block was set, although the corresponding creation event is frequently absent from the log.",
+        "kind": "state",
+        "expansion": null
+      },
+      {
+        "span": "two-way matching",
+        "sentence": "For two-way matching, invoice receipt precedes invoice clearance; goods receipt is not a required step.",
+        "kind": "rule",
+        "expansion": null
+      },
+      {
+        "span": "invoice-clearance rule",
+        "sentence": "Consignment does not have an invoice-clearance rule that can be evaluated from this log.",
+        "kind": "rule",
+        "expansion": null
+      },
+      {
+        "span": "eventual-response rule",
+        "sentence": "The report distinguishes an eventual-response rule from a precedence rule.",
+        "kind": "rule",
+        "expansion": null
+      },
+      {
+        "span": "precedence rule",
+        "sentence": "The report distinguishes an eventual-response rule from a precedence rule.",
+        "kind": "rule",
+        "expansion": null
+      },
+      {
+        "span": "invoice-to-receipt document linkage",
+        "sentence": "Its rules do not establish an authoritative invoice-to-receipt document linkage.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "apparent process deviation",
+        "sentence": "A missing required recorded predecessor can support a finding of apparent process deviation.",
+        "kind": "state",
+        "expansion": null
+      },
+      {
+        "span": "physical goods",
+        "sentence": "It does not by itself prove fraud, non-payment, or absence of the physical goods.",
+        "kind": "thing",
+        "expansion": null
+      }
+    ],
+    [
+      {
+        "span": "invoice-after-goods-receipt three-way matching",
+        "sentence": "For invoice-after-goods-receipt three-way matching, the expected precedence relationships are goods receipt before invoice receipt, goods receipt before invoice clearance, and invoice receipt before invoice clearance.",
+        "kind": "rule",
+        "expansion": null
+      },
+      {
+        "span": "goods receipt",
+        "sentence": "For invoice-after-goods-receipt three-way matching, the expected precedence relationships are goods receipt before invoice receipt, goods receipt before invoice clearance, and invoice receipt before invoice clearance.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "invoice receipt",
+        "sentence": "For invoice-after-goods-receipt three-way matching, the expected precedence relationships are goods receipt before invoice receipt, goods receipt before invoice clearance, and invoice receipt before invoice clearance.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "invoice clearance",
+        "sentence": "For invoice-after-goods-receipt three-way matching, the expected precedence relationships are goods receipt before invoice receipt, goods receipt before invoice clearance, and invoice receipt before invoice clearance.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "invoice-before-goods-receipt three-way matching",
+        "sentence": "For invoice-before-goods-receipt three-way matching, invoice receipt and goods receipt both precede invoice clearance.",
+        "kind": "rule",
+        "expansion": null
+      },
+      {
+        "span": "payment blocking",
+        "sentence": "Early invoice receipt requires payment blocking until goods receipt.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "payment block",
+        "sentence": "Removal of a payment block presupposes that a block was set, although the corresponding creation event is frequently absent from the log.",
+        "kind": "state",
+        "expansion": null
+      },
+      {
+        "span": "creation event",
+        "sentence": "Removal of a payment block presupposes that a block was set, although the corresponding creation event is frequently absent from the log.",
+        "kind": "other",
+        "expansion": null
+      },
+      {
+        "span": "log",
+        "sentence": "Removal of a payment block presupposes that a block was set, although the corresponding creation event is frequently absent from the log.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "two-way matching",
+        "sentence": "For two-way matching, invoice receipt precedes invoice clearance; goods receipt is not a required step.",
+        "kind": "rule",
+        "expansion": null
+      },
+      {
+        "span": "Consignment",
+        "sentence": "Consignment does not have an invoice-clearance rule that can be evaluated from this log.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "invoice-clearance rule",
+        "sentence": "Consignment does not have an invoice-clearance rule that can be evaluated from this log.",
+        "kind": "rule",
+        "expansion": null
+      },
+      {
+        "span": "eventual-response rule",
+        "sentence": "The report distinguishes an eventual-response rule from a precedence rule.",
+        "kind": "rule",
+        "expansion": null
+      },
+      {
+        "span": "precedence rule",
+        "sentence": "The report distinguishes an eventual-response rule from a precedence rule.",
+        "kind": "rule",
+        "expansion": null
+      },
+      {
+        "span": "case",
+        "sentence": "An eventual-response rule requires another activity later in the same case.",
+        "kind": "other",
+        "expansion": null
+      },
+      {
+        "span": "ordering, cardinality, and exclusiveness rules",
+        "sentence": "It also discusses ordering, cardinality, and exclusiveness rules.",
+        "kind": "rule",
+        "expansion": null
+      },
+      {
+        "span": "Evidence requirements",
+        "sentence": "Evidence requirements matter when activities repeat.",
+        "kind": "other",
+        "expansion": null
+      },
+      {
+        "span": "single-occurrence and repeated-occurrence interpretations",
+        "sentence": "The report examines both single-occurrence and repeated-occurrence interpretations.",
+        "kind": "other",
+        "expansion": null
+      },
+      {
+        "span": "invoice-to-receipt document linkage",
+        "sentence": "Its rules do not establish an authoritative invoice-to-receipt document linkage.",
+        "kind": "other",
+        "expansion": null
+      },
+      {
+        "span": "recorded predecessor",
+        "sentence": "A missing required recorded predecessor can support a finding of apparent process deviation.",
+        "kind": "other",
+        "expansion": null
+      },
+      {
+        "span": "apparent process deviation",
+        "sentence": "A missing required recorded predecessor can support a finding of apparent process deviation.",
+        "kind": "state",
+        "expansion": null
+      }
+    ],
+    [
+      {
+        "span": "invoice-after-goods-receipt three-way matching",
+        "sentence": "For invoice-after-goods-receipt three-way matching, the expected precedence relationships are goods receipt before invoice receipt, goods receipt before invoice clearance, and invoice receipt before invoice clearance.",
+        "kind": "rule",
+        "expansion": null
+      },
+      {
+        "span": "goods receipt",
+        "sentence": "For invoice-after-goods-receipt three-way matching, the expected precedence relationships are goods receipt before invoice receipt, goods receipt before invoice clearance, and invoice receipt before invoice clearance.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "invoice receipt",
+        "sentence": "For invoice-after-goods-receipt three-way matching, the expected precedence relationships are goods receipt before invoice receipt, goods receipt before invoice clearance, and invoice receipt before invoice clearance.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "invoice clearance",
+        "sentence": "For invoice-after-goods-receipt three-way matching, the expected precedence relationships are goods receipt before invoice receipt, goods receipt before invoice clearance, and invoice receipt before invoice clearance.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "invoice-before-goods-receipt three-way matching",
+        "sentence": "For invoice-before-goods-receipt three-way matching, invoice receipt and goods receipt both precede invoice clearance.",
+        "kind": "rule",
+        "expansion": null
+      },
+      {
+        "span": "payment blocking",
+        "sentence": "Early invoice receipt requires payment blocking until goods receipt.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "payment block",
+        "sentence": "Removal of a payment block presupposes that a block was set, although the corresponding creation event is frequently absent from the log.",
+        "kind": "state",
+        "expansion": null
+      },
+      {
+        "span": "two-way matching",
+        "sentence": "For two-way matching, invoice receipt precedes invoice clearance; goods receipt is not a required step.",
+        "kind": "rule",
+        "expansion": null
+      },
+      {
+        "span": "Consignment",
+        "sentence": "Consignment does not have an invoice-clearance rule that can be evaluated from this log.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "invoice-clearance rule",
+        "sentence": "Consignment does not have an invoice-clearance rule that can be evaluated from this log.",
+        "kind": "rule",
+        "expansion": null
+      },
+      {
+        "span": "eventual-response rule",
+        "sentence": "The report distinguishes an eventual-response rule from a precedence rule.",
+        "kind": "rule",
+        "expansion": null
+      },
+      {
+        "span": "precedence rule",
+        "sentence": "The report distinguishes an eventual-response rule from a precedence rule.",
+        "kind": "rule",
+        "expansion": null
+      },
+      {
+        "span": "ordering, cardinality, and exclusiveness rules",
+        "sentence": "It also discusses ordering, cardinality, and exclusiveness rules.",
+        "kind": "rule",
+        "expansion": null
+      },
+      {
+        "span": "invoice-to-receipt document linkage",
+        "sentence": "Its rules do not establish an authoritative invoice-to-receipt document linkage.",
+        "kind": "rule",
+        "expansion": null
+      },
+      {
+        "span": "apparent process deviation",
+        "sentence": "A missing required recorded predecessor can support a finding of apparent process deviation.",
+        "kind": "state",
+        "expansion": null
+      }
+    ]
+  ],
+  "bpi2019-purchase-process#c09": [
+    [
+      {
+        "span": "invoice-clearance event",
+        "sentence": "The absence of a later invoice-clearance event in such a snapshot does not necessarily mean that clearance will never occur.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "clearance",
+        "sentence": "The absence of a later invoice-clearance event in such a snapshot does not necessarily mean that clearance will never occur.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "Activity completion timestamps",
+        "sentence": "Activity completion timestamps represent recorded completion and do not provide activity start times or active work duration.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "activity start times",
+        "sentence": "Activity completion timestamps represent recorded completion and do not provide activity start times or active work duration.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "active work duration",
+        "sentence": "Activity completion timestamps represent recorded completion and do not provide activity start times or active work duration.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "Document-level events",
+        "sentence": "Document-level events can be copied into item cases.",
+        "kind": "other",
+        "expansion": null
+      },
+      {
+        "span": "item cases",
+        "sentence": "Document-level events can be copied into item cases.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "approval event",
+        "sentence": "A copied approval event may even precede the creation of a later item.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "item",
+        "sentence": "A copied approval event may even precede the creation of a later item.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "Payment block creation",
+        "sentence": "Payment block creation is poorly recorded compared with removal.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "block creation events",
+        "sentence": "Missing block creation events leave uncertainty about the prior block state.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "block state",
+        "sentence": "Missing block creation events leave uncertainty about the prior block state.",
+        "kind": "state",
+        "expansion": null
+      },
+      {
+        "span": "business entity",
+        "sentence": "Missing values remain unknown; they are not evidence that the associated business entity or activity does not exist.",
+        "kind": "thing",
+        "expansion": null
+      }
+    ],
+    [
+      {
+        "span": "cases",
+        "sentence": "Some cases are incomplete because the data was extracted while the process was still open.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "invoice-clearance event",
+        "sentence": "The absence of a later invoice-clearance event in such a snapshot does not necessarily mean that clearance will never occur.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "clearance",
+        "sentence": "The absence of a later invoice-clearance event in such a snapshot does not necessarily mean that clearance will never occur.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "Activity completion timestamps",
+        "sentence": "Activity completion timestamps represent recorded completion and do not provide activity start times or active work duration.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "activity start times",
+        "sentence": "Activity completion timestamps represent recorded completion and do not provide activity start times or active work duration.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "active work duration",
+        "sentence": "Activity completion timestamps represent recorded completion and do not provide activity start times or active work duration.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "Document-level events",
+        "sentence": "Document-level events can be copied into item cases.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "item cases",
+        "sentence": "Document-level events can be copied into item cases.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "approval event",
+        "sentence": "A copied approval event may even precede the creation of a later item.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "approvals",
+        "sentence": "Repeated records across cases therefore need interpretation at the correct business level before counting approvals or establishing event order.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "Payment block creation",
+        "sentence": "Payment block creation is poorly recorded compared with removal.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "block creation events",
+        "sentence": "Missing block creation events leave uncertainty about the prior block state.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "block state",
+        "sentence": "Missing block creation events leave uncertainty about the prior block state.",
+        "kind": "state",
+        "expansion": null
+      },
+      {
+        "span": "business entity",
+        "sentence": "Missing values remain unknown; they are not evidence that the associated business entity or activity does not exist.",
+        "kind": "thing",
+        "expansion": null
+      }
+    ],
+    [
+      {
+        "span": "invoice-clearance event",
+        "sentence": "The absence of a later invoice-clearance event in such a snapshot does not necessarily mean that clearance will never occur.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "clearance",
+        "sentence": "The absence of a later invoice-clearance event in such a snapshot does not necessarily mean that clearance will never occur.",
+        "kind": "state",
+        "expansion": null
+      },
+      {
+        "span": "timestamps",
+        "sentence": "Some timestamps fall outside the intended period or are otherwise implausible.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "Activity completion timestamps",
+        "sentence": "Activity completion timestamps represent recorded completion and do not provide activity start times or active work duration.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "activity start times",
+        "sentence": "Activity completion timestamps represent recorded completion and do not provide activity start times or active work duration.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "active work duration",
+        "sentence": "Activity completion timestamps represent recorded completion and do not provide activity start times or active work duration.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "Document-level events",
+        "sentence": "Document-level events can be copied into item cases.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "item cases",
+        "sentence": "Document-level events can be copied into item cases.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "approval event",
+        "sentence": "A copied approval event may even precede the creation of a later item.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "item",
+        "sentence": "A copied approval event may even precede the creation of a later item.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "approvals",
+        "sentence": "Repeated records across cases therefore need interpretation at the correct business level before counting approvals or establishing event order.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "Payment block creation",
+        "sentence": "Payment block creation is poorly recorded compared with removal.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "block creation events",
+        "sentence": "Missing block creation events leave uncertainty about the prior block state.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "block state",
+        "sentence": "Missing block creation events leave uncertainty about the prior block state.",
+        "kind": "state",
+        "expansion": null
+      },
+      {
+        "span": "business entity",
+        "sentence": "Missing values remain unknown; they are not evidence that the associated business entity or activity does not exist.",
+        "kind": "thing",
+        "expansion": null
+      }
+    ]
+  ],
+  "bpi2019-purchase-process#c10": [
+    [
+      {
+        "span": "requisition",
+        "sentence": "The report measures elapsed time from requisition or SRM creation to purchase order item creation, from item creation to goods receipt, from vendor invoice creation to invoice receipt recording, from invoice receipt to invoice clearance, and from goods receipt to invoice clearance.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "SRM",
+        "sentence": "The report measures elapsed time from requisition or SRM creation to purchase order item creation, from item creation to goods receipt, from vendor invoice creation to invoice receipt recording, from invoice receipt to invoice clearance, and from goods receipt to invoice clearance.",
+        "kind": "abbreviation",
+        "expansion": null
+      },
+      {
+        "span": "purchase order item",
+        "sentence": "The report measures elapsed time from requisition or SRM creation to purchase order item creation, from item creation to goods receipt, from vendor invoice creation to invoice receipt recording, from invoice receipt to invoice clearance, and from goods receipt to invoice clearance.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "goods receipt",
+        "sentence": "The report measures elapsed time from requisition or SRM creation to purchase order item creation, from item creation to goods receipt, from vendor invoice creation to invoice receipt recording, from invoice receipt to invoice clearance, and from goods receipt to invoice clearance.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "vendor invoice",
+        "sentence": "The report measures elapsed time from requisition or SRM creation to purchase order item creation, from item creation to goods receipt, from vendor invoice creation to invoice receipt recording, from invoice receipt to invoice clearance, and from goods receipt to invoice clearance.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "invoice receipt",
+        "sentence": "The report measures elapsed time from requisition or SRM creation to purchase order item creation, from item creation to goods receipt, from vendor invoice creation to invoice receipt recording, from invoice receipt to invoice clearance, and from goods receipt to invoice clearance.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "invoice clearance",
+        "sentence": "The report measures elapsed time from requisition or SRM creation to purchase order item creation, from item creation to goods receipt, from vendor invoice creation to invoice receipt recording, from invoice receipt to invoice clearance, and from goods receipt to invoice clearance.",
+        "kind": "state",
+        "expansion": null
+      },
+      {
+        "span": "purchasing responsiveness",
+        "sentence": "These intervals describe different business concerns, including purchasing responsiveness, delivery time, invoice recording delay, and payment delay.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "delivery time",
+        "sentence": "These intervals describe different business concerns, including purchasing responsiveness, delivery time, invoice recording delay, and payment delay.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "invoice recording delay",
+        "sentence": "These intervals describe different business concerns, including purchasing responsiveness, delivery time, invoice recording delay, and payment delay.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "payment delay",
+        "sentence": "These intervals describe different business concerns, including purchasing responsiveness, delivery time, invoice recording delay, and payment delay.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "process variant",
+        "sentence": "They are meaningful only where their endpoint activities are available and applicable to the process variant.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "contractual service-level thresholds",
+        "sentence": "The report's definitions do not establish contractual service-level thresholds.",
+        "kind": "rule",
+        "expansion": null
+      }
+    ],
+    [
+      {
+        "span": "requisition",
+        "sentence": "The report measures elapsed time from requisition or SRM creation to purchase order item creation, from item creation to goods receipt, from vendor invoice creation to invoice receipt recording, from invoice receipt to invoice clearance, and from goods receipt to invoice clearance.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "SRM",
+        "sentence": "The report measures elapsed time from requisition or SRM creation to purchase order item creation, from item creation to goods receipt, from vendor invoice creation to invoice receipt recording, from invoice receipt to invoice clearance, and from goods receipt to invoice clearance.",
+        "kind": "abbreviation",
+        "expansion": null
+      },
+      {
+        "span": "purchase order item",
+        "sentence": "The report measures elapsed time from requisition or SRM creation to purchase order item creation, from item creation to goods receipt, from vendor invoice creation to invoice receipt recording, from invoice receipt to invoice clearance, and from goods receipt to invoice clearance.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "goods receipt",
+        "sentence": "The report measures elapsed time from requisition or SRM creation to purchase order item creation, from item creation to goods receipt, from vendor invoice creation to invoice receipt recording, from invoice receipt to invoice clearance, and from goods receipt to invoice clearance.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "vendor invoice",
+        "sentence": "The report measures elapsed time from requisition or SRM creation to purchase order item creation, from item creation to goods receipt, from vendor invoice creation to invoice receipt recording, from invoice receipt to invoice clearance, and from goods receipt to invoice clearance.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "invoice receipt recording",
+        "sentence": "The report measures elapsed time from requisition or SRM creation to purchase order item creation, from item creation to goods receipt, from vendor invoice creation to invoice receipt recording, from invoice receipt to invoice clearance, and from goods receipt to invoice clearance.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "invoice receipt",
+        "sentence": "The report measures elapsed time from requisition or SRM creation to purchase order item creation, from item creation to goods receipt, from vendor invoice creation to invoice receipt recording, from invoice receipt to invoice clearance, and from goods receipt to invoice clearance.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "invoice clearance",
+        "sentence": "The report measures elapsed time from requisition or SRM creation to purchase order item creation, from item creation to goods receipt, from vendor invoice creation to invoice receipt recording, from invoice receipt to invoice clearance, and from goods receipt to invoice clearance.",
+        "kind": "state",
+        "expansion": null
+      },
+      {
+        "span": "purchasing responsiveness",
+        "sentence": "These intervals describe different business concerns, including purchasing responsiveness, delivery time, invoice recording delay, and payment delay.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "delivery time",
+        "sentence": "These intervals describe different business concerns, including purchasing responsiveness, delivery time, invoice recording delay, and payment delay.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "invoice recording delay",
+        "sentence": "These intervals describe different business concerns, including purchasing responsiveness, delivery time, invoice recording delay, and payment delay.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "payment delay",
+        "sentence": "These intervals describe different business concerns, including purchasing responsiveness, delivery time, invoice recording delay, and payment delay.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "process variant",
+        "sentence": "They are meaningful only where their endpoint activities are available and applicable to the process variant.",
+        "kind": "other",
+        "expansion": null
+      },
+      {
+        "span": "service-level thresholds",
+        "sentence": "The report's definitions do not establish contractual service-level thresholds.",
+        "kind": "rule",
+        "expansion": null
+      }
+    ],
+    [
+      {
+        "span": "requisition",
+        "sentence": "The report measures elapsed time from requisition or SRM creation to purchase order item creation, from item creation to goods receipt, from vendor invoice creation to invoice receipt recording, from invoice receipt to invoice clearance, and from goods receipt to invoice clearance.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "SRM",
+        "sentence": "The report measures elapsed time from requisition or SRM creation to purchase order item creation, from item creation to goods receipt, from vendor invoice creation to invoice receipt recording, from invoice receipt to invoice clearance, and from goods receipt to invoice clearance.",
+        "kind": "abbreviation",
+        "expansion": null
+      },
+      {
+        "span": "purchase order item",
+        "sentence": "The report measures elapsed time from requisition or SRM creation to purchase order item creation, from item creation to goods receipt, from vendor invoice creation to invoice receipt recording, from invoice receipt to invoice clearance, and from goods receipt to invoice clearance.",
+        "kind": "thing",
+        "expansion": null
+      },
+      {
+        "span": "goods receipt",
+        "sentence": "The report measures elapsed time from requisition or SRM creation to purchase order item creation, from item creation to goods receipt, from vendor invoice creation to invoice receipt recording, from invoice receipt to invoice clearance, and from goods receipt to invoice clearance.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "vendor invoice",
+        "sentence": "The report measures elapsed time from requisition or SRM creation to purchase order item creation, from item creation to goods receipt, from vendor invoice creation to invoice receipt recording, from invoice receipt to invoice clearance, and from goods receipt to invoice clearance.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "invoice receipt recording",
+        "sentence": "The report measures elapsed time from requisition or SRM creation to purchase order item creation, from item creation to goods receipt, from vendor invoice creation to invoice receipt recording, from invoice receipt to invoice clearance, and from goods receipt to invoice clearance.",
+        "kind": "activity",
+        "expansion": null
+      },
+      {
+        "span": "invoice receipt",
+        "sentence": "The report measures elapsed time from requisition or SRM creation to purchase order item creation, from item creation to goods receipt, from vendor invoice creation to invoice receipt recording, from invoice receipt to invoice clearance, and from goods receipt to invoice clearance.",
+        "kind": "document",
+        "expansion": null
+      },
+      {
+        "span": "invoice clearance",
+        "sentence": "The report measures elapsed time from requisition or SRM creation to purchase order item creation, from item creation to goods receipt, from vendor invoice creation to invoice receipt recording, from invoice receipt to invoice clearance, and from goods receipt to invoice clearance.",
+        "kind": "state",
+        "expansion": null
+      },
+      {
+        "span": "purchasing responsiveness",
+        "sentence": "These intervals describe different business concerns, including purchasing responsiveness, delivery time, invoice recording delay, and payment delay.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "delivery time",
+        "sentence": "These intervals describe different business concerns, including purchasing responsiveness, delivery time, invoice recording delay, and payment delay.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "invoice recording delay",
+        "sentence": "These intervals describe different business concerns, including purchasing responsiveness, delivery time, invoice recording delay, and payment delay.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "payment delay",
+        "sentence": "These intervals describe different business concerns, including purchasing responsiveness, delivery time, invoice recording delay, and payment delay.",
+        "kind": "attribute",
+        "expansion": null
+      },
+      {
+        "span": "endpoint activities",
+        "sentence": "They are meaningful only where their endpoint activities are available and applicable to the process variant.",
+        "kind": "other",
+        "expansion": null
+      },
+      {
+        "span": "process variant",
+        "sentence": "They are meaningful only where their endpoint activities are available and applicable to the process variant.",
+        "kind": "other",
+        "expansion": null
+      },
+      {
+        "span": "endpoint events",
+        "sentence": "Repeated endpoint events require an explicit pairing interpretation.",
+        "kind": "other",
+        "expansion": null
+      },
+      {
+        "span": "contractual service-level thresholds",
+        "sentence": "The report's definitions do not establish contractual service-level thresholds.",
+        "kind": "rule",
+        "expansion": null
+      }
+    ]
+  ]
+}

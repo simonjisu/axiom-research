@@ -1,0 +1,215 @@
+{
+  "rejected": [
+    {
+      "chunk_id": "bpi2019-purchase-process#c00",
+      "span": "BPI Challenge 2019",
+      "votes": 1,
+      "reason": "low_consistency"
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c00",
+      "span": "business concepts",
+      "votes": 1,
+      "reason": "low_consistency"
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c00",
+      "span": "individual vendors",
+      "votes": 1,
+      "reason": "low_consistency"
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c00",
+      "span": "expected behavior",
+      "votes": 1,
+      "reason": "low_consistency"
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c00",
+      "span": "observed behavior",
+      "votes": 1,
+      "reason": "low_consistency"
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c00",
+      "span": "company-issued purchasing policy",
+      "votes": 1,
+      "reason": "low_consistency"
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c00",
+      "span": "PDF",
+      "votes": 1,
+      "reason": "low_consistency"
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c01",
+      "span": "Netherlands",
+      "votes": 1,
+      "reason": "low_consistency"
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c01",
+      "span": "subsequent consumption",
+      "votes": 1,
+      "reason": "low_consistency"
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c01",
+      "span": "events",
+      "votes": 1,
+      "reason": "low_consistency"
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c01",
+      "span": "entire purchase order",
+      "votes": 1,
+      "reason": "low_consistency"
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c02",
+      "span": "process variant",
+      "votes": 1,
+      "reason": "low_consistency"
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c02",
+      "span": "purchased goods or services",
+      "votes": 1,
+      "reason": "low_consistency"
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c02",
+      "span": "company entity",
+      "votes": 1,
+      "reason": "low_consistency"
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c02",
+      "span": "organizational role",
+      "votes": 1,
+      "reason": "low_consistency"
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c02",
+      "span": "service-related step",
+      "votes": 1,
+      "reason": "low_consistency"
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c03",
+      "span": "INVOICE AFTER GOODS RECEIPT",
+      "votes": 1,
+      "reason": "low_consistency"
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c04",
+      "span": "purchase order item",
+      "votes": 1,
+      "reason": "low_consistency"
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c04",
+      "span": "order confirmation",
+      "votes": 1,
+      "reason": "low_consistency"
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c05",
+      "span": "item",
+      "votes": 1,
+      "reason": "low_consistency"
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c06",
+      "span": "payment",
+      "votes": 1,
+      "reason": "low_consistency"
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c06",
+      "span": "invoicing",
+      "votes": 1,
+      "reason": "low_consistency"
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c07",
+      "span": "purchase",
+      "votes": 1,
+      "reason": "low_consistency"
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c08",
+      "span": "physical goods",
+      "votes": 1,
+      "reason": "low_consistency"
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c08",
+      "span": "creation event",
+      "votes": 1,
+      "reason": "low_consistency"
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c08",
+      "span": "log",
+      "votes": 1,
+      "reason": "low_consistency"
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c08",
+      "span": "case",
+      "votes": 1,
+      "reason": "low_consistency"
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c08",
+      "span": "Evidence requirements",
+      "votes": 1,
+      "reason": "low_consistency"
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c08",
+      "span": "single-occurrence and repeated-occurrence interpretations",
+      "votes": 1,
+      "reason": "low_consistency"
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c08",
+      "span": "recorded predecessor",
+      "votes": 1,
+      "reason": "low_consistency"
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c09",
+      "span": "cases",
+      "votes": 1,
+      "reason": "low_consistency"
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c09",
+      "span": "timestamps",
+      "votes": 1,
+      "reason": "low_consistency"
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c10",
+      "span": "service-level thresholds",
+      "votes": 1,
+      "reason": "low_consistency"
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c10",
+      "span": "endpoint activities",
+      "votes": 1,
+      "reason": "low_consistency"
+    },
+    {
+      "chunk_id": "bpi2019-purchase-process#c10",
+      "span": "endpoint events",
+      "votes": 1,
+      "reason": "low_consistency"
+    }
+  ],
+  "schema_errors": []
+}

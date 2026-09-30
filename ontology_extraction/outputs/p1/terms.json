@@ -1,0 +1,3680 @@
+{
+  "meta": {
+    "doc_id": "bpi2019-purchase-process",
+    "input": "/Users/soo/code/datasets/bpi/documents/bpi2019-purchase-process.txt",
+    "model": "gemini-3.5-flash",
+    "n_samples": 3,
+    "min_votes": 2,
+    "temperature": 0.7,
+    "n_chunks": 11,
+    "n_terms": 162,
+    "n_rejected": 35,
+    "n_schema_errors": 0
+  },
+  "terms": [
+    {
+      "term_id": "bpi2019-purchase-process#t000",
+      "span": "active work duration",
+      "kind": "attribute",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c09",
+          "votes": 3,
+          "offsets": [
+            11285
+          ],
+          "sentence": "Activity completion timestamps represent recorded completion and do not provide activity start times or active work duration.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t001",
+      "span": "Activity completion timestamps",
+      "kind": "attribute",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c09",
+          "votes": 3,
+          "offsets": [
+            11181
+          ],
+          "sentence": "Activity completion timestamps represent recorded completion and do not provide activity start times or active work duration.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t002",
+      "span": "activity start times",
+      "kind": "attribute",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c09",
+          "votes": 3,
+          "offsets": [
+            11261
+          ],
+          "sentence": "Activity completion timestamps represent recorded completion and do not provide activity start times or active work duration.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t003",
+      "span": "Actual consumption",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c06",
+          "votes": 2,
+          "offsets": [
+            7972
+          ],
+          "sentence": "Actual consumption, invoicing, and payment are not represented by this consignment log.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t004",
+      "span": "apparent process deviation",
+      "kind": "state",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c08",
+          "votes": 3,
+          "offsets": [
+            10521
+          ],
+          "sentence": "A missing required recorded predecessor can support a finding of apparent process deviation.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t005",
+      "span": "approval activities",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c05",
+          "votes": 3,
+          "offsets": [
+            7009
+          ],
+          "sentence": "Some item traces therefore contain item creation and approval activities without a complete invoice sequence.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t006",
+      "span": "approval authority",
+      "kind": "rule",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c02",
+          "votes": 3,
+          "offsets": [
+            3333
+          ],
+          "sentence": "A recorded resource is evidence about an activity's execution or recording; it does not by itself establish a complete organizational role or approval authority.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t007",
+      "span": "approval decisions",
+      "kind": "other",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c05",
+          "votes": 3,
+          "offsets": [
+            7242
+          ],
+          "sentence": "These copies do not necessarily represent independent approval decisions for every item.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t008",
+      "span": "approval event",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c09",
+          "votes": 3,
+          "offsets": [
+            11370
+          ],
+          "sentence": "A copied approval event may even precede the creation of a later item.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t009",
+      "span": "approvals",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c09",
+          "votes": 2,
+          "offsets": [
+            11538
+          ],
+          "sentence": "Repeated records across cases therefore need interpretation at the correct business level before counting approvals or establishing event order.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t010",
+      "span": "Automated batch resources",
+      "kind": "role",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c02",
+          "votes": 3,
+          "offsets": [
+            3137
+          ],
+          "sentence": "Automated batch resources and human users both occur.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t011",
+      "span": "available log",
+      "kind": "document",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c01",
+          "votes": 2,
+          "offsets": [
+            1525
+          ],
+          "sentence": "Consignment has a different endpoint in the available log because subsequent consumption and payment are outside its scope.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t012",
+      "span": "blanket purchase order",
+      "kind": "document",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c02",
+          "votes": 3,
+          "offsets": [
+            2231
+          ],
+          "sentence": "A framework order, also described as a blanket purchase order, can support recurring invoices over a period of time.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t013",
+      "span": "block creation events",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c09",
+          "votes": 3,
+          "offsets": [
+            11651
+          ],
+          "sentence": "Missing block creation events leave uncertainty about the prior block state.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t014",
+      "span": "block state",
+      "kind": "state",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c09",
+          "votes": 3,
+          "offsets": [
+            11707
+          ],
+          "sentence": "Missing block creation events leave uncertainty about the prior block state.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t015",
+      "span": "business entity",
+      "kind": "thing",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c09",
+          "votes": 3,
+          "offsets": [
+            11836
+          ],
+          "sentence": "Missing values remain unknown; they are not evidence that the associated business entity or activity does not exist.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t016",
+      "span": "cancellations",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c07",
+          "votes": 3,
+          "offsets": [
+            8438
+          ],
+          "sentence": "Purchase order processing can include price changes, quantity changes, delivery indicator changes, order approval changes, cancellations, item deletion, release, and reactivation.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t017",
+      "span": "case",
+      "kind": "thing",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c01",
+          "votes": 3,
+          "offsets": [
+            1701,
+            1740,
+            1826,
+            1841
+          ],
+          "sentence": "An individual item is the case used to organize the event log.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t018",
+      "span": "case identifier",
+      "kind": "identifier",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c01",
+          "votes": 3,
+          "offsets": [
+            1841
+          ],
+          "sentence": "The case identifier combines purchase order and item identifiers.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t019",
+      "span": "case unit",
+      "kind": "thing",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c01",
+          "votes": 3,
+          "offsets": [
+            1826
+          ],
+          "sentence": "A case contains the events recorded for that item; the entire purchase order is not the case unit.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t020",
+      "span": "changes to the order item",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c03",
+          "votes": 3,
+          "offsets": [
+            4879
+          ],
+          "sentence": "Optional or additional activities include purchase requisition creation, order confirmation, service entry sheet recording, and changes to the order item.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t021",
+      "span": "clearance",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c09",
+          "votes": 3,
+          "offsets": [
+            10939,
+            11005
+          ],
+          "sentence": "The absence of a later invoice-clearance event in such a snapshot does not necessarily mean that clearance will never occur.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t022",
+      "span": "company",
+      "kind": "role",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c02",
+          "votes": 2,
+          "offsets": [
+            2422,
+            2762
+          ],
+          "sentence": "Its context includes a subsidiary or company, a vendor, an item type, a spend area, and an item category.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t023",
+      "span": "Company and vendor identifiers",
+      "kind": "identifier",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c02",
+          "votes": 3,
+          "offsets": [
+            2909
+          ],
+          "sentence": "Company and vendor identifiers in the dataset are anonymized.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t024",
+      "span": "completion timestamp",
+      "kind": "attribute",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c02",
+          "votes": 3,
+          "offsets": [
+            3048
+          ],
+          "sentence": "A recorded event belongs to an item case and identifies an activity and its completion timestamp.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t025",
+      "span": "compliance violation",
+      "kind": "state",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c06",
+          "votes": 3,
+          "offsets": [
+            8206
+          ],
+          "sentence": "The absence of invoice events in a consignment case is therefore consistent with the stated recording scope, rather than sufficient evidence of a compliance violation.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t026",
+      "span": "Consignment",
+      "kind": "thing",
+      "expansion": null,
+      "n_chunks": 2,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c01",
+          "votes": 3,
+          "offsets": [
+            1481
+          ],
+          "sentence": "Consignment has a different endpoint in the available log because subsequent consumption and payment are outside its scope.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        },
+        {
+          "chunk_id": "bpi2019-purchase-process#c08",
+          "votes": 2,
+          "offsets": [
+            9741
+          ],
+          "sentence": "Consignment does not have an invoice-clearance rule that can be evaluated from this log.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t027",
+      "span": "consignment case",
+      "kind": "thing",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c06",
+          "votes": 3,
+          "offsets": [
+            8095
+          ],
+          "sentence": "The absence of invoice events in a consignment case is therefore consistent with the stated recording scope, rather than sufficient evidence of a compliance violation.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t028",
+      "span": "consignment log",
+      "kind": "document",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c06",
+          "votes": 3,
+          "offsets": [
+            8043
+          ],
+          "sentence": "Actual consumption, invoicing, and payment are not represented by this consignment log.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t029",
+      "span": "consumption",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c01",
+          "votes": 2,
+          "offsets": [
+            1558
+          ],
+          "sentence": "Consignment has a different endpoint in the available log because subsequent consumption and payment are outside its scope.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t030",
+      "span": "contractual service-level thresholds",
+      "kind": "rule",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c10",
+          "votes": 2,
+          "offsets": [
+            12604
+          ],
+          "sentence": "The report's definitions do not establish contractual service-level thresholds.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t031",
+      "span": "delivery indicator changes",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c07",
+          "votes": 3,
+          "offsets": [
+            8386
+          ],
+          "sentence": "Purchase order processing can include price changes, quantity changes, delivery indicator changes, order approval changes, cancellations, item deletion, release, and reactivation.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t032",
+      "span": "delivery time",
+      "kind": "attribute",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c10",
+          "votes": 3,
+          "offsets": [
+            12324
+          ],
+          "sentence": "These intervals describe different business concerns, including purchasing responsiveness, delivery time, invoice recording delay, and payment delay.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t033",
+      "span": "discovered models",
+      "kind": "thing",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c00",
+          "votes": 2,
+          "offsets": [
+            1073
+          ],
+          "sentence": "The report is not a company-issued purchasing policy, and its discovered models are simplified representations of common behavior.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t034",
+      "span": "document identifier",
+      "kind": "identifier",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c02",
+          "votes": 3,
+          "offsets": [
+            4015
+          ],
+          "sentence": "The report does not provide a reliable document identifier that links every individual invoice to every corresponding receipt.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t035",
+      "span": "document type",
+      "kind": "attribute",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c02",
+          "votes": 3,
+          "offsets": [
+            2084
+          ],
+          "sentence": "A purchase order document groups purchase order items and has a document type.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t036",
+      "span": "Document-level events",
+      "kind": "other",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c09",
+          "votes": 3,
+          "offsets": [
+            11308
+          ],
+          "sentence": "Document-level events can be copied into item cases.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t037",
+      "span": "EC",
+      "kind": "abbreviation",
+      "expansion": null,
+      "n_chunks": 2,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c03",
+          "votes": 3,
+          "offsets": [
+            4165,
+            4947,
+            5009
+          ],
+          "sentence": "Observed behavior: the report separates EC purchase orders from standard and framework orders because EC orders include an SRM subprocess.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        },
+        {
+          "chunk_id": "bpi2019-purchase-process#c04",
+          "votes": 3,
+          "offsets": [
+            5244,
+            6062,
+            6201
+          ],
+          "sentence": "The report describes invoice creation and receipt before goods receipt in EC cases.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t038",
+      "span": "EC orders",
+      "kind": "thing",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c04",
+          "votes": 3,
+          "offsets": [
+            6062
+          ],
+          "sentence": "EC orders include SRM activities before or around item creation.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t039",
+      "span": "EC purchase orders",
+      "kind": "document",
+      "expansion": null,
+      "n_chunks": 2,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c02",
+          "votes": 3,
+          "offsets": [
+            2172
+          ],
+          "sentence": "The report distinguishes standard purchase orders, framework orders, and EC purchase orders.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        },
+        {
+          "chunk_id": "bpi2019-purchase-process#c03",
+          "votes": 3,
+          "offsets": [
+            4947
+          ],
+          "sentence": "Observed behavior: the report separates EC purchase orders from standard and framework orders because EC orders include an SRM subprocess.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t040",
+      "span": "elapsed processing time",
+      "kind": "attribute",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c07",
+          "votes": 3,
+          "offsets": [
+            8610
+          ],
+          "sentence": "These activities may introduce rework or affect elapsed processing time.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t041",
+      "span": "event log",
+      "kind": "document",
+      "expansion": null,
+      "n_chunks": 3,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c00",
+          "votes": 3,
+          "offsets": [
+            1000
+          ],
+          "sentence": "Statements about observed behavior describe its analysis of the event log.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        },
+        {
+          "chunk_id": "bpi2019-purchase-process#c01",
+          "votes": 3,
+          "offsets": [
+            1727
+          ],
+          "sentence": "An individual item is the case used to organize the event log.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        },
+        {
+          "chunk_id": "bpi2019-purchase-process#c06",
+          "votes": 3,
+          "offsets": [
+            7585
+          ],
+          "sentence": "Invoice processing is handled separately from the process represented by this event log.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t042",
+      "span": "eventual-response rule",
+      "kind": "rule",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c08",
+          "votes": 3,
+          "offsets": [
+            9859,
+            9909
+          ],
+          "sentence": "The report distinguishes an eventual-response rule from a precedence rule.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t043",
+      "span": "framework order",
+      "kind": "document",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c02",
+          "votes": 2,
+          "offsets": [
+            2150,
+            2194
+          ],
+          "sentence": "A framework order, also described as a blanket purchase order, can support recurring invoices over a period of time.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t044",
+      "span": "framework orders",
+      "kind": "document",
+      "expansion": null,
+      "n_chunks": 2,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c02",
+          "votes": 3,
+          "offsets": [
+            2150
+          ],
+          "sentence": "The report distinguishes standard purchase orders, framework orders, and EC purchase orders.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        },
+        {
+          "chunk_id": "bpi2019-purchase-process#c05",
+          "votes": 3,
+          "offsets": [
+            6630
+          ],
+          "sentence": "The report associates this category with framework orders and recurring invoices.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t045",
+      "span": "goods",
+      "kind": "thing",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c06",
+          "votes": 3,
+          "offsets": [
+            7402,
+            7692,
+            7899
+          ],
+          "sentence": "Expected business arrangement: goods are delivered to and stored in a warehouse, and payment takes place after their use in production.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t046",
+      "span": "goods and invoice handling activities",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c01",
+          "votes": 3,
+          "offsets": [
+            1421
+          ],
+          "sentence": "Purchase-to-pay follows a purchase order item from its creation through the applicable goods and invoice handling activities to invoice clearance.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t047",
+      "span": "Goods receipt",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 2,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c02",
+          "votes": 3,
+          "offsets": [
+            3354
+          ],
+          "sentence": "Goods receipt, invoice creation, invoice receipt, and invoice clearance are distinct business activities.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        },
+        {
+          "chunk_id": "bpi2019-purchase-process#c03",
+          "votes": 3,
+          "offsets": [
+            4385
+          ],
+          "sentence": "Goods receipt must precede invoice receipt for this category.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t048",
+      "span": "goods receipt",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 5,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c04",
+          "votes": 3,
+          "offsets": [
+            5367,
+            5705,
+            5935,
+            6184
+          ],
+          "sentence": "Expected behavior: invoice receipt is permitted before goods receipt.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        },
+        {
+          "chunk_id": "bpi2019-purchase-process#c05",
+          "votes": 3,
+          "offsets": [
+            6407
+          ],
+          "sentence": "Expected behavior: goods receipt is not required for this category.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        },
+        {
+          "chunk_id": "bpi2019-purchase-process#c06",
+          "votes": 3,
+          "offsets": [
+            7692,
+            7899
+          ],
+          "sentence": "Observed behavior: the common recorded progression is purchase order item creation followed by goods receipt.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        },
+        {
+          "chunk_id": "bpi2019-purchase-process#c08",
+          "votes": 3,
+          "offsets": [
+            9185,
+            9223,
+            9383,
+            9483,
+            9703
+          ],
+          "sentence": "For invoice-after-goods-receipt three-way matching, the expected precedence relationships are goods receipt before invoice receipt, goods receipt before invoice clearance, and invoice receipt before invoice clearance.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        },
+        {
+          "chunk_id": "bpi2019-purchase-process#c10",
+          "votes": 3,
+          "offsets": [
+            12070,
+            12196
+          ],
+          "sentence": "The report measures elapsed time from requisition or SRM creation to purchase order item creation, from item creation to goods receipt, from vendor invoice creation to invoice receipt recording, from invoice receipt to invoice clearance, and from goods receipt to invoice clearance.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t049",
+      "span": "goods receipt cancellation",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c06",
+          "votes": 3,
+          "offsets": [
+            7899
+          ],
+          "sentence": "Item deletion can terminate a case; goods receipt cancellation is also discussed as a possible case ending.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t050",
+      "span": "goods receipt events",
+      "kind": "thing",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c02",
+          "votes": 2,
+          "offsets": [
+            3657
+          ],
+          "sentence": "An item can have multiple goods receipt events and multiple invoice-related events.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t051",
+      "span": "goods receipt recording",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 2,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c03",
+          "votes": 3,
+          "offsets": [
+            4580
+          ],
+          "sentence": "The common business progression is purchase order item creation, goods receipt recording, invoice receipt recording, and invoice clearance.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        },
+        {
+          "chunk_id": "bpi2019-purchase-process#c04",
+          "votes": 3,
+          "offsets": [
+            5705
+          ],
+          "sentence": "The essential activities are purchase order item creation, goods receipt recording, invoice receipt recording, any applicable payment block removal, and invoice clearance.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t052",
+      "span": "goods receipt value",
+      "kind": "attribute",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c03",
+          "votes": 3,
+          "offsets": [
+            4300
+          ],
+          "sentence": "Expected behavior: the invoice value is checked against both the goods receipt value and the value recorded when the purchase order item was created.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t053",
+      "span": "human users",
+      "kind": "role",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c02",
+          "votes": 3,
+          "offsets": [
+            3167
+          ],
+          "sentence": "Automated batch resources and human users both occur.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t054",
+      "span": "individual item",
+      "kind": "thing",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c01",
+          "votes": 2,
+          "offsets": [
+            1678
+          ],
+          "sentence": "An individual item is the case used to organize the event log.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t055",
+      "span": "Internal departments",
+      "kind": "role",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c02",
+          "votes": 3,
+          "offsets": [
+            2807
+          ],
+          "sentence": "Internal departments require purchased goods or services; vendors have an interest in timely payment.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t056",
+      "span": "invoice",
+      "kind": "document",
+      "expansion": null,
+      "n_chunks": 3,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c02",
+          "votes": 3,
+          "offsets": [
+            2277,
+            2524,
+            2725,
+            3369,
+            3387,
+            3408,
+            3691,
+            3741,
+            3787,
+            3893,
+            4063
+          ],
+          "sentence": "A vendor supplies the purchased goods or services and can create an invoice.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        },
+        {
+          "chunk_id": "bpi2019-purchase-process#c04",
+          "votes": 3,
+          "offsets": [
+            5331,
+            5386,
+            5483,
+            5626,
+            5730,
+            5799,
+            5836,
+            6148
+          ],
+          "sentence": "The invoice, receipt, and purchase order item values are still subject to three-way matching.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        },
+        {
+          "chunk_id": "bpi2019-purchase-process#c05",
+          "votes": 3,
+          "offsets": [
+            6460,
+            6570,
+            6661,
+            6730,
+            6926,
+            7048
+          ],
+          "sentence": "Invoice receipt and clearance may be recorded in only one of those item cases even when the invoice covers several items.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t057",
+      "span": "invoice clearance",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 6,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c01",
+          "votes": 3,
+          "offsets": [
+            1462
+          ],
+          "sentence": "Purchase-to-pay follows a purchase order item from its creation through the applicable goods and invoice handling activities to invoice clearance.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        },
+        {
+          "chunk_id": "bpi2019-purchase-process#c02",
+          "votes": 3,
+          "offsets": [
+            3408
+          ],
+          "sentence": "Goods receipt, invoice creation, invoice receipt, and invoice clearance are distinct business activities.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        },
+        {
+          "chunk_id": "bpi2019-purchase-process#c04",
+          "votes": 3,
+          "offsets": [
+            5626,
+            5799
+          ],
+          "sentence": "A previously set payment block is removed before invoice clearance.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        },
+        {
+          "chunk_id": "bpi2019-purchase-process#c05",
+          "votes": 3,
+          "offsets": [
+            6570
+          ],
+          "sentence": "Invoice receipt precedes invoice clearance.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        },
+        {
+          "chunk_id": "bpi2019-purchase-process#c08",
+          "votes": 3,
+          "offsets": [
+            9244,
+            9290,
+            9410,
+            9684
+          ],
+          "sentence": "For invoice-after-goods-receipt three-way matching, the expected precedence relationships are goods receipt before invoice receipt, goods receipt before invoice clearance, and invoice receipt before invoice clearance.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        },
+        {
+          "chunk_id": "bpi2019-purchase-process#c10",
+          "votes": 3,
+          "offsets": [
+            12168,
+            12213
+          ],
+          "sentence": "The report measures elapsed time from requisition or SRM creation to purchase order item creation, from item creation to goods receipt, from vendor invoice creation to invoice receipt recording, from invoice receipt to invoice clearance, and from goods receipt to invoice clearance.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t058",
+      "span": "Invoice clearance",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c03",
+          "votes": 3,
+          "offsets": [
+            4447
+          ],
+          "sentence": "Invoice clearance follows the required receipt and matching steps.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t059",
+      "span": "invoice creation",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 2,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c02",
+          "votes": 3,
+          "offsets": [
+            3369
+          ],
+          "sentence": "Goods receipt, invoice creation, invoice receipt, and invoice clearance are distinct business activities.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        },
+        {
+          "chunk_id": "bpi2019-purchase-process#c04",
+          "votes": 3,
+          "offsets": [
+            6148
+          ],
+          "sentence": "The report describes invoice creation and receipt before goods receipt in EC cases.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t060",
+      "span": "invoice events",
+      "kind": "thing",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c06",
+          "votes": 3,
+          "offsets": [
+            8075
+          ],
+          "sentence": "The absence of invoice events in a consignment case is therefore consistent with the stated recording scope, rather than sufficient evidence of a compliance violation.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t061",
+      "span": "invoice handling",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c02",
+          "votes": 2,
+          "offsets": [
+            3787
+          ],
+          "sentence": "The report also describes invoices that cover several items even though invoice handling is recorded in only one item case.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t062",
+      "span": "invoice matching procedure",
+      "kind": "rule",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c02",
+          "votes": 3,
+          "offsets": [
+            2524
+          ],
+          "sentence": "The item category identifies the invoice matching procedure and therefore the applicable process variant.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t063",
+      "span": "Invoice processing",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c06",
+          "votes": 3,
+          "offsets": [
+            7507
+          ],
+          "sentence": "Invoice processing is handled separately from the process represented by this event log.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t064",
+      "span": "invoice receipt",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 5,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c02",
+          "votes": 3,
+          "offsets": [
+            3387
+          ],
+          "sentence": "Goods receipt, invoice creation, invoice receipt, and invoice clearance are distinct business activities.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        },
+        {
+          "chunk_id": "bpi2019-purchase-process#c03",
+          "votes": 3,
+          "offsets": [
+            4412,
+            4605,
+            4734
+          ],
+          "sentence": "Goods receipt must precede invoice receipt for this category.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        },
+        {
+          "chunk_id": "bpi2019-purchase-process#c04",
+          "votes": 3,
+          "offsets": [
+            5331,
+            5730,
+            5836
+          ],
+          "sentence": "Expected behavior: invoice receipt is permitted before goods receipt.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        },
+        {
+          "chunk_id": "bpi2019-purchase-process#c08",
+          "votes": 3,
+          "offsets": [
+            9206,
+            9267,
+            9363,
+            9435,
+            9659
+          ],
+          "sentence": "For invoice-after-goods-receipt three-way matching, the expected precedence relationships are goods receipt before invoice receipt, goods receipt before invoice clearance, and invoice receipt before invoice clearance.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        },
+        {
+          "chunk_id": "bpi2019-purchase-process#c10",
+          "votes": 3,
+          "offsets": [
+            12117,
+            12149
+          ],
+          "sentence": "The report measures elapsed time from requisition or SRM creation to purchase order item creation, from item creation to goods receipt, from vendor invoice creation to invoice receipt recording, from invoice receipt to invoice clearance, and from goods receipt to invoice clearance.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t065",
+      "span": "Invoice receipt",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c05",
+          "votes": 3,
+          "offsets": [
+            6545,
+            6834
+          ],
+          "sentence": "Invoice receipt precedes invoice clearance.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t066",
+      "span": "invoice receipt recording",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 3,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c03",
+          "votes": 3,
+          "offsets": [
+            4605
+          ],
+          "sentence": "The common business progression is purchase order item creation, goods receipt recording, invoice receipt recording, and invoice clearance.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        },
+        {
+          "chunk_id": "bpi2019-purchase-process#c04",
+          "votes": 3,
+          "offsets": [
+            5730
+          ],
+          "sentence": "The essential activities are purchase order item creation, goods receipt recording, invoice receipt recording, any applicable payment block removal, and invoice clearance.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        },
+        {
+          "chunk_id": "bpi2019-purchase-process#c10",
+          "votes": 2,
+          "offsets": [
+            12117
+          ],
+          "sentence": "The report measures elapsed time from requisition or SRM creation to purchase order item creation, from item creation to goods receipt, from vendor invoice creation to invoice receipt recording, from invoice receipt to invoice clearance, and from goods receipt to invoice clearance.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t067",
+      "span": "invoice recording delay",
+      "kind": "attribute",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c10",
+          "votes": 3,
+          "offsets": [
+            12339
+          ],
+          "sentence": "These intervals describe different business concerns, including purchasing responsiveness, delivery time, invoice recording delay, and payment delay.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t068",
+      "span": "invoice sequence",
+      "kind": "other",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c05",
+          "votes": 2,
+          "offsets": [
+            7048
+          ],
+          "sentence": "Some item traces therefore contain item creation and approval activities without a complete invoice sequence.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t069",
+      "span": "invoice value",
+      "kind": "attribute",
+      "expansion": null,
+      "n_chunks": 2,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c03",
+          "votes": 3,
+          "offsets": [
+            4258
+          ],
+          "sentence": "Expected behavior: the invoice value is checked against both the goods receipt value and the value recorded when the purchase order item was created.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        },
+        {
+          "chunk_id": "bpi2019-purchase-process#c05",
+          "votes": 3,
+          "offsets": [
+            6460
+          ],
+          "sentence": "The invoice value is matched against the value recorded at purchase order item creation.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t070",
+      "span": "invoice-after-goods-receipt three-way matching",
+      "kind": "rule",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c08",
+          "votes": 3,
+          "offsets": [
+            9095
+          ],
+          "sentence": "For invoice-after-goods-receipt three-way matching, the expected precedence relationships are goods receipt before invoice receipt, goods receipt before invoice clearance, and invoice receipt before invoice clearance.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t071",
+      "span": "invoice-before-goods-receipt three-way matching",
+      "kind": "rule",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c08",
+          "votes": 3,
+          "offsets": [
+            9314
+          ],
+          "sentence": "For invoice-before-goods-receipt three-way matching, invoice receipt and goods receipt both precede invoice clearance.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t072",
+      "span": "invoice-clearance event",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c09",
+          "votes": 3,
+          "offsets": [
+            10931
+          ],
+          "sentence": "The absence of a later invoice-clearance event in such a snapshot does not necessarily mean that clearance will never occur.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t073",
+      "span": "invoice-clearance rule",
+      "kind": "rule",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c08",
+          "votes": 3,
+          "offsets": [
+            9770
+          ],
+          "sentence": "Consignment does not have an invoice-clearance rule that can be evaluated from this log.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t074",
+      "span": "invoice-related events",
+      "kind": "thing",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c02",
+          "votes": 2,
+          "offsets": [
+            3691
+          ],
+          "sentence": "An item can have multiple goods receipt events and multiple invoice-related events.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t075",
+      "span": "invoice-to-receipt document linkage",
+      "kind": "thing",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c08",
+          "votes": 3,
+          "offsets": [
+            10418
+          ],
+          "sentence": "Its rules do not establish an authoritative invoice-to-receipt document linkage.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t076",
+      "span": "invoices",
+      "kind": "document",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c07",
+          "votes": 3,
+          "offsets": [
+            8698
+          ],
+          "sentence": "Several receipts or invoices can legitimately relate to one item.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t077",
+      "span": "item",
+      "kind": "thing",
+      "expansion": null,
+      "n_chunks": 2,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c07",
+          "votes": 3,
+          "offsets": [
+            8453,
+            8738
+          ],
+          "sentence": "Several receipts or invoices can legitimately relate to one item.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        },
+        {
+          "chunk_id": "bpi2019-purchase-process#c09",
+          "votes": 2,
+          "offsets": [
+            11349,
+            11426
+          ],
+          "sentence": "A copied approval event may even precede the creation of a later item.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t078",
+      "span": "item case",
+      "kind": "other",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c02",
+          "votes": 3,
+          "offsets": [
+            3003,
+            3828
+          ],
+          "sentence": "A recorded event belongs to an item case and identifies an activity and its completion timestamp.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t079",
+      "span": "item cases",
+      "kind": "other",
+      "expansion": null,
+      "n_chunks": 2,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c05",
+          "votes": 2,
+          "offsets": [
+            6901
+          ],
+          "sentence": "Invoice receipt and clearance may be recorded in only one of those item cases even when the invoice covers several items.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        },
+        {
+          "chunk_id": "bpi2019-purchase-process#c09",
+          "votes": 3,
+          "offsets": [
+            11349
+          ],
+          "sentence": "Document-level events can be copied into item cases.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t080",
+      "span": "item category",
+      "kind": "attribute",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c02",
+          "votes": 3,
+          "offsets": [
+            2476,
+            2495,
+            2611
+          ],
+          "sentence": "Its context includes a subsidiary or company, a vendor, an item type, a spend area, and an item category.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t081",
+      "span": "item creation",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 2,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c04",
+          "votes": 3,
+          "offsets": [
+            5690,
+            6112
+          ],
+          "sentence": "EC orders include SRM activities before or around item creation.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        },
+        {
+          "chunk_id": "bpi2019-purchase-process#c05",
+          "votes": 3,
+          "offsets": [
+            6530,
+            6991
+          ],
+          "sentence": "Some item traces therefore contain item creation and approval activities without a complete invoice sequence.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t082",
+      "span": "Item deletion",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c06",
+          "votes": 3,
+          "offsets": [
+            7863
+          ],
+          "sentence": "Item deletion can terminate a case; goods receipt cancellation is also discussed as a possible case ending.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t083",
+      "span": "item deletion",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c07",
+          "votes": 3,
+          "offsets": [
+            8453
+          ],
+          "sentence": "Purchase order processing can include price changes, quantity changes, delivery indicator changes, order approval changes, cancellations, item deletion, release, and reactivation.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t084",
+      "span": "item identifiers",
+      "kind": "identifier",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c01",
+          "votes": 3,
+          "offsets": [
+            1885
+          ],
+          "sentence": "The case identifier combines purchase order and item identifiers.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t085",
+      "span": "item traces",
+      "kind": "other",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c05",
+          "votes": 3,
+          "offsets": [
+            6961,
+            7175
+          ],
+          "sentence": "Some item traces therefore contain item creation and approval activities without a complete invoice sequence.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t086",
+      "span": "item type",
+      "kind": "attribute",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c02",
+          "votes": 3,
+          "offsets": [
+            2444
+          ],
+          "sentence": "Its context includes a subsidiary or company, a vendor, an item type, a spend area, and an item category.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t087",
+      "span": "multinational paints and coatings company",
+      "kind": "thing",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c01",
+          "votes": 3,
+          "offsets": [
+            1260
+          ],
+          "sentence": "The process concerns purchasing in a multinational paints and coatings company operating from the Netherlands.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t088",
+      "span": "order approval changes",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c07",
+          "votes": 3,
+          "offsets": [
+            8414
+          ],
+          "sentence": "Purchase order processing can include price changes, quantity changes, delivery indicator changes, order approval changes, cancellations, item deletion, release, and reactivation.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t089",
+      "span": "order confirmation",
+      "kind": "document",
+      "expansion": null,
+      "n_chunks": 2,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c03",
+          "votes": 3,
+          "offsets": [
+            4824
+          ],
+          "sentence": "Optional or additional activities include purchase requisition creation, order confirmation, service entry sheet recording, and changes to the order item.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        },
+        {
+          "chunk_id": "bpi2019-purchase-process#c06",
+          "votes": 3,
+          "offsets": [
+            7821
+          ],
+          "sentence": "Optional activities include purchase requisition creation, order confirmation, and quantity changes.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t090",
+      "span": "order confirmation activities",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c04",
+          "votes": 2,
+          "offsets": [
+            6031
+          ],
+          "sentence": "Observed behavior: standard orders may contain requisition and order confirmation activities.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t091",
+      "span": "order confirmations",
+      "kind": "document",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c07",
+          "votes": 3,
+          "offsets": [
+            8518
+          ],
+          "sentence": "Communications include order confirmations and vendor debit memos.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t092",
+      "span": "order item",
+      "kind": "thing",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c02",
+          "votes": 3,
+          "offsets": [
+            2062,
+            2321,
+            3498,
+            3862
+          ],
+          "sentence": "A purchase requisition can precede an order item, but it is not present in every observed variant.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t093",
+      "span": "order items",
+      "kind": "thing",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c05",
+          "votes": 3,
+          "offsets": [
+            6784
+          ],
+          "sentence": "Observed behavior: the modeled flow can begin with vendor invoice creation, followed by creation of one or more order items and a purchase order approval change.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t094",
+      "span": "ordering, cardinality, and exclusiveness rules",
+      "kind": "rule",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c08",
+          "votes": 2,
+          "offsets": [
+            10065
+          ],
+          "sentence": "It also discusses ordering, cardinality, and exclusiveness rules.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t095",
+      "span": "participant analysis report",
+      "kind": "document",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c00",
+          "votes": 2,
+          "offsets": [
+            808
+          ],
+          "sentence": "The source is a participant analysis report.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t096",
+      "span": "payment",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c01",
+          "votes": 3,
+          "offsets": [
+            1574
+          ],
+          "sentence": "Consignment has a different endpoint in the available log because subsequent consumption and payment are outside its scope.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t097",
+      "span": "payment block",
+      "kind": "state",
+      "expansion": null,
+      "n_chunks": 2,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c04",
+          "votes": 3,
+          "offsets": [
+            5594,
+            5772,
+            6265
+          ],
+          "sentence": "A previously set payment block is removed before invoice clearance.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        },
+        {
+          "chunk_id": "bpi2019-purchase-process#c08",
+          "votes": 3,
+          "offsets": [
+            9460,
+            9511
+          ],
+          "sentence": "Removal of a payment block presupposes that a block was set, although the corresponding creation event is frequently absent from the log.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t098",
+      "span": "payment block creation",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c04",
+          "votes": 3,
+          "offsets": [
+            6265
+          ],
+          "sentence": "Payment block removal is visible much more often than payment block creation.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t099",
+      "span": "Payment block creation",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c09",
+          "votes": 3,
+          "offsets": [
+            11578
+          ],
+          "sentence": "Payment block creation is poorly recorded compared with removal.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t100",
+      "span": "payment block removal",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c04",
+          "votes": 3,
+          "offsets": [
+            5772
+          ],
+          "sentence": "The essential activities are purchase order item creation, goods receipt recording, invoice receipt recording, any applicable payment block removal, and invoice clearance.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t101",
+      "span": "payment blocking",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c08",
+          "votes": 3,
+          "offsets": [
+            9460
+          ],
+          "sentence": "Early invoice receipt requires payment blocking until goods receipt.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t102",
+      "span": "payment delay",
+      "kind": "attribute",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c10",
+          "votes": 3,
+          "offsets": [
+            12368
+          ],
+          "sentence": "These intervals describe different business concerns, including purchasing responsiveness, delivery time, invoice recording delay, and payment delay.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t103",
+      "span": "precedence rule",
+      "kind": "rule",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c08",
+          "votes": 3,
+          "offsets": [
+            9889,
+            9984
+          ],
+          "sentence": "The report distinguishes an eventual-response rule from a precedence rule.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t104",
+      "span": "price changes",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c07",
+          "votes": 3,
+          "offsets": [
+            8353
+          ],
+          "sentence": "Purchase order processing can include price changes, quantity changes, delivery indicator changes, order approval changes, cancellations, item deletion, release, and reactivation.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t105",
+      "span": "Process Mining",
+      "kind": "other",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c00",
+          "votes": 3,
+          "offsets": [
+            224
+          ],
+          "sentence": "This English text is a selective paraphrase of \"Compliance and Performance Analysis of Procurement Processes Using Process Mining: BPI Challenge 2019\" by Kiarash Diba, Simon Remy, and Luise Pufahl, Hasso Plattner Institute, University of Potsdam, 2019.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t106",
+      "span": "process variant",
+      "kind": "thing",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c10",
+          "votes": 3,
+          "offsets": [
+            12476
+          ],
+          "sentence": "They are meaningful only where their endpoint activities are available and applicable to the process variant.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t107",
+      "span": "process variants",
+      "kind": "thing",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c00",
+          "votes": 3,
+          "offsets": [
+            656
+          ],
+          "sentence": "This document preserves business concepts, relationships, process variants, and evidence limitations.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t108",
+      "span": "Procurement Processes",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c00",
+          "votes": 3,
+          "offsets": [
+            196
+          ],
+          "sentence": "This English text is a selective paraphrase of \"Compliance and Performance Analysis of Procurement Processes Using Process Mining: BPI Challenge 2019\" by Kiarash Diba, Simon Remy, and Luise Pufahl, Hasso Plattner Institute, University of Potsdam, 2019.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t109",
+      "span": "production",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c06",
+          "votes": 2,
+          "offsets": [
+            7495
+          ],
+          "sentence": "Expected business arrangement: goods are delivered to and stored in a warehouse, and payment takes place after their use in production.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t110",
+      "span": "purchase order",
+      "kind": "document",
+      "expansion": null,
+      "n_chunks": 2,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c01",
+          "votes": 3,
+          "offsets": [
+            1360,
+            1608,
+            1653,
+            1800,
+            1866
+          ],
+          "sentence": "The case identifier combines purchase order and item identifiers.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        },
+        {
+          "chunk_id": "bpi2019-purchase-process#c02",
+          "votes": 3,
+          "offsets": [
+            2022,
+            2053,
+            2133,
+            2175,
+            2239,
+            2312,
+            2369,
+            3853
+          ],
+          "sentence": "A purchase order item is an individually tracked line of a purchase order.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t111",
+      "span": "purchase order approval change",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c05",
+          "votes": 3,
+          "offsets": [
+            6802,
+            7069
+          ],
+          "sentence": "Observed behavior: the modeled flow can begin with vendor invoice creation, followed by creation of one or more order items and a purchase order approval change.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t112",
+      "span": "purchase order document",
+      "kind": "document",
+      "expansion": null,
+      "n_chunks": 3,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c01",
+          "votes": 3,
+          "offsets": [
+            1608
+          ],
+          "sentence": "A purchase order document contains one or more purchase order items.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        },
+        {
+          "chunk_id": "bpi2019-purchase-process#c02",
+          "votes": 3,
+          "offsets": [
+            2022
+          ],
+          "sentence": "A purchase order document groups purchase order items and has a document type.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        },
+        {
+          "chunk_id": "bpi2019-purchase-process#c05",
+          "votes": 3,
+          "offsets": [
+            7113
+          ],
+          "sentence": "A purchase order approval change concerns the purchase order document.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t113",
+      "span": "purchase order item",
+      "kind": "thing",
+      "expansion": null,
+      "n_chunks": 4,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c01",
+          "votes": 3,
+          "offsets": [
+            1360,
+            1653
+          ],
+          "sentence": "Purchase-to-pay follows a purchase order item from its creation through the applicable goods and invoice handling activities to invoice clearance.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        },
+        {
+          "chunk_id": "bpi2019-purchase-process#c02",
+          "votes": 3,
+          "offsets": [
+            2053,
+            2312,
+            3853
+          ],
+          "sentence": "A purchase order item is an individually tracked line of a purchase order.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        },
+        {
+          "chunk_id": "bpi2019-purchase-process#c03",
+          "votes": 3,
+          "offsets": [
+            4352,
+            4550
+          ],
+          "sentence": "Expected behavior: the invoice value is checked against both the goods receipt value and the value recorded when the purchase order item was created.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        },
+        {
+          "chunk_id": "bpi2019-purchase-process#c10",
+          "votes": 3,
+          "offsets": [
+            12018
+          ],
+          "sentence": "The report measures elapsed time from requisition or SRM creation to purchase order item creation, from item creation to goods receipt, from vendor invoice creation to invoice receipt recording, from invoice receipt to invoice clearance, and from goods receipt to invoice clearance.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t114",
+      "span": "purchase order item creation",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 4,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c03",
+          "votes": 3,
+          "offsets": [
+            4550
+          ],
+          "sentence": "The common business progression is purchase order item creation, goods receipt recording, invoice receipt recording, and invoice clearance.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        },
+        {
+          "chunk_id": "bpi2019-purchase-process#c04",
+          "votes": 3,
+          "offsets": [
+            5675
+          ],
+          "sentence": "The essential activities are purchase order item creation, goods receipt recording, invoice receipt recording, any applicable payment block removal, and invoice clearance.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        },
+        {
+          "chunk_id": "bpi2019-purchase-process#c05",
+          "votes": 3,
+          "offsets": [
+            6515
+          ],
+          "sentence": "The invoice value is matched against the value recorded at purchase order item creation.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        },
+        {
+          "chunk_id": "bpi2019-purchase-process#c06",
+          "votes": 3,
+          "offsets": [
+            7651
+          ],
+          "sentence": "Observed behavior: the common recorded progression is purchase order item creation followed by goods receipt.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t115",
+      "span": "purchase order item values",
+      "kind": "attribute",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c04",
+          "votes": 2,
+          "offsets": [
+            5408
+          ],
+          "sentence": "The invoice, receipt, and purchase order item values are still subject to three-way matching.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t116",
+      "span": "purchase order items",
+      "kind": "thing",
+      "expansion": null,
+      "n_chunks": 2,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c01",
+          "votes": 3,
+          "offsets": [
+            1653
+          ],
+          "sentence": "A purchase order document contains one or more purchase order items.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        },
+        {
+          "chunk_id": "bpi2019-purchase-process#c02",
+          "votes": 3,
+          "offsets": [
+            2053
+          ],
+          "sentence": "A purchase order document groups purchase order items and has a document type.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t117",
+      "span": "Purchase order processing",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c07",
+          "votes": 3,
+          "offsets": [
+            8315
+          ],
+          "sentence": "Purchase order processing can include price changes, quantity changes, delivery indicator changes, order approval changes, cancellations, item deletion, release, and reactivation.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t118",
+      "span": "purchase requisition",
+      "kind": "document",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c02",
+          "votes": 3,
+          "offsets": [
+            3462
+          ],
+          "sentence": "A purchase requisition can precede an order item, but it is not present in every observed variant.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t119",
+      "span": "purchase requisition creation",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 2,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c03",
+          "votes": 3,
+          "offsets": [
+            4793
+          ],
+          "sentence": "Optional or additional activities include purchase requisition creation, order confirmation, service entry sheet recording, and changes to the order item.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        },
+        {
+          "chunk_id": "bpi2019-purchase-process#c06",
+          "votes": 3,
+          "offsets": [
+            7790
+          ],
+          "sentence": "Optional activities include purchase requisition creation, order confirmation, and quantity changes.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t120",
+      "span": "Purchase-to-pay",
+      "kind": "other",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c01",
+          "votes": 3,
+          "offsets": [
+            1334
+          ],
+          "sentence": "Purchase-to-pay follows a purchase order item from its creation through the applicable goods and invoice handling activities to invoice clearance.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t121",
+      "span": "PURCHASE-TO-PAY PROCESS",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c00",
+          "votes": 3,
+          "offsets": [
+            20
+          ],
+          "sentence": "BPI CHALLENGE 2019: PURCHASE-TO-PAY PROCESS",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t122",
+      "span": "purchasing",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c01",
+          "votes": 2,
+          "offsets": [
+            1244
+          ],
+          "sentence": "The process concerns purchasing in a multinational paints and coatings company operating from the Netherlands.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t123",
+      "span": "purchasing policy",
+      "kind": "document",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c00",
+          "votes": 2,
+          "offsets": [
+            1046
+          ],
+          "sentence": "The report is not a company-issued purchasing policy, and its discovered models are simplified representations of common behavior.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t124",
+      "span": "purchasing process",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c00",
+          "votes": 3,
+          "offsets": [
+            916
+          ],
+          "sentence": "Statements about expected behavior describe the report's interpretation of the purchasing process.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t125",
+      "span": "purchasing responsiveness",
+      "kind": "attribute",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c10",
+          "votes": 3,
+          "offsets": [
+            12297
+          ],
+          "sentence": "These intervals describe different business concerns, including purchasing responsiveness, delivery time, invoice recording delay, and payment delay.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t126",
+      "span": "quantity changes",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 2,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c06",
+          "votes": 3,
+          "offsets": [
+            7845
+          ],
+          "sentence": "Optional activities include purchase requisition creation, order confirmation, and quantity changes.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        },
+        {
+          "chunk_id": "bpi2019-purchase-process#c07",
+          "votes": 3,
+          "offsets": [
+            8368
+          ],
+          "sentence": "Purchase order processing can include price changes, quantity changes, delivery indicator changes, order approval changes, cancellations, item deletion, release, and reactivation.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t127",
+      "span": "reactivation",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c07",
+          "votes": 3,
+          "offsets": [
+            8481
+          ],
+          "sentence": "Purchase order processing can include price changes, quantity changes, delivery indicator changes, order approval changes, cancellations, item deletion, release, and reactivation.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t128",
+      "span": "receipt",
+      "kind": "document",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c04",
+          "votes": 3,
+          "offsets": [
+            5339,
+            5373,
+            5395,
+            5711,
+            5738,
+            5824,
+            5844,
+            5941,
+            6169,
+            6190
+          ],
+          "sentence": "The invoice, receipt, and purchase order item values are still subject to three-way matching.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t129",
+      "span": "receipts",
+      "kind": "document",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c07",
+          "votes": 3,
+          "offsets": [
+            8686
+          ],
+          "sentence": "Several receipts or invoices can legitimately relate to one item.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t130",
+      "span": "recorded event",
+      "kind": "other",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c02",
+          "votes": 3,
+          "offsets": [
+            2974
+          ],
+          "sentence": "A recorded event belongs to an item case and identifies an activity and its completion timestamp.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t131",
+      "span": "recorded resource",
+      "kind": "role",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c02",
+          "votes": 3,
+          "offsets": [
+            3193
+          ],
+          "sentence": "A recorded resource is evidence about an activity's execution or recording; it does not by itself establish a complete organizational role or approval authority.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t132",
+      "span": "recording of invoice receipt",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c03",
+          "votes": 3,
+          "offsets": [
+            4721
+          ],
+          "sentence": "Vendor invoice creation is a distinct activity from the company's recording of invoice receipt.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t133",
+      "span": "recurring invoices",
+      "kind": "document",
+      "expansion": null,
+      "n_chunks": 2,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c02",
+          "votes": 3,
+          "offsets": [
+            2267
+          ],
+          "sentence": "A framework order, also described as a blanket purchase order, can support recurring invoices over a period of time.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        },
+        {
+          "chunk_id": "bpi2019-purchase-process#c05",
+          "votes": 3,
+          "offsets": [
+            6651
+          ],
+          "sentence": "The report associates this category with framework orders and recurring invoices.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t134",
+      "span": "release",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c07",
+          "votes": 3,
+          "offsets": [
+            8468
+          ],
+          "sentence": "Purchase order processing can include price changes, quantity changes, delivery indicator changes, order approval changes, cancellations, item deletion, release, and reactivation.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t135",
+      "span": "repeated changes",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c03",
+          "votes": 3,
+          "offsets": [
+            5093
+          ],
+          "sentence": "It also observes repeated invoice creation and repeated changes.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t136",
+      "span": "repeated invoice creation",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c03",
+          "votes": 3,
+          "offsets": [
+            5063
+          ],
+          "sentence": "It also observes repeated invoice creation and repeated changes.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t137",
+      "span": "requisition",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 2,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c04",
+          "votes": 3,
+          "offsets": [
+            6015
+          ],
+          "sentence": "Observed behavior: standard orders may contain requisition and order confirmation activities.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        },
+        {
+          "chunk_id": "bpi2019-purchase-process#c10",
+          "votes": 3,
+          "offsets": [
+            11987
+          ],
+          "sentence": "The report measures elapsed time from requisition or SRM creation to purchase order item creation, from item creation to goods receipt, from vendor invoice creation to invoice receipt recording, from invoice receipt to invoice clearance, and from goods receipt to invoice clearance.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t138",
+      "span": "resource",
+      "kind": "role",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c02",
+          "votes": 2,
+          "offsets": [
+            3106,
+            3153,
+            3202
+          ],
+          "sentence": "The log also identifies the user or resource recording activities.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t139",
+      "span": "rework",
+      "kind": "other",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c07",
+          "votes": 3,
+          "offsets": [
+            8593
+          ],
+          "sentence": "These activities may introduce rework or affect elapsed processing time.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t140",
+      "span": "service entry sheet",
+      "kind": "document",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c02",
+          "votes": 3,
+          "offsets": [
+            3561
+          ],
+          "sentence": "A service entry sheet records a service-related step in some variants.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t141",
+      "span": "service entry sheet recording",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c03",
+          "votes": 3,
+          "offsets": [
+            4844
+          ],
+          "sentence": "Optional or additional activities include purchase requisition creation, order confirmation, service entry sheet recording, and changes to the order item.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t142",
+      "span": "spend area",
+      "kind": "attribute",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c02",
+          "votes": 3,
+          "offsets": [
+            2457
+          ],
+          "sentence": "Its context includes a subsidiary or company, a vendor, an item type, a spend area, and an item category.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t143",
+      "span": "SRM",
+      "kind": "abbreviation",
+      "expansion": null,
+      "n_chunks": 3,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c03",
+          "votes": 3,
+          "offsets": [
+            5030
+          ],
+          "sentence": "Observed behavior: the report separates EC purchase orders from standard and framework orders because EC orders include an SRM subprocess.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        },
+        {
+          "chunk_id": "bpi2019-purchase-process#c04",
+          "votes": 3,
+          "offsets": [
+            6080
+          ],
+          "sentence": "EC orders include SRM activities before or around item creation.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        },
+        {
+          "chunk_id": "bpi2019-purchase-process#c10",
+          "votes": 3,
+          "offsets": [
+            12002
+          ],
+          "sentence": "The report measures elapsed time from requisition or SRM creation to purchase order item creation, from item creation to goods receipt, from vendor invoice creation to invoice receipt recording, from invoice receipt to invoice clearance, and from goods receipt to invoice clearance.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t144",
+      "span": "SRM activities",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c04",
+          "votes": 2,
+          "offsets": [
+            6080
+          ],
+          "sentence": "EC orders include SRM activities before or around item creation.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t145",
+      "span": "SRM subprocess",
+      "kind": "other",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c03",
+          "votes": 3,
+          "offsets": [
+            5030
+          ],
+          "sentence": "Observed behavior: the report separates EC purchase orders from standard and framework orders because EC orders include an SRM subprocess.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t146",
+      "span": "standard and framework orders",
+      "kind": "document",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c03",
+          "votes": 2,
+          "offsets": [
+            4971
+          ],
+          "sentence": "Observed behavior: the report separates EC purchase orders from standard and framework orders because EC orders include an SRM subprocess.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t147",
+      "span": "standard orders",
+      "kind": "thing",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c04",
+          "votes": 3,
+          "offsets": [
+            5987
+          ],
+          "sentence": "Observed behavior: standard orders may contain requisition and order confirmation activities.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t148",
+      "span": "standard purchase orders",
+      "kind": "document",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c02",
+          "votes": 3,
+          "offsets": [
+            2124
+          ],
+          "sentence": "The report distinguishes standard purchase orders, framework orders, and EC purchase orders.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t149",
+      "span": "subsidiary",
+      "kind": "role",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c02",
+          "votes": 3,
+          "offsets": [
+            2408,
+            2736
+          ],
+          "sentence": "Its context includes a subsidiary or company, a vendor, an item type, a spend area, and an item category.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t150",
+      "span": "THREE-WAY MATCHING",
+      "kind": "rule",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c03",
+          "votes": 2,
+          "offsets": [
+            4124
+          ],
+          "sentence": "3. PROCESS VARIANT: THREE-WAY MATCHING, INVOICE AFTER GOODS RECEIPT",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t151",
+      "span": "three-way matching",
+      "kind": "rule",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c04",
+          "votes": 3,
+          "offsets": [
+            5456
+          ],
+          "sentence": "The invoice, receipt, and purchase order item values are still subject to three-way matching.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t152",
+      "span": "TWO-WAY MATCHING",
+      "kind": "other",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c05",
+          "votes": 3,
+          "offsets": [
+            6310
+          ],
+          "sentence": "5. PROCESS VARIANT: TWO-WAY MATCHING",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t153",
+      "span": "two-way matching",
+      "kind": "rule",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c08",
+          "votes": 3,
+          "offsets": [
+            9641
+          ],
+          "sentence": "For two-way matching, invoice receipt precedes invoice clearance; goods receipt is not a required step.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t154",
+      "span": "user",
+      "kind": "role",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c02",
+          "votes": 2,
+          "offsets": [
+            3098,
+            3173
+          ],
+          "sentence": "The log also identifies the user or resource recording activities.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t155",
+      "span": "vendor",
+      "kind": "role",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c02",
+          "votes": 3,
+          "offsets": [
+            2433,
+            2659,
+            2865,
+            2921
+          ],
+          "sentence": "Its context includes a subsidiary or company, a vendor, an item type, a spend area, and an item category.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t156",
+      "span": "vendor debit memos",
+      "kind": "document",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c07",
+          "votes": 3,
+          "offsets": [
+            8542
+          ],
+          "sentence": "Communications include order confirmations and vendor debit memos.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t157",
+      "span": "vendor invoice",
+      "kind": "document",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c10",
+          "votes": 3,
+          "offsets": [
+            12090
+          ],
+          "sentence": "The report measures elapsed time from requisition or SRM creation to purchase order item creation, from item creation to goods receipt, from vendor invoice creation to invoice receipt recording, from invoice receipt to invoice clearance, and from goods receipt to invoice clearance.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t158",
+      "span": "Vendor invoice creation",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c03",
+          "votes": 3,
+          "offsets": [
+            4655
+          ],
+          "sentence": "Vendor invoice creation is a distinct activity from the company's recording of invoice receipt.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t159",
+      "span": "vendor invoice creation",
+      "kind": "activity",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c05",
+          "votes": 3,
+          "offsets": [
+            6723
+          ],
+          "sentence": "Observed behavior: the modeled flow can begin with vendor invoice creation, followed by creation of one or more order items and a purchase order approval change.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t160",
+      "span": "vendors",
+      "kind": "role",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c00",
+          "votes": 2,
+          "offsets": [
+            782
+          ],
+          "sentence": "It omits statistical tables, charts, tool comparisons, and rankings of individual vendors.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    },
+    {
+      "term_id": "bpi2019-purchase-process#t161",
+      "span": "warehouse",
+      "kind": "thing",
+      "expansion": null,
+      "n_chunks": 1,
+      "mentions": [
+        {
+          "chunk_id": "bpi2019-purchase-process#c06",
+          "votes": 3,
+          "offsets": [
+            7441
+          ],
+          "sentence": "Expected business arrangement: goods are delivered to and stored in a warehouse, and payment takes place after their use in production.",
+          "sentence_verbatim": true,
+          "case_fixed": false
+        }
+      ]
+    }
+  ]
+}
